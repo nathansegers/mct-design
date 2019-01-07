@@ -1,4 +1,4 @@
 baseURL = "http://mct.be/"
 languageCode = "nl-be"
 title = "MCT design site"
-theme = "blank"
+theme = "mct"
