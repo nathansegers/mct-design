@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "generic.head.html" . }}
+
+<body class="js-page">
+
+    <!-- Page top -->
+    {{ partial "components.top.html" . }}
+    <!-- End page header -->
+
+    <!-- Page header -->
+    {{ partial "components.header.html" . }}
+    <!-- End page header -->
+
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+
+    <!-- Mobile Nav -->
+    <!-- {% include components.mobile-nav.html %} -->
+    <!-- End page footer -->
+
+    <!-- Page footer -->
+    {{ partial "components.footer.html" . }}
+    <!-- End page footer -->
+
+    <!-- Cookie message -->
+    <!-- {% include components.cookie-message.html %} -->
+    <!-- End cookie message -->
+
+    <!-- Footer javascript -->
+    <!-- {% include generic.javascript.html %} -->
+    <!-- End footer javascript -->
+
+</body>
+</html>
