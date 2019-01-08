@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-{{ partial "generic/head" }}
+{{ partial "generic/head" . }}
 
 <body class="js-page">
 
     <!-- Page top -->
-    {{ partial "components/top" }}
+    {{ partial "components/top" . }}
     <!-- End page header -->
 
     <!-- Page header -->
-    {{ partial "components/header" }}
+    {{ partial "components/header" . }}
     <!-- End page header -->
 
     {{ block "main" . }}

@@ -1,30 +1,45 @@
 baseURL = "http://mct.be/"
-title = "mct.be design"
 theme = "mct"
 
 [menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+	weight = 1
 
   [[menu.main]]
     identifier = "waarom"
-    name = "Waarom NMCT"
-    url = "/waarom-nmct/"
+    name = "Waarom MCT"
+    url = "/waarom-mct/"
+	weight = 2
 
   [[menu.main]]
     identifier = "programma"
     name = "Programma"
     url = "/programma/"
+	weight = 3
+
+#   [[menu.main]]
+#     identifier = "nieuws"
+#     name = "Nieuws"
+#     url = "/nieuws/"
+# 	weight = 4
 
   [[menu.main]]
-    identifier = "nieuws"
-    name = "Nieuws"
-    url = "/nieuws/"
+    identifier = "projecten"
+    name = "Projecten"
+    url = "/projecten/"
+	weight = 4
 
   [[menu.main]]
     identifier = "afstandsonderwijs"
-    name = "Afstandsonderwijs"
+    name = "@Home"
     url = "/at-home/"
+	weight = 5
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
+	weight = 6
