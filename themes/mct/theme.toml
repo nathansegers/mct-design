@@ -1,6 +1,6 @@
 name = "mct"
 license = "MIT"
-description = "Starter theme for mct.be design."
+description = "Starter theme for mct.be."
 min_version = 0.19
 
 [author]
