@@ -1,0 +1,69 @@
+//
+//  Tools: Ms
+//  ---
+//  Modular scale mixins
+//
+
+@mixin ms-3 {
+    @include text-dimensions(ms(-3),.75);
+}
+
+@mixin ms-2 {
+    @include text-dimensions(ms(-2),1);
+}
+
+@mixin ms-1 {
+    @include text-dimensions(ms(-1),1);
+}
+
+@mixin ms0 {
+    @include text-dimensions(ms(0),1);
+}
+
+@mixin ms1 {
+    @include text-dimensions(ms(1),1.125);
+}
+
+@mixin ms2 {
+    @include text-dimensions(ms(2),1.25);
+}
+
+@mixin ms3 {
+    @include text-dimensions(ms(3),1.25);
+}
+
+@mixin ms4 {
+    @include text-dimensions(ms(4),1.25);
+}
+
+@mixin ms5 {
+    @include text-dimensions(ms(5),1.5);
+}
+
+@mixin ms6 {
+    @include text-dimensions(ms(6),1.75);
+}
+
+@mixin ms7 {
+    @include text-dimensions(ms(7),2);
+}
+
+@mixin ms8 {
+    @include text-dimensions(ms(8),2.25);
+}
+
+@mixin ms9 {
+    @include text-dimensions(ms(9),2.25);
+}
+
+@mixin ms10 {
+    @include text-dimensions(ms(10),2.25);
+}
+
+@mixin ms11 {
+    @include text-dimensions(ms(11),2.75);
+}
+
+@mixin ms12 {
+    @include text-dimensions(ms(12),3);
+}

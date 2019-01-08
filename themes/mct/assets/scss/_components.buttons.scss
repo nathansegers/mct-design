@@ -1,0 +1,229 @@
+/*
+    Components: Buttons
+    ---
+    Button styles, sizes, etc.
+*/
+
+/**
+ *  1. The user agent may consider touches that begin on the element
+ *     only for the purposes of scrolling and continuous zooming.
+ *  2. Reset unusual Firefox-on-Android default style.
+ *     see https://github.com/necolas/normalize.css/issues/214
+ *  3. Sequences of whitespace will collapse into a single whitespace.
+ *     Text will never wrap to the next line.
+ *     The text continues on the same line until a <br> tag is encountered.
+ *  4. Controls the application of anti-aliasing when fonts are rendered.
+ *     Webkit & Firefox implements.
+ *     Works only on Mac OS X platform.
+ */
+
+ /* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    appearance: button;
+    user-select: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.c-button {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation; /* [1] */
+    background-image: none; /* [2] */
+    white-space: nowrap; /* [3] */
+    border-radius: 0;
+    border-width: 0;
+    transition-duration: $animation-duration-alpha;
+    transition-timing-function: $animation-easing-alpha;
+    transition-property: background, color, border, transform, box-shadow;
+    outline: none;
+    appearance: none;
+    box-shadow: none;
+    -webkit-font-smoothing: antialiased; /* [4] */
+    -moz-osx-font-smoothing: grayscale; /* [4] */
+    font-weight: $delta-font-weight;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:active {
+        outline: 0;
+        background-image: none;
+    }
+
+    &[disabled],
+    &[disabled]:hover {
+        background: palette(color-neutral,light);
+        color: palette(color-neutral);
+        border: palette(color-neutral);
+    }
+}
+
+// Button display
+
+.c-button--block {
+    display: block;
+    width: 100%;
+}
+
+.c-button--float-left {
+    display: block;
+    float: left;
+
+    .c-button-group > & {
+        @include margin-right(1);
+    }
+}
+
+.c-button--float-right {
+    display: block;
+    float: right;
+
+    .c-button-group > & {
+        @include margin-right(1);
+    }
+}
+
+// Button sizes
+
+.c-button--sm {
+    @include padding-lr($columns-gutter,$columns-gutter);
+    @include input-dimensions(ms(-2),1,0,.5,.5);
+}
+
+.c-button--md {
+    @include padding-lr($columns-gutter * 1.25,$columns-gutter * 1.25);
+    @include input-dimensions(ms(-1),1,0,$alpha-leading / 2,$alpha-leading / 2);
+}
+
+.c-button--lg {
+    @include padding-lr($columns-gutter * 1.5,$columns-gutter * 1.5);
+    @include input-dimensions(ms(0),1,0,$alpha-leading * .75,$alpha-leading * .75);
+}
+
+// Button colors
+
+.c-button--alpha {
+    background-color: palette(color-alpha);
+    border-color: palette(color-beta,light);
+
+    &,
+    &:visited,
+    &:hover {
+        color: palette(color-neutral,xxxxx-light);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: palette(color-alpha,light);
+        color: palette(color-neutral,xxxxx-light);
+    }
+
+    &:active {
+        background-color: palette(color-alpha);
+    }
+
+}
+
+// rounded
+
+.c-button--rounded {
+    border-radius: 4rem;
+}
+
+// With box-shadow
+
+.c-button--box-shadow {
+    box-shadow: 0 5px 15px rgba(palette(color-neutral,xxx-dark),.1);
+}
+
+// effects
+
+.c-button--scale {
+    &:active {
+        transform: scale(.975);
+    }
+}
+
+.c-button--transform {
+    &:hover {
+        transform: translateY(-2px);
+        @include box-shadow-xl();
+    }
+}
+
+// special cases
+
+.c-button--header-cta {
+    z-index: 30;
+    @include box-shadow;
+
+    &,
+    &:visited {
+        background-color: palette(color-neutral,xxxxx-light);
+        color: palette(color-alpha);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: rgba(palette(color-neutral,xxxxx-light),.9);
+        color: palette(color-alpha);
+        transform: translateY(-1px);
+        @include box-shadow-lg;
+    }
+
+    &:active {
+        background-color: palette(color-neutral,xxxxx-light);
+        color: palette(color-alpha);
+        transform: scale(1);
+    }
+
+    .c-header & {
+        display: none;
+
+        @include mq(bp4) {
+            display: block;
+        }
+    }
+}
+
+.c-button--form {
+    color: palette(color-alpha);
+    border: 2px solid palette(color-alpha);
+}
+
+// Modifiers
+
+.c-button--postfix {
+    border-radius: 0 $radius $radius 0;
+}
+
+// Button-group
+
+.c-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    @include margin-lr($columns-gutter * -1);
+
+    .c-button {
+        @include margin-lr($columns-gutter);
+    }
+}

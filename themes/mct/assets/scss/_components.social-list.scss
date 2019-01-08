@@ -1,0 +1,28 @@
+/*
+    Components: Social list
+*/
+
+.c-social-list {
+    display: flex;
+}
+
+    .c-social-list__item {
+        & + & {
+            @include margin-left($columns-gutter);
+        }
+    }
+
+    .c-social-list__link {
+        display: block;
+        text-decoration: none;
+
+        &,
+        &:visited {
+            color: palette(color-neutral,x-dark);
+        }
+
+        &:hover,
+        &:focus {
+            color: palette(color-alpha);
+        }
+    }

@@ -1,0 +1,213 @@
+/*
+    Components: Navigation
+    ---
+    Site navigation, breadcrumbs, etc.
+*/
+
+.c-nav-main {
+    .c-header & {
+        display: none;
+        z-index: 10;
+
+        @include mq(bp4) {
+            display: table;
+        }
+    }
+
+    @include mq(bp4) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+    .c-nav-main__list {
+        width: 100%;
+
+        .c-header & {
+            margin-bottom: 0;
+        }
+
+        .c-nav-mobile & {
+            @include margin-bottom($alpha-leading * 1.5);
+        }
+
+        @include mq(bp4) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .c-nav-main__item {
+        @include mq(bp4) {
+            @include margin-lr($columns-gutter / 2);
+
+            & + & {
+                // @include margin-left($columns-gutter);
+            }
+        }
+
+        @include mq(bp5) {
+            @include margin-lr($columns-gutter);
+
+            & + & {
+                // @include margin-left($columns-gutter * 2);
+            }
+        }
+    }
+
+    .c-nav-main__link {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        font-weight: $delta-font-weight;
+        @include text-dimensions(ms(-1),1);
+        @include padding-tb($alpha-leading / 4,$alpha-leading / 4);
+
+        &,
+        &:visited {
+            color: palette(color-neutral,xxxxx-light);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: #{$alpha-leading / 2}px;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: rgba(palette(color-neutral,xxxxx-light),1);
+            transition: all $animation-duration-beta $animation-easing-alpha;
+            transition-property: width;
+        }
+
+        &:hover,
+        &:focus,
+        .is-selected & {
+            color: white;
+            text-decoration: none;
+
+            @include mq(bp4) {
+                &:after {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+
+        @include mq(bp4) {
+            @include padding-tb($alpha-leading / 2,$alpha-leading / 2);
+        }
+    }
+
+.c-nav-main-trigger {
+    position: relative;
+    width: $alpha-leading * 2px;
+    height: $alpha-leading * 2px;
+    margin-right: -#{$alpha-leading / 2}px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: palette(color-neutral,xxxxx-light);
+    background-color: transparent;
+    outline: 0;
+
+    @include mq(bp4) {
+        display: none;
+    }
+}
+
+    // .c-nav-main-trigger__symbol {
+    //     width: 1.5em;
+    //     height: 1.5em;
+    // }
+
+// mobile navigation
+
+.c-nav-mobile {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: palette(color-alpha);
+    z-index: 100;
+    pointer-events: none;
+    transition: opacity $animation-duration-alpha $animation-easing-alpha;
+
+    &.is-visible {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    @include mq(bp4) {
+        &,
+        &.is-visible {
+            display: none;
+        }
+    }
+}
+
+.c-nav-mobile__body {
+    @include padding-tb($alpha-leading,$alpha-leading);
+    @include padding-lr($columns-gutter,$columns-gutter);
+
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+    }
+}
+
+.c-nav-mobile__nav {
+    opacity: 0;
+    width: 100%;
+    transform: translateX(24px);
+
+    .is-visible & {
+        opacity: 1;
+        transform: none;
+        transition: all $animation-duration-alpha $animation-easing-alpha;
+    }
+}
+
+// top navigation
+
+.c-nav-top {
+    margin-bottom: 0;
+}
+
+    .c-nav-top__list {
+        margin-bottom: 0;
+
+
+            justify-content: flex-end;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+    }
+
+    .c-nav-top__item {
+
+            & + & {
+                @include margin-left($columns-gutter);
+            }
+
+    }
+
+    .c-nav-top__link {
+        display: block;
+        color: palette(color-alpha);
+        text-decoration: none;
+        @include text-dimensions(ms(-1),1);
+
+        &:hover,
+        .is-selected & {
+            color: palette(color-alpha,dark);
+        }
+    }

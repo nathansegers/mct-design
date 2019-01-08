@@ -1,0 +1,13 @@
+/*
+    Components: Top
+*/
+
+.c-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+    .c-top__item {
+        @include margin-left($columns-gutter);
+    }

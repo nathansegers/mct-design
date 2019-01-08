@@ -1,10 +1,35 @@
-{{ partial "header.html" . }}
-	<main>
-		{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-		{{ range $paginator.Pages }}
-			{{ partial "summary.html" . }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main>
-{{ partial "sidebar.html" . }}
-{{ partial "footer.html" . }}
+<!DOCTYPE html>
+<html>
+
+{{ partial "generic/head" }}
+
+<body class="js-page">
+
+    <!-- Page top -->
+    {{ partial "components/top" }}
+    <!-- End page header -->
+
+    <!-- Page header -->
+    {{ partial "components/header" }}
+    <!-- End page header -->
+
+    {{ .Content }}
+
+    <!-- Mobile Nav -->
+    <!-- {% include components.mobile-nav.html %} -->
+    <!-- End page footer -->
+
+    <!-- Page footer -->
+    {{ partial "components/footer" }}
+    <!-- End page footer -->
+
+    <!-- Cookie message -->
+    <!-- {% include components.cookie-message.html %} -->
+    <!-- End cookie message -->
+
+    <!-- Footer javascript -->
+    <!-- {% include generic.javascript.html %} -->
+    <!-- End footer javascript -->
+
+</body>
+</html>
