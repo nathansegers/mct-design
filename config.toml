@@ -1,4 +1,30 @@
 baseURL = "http://mct.be/"
-languageCode = "nl-be"
-title = "MCT design site"
+title = "mct.be design"
 theme = "mct"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "waarom"
+    name = "Waarom NMCT"
+    url = "/waarom-nmct/"
+
+  [[menu.main]]
+    identifier = "programma"
+    name = "Programma"
+    url = "/programma/"
+
+  [[menu.main]]
+    identifier = "nieuws"
+    name = "Nieuws"
+    url = "/nieuws/"
+
+  [[menu.main]]
+    identifier = "afstandsonderwijs"
+    name = "Afstandsonderwijs"
+    url = "/at-home/"
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
