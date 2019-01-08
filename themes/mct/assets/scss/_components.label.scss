@@ -1,0 +1,30 @@
+/*
+    Components: Forms
+    ---
+    Label styles
+*/
+
+// Labels
+.c-label {
+    // text-transform: uppercase;
+    font-family: $beta-font-family;
+    font-weight: $alpha-font-weight;
+    color: palette(color-neutral);
+    @include text-dimensions(ms(-1),1);
+
+    &.has-error {
+        color: palette(color-error);
+    }
+}
+
+.c-label--option {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: inline-block;
+}
+
+// NL naam om bots te foolen
+.c-label--verborgen {
+    display: none;
+}

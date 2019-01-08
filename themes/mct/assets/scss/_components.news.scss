@@ -1,0 +1,40 @@
+/*
+    Components: News
+*/
+
+.c-news-item {
+    color: palette(color-neutral, xxxx-dark);
+    opacity: .7;
+
+    transition: opacity 200ms ease-out;
+
+    &:hover {
+    	text-decoration: none;
+		opacity: 1;
+    }
+}
+
+.c-news-item__header {
+	margin: 10px 0;
+}
+
+.c-news__all-link {
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px solid palette(color-alpha);
+    font-family: $beta-font-family;
+    text-transform: uppercase;
+    @include ms-1;
+
+    &:hover {
+        text-decoration: none;
+        opacity: .7;
+    }
+}
+
+.c-news__pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}

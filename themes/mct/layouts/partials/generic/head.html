@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/zgq1yxl.css">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+    {{ $style := resources.Get "scss/screen.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     <link rel="icon" href="/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-precomposed.png">

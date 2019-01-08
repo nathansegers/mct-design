@@ -1,0 +1,132 @@
+/*
+    Components: Row
+    ---
+    Creates a horizontal row with padding
+*/
+
+.c-row {
+    position: relative;
+    background-color: palette(color-neutral, xxxxx-light);
+    z-index: 10;
+    @include clearfix;
+    @include padding-lr($columns-gutter,$columns-gutter);
+    @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
+
+    @include mq(bp3) {
+        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+    }
+}
+
+.c-row--lg {
+    @include mq(bp4) {
+        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
+    }
+}
+
+.c-row--xl {
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
+    }
+
+    @include mq(bp6) {
+        @include padding-tb($alpha-leading * 6,$alpha-leading * 5);
+    }
+}
+
+.c-row--alpha {
+    background-color: palette(color-alpha);
+    color: palette(color-neutral,xxxxx-light);
+}
+
+.c-row--beta {
+    background-color: palette(color-neutral,xxxx-dark);
+    color: palette(color-neutral,xxxxx-light);
+}
+
+.c-row--gamma {
+    background: palette(color-neutral,xx-dark);
+    color: palette(color-neutral, xxxxx-light);
+}
+
+.c-row--divide {
+    border-top: 1px solid palette(color-neutral,xxx-light);
+}
+
+.c-row--top {
+    background-color: palette(color-alpha, base);
+    z-index: 30;
+    // box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxxx-light),.15);
+    border-bottom: 1px solid rgba(palette(color-neutral,xxxxx-light),.15);
+
+    @include padding-tb($alpha-leading * .5, $alpha-leading * .5);
+}
+
+.c-row--header {
+    background-color: palette(color-alpha);
+    z-index: 20;
+    @include padding-tb($alpha-leading,$alpha-leading);
+
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+    }
+}
+
+.c-row--intro {
+    background-color: palette(color-alpha);
+    color: palette(color-neutral,xxxxx-light);
+}
+
+.c-row--visual {
+    background: palette(color-alpha) url('../../img/svg/background-visual-top.svg') bottom center no-repeat;
+    background-size: 110%;
+
+    @include mq(bp5) {
+        background-size: auto;
+    }
+}
+
+.c-row--footer {
+    border-top: 1px solid palette(color-neutral,xxx-light);
+	// border-bottom: $alpha-leading * .25px solid palette(color-alpha);
+
+	// &::after {
+	// 	content: '';
+	// 	position: fixed;
+	// 	width: 100%;
+	// 	height: 1400px;
+
+	// 	left: 0;
+	// 	bottom: -1400px;
+	// 	right: 0;
+
+	// 	background: yellow;
+	// }
+}
+
+.c-row--404 {
+    background-color: palette(color-alpha);
+    color: white;
+    min-height: calc(100vh - #{$alpha-leading * 5}px);
+    display: flex;
+    align-items: center;
+
+    @include mq(bp3) {
+        min-height: calc(100vh - #{$alpha-leading * 7}px);
+    }
+}
+
+.c-row--no-overflow {
+    overflow: hidden;
+}
+
+.c-row--clear {
+    padding: 0;
+}
+
+.c-row--clear-top {
+    padding-top: 0;
+}
+
+.c-row--clear-bottom {
+    padding-bottom: 0;
+}

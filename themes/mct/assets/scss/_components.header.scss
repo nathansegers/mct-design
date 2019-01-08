@@ -1,0 +1,14 @@
+/*
+    Components: Header
+*/
+
+.c-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .c-nav-mobile & {
+        @include margin-bottom($alpha-leading * 1.5);
+    }
+}

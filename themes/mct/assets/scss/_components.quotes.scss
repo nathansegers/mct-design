@@ -1,0 +1,41 @@
+/*
+    Components: Quotes
+*/
+
+.c-quote {
+    position: relative;
+    text-align: center;
+}
+
+    .c-quote__text {
+        font-family: $beta-font-family;
+        color: palette(color-epsilon,light);
+
+        //background-image: linear-gradient(to bottom right, palette(color-epsilon,x-light), palette(color-epsilon,light));
+        background-image: linear-gradient(to bottom left, palette(color-alpha,xx-light), palette(color-epsilon,light));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        //@include ms4;
+        @include ms6;
+    }
+
+    .c-quote__author {
+        //display: flex;
+        //align-items: center;
+    }
+
+    .c-quote__avatar {
+        height: $alpha-line-height * 3.5rem;
+        width: $alpha-line-height * 3.5rem;
+        border-radius: 100%;
+        //@include margin-right($columns-gutter);
+        @include margin-bottom($alpha-leading)
+    }
+
+    .c-quote__name {
+        margin-bottom: 0;
+        //@include ms3;
+        //@include ms-1;
+        //@include uppercase-wide;
+    }

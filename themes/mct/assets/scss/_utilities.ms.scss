@@ -1,0 +1,217 @@
+/*
+    Utilities: Modolar scale
+*/
+
+.u-ms-3 {
+    @include ms-3;
+}
+
+.u-ms-2 {
+    @include ms-2;
+}
+
+.u-ms-1 {
+    @include ms-1;
+}
+
+.u-ms0 {
+    @include ms0;
+}
+
+.u-ms1 {
+    @include ms1;
+}
+
+.u-ms2 {
+    @include ms2;
+}
+
+.u-ms3 {
+    @include ms3;
+}
+
+.u-ms4 {
+    @include ms4;
+}
+
+.u-ms5 {
+    @include ms5;
+}
+
+.u-ms6 {
+    @include ms6;
+}
+
+.u-ms7 {
+    @include ms7;
+}
+
+.u-ms8 {
+    @include ms8;
+}
+
+.u-ms9 {
+    @include ms9;
+}
+
+.u-ms10 {
+    @include ms10;
+}
+
+.u-ms11 {
+    @include ms11;
+}
+
+.u-ms12 {
+    @include ms12;
+}
+
+// responsive ms classes
+
+@include mq(bp3) {
+
+    .u-ms1-bp3 {
+        @include ms1;
+    }
+
+    .u-ms2-bp3 {
+        @include ms2;
+    }
+
+    .u-ms3-bp3 {
+        @include ms3;
+    }
+
+    .u-ms4-bp3 {
+        @include ms4;
+    }
+
+    .u-ms5-bp3 {
+        @include ms5;
+    }
+
+    .u-ms6-bp3 {
+        @include ms6;
+    }
+
+    .u-ms7-bp3 {
+        @include ms7;
+    }
+
+    .u-ms8-bp3 {
+        @include ms8;
+    }
+
+    .u-ms9-bp3 {
+        @include ms9;
+    }
+
+    .u-ms10-bp3 {
+        @include ms10;
+    }
+
+    .u-ms12-bp3 {
+        @include ms12;
+    }
+
+}
+
+@include mq(bp4) {
+
+    .u-ms1-bp4 {
+        @include ms1;
+    }
+
+    .u-ms2-bp4 {
+        @include ms2;
+    }
+
+    .u-ms3-bp4 {
+        @include ms3;
+    }
+
+    .u-ms4-bp4 {
+        @include ms4;
+    }
+
+    .u-ms5-bp4 {
+        @include ms5;
+    }
+
+    .u-ms6-bp4 {
+        @include ms6;
+    }
+
+    .u-ms7-bp4 {
+        @include ms7;
+    }
+
+    .u-ms8-bp4 {
+        @include ms8;
+    }
+
+    .u-ms9-bp4 {
+        @include ms9;
+    }
+
+    .u-ms10-bp4 {
+        @include ms10;
+    }
+
+    .u-ms12-bp4 {
+        @include ms12;
+    }
+
+}
+
+@include mq(bp5) {
+
+    .u-ms1-bp5 {
+        @include ms1;
+    }
+
+    .u-ms2-bp5 {
+        @include ms2;
+    }
+
+    .u-ms3-bp5 {
+        @include ms3;
+    }
+
+    .u-ms4-bp5 {
+        @include ms4;
+    }
+
+    .u-ms5-bp5 {
+        @include ms5;
+    }
+
+    .u-ms6-bp5 {
+        @include ms6;
+    }
+
+    .u-ms7-bp5 {
+        @include ms7;
+    }
+
+    .u-ms8-bp5 {
+        @include ms8;
+    }
+
+    .u-ms9-bp5 {
+        @include ms9;
+    }
+
+    .u-ms10-bp5 {
+        @include ms10;
+    }
+
+    .u-ms11-bp5 {
+        @include ms11;
+    }
+
+    .u-ms12-bp5 {
+        @include ms12;
+    }
+
+}

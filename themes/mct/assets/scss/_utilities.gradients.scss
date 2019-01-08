@@ -1,0 +1,27 @@
+/*
+    Utilities: Gradients
+*/
+
+.u-gradient-bg-1 {
+    background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xxx-light), map-get(map-get($palettes,color-alpha) ,xx-light));
+}
+
+.u-gradient-bg-2 {
+    background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xxx-light), map-get(map-get($palettes,color-beta) ,xx-light));
+}
+
+.u-gradient-bg-3 {
+    background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xxx-light), map-get(map-get($palettes,color-gamma) ,xx-light));
+}
+
+.u-gradient-bg-4 {
+    background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-alpha) ,xxx-light), map-get(map-get($palettes,color-epsilon) ,xx-light));
+}
+
+.u-gradient-bg-5 {
+    background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-delta) ,xxx-light), map-get(map-get($palettes,color-beta) ,xx-light));
+}
+
+.u-gradient-bg-6 {
+    background-image: linear-gradient(to bottom right, map-get(map-get($palettes,color-beta) ,xxx-light), map-get(map-get($palettes,color-jota) ,x-light));
+}

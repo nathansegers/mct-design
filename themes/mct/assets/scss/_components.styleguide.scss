@@ -1,0 +1,68 @@
+/*
+    Components: Styleguide
+    ---
+    Styleguide specific scaffolding and demo styles
+*/
+
+.c-swatch {
+    width: 100%;
+    height: $alpha-line-height * 6px;
+    position: relative;
+    @include margin-bottom($beta-leading);
+
+    &:after {
+        display: block;
+        //color: rgba(palette(color-neutral,xxxx-dark),.5);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-weight: $delta-font-weight;
+        white-space: pre;
+        @include uppercase;
+        @include ms-1;
+        @include padding-lr($columns-gutter);
+        @include padding-tb($alpha-line-height/2,$alpha-line-height/2);
+    }
+}
+
+// Loop through the different colors in palettes map
+@each $palette, $value in $palettes {
+
+    // Loop through the different shades in colors map
+    @each $shade, $i in $value {
+
+        // Background colors (e.g .u-bgcolor-alpha-base)
+        .c-swatch.u-bg#{$palette}-#{$shade} {
+            &:after {
+                //color: mix();
+                @if (lightness(map-get(map-get($palettes,$palette) ,$shade)) > 60) {
+                    //color: rgba(palette(color-neutral,xxxx-dark),.5); // Lighter backgorund, return dark color
+                    color: mix(map-get(map-get($palettes,$palette) ,$shade),black,0%); // Lighter backgorund, return dark color
+                } @else {
+                    //color: rgba(palette(color-neutral,xxxx-light),.75); // Darker background, return light color
+                    color: mix(map-get(map-get($palettes,$palette) ,$shade),white,0%); // Darker background, return light color
+                }
+                content: '#{$shade} \A #{map-get(map-get($palettes,$palette) ,$shade)}';
+            }
+        }
+
+    }
+}
+
+.c-swatch--gradient {
+    height: $alpha-line-height * 12rem;
+}
+
+.c-swatch--texture {
+    height: $alpha-line-height * 22rem;
+
+    &:after {
+        display: none;
+    }
+}
+
+.c-swatch-caption {
+    color: palette(color-neutral);
+    min-height: 55px;
+    @include text-dimensions(14,.8,0,.5,.3);
+}

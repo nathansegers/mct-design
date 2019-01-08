@@ -1,0 +1,251 @@
+/*
+    Shame
+    ---
+    Hacks and quick fixes
+*/
+
+html {
+    position: relative;
+
+    @if $show-baseline {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            background-image: linear-gradient(#ccc 0, transparent 1px), linear-gradient(#ccc 0, transparent 1px), linear-gradient(#ccc 0, transparent 1px), linear-gradient(#ccc 0, transparent 1px);
+            background-size: 100% #{$alpha-line-height}px, 100% #{$alpha-line-height}px, 100% #{$alpha-line-height}px, 100% #{$alpha-line-height}px;
+            background-position: 0 #{$alpha-line-height * .25}px, 0 #{$alpha-line-height/2}px, 0 #{$alpha-line-height * .75}px, 0 #{$alpha-line-height}px;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+    @if $show-baseline {
+        background-color: rgba(red,.1);
+    }
+}
+
+.u-width-auto {
+    width: auto;
+}
+
+.u-max-width-sm {
+    max-width: 30em;
+}
+
+.u-max-width-md {
+    max-width: 36em;
+}
+
+.u-max-width-optimal {
+    max-width: 47.5em;
+}
+
+.u-max-width-lg {
+    max-width: 56em;
+}
+
+.u-max-width-xl {
+    max-width: 68em;
+}
+
+.u-opacity-alpha {
+    opacity: .6;
+}
+
+.u-opacity-beta {
+    opacity: .7;
+}
+
+.u-opacity-gamma {
+    opacity: .8;
+}
+
+.u-opacity-delta {
+    opacity: .9;
+}
+
+.c-main-section {
+    @include mq(bp2) {
+        & + & {
+            @include padding-top($alpha-leading);
+        }
+    }
+}
+
+.c-main-section-md {
+    // @include mq(bp2) {
+        & + & {
+            @include padding-top($alpha-leading);
+        }
+    // }
+
+    @include mq(bp3) {
+        & + & {
+            @include padding-top($alpha-leading * 2);
+        }
+    }
+}
+
+.c-main-section-lg {
+    // @include mq(bp2) {
+        & + & {
+            @include padding-top($alpha-leading);
+        }
+    // }
+
+    @include mq(bp5) {
+        & + & {
+            @include padding-top($alpha-leading * 3);
+        }
+    }
+}
+
+.c-main-section-xl {
+    // @include mq(bp2) {
+        & + & {
+            @include padding-top($alpha-leading);
+        }
+    // }
+
+    @include mq(bp4) {
+        & + & {
+            @include padding-top($alpha-leading * 3);
+        }
+    }
+
+    @include mq(bp5) {
+        & + & {
+            @include padding-top($alpha-leading * 4);
+        }
+    }
+}
+
+.c-projects__header,
+.c-projects__body {
+    position: relative;
+}
+
+.c-projects__body-sm {
+    @include margin-top($alpha-leading * -1);
+
+    @include mq(bp3) {
+        @include margin-top($alpha-leading * -2);
+    }
+
+    @include mq(bp4) {
+        margin-top: 0;
+    }
+}
+
+.c-projects__carousel {
+    position: relative;
+
+    flex-direction: row;
+
+    overflow: hidden;
+}
+    .c-projects__carousel--offset-left {
+        transform: translateX( -100% );
+    }
+
+    .c-projects__carousel--offset-right {
+        transform: translateX( -200% );
+    }
+
+.c-projects__body-lg {
+    @include mq(bp4) {
+        @include margin-top($alpha-leading * -7);
+    }
+}
+
+.c-button {
+    &.next,
+    &.prev {
+        position: absolute;
+        top: 40%;
+
+        display: block;
+        width: 35px;
+        height: 35px;
+
+        text-align: center;
+        line-height: 0;
+        color: palette( color-alpha );
+
+        background-color: palette( color-neutral, xxxxx-light );
+
+        z-index: 10;
+    }
+
+    &.next {
+        right: 0;
+    }
+
+    &.prev {
+        left: 0;
+    }
+}
+
+.c-news__body {
+    @include margin-top($alpha-leading * -1.5);
+
+    @include mq(bp3) {
+        @include margin-top($alpha-leading * -2.5);
+    }
+
+    @include mq(bp4) {
+        @include margin-top($alpha-leading * -4);
+    }
+}
+
+.c-map {
+    width: 100%;
+    height: 0;
+    background-color: palette(color-neutral,xxx-light);
+    height: 75vh;
+}
+
+.c-map--contained {
+    height: 40vh;
+}
+
+::-webkit-input-placeholder {
+    font-family: $placeholder-font-family;
+    font-style: $placeholder-font-style;
+    font-weight: $alpha-font-weight;
+    color: $placeholder-color;
+}
+
+::-moz-placeholder {
+    font-family: $placeholder-font-family;
+    font-style: $placeholder-font-style;
+    font-weight: $alpha-font-weight;
+    color: $placeholder-color;
+}
+
+:-ms-input-placeholder {
+    font-family: $placeholder-font-family;
+    font-style: $placeholder-font-style;
+    font-weight: $alpha-font-weight;
+    color: $placeholder-color;
+}
+
+.c-partner {
+    filter: grayscale( 1 );
+    transition: filter 400ms ease-out;
+
+    &:hover {
+        filter: grayscale( 0 );
+    }
+}

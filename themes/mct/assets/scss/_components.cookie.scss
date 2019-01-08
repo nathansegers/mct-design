@@ -1,0 +1,33 @@
+.c-cookie-message {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: #{ $columns-gutter }px;
+	background-color: #fff;
+    z-index: 99;
+	@include box-shadow-xl;
+
+    a {
+        text-decoration: underline;
+    }
+
+	@include mq(bp2) {
+		right: #{$columns-gutter}px;
+		bottom: #{$columns-gutter}px;
+		left: #{$columns-gutter}px;
+	}
+
+	@include mq(bp3) {
+		right: auto;
+        display: flex;
+        align-items: center;
+	}
+}
+
+.c-cookie-message__text {
+    @include mq(bp3) {
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+}
