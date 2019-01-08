@@ -13,9 +13,7 @@
     {{ partial "components/header" }}
     <!-- End page header -->
 
-    {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
+    {{ .Content }}
 
     <!-- Mobile Nav -->
     <!-- {% include components.mobile-nav.html %} -->
