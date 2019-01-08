@@ -1,23 +1,10 @@
 <nav class="c-nav-main js-nav">
     <ul class="o-list c-nav-main__list">
-<<<<<<< HEAD
-        <!-- Manually define homepage link -->
-        <li class="c-nav-main__item is-selected">
-            <a href="/" class="c-nav-main__link">Home</a>
-        </li>
-        <!-- Define your site navigation -->
-        {{ range .Site.Menus.main }}
-        <li class="c-nav-main__item is-selected">
-            <a href="{{ .URL }}" class="c-nav-main__link">{{ .Name }}</a>
-        </li>
-        {{ end }}
-=======
 		{{ $currentNode := . }}
 		{{ range .Site.Menus.main }}
 			<li class="c-nav-main__item {{if or ($currentNode.IsMenuCurrent "main" . ) ($currentNode.HasMenuCurrent "main" . ) }} is-active{{end}}">
 				<a href="{{ .URL }}" class="c-nav-main__link">{{ .Name }}</a>
 			</li>
 		{{ end }}
->>>>>>> 9c579459ca3f4b4247d41d6070c578110916b849
     </ul>
 </nav>
