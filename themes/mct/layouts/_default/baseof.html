@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-{{ partial "generic.head.html" . }}
+{{ partial "generic/head" }}
 
 <body class="js-page">
 
     <!-- Page top -->
-    {{ partial "components.top.html" . }}
+    {{ partial "components/top" }}
     <!-- End page header -->
 
     <!-- Page header -->
-    {{ partial "components.header.html" . }}
+    {{ partial "components/header" }}
     <!-- End page header -->
 
     {{ block "main" . }}
@@ -22,7 +22,7 @@
     <!-- End page footer -->
 
     <!-- Page footer -->
-    {{ partial "components.footer.html" . }}
+    {{ partial "components/footer" }}
     <!-- End page footer -->
 
     <!-- Cookie message -->
