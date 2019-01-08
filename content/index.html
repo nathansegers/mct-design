@@ -1,8 +1,35 @@
-{{ define "main" }}
+---
+Title: Home
+identifier: home
+---
+<main>
+	<div class="c-row c-row--lg c-row--intro c-row--visual">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter-lg">
+				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+					<div class="c-main-section-lg">
+						<div class="u-max-width-xl">
+							<h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
+								Multimedia & Communicatie Technologie
+							</h1>
+							<p class="c-type-intro">
+								Van user interface tot deep learning & augmented reality. Welkom bij de Internet Of Things-generatie.
+							</p>
+						</div>
+					</div>
+					<div class="c-main-section-lg">
+						<div class="c-video-player">
+							<button class="c-video-play-button">
+								{{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
+							</button>
+							<video class="c-video-player__video" poster="/img/jpg/nmct-promo.jpg">
+								<source src="/video/nmct-promo.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</div>
 
-<<<<<<< HEAD
 						<p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
-							Kijk zelf wat NMCT zo uniek maakt
+							Kijk zelf wat MCT zo uniek maakt
 						</p>
 					</div>
 				</div>
@@ -130,7 +157,7 @@
 	</section>
 	<section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
 		<div class="o-container">
-			{{ partial "components/news-widget" . }}
+			<!-- {% include components.news.html %} -->
 		</div>
 	</section>
 	<!--
@@ -138,6 +165,3 @@
 	topbedrijven mee bezig zijn" %}
 	-->
 </main>
-=======
->>>>>>> 9c579459ca3f4b4247d41d6070c578110916b849
-{{ end }}
