@@ -1,0 +1,15 @@
+<div class="c-nav-mobile js-nav-mobile">
+    {{ partial "components/top" .}}
+    <div class="c-nav-mobile__body">
+        <div class="c-header">
+            {{ partial "components/logo" .}}
+            <button class="c-nav-main-trigger js-nav-trigger">
+                {{ partial "atoms/symbol" (dict "value" "close" "class" "c-nav-main-trigger__symbol")}}
+            </button>
+        </div>
+        <div class="c-nav-mobile__nav">
+            {{ partial "components/nav-main" .}}
+            <a href="#!" class="c-button c-button--md c-button--header-cta">Inschrijven</a>
+        </div>
+    </div>
+</div>

@@ -5,7 +5,7 @@
 			{{ partial "components/nav-main" . }}
 			<a href="#!" class="c-button c-button--md c-button--header-cta">Inschrijven</a>
 			<button class="c-nav-main-trigger js-nav-trigger">
-				<!-- {% include atom.symbol.html value="menu" class="c-nav-main-trigger__symbol" %} -->
+				{{ partial "atoms/symbol" (dict "value" "menu" "class" "c-nav-main-trigger__symbol")}}
 			</button>
 		</div>
 	</div>
