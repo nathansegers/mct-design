@@ -24,6 +24,7 @@ body {
     color: $body-color;
     font-feature-settings: "zero" 1, "tnum" 1, "calt" 1, "ss01" 1, "case" 1;
     overflow-x: hidden;
+    @include margin-bottom(map-get($increments, beta));
 
     @if $body-font-smoothing == true {
         -webkit-font-smoothing: antialiased;

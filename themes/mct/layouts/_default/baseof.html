@@ -19,6 +19,7 @@
 
     <!-- Mobile Nav -->
     <!-- {% include components.mobile-nav.html %} -->
+    {{ partial "components/nav-mobile" . }}
     <!-- End page footer -->
 
     <!-- Page footer -->
@@ -29,9 +30,7 @@
     <!-- {% include components.cookie-message.html %} -->
     <!-- End cookie message -->
 
-    <!-- Footer javascript -->
-    <!-- {% include generic.javascript.html %} -->
-    <!-- End footer javascript -->
+    {{ partial "generic/javascript" . }}
 
 </body>
 </html>
