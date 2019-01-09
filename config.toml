@@ -34,7 +34,7 @@ theme = "mct"
 	weight = 4
 
   [[menu.main]]
-    identifier = "afstandsonderwijs"
+    identifier = "at-home"
     name = "@Home"
     url = "/at-home/"
 	weight = 5
