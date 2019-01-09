@@ -1,4 +1,5 @@
 baseURL = "http://mct.be/"
+title = "MCT"
 theme = "mct"
 
 [menu]
