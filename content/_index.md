@@ -1,6 +1,5 @@
 ---
 title: Home
-layout: index
 identifier: home
 
 subheader: "Multimedia & Communicatie Technologie"

@@ -3,7 +3,7 @@
 
 {{ partial "generic/head" . }}
 
-<body class="js-page">
+<body>
 
     <!-- Page top -->
     {{ partial "components/top" . }}
@@ -13,13 +13,12 @@
     {{ partial "components/header" . }}
     <!-- End page header -->
 
-    {{ block "main" . }}
+    {{ block "main" .}}
       <!-- The part of the page that begins to differ between templates -->
     {{ end }}
 
     <!-- Mobile Nav -->
-    <!-- {% include components.mobile-nav.html %} -->
-    {{ partial "components/nav-mobile" . }}
+    {{ partial "components/nav-mobile" }}
     <!-- End page footer -->
 
     <!-- Page footer -->

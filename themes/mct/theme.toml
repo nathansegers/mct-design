@@ -4,4 +4,4 @@ description = "Starter theme for mct.be."
 min_version = 0.19
 
 [author]
-  name = "Simon"
+	name = "Simon"
