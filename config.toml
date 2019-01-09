@@ -1,4 +1,4 @@
-baseURL = "http://mct.be/"
+baseURL = "https://mct.be/"
 title = "MCT"
 theme = "mct"
 
