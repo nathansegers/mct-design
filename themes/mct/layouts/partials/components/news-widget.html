@@ -1,0 +1,12 @@
+<div class="c-news">
+    <h2 class="c-type-svg c-type-svg--news">
+        <img class="c-type-svg__svg" src="/img/svg/word-news.svg" alt="Nieuws">
+    </h2>
+    <div class="c-news__body">
+        <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+            {{ range .Site.Data.news }}
+                {{ partial "atoms/news-article" . }}
+            {{ end }}
+        </div>
+    </div>
+</div>
