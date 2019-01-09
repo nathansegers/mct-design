@@ -8,17 +8,17 @@
   </url>
   
   <url>
+    <loc>http://mct.be/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://mct.be/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://mct.be/</loc>
-  </url>
-  
-  <url>
-    <loc>http://mct.be/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
