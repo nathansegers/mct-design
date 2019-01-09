@@ -1,6 +1,7 @@
 baseURL = "https://mct.be/"
 title = "MCT"
 theme = "mct"
+enableEmoji = true
 
 [menu]
   [[menu.main]]
