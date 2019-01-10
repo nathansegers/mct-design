@@ -26,7 +26,48 @@
             <div class="c-curriculum-overview">
                 <div class="c-curriculum-choice js-curriculum-choice">
                     <div class="c-curriculum-choice__box">
-                        <div class="c-curriculum-choice__body">
+						<div class="c-curriculum-choice__body">
+							<button class="c-curriculum-choice__button js-curriculum-button">
+								<span>Kies je uitstroomprofiel</span>
+								<svg role="img" class="c-symbol c-symbol-keyboard-arrow-down c-curriculum-choice__icon-down">
+									{{ partial "atoms/symbol" (dict "value" "keyboard-arrow-down" "class" "c-curriculum-choice__icon-down") }}
+								</svg>
+							</button>
+							<ul class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
+								<li class="c-curriculum-choices__item js-curriculum-item" data-slug="smart-technology" data-name="Smart Tech &amp; AI"
+								 data-module="10">
+									<a href="#!" class="c-curriculum-choices__filter">
+										<svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
+											{{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
+										</svg> Smart Tech &amp; AI
+									</a>
+								</li>
+								<li class="c-curriculum-choices__item js-curriculum-item" data-slug="web-app" data-name="Web App Developer"
+								 data-module="9">
+									<a href="#!" class="c-curriculum-choices__filter">
+										<svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
+											{{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
+										</svg> Web App Developer
+									</a>
+								</li>
+								<li class="c-curriculum-choices__item js-curriculum-item" data-slug="ai-engineer" data-name="AI Engineer" data-module="14">
+									<a href="#!" class="c-curriculum-choices__filter">
+										<svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
+											{{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
+										</svg> AI Engineer
+									</a>
+								</li>
+								<li class="c-curriculum-choices__item js-curriculum-item" data-slug="infrastructure-engineer" data-name="Infrastructure Engineer"
+								 data-module="11">
+									<a href="#!" class="c-curriculum-choices__filter">
+										<svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
+											{{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
+										</svg> Infrastructure Engineer
+									</a>
+								</li>
+							</ul>
+						</div>
+                        <!-- <div class="c-curriculum-choice__body">
                             <button class="c-curriculum-choice__button js-show-hide" data-target-selector=".js-curriculum-choice-filter">
                                 Smart Technology Creator {{ partial "atoms/symbol" (dict "value" "keyboard-arrow-down" "class" "c-curriculum-choice__icon-down") }}
                             </button>
@@ -47,7 +88,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="c-curriculum">
@@ -133,53 +174,21 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 4
                             </h3>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Advanced Programming &amp; Maths</h4>
-                                <p class="c-module__tags">#principles #python</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Computer Networks</h4>
-                                <p class="c-module__tags">#dhcp #router #netwerk</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Data Science</h4>
-                                <p class="c-module__tags">#principes #data</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--create c-module--link">
-                                <h4 class="c-module__title">User Experience Design</h4>
-                                <p class="c-module__tags">#ux #user #wireframe</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--project c-module--link">
-                                <h4 class="c-module__title">Prototyping</h4>
-                                <p class="c-module__tags">#electricity #arduino</p>
-                            </a>
+							<div class="c-curriculum__choice--holder">
+								<div class="c-curriculum__call-to-action">
+									<p class="c-type-meta u-ms-2 u-mb-gamma u-opacity-gamma js-loading-message">
+										Wat is jouw passie?
+									</p>
+								</div>
+							</div>
                         </div>
                     </section>
                     <section class="c-curriculum__year">
                         <div class="c-curriculum__semester c-curriculum__semester--choice c-curriculum__semester--choice-5">
                             <h3 class="c-curriculum__semester-title">
                                 Semester 5
-                            </h3>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Device Programming&nbsp;1</h4>
-                                <p class="c-module__tags">#HTML #flask #JS</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Data Communication&nbsp;1</h4>
-                                <p class="c-module__tags">#cryptography #coding</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Data Management</h4>
-                                <p class="c-module__tags">#sql #databases #erd</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--create c-module--link">
-                                <h4 class="c-module__title">User Interface Design</h4>
-                                <p class="c-module__tags">#ui #design #HTML #CSS</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--project c-module--link">
-                                <h4 class="c-module__title">Project&nbsp;1</h4>
-                                <p class="c-module__tags">#integrate</p>
-                            </a>
+							</h3>
+							<div class="c-curriculum__choice--holder"></div>
                         </div>
                         <div class="c-curriculum__semester">
                             <h3 class="c-curriculum__semester-title">
@@ -217,7 +226,7 @@
             </div>
         </div>
     </div>
-    <div id="profile-smart-technology" class="c-row c-row--lg c-row--divide">
+    <div id="profile-smart-tech-ai" class="c-row c-row--lg c-row--divide">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
@@ -266,7 +275,7 @@
             </div>
         </div>
     </div>
-    <div class="c-row c-row--lg c-row--clear-top">
+    <div id="profile-web-app" class="c-row c-row--lg c-row--clear-top">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-6-of-12-bp4 u-push-6-of-12-bp4">
@@ -314,12 +323,12 @@
             </div>
         </div>
     </div>
-    <div class="c-row c-row--lg c-row--clear-top">
+    <div id="profile-ai-engineer" class="c-row c-row--lg c-row--clear-top">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
                     <h2 class="c-type-title-lg">
-                        Infrastructure <br> Engineer
+                        AI <br> Engineer
                     </h2>
                 </div>
             </div>
@@ -330,17 +339,13 @@
                             <div class="o-grid__item u-5-of-6-bp5 u-push-1-of-6-bp5">
                                 <div class="u-max-width-md">
                                     <p class="u-ms2">
-                                        Word je enthousiast van computernetwerken installeren, configureren en onderhouden?
-                                        Is een computernetwerk beveiligen tegen externe en interne bedreigingen echt iets voor jou?
-                                        Dan is MCT uitstroomprofiel Infrastructure Engineer waarschijnlijk iets voor jou!
-                                        Leer alles over infrastructuur opzetten met behulp van Windows en Linux, zowel lokaal als in de Cloud.
-                                        Wordt expert in VM Ware een virtueel computernetwerk automatisch deployen aan de hand van scripting.
+                                        
                                     </p>
                                     <h3 class="u-mb-alpha u-color-alpha-light">
                                         Jouw toekomst
                                     </h3>
                                     <p class="u-color-neutral-base">
-                                        Big&nbsp;Data&nbsp;Architect, Cloud&nbsp;Engineer, R&D&nbsp;Developer, IT&nbsp;Engineer, SQL&nbsp;Programmeur, &hellip;
+                                        Big&nbsp;Data&nbsp;Developer, AI Engineer, Backend developer, ...
                                     </p>
                                 </div>
                             </div>
@@ -352,14 +357,58 @@
                         </p>
                     </div>
                 </div>
-                <div class="o-grid__item u-6-of-12-bp4">
+                <!-- <div class="o-grid__item u-6-of-12-bp4">
                     <p>
                         <img src="/img/jpg/NMCT-shoot2-8.jpg" alt="">
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
-    </div>
+	</div>
+	<div id="profile-infrastructure-engineer" class="c-row c-row--lg c-row--clear-top">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter-lg">
+				<div class="o-grid__item u-6-of-12-bp4 u-push-6-of-12-bp4">
+					<h2 class="c-type-title-lg">
+						Infrastructure <br> Engineer
+					</h2>
+				</div>
+			</div>
+			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--horizontal-rev">
+				<div class="o-grid__item u-6-of-12-bp4">
+					<div class="c-main-section-lg">
+						<div class="o-grid o-grid--gutter-lg">
+							<div class="o-grid__item u-5-of-6-bp5">
+								<div class="u-max-width-md">
+									<p class="u-ms2">
+										Word je enthousiast van computernetwerken installeren, configureren en onderhouden? Is een computernetwerk beveiligen
+										tegen externe en interne bedreigingen echt iets voor jou? Dan is MCT uitstroomprofiel Infrastructure Engineer waarschijnlijk iets voor jou! Leer alles over infrastructuur opzetten met behulp van Windows en Linux, zowel lokaal als
+										in de Cloud. Word expert in VM Ware een virtueel computernetwerk automatisch deployen aan de hand van scripting.
+									</p>
+									<h3 class="u-mb-alpha u-color-alpha-light">
+										Jouw toekomst
+									</h3>
+									<p class="u-color-neutral-base">
+										Cloud Engineer, IT Engineer, ...
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="c-main-section-lg">
+						<p>
+							<img src="/img/jpg/NMCT-shoot1-50.jpg" alt="">
+						</p>
+					</div>
+				</div>
+				<div class="o-grid__item u-6-of-12-bp4">
+					<p>
+						<img src="/img/jpg/NMCT-shoot1-67-2.jpg" alt="">
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
     {{ partial "components/cta.html" (dict "title" "Klaar om IT expert te worden?" "paragraph" "Leer zelf de technieken waar de topbedrijven mee bezig zijn") }}
 </main>
 {{ end }}
