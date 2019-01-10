@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-{{ partial "generic/head" . }}
-
-<body class="js-page">
-
-    <!-- Page top -->
-    {{ partial "components/top" . }}
-    <!-- End page header -->
-
-    <!-- Page header -->
-    {{ partial "components/header" . }}
-    <!-- End page header -->
-
+{{ define "main" }}
     {{ .Content }}
-
-    <!-- Mobile Nav -->
-    <!-- {% include components.mobile-nav.html %} -->
-    <!-- End page footer -->
-
-    <!-- Page footer -->
-    {{ partial "components/footer" . }}
-    <!-- End page footer -->
-
-    <!-- Cookie message -->
-    <!-- {% include components.cookie-message.html %} -->
-    <!-- End cookie message -->
-
-    <!-- Footer javascript -->
-    <!-- {% include generic.javascript.html %} -->
-    <!-- End footer javascript -->
-
-</body>
-</html>
+{{ end }}
