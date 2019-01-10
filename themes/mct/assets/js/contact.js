@@ -3,7 +3,7 @@ var map,
 	contentString = '<div id="content">' +
 		'<div id="siteNotice">' +
 		'</div>' +
-		'<h1 id="firstHeading" class="firstHeading">NMCT</h1>' +
+		'<h1 id="firstHeading" class="firstHeading">MCT</h1>' +
 		'<div id="bodyContent">' +
 		'<p>MCT @ Howest Kortrijk<br/>Graaf Karel de Goedelaan 5<br/>8500 Kortrijk</p>' +
 		'</div>' +
@@ -257,12 +257,7 @@ function initMap() {
 		content: contentString
 	});
 
-	// DEV.
-	if (window.location.hostname == 'localhost') {
-		imagePath = '/img/favicons/favicon-32.png';
-	} else {
-		imagePath = '/img/favicons/favicon-32.png';
-	}
+	imagePath = '/favicons/favicon-32x32.png';
 
 	var marker = new google.maps.Marker({
 		position: HQ,
@@ -276,6 +271,7 @@ function initMap() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+	// For the form security.
 	let label = document.querySelector('.c-label--verborgen');
 	if (label) {
 		label.style.display = 'none';
