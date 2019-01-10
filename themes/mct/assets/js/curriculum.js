@@ -13,8 +13,8 @@ var endpoint = 'https://mct.be/wp-json/wp/v2/module?filter[orderby]=menu_order&p
 function fillCustomModules( modules ) {
 	var s4 = '',
 		s5 = '',
-		s4Holder = document.querySelector( '.c-curriculum__semester--choice-4 .c-curriculum__choice--holder' ),
-		s5Holder = document.querySelector( '.c-curriculum__semester--choice-5 .c-curriculum__choice--holder' );
+		s4Holder = document.querySelector('.c-curriculum__semester--choice-4 .c-curriculum__choice--holder'),
+		s5Holder = document.querySelector('.c-curriculum__semester--choice-5 .c-curriculum__choice--holder');
 
 	for (var i = 0; i <= modules.length - 6; i++) {
 		s4 += '<a href="'  + modules[i].link + '" class="c-module c-module--link c-module--' + modules[i].acf.module + ' o-fadeInTop"><h3 class="c-module__title">' + modules[i].title.rendered + '</h3><p class="c-module__tags">' + modules[i].excerpt.rendered + '</p></a>';
@@ -30,7 +30,7 @@ function fillCustomModules( modules ) {
 	makeModulesFullHeight();
 }
 
-function getModules( slug ) {
+function getModules(slug) {
 	var xhttp = new XMLHttpRequest(),
 		query = slug;
 
