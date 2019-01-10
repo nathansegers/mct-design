@@ -7,11 +7,23 @@
                     <div class="c-main-section-lg">
                         <div class="u-max-width-xl">
                             <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
-                                Projecten van studenten
+                                Projecten van studenten layout: projecten/list
                             </h1>
                             <p class="c-type-intro">
                                 Korte intro die duidelijk maakt wanneer de projectweken vallen en wat het belang is. Na iedere examenperiode hebben studenten projectweken.
                             </p>
+                            <h3>
+                                Projecten
+                            </h3>
+
+                            <div class="o-grid o-grid--gutter">
+
+                                {{ range first 3 .Pages }}
+                                <div class="o-grid__item u-1-of-2">
+                                    {{ partial "atoms/project-article" .}}
+                                </div>
+                                {{ end }}
+                            </div>
                         </div>
                     </div>
                 </div>
