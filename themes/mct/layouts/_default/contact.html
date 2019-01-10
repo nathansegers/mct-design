@@ -7,10 +7,10 @@
                     <div class="c-main-section-lg">
                         <div class="u-max-width-xl">
                             <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
-                                Neem contact op
+                                {{.Params.Subheader}}
                             </h1>
                             <p class="c-type-intro">
-                                Nog niet helemaal zeker? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis illo quam iure sit fugit culpa repellendus aut eum. Laat ons horen waar je mee zit en we zullen je zo snel mogelijk van antwoord dienen.
+								{{.Params.Intro | markdownify}}
                             </p>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                             <div class="o-grid__item u-1-of-4-bp4 c-doormat__item">
                                 <h3 class="u-ms0 u-color-neutral-xxxx-dark">Join the community</h3>
                                 <p class="u-ms0">
-                                    We posten over leuke projecten, evenementen en opportuniteiten en Lorem ipsum dolor sit.
+									We posten leuke projecten, evenementen en opportuniteiten.
                                 </p>
                                 {{ partial "components/social-icons" }}
                             </div>
