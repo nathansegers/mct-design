@@ -87,6 +87,7 @@
 
 .c-row--footer {
     border-top: 1px solid palette(color-neutral,xxx-light);
+	border-bottom: $alpha-leading * .25px solid palette(color-alpha);
 }
 
 .c-row--404 {
