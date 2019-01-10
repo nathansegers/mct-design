@@ -1,0 +1,17 @@
+/*
+    Components: links
+    ---
+    Special link styles
+*/
+
+.c-link-more {
+    border-bottom: 1px solid palette(color-alpha);
+    font-family: $beta-font-family;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include ms-1;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
