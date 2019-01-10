@@ -1,0 +1,31 @@
+{{ define "main" }}
+    <section class="c-row c-row--lg">
+        <div class="o-container">
+            <div class="u-max-width-optimal u-align-horizontal">
+                <div class="c-main-section">
+                    <p class="c-type-meta u-ms-1 u-color-neutral-base u-mb-beta">
+                        {{ .Date.Format "02/01/2006" }}
+                    </p>
+                    <h1 class="u-ms10-bp3">
+                        {{ .Title }}
+                    </h1>
+                </div>
+                <div class="c-main-section">
+                    <p>
+                        <img class="c-media__image lozad" data-src="/img/jpg/medium/{{ .Params.Image }}" alt="">
+                    </p>
+                </div>
+                <div class="c-main-section">
+                    <div class="s-content u-max-width-optimal">
+                        <p class="u-ms2">
+                            {{ .Description }}
+                        </p>
+                    </div>
+                </div>
+                <div class="c-main-section">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

@@ -1,4 +1,4 @@
 ---
 title: Nieuws
-layout: news
+type: news
 ---

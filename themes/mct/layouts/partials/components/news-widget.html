@@ -4,8 +4,8 @@
     </h2>
     <div class="c-news__body">
         <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
-            {{ range .Site.Data.news }}
-                {{ partial "atoms/news-article" . }}
+            {{ range first 4 (where .Data.Pages "Type" "news") }}
+                {{ partial "atoms/news-article" .}}
             {{ end }}
         </div>
     </div>
