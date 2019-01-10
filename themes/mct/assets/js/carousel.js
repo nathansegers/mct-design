@@ -1,4 +1,4 @@
-let nmct_carousel = (function(){
+let mct_carousel = (function(){
 	var slidesCount = 0,
 		posRegex = /\.*translateX\((.*)%\)/i;
 	
