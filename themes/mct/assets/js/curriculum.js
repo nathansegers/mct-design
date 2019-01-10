@@ -130,46 +130,48 @@ function checkScrolling( containerTop, page ) {
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-	var c = document.querySelector('.js-curriculum-choice'),
-		cT = c.offsetParent.offsetTop + c.offsetTop,
-		s = c.querySelector('.js-curriculum-button'),
-		l = document.querySelector('.js-curriculum-choices'),
-		o = document.querySelectorAll('.js-curriculum-item'),
-		p = document.querySelector('body');
-
-	p.classList.add( 'js-page' );
-
-	if (window.location.hash.substring(0, 9) == '#profile-') {
-		var tempMessage = document.querySelector('.js-loading-message');
-		if (tempMessage) {
-			tempMessage.innerHTML = 'Even je modules ophalen...';
-		}
-		var selectedTrack = tracks[window.location.hash.substring(9, window.location.hash.length)];
-		// window.scrollTo(window.scrollX, window.scrollY - 28);
-		getModules(selectedTrack);
-		selectAndDeselectOptions(selectedTrack, o, l, s );
+	if (document.querySelector('.c-curriculum-overview')) {
+			var c = document.querySelector('.js-curriculum-choice'),
+				cT = c.offsetParent.offsetTop + c.offsetTop,
+				s = c.querySelector('.js-curriculum-button'),
+				l = document.querySelector('.js-curriculum-choices'),
+				o = document.querySelectorAll('.js-curriculum-item'),
+				p = document.querySelector('body');
+		
+			p.classList.add( 'js-page' );
+		
+			if (window.location.hash.substring(0, 9) == '#profile-') {
+				var tempMessage = document.querySelector('.js-loading-message');
+				if (tempMessage) {
+					tempMessage.innerHTML = 'Even je modules ophalen...';
+				}
+				var selectedTrack = tracks[window.location.hash.substring(9, window.location.hash.length)];
+				// window.scrollTo(window.scrollX, window.scrollY - 28);
+				getModules(selectedTrack);
+				selectAndDeselectOptions(selectedTrack, o, l, s );
+			}
+		
+			getItemsAndAddListeners(s, l, o);
+		
+			window.addEventListener('hashchange', function () {
+				var moduleSlug = window.location.hash.substring(9, window.location.hash.length);
+		
+				if (window.location.hash.substring(0, 9) == '#profile-') {
+					// console.log('Hash changed!', tracks[window.location.hash.substring(7, window.location.hash.length)]);
+					getModules(tracks[moduleSlug]);
+					selectAndDeselectOptions(tracks[moduleSlug], o, l, s);
+				}
+			});
+		
+			window.addEventListener('resize', function() {
+				// Always check the modules when resizing the window1
+				makeModulesFullHeight();
+			});
+		
+			document.addEventListener('scroll', function() {
+				checkScrolling( cT, p );
+			});
+		
+			makeModulesFullHeight();
 	}
-
-	getItemsAndAddListeners(s, l, o);
-
-	window.addEventListener('hashchange', function () {
-		var moduleSlug = window.location.hash.substring(9, window.location.hash.length);
-
-		if (window.location.hash.substring(0, 9) == '#profile-') {
-			// console.log('Hash changed!', tracks[window.location.hash.substring(7, window.location.hash.length)]);
-			getModules(tracks[moduleSlug]);
-			selectAndDeselectOptions(tracks[moduleSlug], o, l, s);
-		}
-	});
-
-	window.addEventListener('resize', function() {
-		// Always check the modules when resizing the window1
-		makeModulesFullHeight();
-	});
-
-	document.addEventListener('scroll', function() {
-		checkScrolling( cT, p );
-	});
-
-	makeModulesFullHeight();
 });
