@@ -96,6 +96,11 @@
         background-color: palette(color-alpha);
     }
 
+    .c-media__picture--fixed-ratio {
+        height: 0;
+        padding-bottom: 60%;
+    }
+
     .c-media__image {
         min-width: 100%;
         transform: translateX(0) translateY(0);
@@ -109,14 +114,12 @@
                opacity: 1;
            }
         }
-    }
 
-    .c-media__image--blazy {
-        width: 100%;
-        height: auto;
-        opacity: 0;
-
-        &.is-blazy-loaded {
-            opacity: 1;
+        .c-media__picture--fixed-ratio & {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
