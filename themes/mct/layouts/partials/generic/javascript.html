@@ -3,11 +3,12 @@
 
 <!-- Our app file -->
 {{ $carousel := resources.Get "js/carousel.js" }}
-{{ $contact := resources.Get "js/contact.js" }}
 {{ $curriculum := resources.Get "js/curriculum.js" }}
-{{ $locations := resources.Get "js/locations.js" }}
+{{ $contact := resources.Get "js/contact.js" }}
 
-{{ $js := slice $app $carousel $contact $curriculum $locations | resources.Concat "js/app.js" | resources.Minify }}
+{{ $js := slice $app $carousel $contact $curriculum | resources.Concat "js/app.js" | resources.Minify }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+
 <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
 <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+{{ if eq .Params.Identifier "contact" }}<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBit5aFgJO91h5puuF2lOHl-K06__ZvFOc&callback=initMap"></script>{{end}}
