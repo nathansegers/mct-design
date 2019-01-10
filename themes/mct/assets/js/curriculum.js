@@ -8,13 +8,23 @@ var endpoint = 'https://mct.be/wp-json/wp/v2/module?filter[orderby]=menu_order&p
 		'smart-tech-ai': 10,
 		'infrastructure-engineer': 11,
 		'ai-engineer': 14
-	};
+	},
+	s4Holder,
+	s5Holder;
+
+function showLoadingMessage() {
+	var loadingMessage = 'Even je modules ophalen...';
+	s5Holder.innerHTML = '';
+	s4Holder.innerHTML = `<div class="c-curriculum__call-to-action">
+		<p class="c-type-meta u-ms-2 u-mb-gamma u-opacity-gamma js-loading-message">
+			${loadingMessage}
+		</p>
+	</div>`;
+}
 
 function fillCustomModules( modules ) {
 	var s4 = '',
-		s5 = '',
-		s4Holder = document.querySelector('.c-curriculum__semester--choice-4 .c-curriculum__choice--holder'),
-		s5Holder = document.querySelector('.c-curriculum__semester--choice-5 .c-curriculum__choice--holder');
+		s5 = '';
 
 	for (var i = 0; i <= modules.length - 6; i++) {
 		s4 += '<a href="'  + modules[i].link + '" class="c-module c-module--link c-module--' + modules[i].acf.module + ' o-fadeInTop"><h3 class="c-module__title">' + modules[i].title.rendered + '</h3><p class="c-module__tags">' + modules[i].excerpt.rendered + '</p></a>';
@@ -84,10 +94,7 @@ function getItemsAndAddListeners(s, l, o) {
 		for (var i = o.length - 1; i >= 0; i--) {
 			o[i].addEventListener('click', function( e ) {
 				e.preventDefault();
-				var tempMessage = document.querySelector('.js-loading-message');
-				if ( tempMessage ) {
-					tempMessage.innerHTML = 'Even je modules ophalen...';
-				}
+				showLoadingMessage();
 				var target = e.target || e.srcElement;
 				if (history.pushState) {
 					history.pushState(null, null, '#profile-' + target.parentNode.dataset.slug);
@@ -130,46 +137,51 @@ function checkScrolling( containerTop, page ) {
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-	var c = document.querySelector('.js-curriculum-choice'),
-		cT = c.offsetParent.offsetTop + c.offsetTop,
-		s = c.querySelector('.js-curriculum-button'),
-		l = document.querySelector('.js-curriculum-choices'),
-		o = document.querySelectorAll('.js-curriculum-item'),
-		p = document.querySelector('body');
+	if (document.querySelector('.c-curriculum-overview')) {
+			var c = document.querySelector('.js-curriculum-choice'),
+				cT = c.offsetParent.offsetTop + c.offsetTop,
+				s = c.querySelector('.js-curriculum-button'),
+				l = document.querySelector('.js-curriculum-choices'),
+				o = document.querySelectorAll('.js-curriculum-item'),
+				p = document.querySelector('body');
 
-	p.classList.add( 'js-page' );
-
-	if (window.location.hash.substring(0, 9) == '#profile-') {
-		var tempMessage = document.querySelector('.js-loading-message');
-		if (tempMessage) {
-			tempMessage.innerHTML = 'Even je modules ophalen...';
-		}
-		var selectedTrack = tracks[window.location.hash.substring(9, window.location.hash.length)];
-		// window.scrollTo(window.scrollX, window.scrollY - 28);
-		getModules(selectedTrack);
-		selectAndDeselectOptions(selectedTrack, o, l, s );
+			s4Holder = document.querySelector('.js-semester-4'),
+			s5Holder = document.querySelector('.js-semester-5');
+		
+			p.classList.add( 'js-page' );
+		
+			if (window.location.hash.substring(0, 9) == '#profile-') {
+				var tempMessage = document.querySelector('.js-loading-message');
+				if (tempMessage) {
+					showLoadingMessage();
+				}
+				var selectedTrack = tracks[window.location.hash.substring(9, window.location.hash.length)];
+				// window.scrollTo(window.scrollX, window.scrollY - 28);
+				getModules(selectedTrack);
+				selectAndDeselectOptions(selectedTrack, o, l, s );
+			}
+		
+			getItemsAndAddListeners(s, l, o);
+		
+			window.addEventListener('hashchange', function () {
+				var moduleSlug = window.location.hash.substring(9, window.location.hash.length);
+		
+				if (window.location.hash.substring(0, 9) == '#profile-') {
+					// console.log('Hash changed!', tracks[window.location.hash.substring(7, window.location.hash.length)]);
+					getModules(tracks[moduleSlug]);
+					selectAndDeselectOptions(tracks[moduleSlug], o, l, s);
+				}
+			});
+		
+			window.addEventListener('resize', function() {
+				// Always check the modules when resizing the window1
+				makeModulesFullHeight();
+			});
+		
+			document.addEventListener('scroll', function() {
+				checkScrolling( cT, p );
+			});
+		
+			makeModulesFullHeight();
 	}
-
-	getItemsAndAddListeners(s, l, o);
-
-	window.addEventListener('hashchange', function () {
-		var moduleSlug = window.location.hash.substring(9, window.location.hash.length);
-
-		if (window.location.hash.substring(0, 9) == '#profile-') {
-			// console.log('Hash changed!', tracks[window.location.hash.substring(7, window.location.hash.length)]);
-			getModules(tracks[moduleSlug]);
-			selectAndDeselectOptions(tracks[moduleSlug], o, l, s);
-		}
-	});
-
-	window.addEventListener('resize', function() {
-		// Always check the modules when resizing the window1
-		makeModulesFullHeight();
-	});
-
-	document.addEventListener('scroll', function() {
-		checkScrolling( cT, p );
-	});
-
-	makeModulesFullHeight();
 });

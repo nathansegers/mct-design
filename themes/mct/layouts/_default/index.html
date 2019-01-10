@@ -60,23 +60,23 @@
                             <div class="c-projects__body-lg">
                                 <div class="c-carousel js-carousel">
                                     <div class="c-carousel-nav" aria-hidden="true">
-                                        <ol class="o-list c-carousel-nav-list">
-                                            <li class="c-carousel-nav-list__item is-selected js-carousel-nav-list-item">
+                                        <ol class="o-list c-carousel-nav-list js-nav-list">
+                                            <li class="c-carousel-nav-list__item is-selected js-carousel-nav-list-item" data-slide="0">
                                                 0
                                             </li>
-                                            <li class="c-carousel-nav-list__item js-carousel-nav-list-item">
+                                            <li class="c-carousel-nav-list__item js-carousel-nav-list-item" data-slide="1">
                                                 1
                                             </li>
-                                            <li class="c-carousel-nav-list__item js-carousel-nav-list-item">
+                                            <li class="c-carousel-nav-list__item js-carousel-nav-list-item" data-slide="2">
                                                 2
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="c-carousel-holder">
                                         <div class="c-carousel__items-holder">
-                                            <div class="c-carousel__items js-carousel-items">
-                                                <div class="c-carousel__item is-selected js-carousel-item">
-                                                    <a class="c-media c-media--link" href="/projecten/project-detail">
+                                            <div class="c-carousel__items js-carousel-items" style="transform: translateX(0%);">
+                                                <div class="c-carousel__item is-selected js-carousel-item" data-slide="0">
+                                                    <a class="c-media c-media--link" href="/blog-detail">
                                                         <picture class="c-media__picture u-mb-epsilon">
                                                             <img class="c-media__image lozad" data-src="/img/jpg/NMCT-shoot2-16.jpg" alt="">
                                                         </picture>
@@ -96,8 +96,8 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="c-carousel__item is-not-selected js-carousel-item">
-                                                    <a class="c-media c-media--link" href="/projecten/project-detail">
+                                                <div class="c-carousel__item is-not-selected js-carousel-item" data-slide="1">
+                                                    <a class="c-media c-media--link" href="/blog-detail">
                                                         <picture class="c-media__picture u-mb-epsilon">
                                                             <img class="c-media__image lozad" data-src="/img/jpg/large/skateboard.jpg" alt="">
                                                         </picture>
@@ -117,8 +117,8 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="c-carousel__item is-not-selected js-carousel-item">
-                                                    <a class="c-media c-media--link" href="/projecten/project-detail">
+                                                <div class="c-carousel__item is-not-selected js-carousel-item" data-slide="2">
+                                                    <a class="c-media c-media--link" href="/blog-detail">
                                                         <picture class="c-media__picture u-mb-epsilon">
                                                             <img class="c-media__image lozad" data-src="/img/jpg/NMCT-shoot2-146.jpg" alt="">
                                                         </picture>
@@ -142,10 +142,10 @@
                                         </div>
                                     </div>
 
-                                    <button class="c-carousel__arrow c-carousel__arrow--left is-disabled" disabled>
+                                    <button class="c-carousel__arrow c-carousel__arrow--left js-button-prev">
                                         {{ partial "atoms/symbol" (dict "value" "arrow-left" "class" "c-carousel__arrow-symbol") }}
                                     </button>
-                                    <button class="c-carousel__arrow c-carousel__arrow--right">
+                                    <button class="c-carousel__arrow c-carousel__arrow--right js-button-next">
                                         {{ partial "atoms/symbol" (dict "value" "arrow-right" "class" "c-carousel__arrow-symbol") }}
                                     </button>
                                 </div>
