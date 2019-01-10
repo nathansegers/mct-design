@@ -1,4 +1,4 @@
 ---
 title: Projecten
-identifier: projecten
+type: project
 ---
