@@ -64,7 +64,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	const observer = lozad(); // lazy loads elements with default selector as ".lozad"
 	observer.observe();
 
-	if (typeof nmct_carousel != 'undefined') {
-		nmct_carousel.initCarousel();
+	if (typeof mct_carousel != 'undefined') {
+		mct_carousel.initCarousel();
 	}
 });

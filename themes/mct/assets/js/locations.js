@@ -1,3 +1,5 @@
+// Can be deleted?
+
 var map,
 	HQ = {lat: 50.8244565, lng: 3.2502635},
 	src = window.location.origin + '/nmct-website/wp-content/themes/nmct/dist/script/nmct-world.kml';
