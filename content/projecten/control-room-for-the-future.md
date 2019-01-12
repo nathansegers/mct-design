@@ -13,3 +13,9 @@ students:
 ---
 
 Hallo, ik ben extra content
+
+Elk project kan de volgende onderdelen bevatten.
+- De uitdaging
+- Het proces
+- Eindproduct
+- Het talent (studenten)
