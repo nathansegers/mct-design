@@ -4,25 +4,35 @@
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
                     <div class="c-main-section-lg">
-                        <div class="u-max-width-xl">
-                            <p class="c-type-meta u-ms-1 u-color-neutral-base u-mb-beta">
-                                {{ .Params.Year }} - {{ .Params.Project }}
-                            </p>
-                            <h1 class="u-ms10-bp3">
-                                {{ .Title }}
-                            </h1>
+                        <div class="c-main-section-lg">
+                            <div class="u-max-width-xl">
+                                <p class="c-type-meta u-ms-1 u-color-neutral-base u-mb-beta">
+                                    {{ .Params.Year }} - {{ .Params.Project }}
+                                </p>
+                                <h1 class="u-ms10-bp3">
+                                    {{ .Title }}
+                                </h1>
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-main-section-lg">
-                        <div class="c-video-player">
-                            <button class="c-video-play-button">
-                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
-                            </button>
-                            <video class="c-video-player__video" poster="/img/jpg/mct-promo.jpg">
-                                <source src="/video/mct-promo.webm" type="video/webm">
-                                <source src="/video/mct-promo.mp4" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
+                        <div class="c-main-section-lg">
+                            {{ if .Params.video }}
+                            <div class="c-video-player">
+                                <button class="c-video-play-button">
+                                    {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
+                                </button>
+                                <video class="c-video-player__video" poster="/img/jpg/{{ .Params.image }}">
+                                    <source src="/video/{{ .Params.video }}.webm" type="video/webm">
+                                    <source src="/video/{{ .Params.image }}.mp4" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
+                            </div>
+                            {{ else }}
+                            <p class="c-media">
+                                <picture class="c-media__picture c-media__picture--fixed-ratio">
+                                    <img class="c-media__image lozad" data-src="/img/jpg/{{ .Params.Image }}" alt="">
+                                </picture>
+                            </p>
+                            {{ end }}
                         </div>
                     </div>
                     <div class="c-main-section-lg">
@@ -39,35 +49,34 @@
                                 </div>
                                 <div class="c-main-section">
                                     <div class="s-content u-max-width-optimal">
-                                        {{ .Content }}                                        
+                                        {{ .Content }}
                                     </div>
                                 </div>
                             </div>
-                            <div class="o-grid__item u-4-of-12-bp4">
+                            <aside class="o-grid__item u-4-of-12-bp4">
                                 <div class="c-main-section">
-                                    <h2 class="u-ms1 u-mb-alpha u-color-alpha-light">
-                                        Klant
-                                    </h2>
+                                    <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+                                        {{if gt (len .Params.students) 1}}
+                                            Studenten
+                                        {{ else }}
+                                            Student:
+                                        {{ end }}
+                                    </h3>
+                                    <p class="u-color-neutral-base">
+                                        {{ delimit .Params.students ", " " en " }}
+                                    </p>
+                                </div>
+                                {{ if .Params.client }}
+                                <div class="c-main-section">
+                                    <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+                                        Opdrachtgever
+                                    </h3>
                                     <p class="u-color-neutral-base">
                                         {{ .Params.client }}
                                     </p>
                                 </div>
-                                <div class="c-main-section">
-                                    <h2 class="u-ms1 u-mb-alpha u-color-alpha-light">
-                                        Studenten
-                                    </h2>
-                                    <p class="u-color-neutral-base">
-                                        {{ delimit .Params.students ", " " en " }}
-                                    </p>
-                                    <!-- <ul class="o-list u-color-neutral-base">
-                                        {{ range .Params.students }}
-                                            <li>
-                                                {{ . }}
-                                            </li>
-                                        {{ end }}
-                                    </ul> -->
-                                </div>
-                            </div>
+                                {{ end }}
+                            </aside>
                         </div>
                     </div>
                 </div>
