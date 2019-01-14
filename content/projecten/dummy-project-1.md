@@ -5,11 +5,10 @@ type: project
 year: 2NMCT
 project: Project 2
 image: large/inspiratie.jpg
+video:
+client: Opleiding ergotherapie
 students:
-- Rune Vandebuerie
-- Aiko Van Ryssel
 - Johannes Gouwy
-- Markey Thibault
 ---
 
 Hallo, ik ben extra content
