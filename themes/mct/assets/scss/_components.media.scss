@@ -98,13 +98,12 @@
 
     .c-media__picture--fixed-ratio {
         height: 0;
-        padding-bottom: 60%;
+        padding-bottom: 56%;
     }
 
     .c-media__image {
         min-width: 100%;
-        transform: translateX(0) translateY(0);
-        will-change: transform,opacity;
+        will-change: opacity;
         transition: opacity $animation-duration-beta $animation-easing-alpha;
 
         .c-media--link:hover & {
