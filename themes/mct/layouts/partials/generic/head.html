@@ -1,7 +1,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <meta http-equiv="cleartype" content="on">
+	<meta http-equiv="cleartype" content="on">
 
     <!-- Mobile header colors -->
     <meta name="theme-color" content="#e85e00" />
@@ -14,10 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- About this document -->
-    <meta name="description" content="whatever">
     <meta name="author" content="mct">
-    {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+    <meta name="description" content="{{ .Params.Description }}">
+    <title>{{ block "title" . }}{{ .Params.Title }} | {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/zgq1yxl.css">
 
