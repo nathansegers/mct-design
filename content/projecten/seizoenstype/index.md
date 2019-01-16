@@ -4,7 +4,7 @@ description: "Stylisten bepalen op basis van iemands haar-, huid- en oogkleur of
 type: project
 year: 2NMCT
 project: Project 3
-image: large/skateboard.jpg
+cover: skateboard.jpg
 students:
 - Rune Vandebuerie
 - Aiko Van Ryssel

@@ -4,7 +4,7 @@ description: "In 4 weken tijd bouwden onze NMCT studenten een prototype “Contr
 type: project
 year: 1NMCT
 project: Project 1
-image: NMCT-shoot2-16.jpg
+cover: NMCT-shoot2-16.jpg
 video: mct-promo
 client: VYNCKE nv.
 students:

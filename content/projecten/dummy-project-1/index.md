@@ -4,7 +4,7 @@ description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 type: project
 year: 2NMCT
 project: Project 2
-image: large/inspiratie.jpg
+cover: inspiratie.jpg
 video:
 client: Opleiding ergotherapie
 students:

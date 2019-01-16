@@ -4,7 +4,7 @@ description: "Snel verantwoordelijken op de hoogte brengen van infrastructuur pr
 type: project
 year: 2NMCT
 project: Project 2
-image: pexels-photo-668137.jpg
+cover: pexels-photo-668137.jpg
 students:
 - Rune Vandebuerie
 - Aiko Van Ryssel
