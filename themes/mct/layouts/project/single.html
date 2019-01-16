@@ -1,4 +1,9 @@
 {{ define "main" }}
+
+{{ $cover := .Params.Cover }}
+{{ $image := .Resources.GetMatch $cover }}
+{{ $scaledImage := $image.Fill "1184x663" }}
+
     <section class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
@@ -20,7 +25,7 @@
                                 <button class="c-video-play-button">
                                     {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
                                 </button>
-                                <video class="c-video-player__video" poster="/img/jpg/{{ .Params.image }}">
+                                <video class="c-video-player__video" poster="{{ $scaledImage.Permalink }}">
                                     <source src="/video/{{ .Params.video }}.webm" type="video/webm">
                                     <source src="/video/{{ .Params.image }}.mp4" type="video/mp4">
                                     Your browser does not support HTML5 video.
@@ -29,7 +34,7 @@
                             {{ else }}
                             <p class="c-media">
                                 <picture class="c-media__picture c-media__picture--fixed-ratio">
-                                    <img class="c-media__image lozad" data-src="/img/jpg/{{ .Params.Image }}" alt="">
+                                    <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
                                 </picture>
                             </p>
                             {{ end }}
