@@ -1,20 +1,22 @@
-<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
-    <a class="c-media c-media--link" href="{{ .Permalink }}">
-        <picture class="c-media__picture u-mb-delta">
-            <img class="c-media__image" src="/img/jpg/medium/{{ .Params.image }}" alt="">
-        </picture>
-        <div class="c-media__body">
-            <p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
-                {{ .Date.Format "02/01/2006" }}
+{{ $cover := .Params.Cover }}
+{{ $image := .Resources.GetMatch $cover }}
+{{ $scaledImage := $image.Resize "400x" }}
+
+<a class="c-media c-media--link" href="{{ .Permalink }}">
+    <picture class="c-media__picture u-mb-delta">
+        <img class="c-media__image" src="{{ $scaledImage.Permalink }}" alt="">
+    </picture>
+    <div class="c-media__body">
+        <p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
+            {{ .Date.Format "02/01/2006" }}
+        </p>
+        <div class="c-media__content">
+            <h2 class="c-media__title u-ms0 u-mb-gamma">
+                {{ .Title }}
+            </h2>
+            <p class="c-media__text u-ms0">
+                {{ .Description }}
             </p>
-            <div class="c-media__content">
-                <h2 class="c-media__title u-ms0 u-mb-gamma">
-                    {{ .Title }}
-                </h2>
-                <p class="c-media__text u-ms0">
-                    {{ .Description }}
-                </p>
-            </div>
         </div>
-    </a>
-</article>
+    </div>
+</a>

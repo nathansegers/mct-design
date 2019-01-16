@@ -3,7 +3,9 @@
     <div class="o-container">
         <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
             {{ range where .Data.Pages "Type" "news" }}
-                {{ partial "atoms/news-article" .}}
+                <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
+                    {{ partial "atoms/news-article" .}}
+                </article>
             {{ end }}
         </div>
     </div>
