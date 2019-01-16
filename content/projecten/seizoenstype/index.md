@@ -5,6 +5,7 @@ type: project
 year: 2NMCT
 project: Project 3
 cover: skateboard.jpg
+video:
 students:
 - Rune Vandebuerie
 - Aiko Van Ryssel

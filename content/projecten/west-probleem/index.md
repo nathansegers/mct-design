@@ -5,6 +5,7 @@ type: project
 year: 2NMCT
 project: Project 2
 cover: pexels-photo-668137.jpg
+video: 
 students:
 - Rune Vandebuerie
 - Aiko Van Ryssel
