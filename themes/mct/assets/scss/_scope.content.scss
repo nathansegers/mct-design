@@ -20,7 +20,7 @@
     }
 
     blockquote {
-        color: palette(color-alpha);
+        color: palette(color-alpha,light);
         @include padding-tb($alpha-leading,$alpha-leading);
     }
 
