@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-    <div class="c-row c-row--lg">
+	<div class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
@@ -74,52 +74,28 @@
                         <div class="c-curriculum__semester">
                             <h3 class="c-curriculum__semester-title">
                                 Semester 1
-                            </h3>
-                            <a href="module-detail" class="c-module c-module--code c-module--link">
-                                <h4 class="c-module__title">Basic Programming</h4>
-                                <p class="c-module__tags">#principles #python</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--connect c-module--link">
-                                <h4 class="c-module__title">Computer Networks</h4>
-                                <p class="c-module__tags">#dhcp #router #netwerk</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Data Science</h4>
-                                <p class="c-module__tags">#principes #data</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--create c-module--link">
-                                <h4 class="c-module__title">User Experience Design</h4>
-                                <p class="c-module__tags">#ux #user #wireframe</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--project c-module--link">
-                                <h4 class="c-module__title">Prototyping</h4>
-                                <p class="c-module__tags">#electricity #arduino</p>
-                            </a>
+							</h3>
+							{{ range (where .Site.Pages "Type" "module") }}
+								{{ if eq .Params.Semester 1 }}
+									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+										<h4 class="c-module__title">{{ .Title }}</h4>
+										<p class="c-module__tags">{{ .Params.Tags }}</p>
+                            		</a>
+								{{ end }}
+							{{ end }}
                         </div>
                         <div class="c-curriculum__semester">
                             <h3 class="c-curriculum__semester-title">
                                 Semester 2
                             </h3>
-                            <a href="module-detail" class="c-module c-module--code c-module--link">
-                                <h4 class="c-module__title">Device Programming&nbsp;1</h4>
-                                <p class="c-module__tags">#HTML #flask #JS</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--connect c-module--link">
-                                <h4 class="c-module__title">Data Communication&nbsp;1</h4>
-                                <p class="c-module__tags">#cryptography #coding</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Data Management</h4>
-                                <p class="c-module__tags">#sql #databases #erd</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--create c-module--link">
-                                <h4 class="c-module__title">User Interface Design</h4>
-                                <p class="c-module__tags">#ui #design #HTML #CSS</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--project c-module--link">
-                                <h4 class="c-module__title">Project&nbsp;1</h4>
-                                <p class="c-module__tags">#integrate</p>
-                            </a>
+							{{ range (where .Site.Pages "Type" "module") }}
+								{{ if eq .Params.Semester 2 }}
+								<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+									<h4 class="c-module__title">{{ .Title }}</h4>
+									<p class="c-module__tags">{{ .Params.Tags }}</p>
+								</a>
+								{{ end }}
+							{{ end }}
                         </div>
                     </section>
                     <section class="c-curriculum__year">
@@ -127,26 +103,14 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 3
                             </h3>
-                            <a href="module-detail" class="c-module c-module--code c-module--link">
-                                <h4 class="c-module__title">Device Programming&nbsp;2</h4>
-                                <p class="c-module__tags">#c# #xamarin #coding</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--connect c-module--link">
-                                <h4 class="c-module__title">Security</h4>
-                                <p class="c-module__tags">#privacy #beveiliging</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--analysis c-module--link">
-                                <h4 class="c-module__title">Cloud&nbsp;1</h4>
-                                <p class="c-module__tags">#c# #cloud #asp.net</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--create c-module--link">
-                                <h4 class="c-module__title">Interaction Design</h4>
-                                <p class="c-module__tags">#interaction #dashboards</p>
-                            </a>
-                            <a href="module-detail" class="c-module c-module--project c-module--link">
-                                <h4 class="c-module__title">Project&nbsp;2</h4>
-                                <p class="c-module__tags">#business_cases</p>
-                            </a>
+							{{ range (where .Site.Pages "Type" "module") }}
+								{{ if eq .Params.Semester 3 }}
+									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+										<h4 class="c-module__title">{{ .Title }}</h4>
+										<p class="c-module__tags">{{ .Params.Tags }}</p>
+									</a>
+								{{ end }}
+							{{ end }}
                         </div>
                         <div class="c-curriculum__semester c-curriculum__semester--choice c-curriculum__semester--choice-4">
                             <h3 class="c-curriculum__semester-title">
@@ -172,9 +136,10 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 6
                             </h3>
-                            <a href="module-detail" class="c-module c-module--project c-module--full c-module--link">
+                            <a href="/module/stage-bachelorproef/" class="c-module c-module--project c-module--full c-module--link">
                                 <h4 class="c-module__title">Stage + Bachelorproef</h4>
-                                <p class="c-module__tags">#ervaring #onderzoek</p>
+                                <p class="c-module__tags">#communicatie #teamwork #entrepreneur #projectmanagement #device #network #ux #embeddedsoftware #front-end
+								#data-management</p>
                             </a>
                         </div>
                     </section>
