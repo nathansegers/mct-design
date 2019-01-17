@@ -75,25 +75,25 @@
                         </p>
                     </div>
                     <div class="c-main-section">
-                        <form action="" method="POST" class="">
+                        <form action="" method="POST" class="js-contact-form">
     						<label class="c-label">Je naam
-    						    <input type="text" value="" name="your-name" id="your-name" size="40" class="c-input-text c-input-text--md" aria-required="true" aria-invalid="false">
+    						    <input type="text" name="your-name" data-form-name="name" id="your-name" size="40" class="c-input-text c-input-text--md js-name" aria-required="true" aria-invalid="false">
     						</label>
-    						<label class="c-label has-error">En je e-mailadres
-    						    <input type="email" value="" name="your-email" id="your-email" placeholder="naam@adres.be" value="simonhowest.be" class="c-input-text c-input-text--md" aria-required="true" aria-invalid="false">
-                                 <span class="c-alert-inline c-alert-inline--error">Gelieve een geldig e-mail adres in te vullen.</span>
+    						<label class="c-label">En je e-mailadres
+    						    <input type="email" name="your-email" data-form-name="email" id="your-email" placeholder="naam@adres.be" class="c-input-text c-input-text--md js-email" aria-required="true" aria-invalid="false">
+								<!-- <span class="c-alert-inline c-alert-inline--error">Gelieve een geldig e-mail adres in te vullen.</span> -->
     						</label>
     						<label class="c-label">Waarover gaat het ongeveer?
-    						    <input type="text" value="" name="your-subject" id="your-subject" placeholder="Onderwerp" size="40" class="c-input-text c-input-text--md" aria-invalid="false">
+    						    <input type="text" name="your-subject" data-form-name="subject" id="your-subject" placeholder="Onderwerp" size="40" class="c-input-text c-input-text--md js-subject" aria-invalid="false">
     						</label>
     						<label class="c-label" for="your-message">Waarmee kunnen we je helpen?
-    						    <textarea name="your-message" id="your-message" cols="40" rows="10" class="c-input-text c-input-text--md" aria-invalid="false"></textarea>
+    						    <textarea name="your-message" data-form-name="message" id="your-message" cols="40" rows="10" class="c-input-text c-input-text--md js-message" aria-invalid="false"></textarea>
     						</label>
-                            <p>
-                                <button class="c-button c-button--alpha c-button--lg">
+							<p>
+								<button class="c-button c-button--alpha c-button--lg js-button">
 									Laat het ons weten
-        						</button>
-                            </p>
+								</button>
+							</p>
     					</form>
                     </div>
                 </div>
