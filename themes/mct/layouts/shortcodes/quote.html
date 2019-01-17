@@ -1,6 +1,8 @@
 <blockquote class="c-quote">
     {{ index .Params 0 }}
+    {{ if isset .Params 1 }}
     <p class="c-quote__author">
         {{ index .Params 1 }}
     </p>
+    {{ end }}
 </blockquote>

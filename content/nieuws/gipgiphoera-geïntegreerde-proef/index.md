@@ -7,4 +7,4 @@ cover: cover.jpg
 draft: false
 ---
 
-Content here!
+Meer info hierover? [Neem contact met ons op]({{< ref "/contact" >}}).
