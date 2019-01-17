@@ -1,0 +1,104 @@
+{{ define "main" }}
+<main>
+    <div class="c-row c-row--lg c-row--intro c-row--visual">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section-lg">
+                        <div class="u-max-width-xl">
+                            <h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
+								{{.Params.Subheader}}
+                            </h1>
+                            <p class="c-type-intro">
+								{{.Params.Intro | markdownify}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c-main-section-lg">
+                        <div class="c-video-player">
+                            <button class="c-video-play-button">
+                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
+                            </button>
+                            <video class="c-video-player__video" poster="/img/jpg/mct-promo.jpg">
+                                <source src="/video/mct-promo.webm" type="video/webm">
+                                <source src="/video/mct-promo.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+
+                        <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            Kijk zelf wat MCT zo uniek maakt
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="c-row c-row--lg c-row--no-overflow">
+        <div class="o-container">
+            <div class="c-projects">
+                <div class="c-projects__header">
+                    <h2 class="c-type-svg c-type-svg--projects">
+                        <img class="c-type-svg__svg lozad" data-src="/img/svg/word-projects.svg" alt="Projecten">
+                    </h2>
+                </div>
+                <div class="c-projects__body">
+                    <div class="o-grid o-grid--gutter-lg">
+                        <div class="o-grid__item u-4-of-12-bp4">
+                            <div class="c-projects__body-sm">
+                                <p class="u-ms2">
+									Bij MCT hebben we unieke projectweken die je de mogelijkheid geven om de technieken die je geleerd hebt toe te passen
+									in een relevante case! Geniet van deze recente projecten, gemaakt tijdens de projectweken:
+                                </p>
+                                <p>
+                                    <a class="c-link-more" href="/projecten">
+                                        Bekijk alle projecten <span class="c-link-more__symbol">></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp6">
+                            <div class="c-projects__body-lg">
+                                <div class="c-carousel js-carousel">
+                                    <div class="c-carousel-nav" aria-hidden="true">
+                                        <ol class="o-list c-carousel-nav-list js-nav-list">
+                                            {{ range $i, $sequence :=  (first 3 (where .Data.Pages "Type" "project")) }}
+                                            <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
+                                                {{ $i }}
+                                            </li>
+                                            {{ end }}
+                                        </ol>
+                                    </div>
+                                    <div class="c-carousel-holder">
+                                        <div class="c-carousel__items-holder">
+                                            <div class="c-carousel__items js-carousel-items" style="transform: translateX(0%);">
+                                                {{ range $i, $sequence :=  (shuffle (first 3 (where .Data.Pages "Type" "project"))) }}
+                                                    <div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
+                                                        {{ partial "atoms/project-article" .}}
+                                                    </div>
+                                                {{ end }}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="c-carousel__arrow c-carousel__arrow--left js-button-prev">
+                                        {{ partial "atoms/symbol" (dict "value" "arrow-left" "class" "c-carousel__arrow-symbol") }}
+                                    </button>
+                                    <button class="c-carousel__arrow c-carousel__arrow--right js-button-next">
+                                        {{ partial "atoms/symbol" (dict "value" "arrow-right" "class" "c-carousel__arrow-symbol") }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
+        <div class="o-container">
+            {{ partial "components/news-widget" . }}
+        </div>
+    </section>
+</main>
+{{ end }}

@@ -12,6 +12,7 @@ let formModule = (function() {
 document.addEventListener('DOMContentLoaded', function() {
 	formModule.initForm()
 })
+<<<<<<< Updated upstream
 
 /*
 $title = 'Contact van ' . $yourname . ' over ' . $yoursubject;
@@ -36,3 +37,5 @@ $title = 'Contact van ' . $yourname . ' over ' . $yoursubject;
 		if ( $response['response']['code'] == 200 ) {
 			echo '<script type="text/javascript">window.location = "https://mct.be/bedankt/";</script>';
 		}*/
+=======
+>>>>>>> Stashed changes
