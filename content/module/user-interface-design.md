@@ -1,5 +1,9 @@
 ---
-title: Module detail
+title: User Interface Design
+semester: 2
+weight: 40
+tags: "#ui #design #HTML #CSS"
+pillar: create
 ---
 
 <section class="c-row c-row--lg">
@@ -16,7 +20,6 @@ title: Module detail
             			</ul>
                     </div>
                     <div class="c-main-section">
-
                         <h1 class="u-ms10-bp3 u-mb-beta">
                             User Interface Design
                         </h1>
