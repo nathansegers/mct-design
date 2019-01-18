@@ -1,4 +1,4 @@
 ---
-title: Projecten van studenten
 type: project
+title: Projecten van studenten
 ---
