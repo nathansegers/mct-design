@@ -117,11 +117,19 @@
                                 Semester 4
                             </h3>
 							<div class="js-semester-4">
-								<div class="c-curriculum__call-to-action">
+								{{ range (where .Site.Pages "Type" "module") }}
+									{{ if eq .Params.Semester 4 }}
+										<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+											<h4 class="c-module__title">{{ .Title }}</h4>
+											<p class="c-module__tags">{{ .Params.Tags }}</p>
+										</a>
+									{{ end }}
+								{{ end }}
+								<!-- <div class="c-curriculum__call-to-action">
 									<p class="c-type-meta u-ms-2 u-mb-gamma u-opacity-gamma js-loading-message">
 										Wat is jouw passie?
 									</p>
-								</div>
+								</div> -->
 							</div>
                         </div>
                     </section>
@@ -130,7 +138,15 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 5
 							</h3>
-							<div class="js-semester-5"></div>
+							<!-- <div class="js-semester-5"></div> -->
+							{{ range (where .Site.Pages "Type" "module") }}
+								{{ if eq .Params.Semester 5 }}
+									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+										<h4 class="c-module__title">{{ .Title }}</h4>
+										<p class="c-module__tags">{{ .Params.Tags }}</p>
+									</a>
+								{{ end }}
+							{{ end }}
                         </div>
                         <div class="c-curriculum__semester">
                             <h3 class="c-curriculum__semester-title">
