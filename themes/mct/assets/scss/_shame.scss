@@ -257,12 +257,16 @@ li {
 	}
 }
 
+.c-curriculum__semester-holder--dynamic {
+	position: relative;
+}
+
 .c-curriculum__semester--dynamic {
-	position: absolute;
+	// position: absolute;
 	opacity: 0;
-	// $animation-duration-alpha: .1s !default;
-	// $animation-duration-beta: .2s !default;
-	// $animation-duration-gamma: .3s !default;
-	// $animation-easing-alpha: ease-in-out !default;
-	transition: opacity $animation-duration-gamma $animation-easing-alpha;
+	// visibility: hidden;
+	display: none;
+	flex-direction: column;
+	transition: opacity $animation-duration-gamma $animation-easing-alpha,
+		visibility $animation-duration-gamma $animation-easing-alpha;
 }

@@ -9,5 +9,7 @@
 }
 
 .c-curriculum__semester--dynamic.is-selected {
+	// visibility: visible;
+	display: flex;
 	opacity: 1;
 }
