@@ -116,7 +116,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 4
                             </h3>
-							<div class="js-semester-4">
+							<div class="c-curriculum__semester-holder--dynamic js-semester-4">
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
 									{{ range (where .Site.Pages "Type" "module") }}
 										{{ if eq .Params.Semester 4 }}
@@ -178,7 +178,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 5
 							</h3>
-							<div class="js-semester-5">
+							<div class="c-curriculum__semester-holder--dynamic js-semester-5">
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
 									{{ range (where .Site.Pages "Type" "module") }}
 										{{ if eq .Params.Semester 5 }}

@@ -30,5 +30,11 @@
 			</div>
 		</div>
 	</section>
+	<script type="application/ld+json">
+		{"@context":"http://schema.org","@type":"course",
+		"name": {{ .Title | jsonify }},
+		"description": {{ .Content | jsonify }},
+		"provider": {"@type":"Organization","name":"MCT","sameAs":"https://mct.be"}}
+	</script>
 
 {{ end }}
