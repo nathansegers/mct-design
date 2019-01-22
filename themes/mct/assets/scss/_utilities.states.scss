@@ -5,5 +5,9 @@
 */
 
 .is-hidden {
-    display: none !important;
+	display: none !important;
+}
+
+.c-curriculum__semester--dynamic.is-selected {
+	opacity: 1;
 }

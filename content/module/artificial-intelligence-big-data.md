@@ -4,7 +4,9 @@ semester: 4
 weight: 20
 tags: "#timeseries #nosql #textsearch #mapreduce #spark #stream #batch"
 pillar: analysis
-track: smart-tech-ai
+tracks: 
+- smart-tech-ai
+- ai-engineer
 ---
 
 Met IoT sensor data **problemen voorspellen**, **transacties op een veilige manier laten gebeuren** of met **text search intelligente informatie ophalen**: data intensieve applicaties steunen op een **complexe data architectuur**.

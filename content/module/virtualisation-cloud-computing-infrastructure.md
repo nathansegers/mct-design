@@ -4,7 +4,8 @@ semester: 4
 weight: 30
 tags: "#vmware #hyperv #docker #kvm #lxc #hyperconverged"
 pillar: connect
-track: infrastructure-engineer
+tracks:
+- infrastructure-engineer
 ---
 
 In datacenteromgevingen is virtualisatie niet meer weg te denken. Door de **verlaging** van de **TCO**, de **verhoging van de schaalbaarheid**, de **verbetering van de beschikbaarheid**, en het **vereenvoudigen van complexe beheerstaken** overtreffen gevirtualiseerde infrastructuren de klassieke modellen in vrijwel elk opzicht. In deze module maken we jou vertrouwd met de concepten en technologieën die gebruikt worden in **moderne geconvergeerde en geïntegreerde datacenters**.

@@ -4,7 +4,8 @@ semester: 4
 weight: 20
 tags: "#linux #debian #operatingsystem #internet"
 pillar: connect
-track: infrastructure-engineer
+tracks:
+- infrastructure-engineer
 ---
 
 Gebruik je soms Facebook? Of Instagram? Of Spotify? Of Twitter? Of Android? Dan **gebruik je onbewust Linux**. Want al deze diensten gebruiken achterliggend Linux. Als hedendaagse volwaardige IT’er is het daarom belangrijk om te kunnen werken met **linux-gebaseerde besturingssystemen**. Dat is wat je leert in deze module Linux OS.

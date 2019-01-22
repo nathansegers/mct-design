@@ -4,7 +4,9 @@ semester: 4
 weight: 30
 tags: "#neuralnetworks #ai #machinelearning"
 pillar: analysis
-track: smart-tech-ai
+tracks:
+- smart-tech-ai
+- ai-engineer
 ---
 
 IoT en machine learning zijn de drijvende krachten van de vierde industriële revolutie die de wereld zoals we deze nu kennen **in een razend tempo transformeert**. Dit zal onvermijdelijk leiden tot een (aard)verschuiving op de arbeidsmarkt.

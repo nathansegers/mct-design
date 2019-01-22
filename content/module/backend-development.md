@@ -4,7 +4,9 @@ semester: 4
 weight: 30
 tags: "#aspNET #database #validation"
 pillar: code
-track: web-app
+tracks:
+- web-app
+- ai-engineer
 ---
 
 Elke applicatie of toestel heeft te maken met data. Van temperatuur tot alle liedjes op spotify. Deze data moet gevalideerd worden en opgeslagen in een database.

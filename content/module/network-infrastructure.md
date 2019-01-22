@@ -4,7 +4,8 @@ semester: 4
 weight: 10
 tags: "#CCNA1+2 #corporatenetworking #IProuting #cabling"
 pillar: connect
-track: infrastructure-engineer
+tracks:
+- infrastructure-engineer
 ---
 
 Je hebt gekozen voor het afstudeerprofiel 'Infrastructure Engineer'. Hier zetten we bedrijfsnetwerken op in het klein, ondersteund met algemene theorie:  

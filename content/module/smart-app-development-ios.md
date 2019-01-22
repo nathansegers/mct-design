@@ -4,7 +4,8 @@ semester: 4
 weight: 20
 tags: "#iOS #C# #Xamarin"
 pillar: code
-track: web-app
+tracks:
+- web-app
 ---
 
 Ontwikkelen van **iOS applicaties** met behulp van **Xamarin.iOS en Visual Studio**. Naast Android is iOS een zeer populair mobiel platform. De iPhone bracht een revolutie teweeg in de smartphone wereld. Vandaag de dag is iOS nog steeds enorm belangrijk. Het is dan zeer belangrijk als IoT bedrijf om aanwezig te zijn op dit platform.

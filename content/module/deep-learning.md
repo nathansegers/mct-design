@@ -4,6 +4,9 @@ semester: 5
 weight: 10
 tags: "#dsp #neural_networks"
 pillar: analysis
+tracks:
+- smart-tech-ai
+- ai-engineer
 ---
 De module deep learning gaat verder waar de <a href="/module/machine-learning/">module machine learning</a> is gestopt, namelijk bij de neurale netwerken.</p>
 <ul>

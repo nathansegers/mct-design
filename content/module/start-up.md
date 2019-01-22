@@ -4,6 +4,11 @@ semester: 5
 weight: 40
 tags: "#international #business #mvp #entrepreneurs"
 pillar: project
+tracks:
+- smart-tech-ai
+- web-app
+- ai-engineer
+- infrastructure-engineer
 ---
 
 **Start-up** is a module that requires international and / or **interdisciplinary teamwork**: you get the chance to work together with Energy Management or Industrial Product Design students.

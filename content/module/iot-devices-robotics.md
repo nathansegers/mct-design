@@ -1,9 +1,11 @@
 ---
 title: IoT Devices & Robotics
 semester: 5
-weight: 30
+weight: 20
 tags: "#Lora #5G #embeddedpython #wearables"
 pillar: analysis
+tracks:
+- smart-tech-ai
 ---
 Robots bestaan al lang: zware industriële robots werden reeds geproduceerd sinds 1956(*). Sinds een paar jaar zijn huishoudelijke robots zoals een grasmaairobot en stofzuigerbot gemeengoed aan het worden.
 

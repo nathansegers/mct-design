@@ -4,6 +4,9 @@ semester: 5
 weight: 30
 tags: "#AR #MR #Unity #hololens"
 pillar: create
+tracks:
+- smart-tech-ai
+- web-app
 ---
 Het doel van deze module is om kennis te maken met Augmented Reality en Mixed Reality. Je maakt kennis met de verschillende mogelijkheden naar **interactie en visualisatie**. In het praktische luik van de module worden hiervoor business toepassingen uitgewerkt, in hoofdzaak a.d.h.v. **Microsoft Hololens** maar ook via **mobile devices** en alternatieven zoals **MagicLeap**.
 
