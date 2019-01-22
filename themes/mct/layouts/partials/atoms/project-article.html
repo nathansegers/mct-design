@@ -12,7 +12,7 @@
                 {{ .Title }}
             </h2>
             <p class="c-media__text">
-                {{ .Description }}
+                {{ .Description | markdownify | replaceRE "<p>" "<p class=\"c-media__text\">" | safeHTML }}
             </p>
             <p class="c-media__more-link">
                 Bekijk dit project

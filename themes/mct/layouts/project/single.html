@@ -43,15 +43,15 @@
                     <div class="c-main-section-lg">
                         <div class="o-grid o-grid--gutter-lg">
                             <div class="o-grid__item u-8-of-12-bp4">
-                                <div class="c-main-section">
+                                <!-- <div class="c-main-section">
                                     <div class="u-max-width-optimal">
                                         <div class="c-main-section">
                                             <p>
-                                                {{ .Description }}
+												{{ .Description | markdownify }}
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="c-main-section">
                                     <div class="s-content u-max-width-optimal">
                                         {{ .Content }}
@@ -61,14 +61,18 @@
                             <aside class="o-grid__item u-4-of-12-bp4">
                                 <div class="c-main-section">
                                     <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
-                                        {{if gt (len .Params.students) 1}}
-                                            Studenten
-                                        {{ else }}
-                                            Student:
-                                        {{ end }}
+										{{ if isset .Params "students" }}
+											{{if gt (len .Params.students) 1}}
+												Studenten:
+											{{ else }}
+												Student:
+											{{ end }}
+										{{ end }}
                                     </h3>
                                     <p class="u-color-neutral-base">
-                                        {{ delimit .Params.students ", " " en " }}
+										{{ if isset .Params "students" }}
+											{{ delimit .Params.students ", " " en " }}
+										{{ end }}
                                     </p>
                                 </div>
                                 {{ if .Params.client }}
