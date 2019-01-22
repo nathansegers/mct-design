@@ -1,0 +1,104 @@
+{{ define "main" }}
+<main>
+    <div class="c-row c-row--lg c-row--lg">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section-lg">
+                        <div class="u-max-width-xl">
+                            <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
+                                {{.Params.Subheader}}
+                            </h1>
+                            <p class="c-type-intro">
+								{{.Params.Intro | markdownify}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c-main-section-lg">
+                        <div class="o-grid o-grid--gutter">
+                            <div class="o-grid__item u-1-of-3-bp4">
+                                <div class="s-content">
+                                    <h3 class="u-ms0 u-color-neutral-xxxx-dark u-mb-alpha">Johan De Gelas</h3>
+                                    <p class="u-ms0">
+                                        <span class="u-color-neutral-base">Opleidingscoördinator</span> <br>
+                                        <a href="mailto:johan.de.gelas@howest.be">johan.de.gelas@howest.be</a>
+                                    </p>
+                                    <h3 class="u-ms0 u-color-neutral-xxxx-dark u-mb-alpha">Stijn Walcarius</h3>
+                                    <p class="u-ms0">
+                                        <span class="u-color-neutral-base">Stagecoördinator</span> <br>
+                                        <a href="mailto:johan.de.gelas@howest.be">nmct@howest.be</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="o-grid__item u-1-of-3-bp4">
+                                <div class="s-content">
+                                    <h3 class="u-ms0 u-color-neutral-xxxx-dark u-mb-alpha">Contact</h3>
+                                    <p class="u-ms0">
+                                        Howest Kortrijk <br>
+                                        Graaf Karel de Goedelaan 5 <br>
+                                        8500 Kortrijk
+                                    </p>
+                                    <p class="u-ms0">
+                                        <a href="tel:+32 56 24 12 44">+32 56 24 12 44</a> <br>
+                                        <a href="mailto:nmct@howest.be">nmct@howest.be</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="o-grid__item u-1-of-4-bp4 c-doormat__item">
+                                <h3 class="u-ms0 u-color-neutral-xxxx-dark">Join the community</h3>
+                                <p class="u-ms0">
+									We posten leuke projecten, evenementen en opportuniteiten.
+                                </p>
+                                {{ partial "components/social-icons" }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-row c-row--clear">
+		<div class="c-map js-contact-map" id="map">
+		</div>
+    </div>
+    <div class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter">
+                <div class="o-grid__item u-10-of-12-bp4 u-push-1-of-12-bp4 u-8-of-12-bp5 u-push-2-of-12-bp5 u-6-of-12-bp6 u-push-3-of-12-bp6">
+                    <div class="c-main-section">
+                        <h2 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
+							Toch even vragen...
+                        </h2>
+                        <p class="c-type-lead">
+							Zijn er na het lezen van onze site nog steeds dingen niet helemaal duidelijk? Twijfel je nog ergens aan? Laat ons horen
+							waar je mee zit en we zullen je zo snel mogelijk van antwoord dienen!
+                        </p>
+                    </div>
+                    <div class="c-main-section">
+                        <form action="" method="POST" class="js-contact-form">
+    						<label class="c-label">Je naam
+    						    <input type="text" name="your-name" data-form-name="name" id="your-name" size="40" class="c-input-text c-input-text--md js-name" aria-required="true" aria-invalid="false">
+    						</label>
+    						<label class="c-label">En je e-mailadres
+    						    <input type="email" name="your-email" data-form-name="email" id="your-email" placeholder="naam@adres.be" class="c-input-text c-input-text--md js-email" aria-required="true" aria-invalid="false">
+								<!-- <span class="c-alert-inline c-alert-inline--error">Gelieve een geldig e-mail adres in te vullen.</span> -->
+    						</label>
+    						<label class="c-label">Waarover gaat het ongeveer?
+    						    <input type="text" name="your-subject" data-form-name="subject" id="your-subject" placeholder="Onderwerp" size="40" class="c-input-text c-input-text--md js-subject" aria-invalid="false">
+    						</label>
+    						<label class="c-label" for="your-message">Waarmee kunnen we je helpen?
+    						    <textarea name="your-message" data-form-name="message" id="your-message" cols="40" rows="10" class="c-input-text c-input-text--md js-message" aria-invalid="false"></textarea>
+    						</label>
+							<p>
+								<button class="c-button c-button--alpha c-button--lg js-button">
+									Laat het ons weten
+								</button>
+							</p>
+    					</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}

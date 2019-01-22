@@ -1,9 +1,10 @@
-{{ $resource := .Params.Image }}
-{{ $image := $resource }}
+{{ $cover := .Params.Cover }}
+{{ $image := .Resources.GetMatch $cover }}
+{{ $scaledImage := $image.Fill "800x448" }}
 
 <a class="c-media c-media--link" href="{{ .Permalink }}">
     <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon">
-        <img class="c-media__image lozad" data-src="/img/jpg/{{ $image }}" alt="">
+        <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
     </picture>
     <div class="c-media__body">
         <div class="c-media__content u-max-width-optimal">

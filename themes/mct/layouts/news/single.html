@@ -1,29 +1,39 @@
 {{ define "main" }}
+{{ $cover := .Params.Cover }}
+{{ $image := .Resources.GetMatch $cover }}
+{{ $scaledImage := $image.Fill "1184x663" }}
+
     <section class="c-row c-row--lg">
         <div class="o-container">
-            <div class="u-max-width-optimal u-align-horizontal">
-                <div class="c-main-section">
-                    <p class="c-type-meta u-ms-1 u-color-neutral-base u-mb-beta">
-                        {{ .Date.Format "02/01/2006" }}
-                    </p>
-                    <h1 class="u-ms10-bp3">
-                        {{ .Title }}
-                    </h1>
-                </div>
-                <div class="c-main-section">
-                    <p>
-                        <img class="c-media__image lozad" data-src="/img/jpg/medium/{{ .Params.Image }}" alt="">
-                    </p>
-                </div>
-                <div class="c-main-section">
-                    <div class="s-content u-max-width-optimal">
-                        <p class="u-ms2">
-                            {{ .Description }}
+            <div class="u-max-width-lg u-align-horizontal">
+                <div class="c-main-section-lg">
+                    <div class="c-main-section-lg">
+                        <div class="u-max-width-xl">
+                            <p class="c-type-meta u-ms-1 u-color-neutral-base u-mb-beta">
+                                {{ .Date.Format "02/01/2006" }}
+                            </p>
+                            <h1 class="u-ms10-bp3 u-ms12-bp4">
+                                {{ .Title }}
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="c-main-section-lg">
+                        <p class="c-media">
+                            <picture class="c-media__picture c-media__picture--fixed-ratio">
+                                <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="{{ .Title }} afbeelding">
+                            </picture>
                         </p>
                     </div>
                 </div>
-                <div class="c-main-section">
-                    {{ .Content }}
+                <div class="c-main-section-lg">
+                    <div class="u-max-width-optimal">
+                        <div class="s-content">
+                            <p>
+                                {{ .Description }}
+                            </p>
+                            {{ .Content }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
