@@ -235,7 +235,7 @@
 							</h3>
 							{{ range (where .Site.Pages "Type" "module") }}
 								{{ if eq .Params.Semester 6 }}
-									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--single c-module--link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
 										<p class="c-module__tags">{{ .Params.Tags }}</p>
 									</a>
@@ -383,7 +383,7 @@
                             <div class="o-grid__item u-5-of-6-bp5 u-push-1-of-6-bp5">
                                 <div class="u-max-width-md">
                                     <p class="u-ms2">
-                                        
+
                                     </p>
                                     <h3 class="u-mb-alpha u-color-alpha-light">
                                         Jouw toekomst

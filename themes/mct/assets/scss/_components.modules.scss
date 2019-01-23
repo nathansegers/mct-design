@@ -9,6 +9,8 @@
 	display: flex;
 	flex-grow: 1;
 	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
 	border-bottom: $alpha-leading * 0.25px solid transparent;
 	background: palette(color-neutral, xxxxx-light);
 	box-shadow: 0 0 0 1px rgba(palette(color-neutral, xxxx-dark), 0.05),
@@ -39,6 +41,10 @@
 
 	&--project {
 		border-color: palette(color-project);
+	}
+
+	&--single {
+		height: calc(100% - 33px);
 	}
 }
 
@@ -96,7 +102,7 @@
 
 .c-module__tags {
 	margin-bottom: 0;
-	margin-top: auto;
+	// margin-top: auto;
 	color: palette(color-neutral);
 	font-family: $beta-font-family;
 	text-transform: uppercase;
