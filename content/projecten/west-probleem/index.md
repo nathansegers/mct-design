@@ -15,4 +15,6 @@ students:
 - Markey Thibault
 ---
 
-Hallo, ik ben extra content
+Onze NMCT-studenten ontwikkelden in vier weken tijd de mobiele applicatie “West-Probleem”, in **Xamarin** geschreven, **voor zowel Android als iOS**.
+
+Met deze app kunnen studenten en docenten eenvoudig een foto van het infrastructuurprobleem maken, de locatie aanduiden, een opmerking bijvoegen en alles doorsturen naar de verantwoordelijke.

@@ -4,104 +4,102 @@
 */
 
 .c-module {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    border-bottom: $alpha-leading * .25px solid transparent;
-    background: palette(color-neutral, xxxxx-light);
-    box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxx-dark),.05), 0 2px 4px rgba(palette(color-neutral,xxxx-dark),.1);
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	border-bottom: $alpha-leading * 0.25px solid transparent;
+	background: palette(color-neutral, xxxxx-light);
+	box-shadow: 0 0 0 1px rgba(palette(color-neutral, xxxx-dark), 0.05),
+		0 2px 4px rgba(palette(color-neutral, xxxx-dark), 0.1);
 
-    @include padding-lr($columns-gutter / 2, $columns-gutter / 2);
-    @include padding-tb($alpha-leading / 2, $alpha-leading / 2);
+	@include padding-lr($columns-gutter / 2, $columns-gutter / 2);
+	@include padding-tb($alpha-leading / 2, $alpha-leading / 2);
 
-    & + & {
-        @include margin-top($alpha-leading / 2);
-    }
+	& + & {
+		@include margin-top($alpha-leading / 2);
+	}
 
-    &--code {
-        border-color: palette(color-code);
-    }
+	&--code {
+		border-color: palette(color-code);
+	}
 
-    &--connect {
-        border-color: palette(color-connect);
-    }
+	&--connect {
+		border-color: palette(color-connect);
+	}
 
-    &--create {
-        border-color: palette(color-create);
-    }
+	&--create {
+		border-color: palette(color-create);
+	}
 
-    &--analysis {
-        border-color: palette(color-analysis);
-    }
+	&--analysis {
+		border-color: palette(color-analysis);
+	}
 
-    &--project {
-        border-color: palette(color-project);
-    }
-
-    &--full {
-        height: calc(100% - 33px);
-    }
+	&--project {
+		border-color: palette(color-project);
+	}
 }
 
 .c-module--link {
+	&:hover {
+		text-decoration: none;
+		// transform: translate(-2px, -2px);
 
-    &:hover {
-        text-decoration: none;
-        // transform: translate(-2px, -2px);
+		.c-module__title,
+		.c-module__tags {
+			color: white;
+		}
 
-        .c-module__title,
-        .c-module__tags {
-            color: white;
-        }
-
-        &.c-module--code {
-            background-color: palette(color-code);
-        }
-        &.c-module--connect {
-            background-color: palette(color-connect);
-        }
-        &.c-module--create {
-            background-color: palette(color-create);
-        }
-        &.c-module--project {
-            background-color: palette(color-project);
-        }
-        &.c-module--analysis {
-            background-color: palette(color-analysis);
-        }
-    }
+		&.c-module--code {
+			background-color: palette(color-code);
+		}
+		&.c-module--connect {
+			background-color: palette(color-connect);
+		}
+		&.c-module--create {
+			background-color: palette(color-create);
+		}
+		&.c-module--project {
+			background-color: palette(color-project);
+		}
+		&.c-module--analysis {
+			background-color: palette(color-analysis);
+		}
+	}
 }
 
-    .c-module__title,
-    .c-module__tags,
-    .module__points {
-        transition: all $animation-duration-alpha $animation-easing-alpha;
-    }
+.c-module__title,
+.c-module__tags,
+.module__points {
+	transition: all $animation-duration-alpha $animation-easing-alpha;
+}
 
-    .c-module__title {
-        width: 100%;
-        margin-bottom: 0;
-        color: palette(color-neutral,xxx-dark);
-        @include ms-1;
-    }
+.c-module__title {
+	width: 100%;
+	margin-bottom: 0;
+	// color: $body-color;
+	color: palette(color-neutral, xxx-dark);
+	@include ms-1;
+	// @include margin-bottom($alpha-leading * .5);
+}
 
-    .c-module__points {
-        width: 100%;
-        margin-bottom: 0;
-        color: $body-color;
-        color: palette;
-        @include ms-2;
-    }
+.c-module__points {
+	width: 100%;
+	margin-bottom: 0;
+	color: $body-color;
+	color: palette;
+	// font-family: $beta-font-family;
+	@include ms-2;
+}
 
-    .c-module__tags {
-        margin-bottom: 0;
-        margin-top: auto;
-        color: palette(color-neutral);
-        font-family: $beta-font-family;
-        text-transform: uppercase;
-        @include padding-top($alpha-leading * .5);
-        @include ms-2;
-    }
+.c-module__tags {
+	margin-bottom: 0;
+	margin-top: auto;
+	color: palette(color-neutral);
+	font-family: $beta-font-family;
+	text-transform: uppercase;
+	@include padding-top($alpha-leading * 0.5);
+	@include ms-2;
+}
