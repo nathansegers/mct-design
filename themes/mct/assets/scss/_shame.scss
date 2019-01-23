@@ -75,6 +75,10 @@ li {
     opacity: .9;
 }
 
+.u-text-normal {
+    font-weight: normal;
+}
+
 .c-main-section {
     @include mq(bp2) {
         & + & {
@@ -248,4 +252,13 @@ li {
     &:hover {
         filter: grayscale( 0 );
     }
+}
+
+.c-gallery {
+    display: flex;
+    overflow: hidden;
+}
+
+.c-gallery__item {
+    width: 100%;
 }

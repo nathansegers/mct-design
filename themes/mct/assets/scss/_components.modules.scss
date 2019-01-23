@@ -7,6 +7,7 @@
     position: relative;
     width: 100%;
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     flex-wrap: wrap;
     border-bottom: $alpha-leading * .25px solid transparent;
@@ -38,6 +39,10 @@
 
     &--project {
         border-color: palette(color-project);
+    }
+
+    &--full {
+        height: calc(100% - 33px);
     }
 }
 
@@ -79,10 +84,8 @@
     .c-module__title {
         width: 100%;
         margin-bottom: 0;
-        // color: $body-color;
         color: palette(color-neutral,xxx-dark);
         @include ms-1;
-        // @include margin-bottom($alpha-leading * .5);
     }
 
     .c-module__points {
@@ -90,7 +93,6 @@
         margin-bottom: 0;
         color: $body-color;
         color: palette;
-        // font-family: $beta-font-family;
         @include ms-2;
     }
 

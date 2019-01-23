@@ -63,9 +63,9 @@
                                     <div class="c-carousel-nav" aria-hidden="true">
                                         <ol class="o-list c-carousel-nav-list js-nav-list">
                                             {{ range $i, $sequence :=  (first 4 (where .Data.Pages "Type" "project")) }}
-                                            <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
-                                                {{ $i }}
-                                            </li>
+                                                <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
+                                                    {{ $i }}
+                                                </li>
                                             {{ end }}
                                         </ol>
                                     </div>

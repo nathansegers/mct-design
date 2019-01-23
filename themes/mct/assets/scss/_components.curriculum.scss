@@ -200,9 +200,9 @@ $choice-column-border-style: solid;
     .c-curriculum__semester {
         position: relative;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column;
         @include padding-bottom($alpha-leading / 2);
         @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
 
@@ -280,7 +280,7 @@ $choice-column-border-style: solid;
         border-radius: 100%;
         @include margin-right($columns-gutter * .25);
 	}
-	
+
 .c-curriculum__call-to-action {
 	width: 100%;
 	height: 100%;
