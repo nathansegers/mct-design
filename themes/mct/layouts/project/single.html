@@ -48,29 +48,31 @@
                                     {{ .Content }}
                                 </div>
                             </div>
-                        </div>
+						</div>
                         <aside class="o-grid__item u-4-of-12-bp4">
-                            <div class="c-main-section">
-                                <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
-                                    {{if gt (len .Params.students) 1}}
-                                        Studenten
-                                    {{ else }}
-                                        Student:
-                                    {{ end }}
-                                </h3>
-                                <p class="u-color-neutral-base">
-                                    {{ delimit .Params.students ", " " en " }}
-                                </p>
-                            </div>
+							{{ if isset .Params "students" }}
+								<div class="c-main-section">
+									<h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+										{{if gt (len .Params.students) 1}}
+											Studenten
+										{{ else }}
+											Student:
+										{{ end }}
+									</h3>
+									<p class="u-color-neutral-base">
+										{{ delimit .Params.students ", " " en " }}
+									</p>
+								</div>
+							{{ end }}
                             {{ if .Params.client }}
-                            <div class="c-main-section">
-                                <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
-                                    Opdrachtgever
-                                </h3>
-                                <p class="u-color-neutral-base">
-                                    {{ .Params.client }}
-                                </p>
-                            </div>
+								<div class="c-main-section">
+									<h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+										Opdrachtgever
+									</h3>
+									<p class="u-color-neutral-base">
+										{{ .Params.client }}
+									</p>
+								</div>
                             {{ end }}
                         </aside>
                     </div>
