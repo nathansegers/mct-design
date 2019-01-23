@@ -2,90 +2,81 @@
 
 {{ $cover := .Params.Cover }}
 {{ $image := .Resources.GetMatch $cover }}
-{{ $scaledImage := $image.Fill "1184x663" }}
+{{ $scaledImage := $image.Fill "1184x666" }}
 
-    <section class="c-row c-row--lg">
-        <div class="o-container">
-            <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+<main class="c-row c-row--lg">
+    <div class="o-container">
+        <div class="o-grid o-grid--gutter-lg">
+            <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                <div class="c-main-section-lg">
                     <div class="c-main-section-lg">
-                        <div class="c-main-section-lg">
-                            <div class="u-max-width-xl">
-                                <p class="c-type-meta u-ms-1 u-color-neutral-base u-mb-beta">
-                                    {{ .Params.Year }} - {{ .Params.Project }}
-                                </p>
-                                <h1 class="u-ms10-bp3">
-                                    {{ .Title }}
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="c-main-section-lg">
-                            {{ if .Params.video }}
-                            <div class="c-video-player">
-                                <button class="c-video-play-button">
-                                    {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
-                                </button>
-                                <video class="c-video-player__video" poster="{{ $scaledImage.Permalink }}">
-                                    <source src="video/{{ .Params.video }}.webm" type="video/webm">
-                                    <source src="video/{{ .Params.video }}.mp4" type="video/mp4">
-                                    Your browser does not support HTML5 video.
-                                </video>
-                            </div>
-                            {{ else }}
-                            <p class="c-media">
-                                <picture class="c-media__picture c-media__picture--fixed-ratio">
-                                    <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
-                                </picture>
+                        <div class="u-max-width-xl">
+                            <p class="c-type-meta u-ms-1 u-mb-beta u-color-neutral-base">
+                                {{ .Params.Year }} - Project {{ .Params.Project }}
                             </p>
-                            {{ end }}
+                            <h1 class="c-type-intro">
+                                {{ .Title }} &#8212; {{ .Description }}
+                            </h1>
                         </div>
                     </div>
                     <div class="c-main-section-lg">
-                        <div class="o-grid o-grid--gutter-lg">
-                            <div class="o-grid__item u-8-of-12-bp4">
-                                <div class="c-main-section">
-                                    <div class="u-max-width-optimal">
-                                        <div class="c-main-section">
-                                            <p>
-                                                {{ .Description }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="c-main-section">
-                                    <div class="s-content u-max-width-optimal">
-                                        {{ .Content }}
-                                    </div>
+                        {{ if .Params.video }}
+                        <div class="c-video-player">
+                            <button class="c-video-play-button">
+                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
+                            </button>
+                            <video class="c-video-player__video" poster="{{ $scaledImage.Permalink }}">
+                                <source src="video/{{ .Params.video }}.webm" type="video/webm">
+                                <source src="video/{{ .Params.video }}.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        {{ else }}
+                        <p class="c-media">
+                            <picture class="c-media__picture c-media__picture--fixed-ratio">
+                                <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
+                            </picture>
+                        </p>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="c-main-section-lg">
+                    <div class="o-grid o-grid--gutter-lg">
+                        <div class="o-grid__item u-8-of-12-bp4">                            
+                            <div class="c-main-section">
+                                <div class="s-content u-max-width-optimal">
+                                    {{ .Content }}
                                 </div>
                             </div>
-                            <aside class="o-grid__item u-4-of-12-bp4">
-                                <div class="c-main-section">
-                                    <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
-                                        {{if gt (len .Params.students) 1}}
-                                            Studenten
-                                        {{ else }}
-                                            Student:
-                                        {{ end }}
-                                    </h3>
-                                    <p class="u-color-neutral-base">
-                                        {{ delimit .Params.students ", " " en " }}
-                                    </p>
-                                </div>
-                                {{ if .Params.client }}
-                                <div class="c-main-section">
-                                    <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
-                                        Opdrachtgever
-                                    </h3>
-                                    <p class="u-color-neutral-base">
-                                        {{ .Params.client }}
-                                    </p>
-                                </div>
-                                {{ end }}
-                            </aside>
                         </div>
+                        <aside class="o-grid__item u-4-of-12-bp4">
+                            <div class="c-main-section">
+                                <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+                                    {{if gt (len .Params.students) 1}}
+                                        Studenten
+                                    {{ else }}
+                                        Student:
+                                    {{ end }}
+                                </h3>
+                                <p class="u-color-neutral-base">
+                                    {{ delimit .Params.students ", " " en " }}
+                                </p>
+                            </div>
+                            {{ if .Params.client }}
+                            <div class="c-main-section">
+                                <h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+                                    Opdrachtgever
+                                </h3>
+                                <p class="u-color-neutral-base">
+                                    {{ .Params.client }}
+                                </p>
+                            </div>
+                            {{ end }}
+                        </aside>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</main>
 {{ end }}

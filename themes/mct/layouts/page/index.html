@@ -39,7 +39,7 @@
             <div class="c-projects">
                 <div class="c-projects__header">
                     <h2 class="c-type-svg c-type-svg--projects">
-                        <img class="c-type-svg__svg lozad" data-src="/img/svg/word-projects.svg" alt="Projecten">
+                        <img class="c-type-svg__svg" src="/img/svg/word-projects.svg" alt="Projecten">
                     </h2>
                 </div>
                 <div class="c-projects__body">
@@ -62,19 +62,19 @@
                                 <div class="c-carousel js-carousel">
                                     <div class="c-carousel-nav" aria-hidden="true">
                                         <ol class="o-list c-carousel-nav-list js-nav-list">
-                                            {{ range $i, $sequence :=  (first 3 (where .Data.Pages "Type" "project")) }}
-                                            <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
-                                                {{ $i }}
-                                            </li>
+                                            {{ range $i, $sequence :=  (first 4 (where .Data.Pages "Type" "project")) }}
+                                                <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
+                                                    {{ $i }}
+                                                </li>
                                             {{ end }}
                                         </ol>
                                     </div>
                                     <div class="c-carousel-holder">
                                         <div class="c-carousel__items-holder">
                                             <div class="c-carousel__items js-carousel-items" style="transform: translateX(0%);">
-                                                {{ range $i, $sequence :=  (shuffle (first 3 (where .Data.Pages "Type" "project"))) }}
+                                                {{ range $i, $sequence :=  (shuffle (first 4 (where .Data.Pages "Type" "project"))) }}
                                                     <div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
-                                                        {{ partial "atoms/project-article" .}}
+                                                        {{ partial "atoms/project-article-home" .}}
                                                     </div>
                                                 {{ end }}
                                             </div>

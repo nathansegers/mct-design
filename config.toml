@@ -6,7 +6,6 @@ relativeURLS = true
 canonifyurls = true
 enableEmoji = true
 
-
 [menu]
   [[menu.main]]
     name = "Home"

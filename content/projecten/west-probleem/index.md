@@ -1,11 +1,13 @@
 ---
-title: West Probleem
-description: "Snel verantwoordelijken op de hoogte brengen van infrastructuur problemen? Het kan! Onze NMCT-studenten ontwikkelden in vier weken tijd de mobiele applicatie “West Probleem”."
 type: project
-year: 2NMCT
-project: Project 2
+title: West Probleem
+date: 2018-03-09T21:40:40+01:00
+description: "Voor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+year: 2MCT
+project: 2
+featured: true
 cover: pexels-photo-668137.jpg
-video: 
+video:
 students:
 - Rune Vandebuerie
 - Aiko Van Ryssel

@@ -1,0 +1,25 @@
+{{ $cover := .Params.Cover }}
+{{ $image := .Resources.GetMatch $cover }}
+{{ $scaledImage := $image.Fill "800x448" }}
+
+<a class="c-media c-media--link" href="{{ .Permalink }}">
+    <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon">
+        <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
+    </picture>
+    <div class="c-media__body">
+        <div class="c-media__content u-max-width-optimal">
+            <p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
+                {{ .Params.Year }} - Project {{ .Params.Project }}
+            </p>
+            <h2 class="c-media__title u-ms2 u-mb-gamma">
+                {{ .Title }}
+            </h2>
+            <p class="c-media__text">
+                {{ .Description }}
+            </p>
+            <!-- <p class="c-media__more-link">
+                Bekijk dit project
+            </p> -->
+        </div>
+    </div>
+</a>

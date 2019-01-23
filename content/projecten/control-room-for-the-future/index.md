@@ -1,9 +1,11 @@
 ---
-title: Control room for the future
-description: "In 4 weken tijd bouwden onze NMCT studenten een prototype “Controlroom of the future” voor de biomassa centrales van Vyncke. Live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!"
 type: project
-year: 1NMCT
-project: Project 1
+title: Control room for the future
+date: 2018-03-09T21:40:40+01:00
+description: "Voor de biomassa centrales van Vyncke bouwden onze studenten een prototype met live data visualisatie vanuit Nederland in een Microsoft Hololens applicatie!"
+year: 2MCT
+project: 2
+featured: true
 cover: control-room-for-the-future.jpg
 video: control-room-for-the-future
 client: VYNCKE nv.
