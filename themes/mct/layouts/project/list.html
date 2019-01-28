@@ -4,124 +4,153 @@
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
-                    <div class="c-main-section-lg">
+                    <div class="c-main-section">
                         <div class="u-max-width-xl">
                             <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
-                                Projecten van studenten layout: projecten/list
+                                {{ .Title }}
                             </h1>
                             <p class="c-type-intro">
                                 Korte intro die duidelijk maakt wanneer de projectweken vallen en wat het belang is. Na iedere examenperiode hebben studenten projectweken.
                             </p>
-                            <h3>
-                                Projecten
-                            </h3>
-
-                            <div class="o-grid o-grid--gutter">
-
-                                {{ range .Pages }}
-                                <div class="o-grid__item u-1-of-2">
-                                    {{ partial "atoms/project-article" .}}
-                                </div>
-                                {{ end }}
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="c-row c-row--lg c-row--divide c-row--no-overflow">
+    <section class="c-row c-row--lg c-row--divide">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-4-of-12-bp4">
-                    <h2 class="c-type-meta u-mb-delta u-ms-1 u-color-neutral-base">
-                        Project 1 - Your project
-                    </h2>
-                    <p>
-                        Op het einde van het 1ste jaar werk je 4 weken lang individueel aan een <strong>Internet of Things</strong> project. Je integreert verschillende inhouden en vaardigheden van verschillende opleidingsonderdelen in dit project.
-                    </p>
-                </div>
-                <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp6">
-                    <div class="c-carousel js-carousel">
-                        <div class="c-carousel-nav" aria-hidden="true">
-                            <ol class="o-list c-carousel-nav-list js-nav-list">
-                                {{ range $i, $sequence :=  (first 3 (where .Data.Pages "Type" "project")) }}
-                                <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
-                                    {{ $i }}
-                                </li>
-                                {{ end }}
-                            </ol>
-                        </div>
-                        <div class="c-carousel-holder">
-                            <div class="c-carousel__items-holder">
-                                <div class="c-carousel__items js-carousel-items" style="transform: translateX(0%);">
-                                    {{ range $i, $sequence :=  (shuffle (first 3 (where .Data.Pages "Type" "project"))) }}
-                                        <div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
-                                            {{ partial "atoms/project-article" .}}
-                                        </div>
-                                    {{ end }}
-                                </div>
-                            </div>
-                        </div>
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section">
+                        <div class="u-max-width-optimal">
+                            <p class="c-type-meta u-mb-alpha u-ms-1 u-color-neutral-base">
+                                1MCT - Project 1
+                            </p>
+                            <h2 class="c-type-intro u-mb-zeta">
+                                Your project
+                            </h2>
 
-                        <button class="c-carousel__arrow c-carousel__arrow--left js-button-prev">
-                            {{ partial "atoms/symbol" (dict "value" "arrow-left" "class" "c-carousel__arrow-symbol") }}
-                        </button>
-                        <button class="c-carousel__arrow c-carousel__arrow--right js-button-next">
-                            {{ partial "atoms/symbol" (dict "value" "arrow-right" "class" "c-carousel__arrow-symbol") }}
-                        </button>
+                            <p>
+                                Op het einde van het 1ste jaar werk je 4 weken lang individueel aan een Internet of Things project. Je integreert verschillende inhouden en vaardigheden van verschillende opleidingsonderdelen in dit project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c-main-section">
+                        <div class="c-video-player">
+                            <button class="c-video-play-button">
+                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
+                            </button>
+                            <video class="c-video-player__video" poster="./assets/img/mct-promo.jpg">
+                                <source src="./assets/video/mct-promo.webm" type="video/webm">
+                                <source src="./assets/video/mct-promo.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        <p class="c-type-meta u-ms-1 u-color-neutral-base">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="c-row c-row--lg c-row--divide c-row--no-overflow">
+    <section class="c-row c-row--lg c-row--divide">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-4-of-12-bp4">
-                    <h2 class="c-type-meta u-mb-delta u-ms-1 u-color-neutral-base">
-                        Project 2 - Team Project
-                    </h2>
-                    <p>
-                        Op het einde van het 2de jaar werk je 4 weken lang in een team van 5 NMCT studenten op een bedrijfscase aangeleverd door een Belgische of Internationale onderneming. Je integreert verschillende inhouden en vaardigheden van verschillende opleidingsonderdelen in dit project.
-                    </p>
-                    <p>
-                        Bedrijven waar we reeds mee samenwerken zijn TVH, Smappee, Alvey Group, Ordina
-                    </p>
-                </div>
-                <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp6">
-                    <div class="c-carousel js-carousel">
-                        <div class="c-carousel-nav" aria-hidden="true">
-                            <ol class="o-list c-carousel-nav-list js-nav-list">
-                                {{ range $i, $sequence :=  (first 3 (where .Data.Pages "Type" "project")) }}
-                                <li class="c-carousel-nav-list__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-nav-list-item" data-slide="{{ $i }}">
-                                    {{ $i }}
-                                </li>
-                                {{ end }}
-                            </ol>
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section">
+                        <div class="u-max-width-optimal">
+                            <p class="c-type-meta u-mb-alpha u-ms-1 u-color-neutral-base">
+                                2MCT - Project 2
+                            </p>
+                            <h2 class="c-type-intro u-mb-zeta">
+                                Team Project
+                            </h2>
+                            <p>
+                                Op het einde van het 2de jaar werk je 4 weken lang in een team van 5 NMCT studenten op een bedrijfscase aangeleverd door een Belgische of Internationale onderneming. Je integreert verschillende inhouden en vaardigheden van verschillende opleidingsonderdelen in dit project. Bedrijven waar we reeds mee samenwerken zijn TVH, Smappee, Alvey Group, Ordina
+                            </p>
                         </div>
-                        <div class="c-carousel-holder">
-                            <div class="c-carousel__items-holder">
-                                <div class="c-carousel__items js-carousel-items" style="transform: translateX(0%);">
-                                    {{ range $i, $sequence :=  (shuffle (first 3 (where .Data.Pages "Type" "project"))) }}
-                                        <div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
-                                            {{ partial "atoms/project-article" .}}
-                                        </div>
-                                    {{ end }}
+                    </div>
+                    <div class="c-main-section">
+                        <div class="o-grid o-grid--gutter u-mb-epsilon-neg">
+                            {{ range .Pages }}
+                                {{ if eq .Params.project 2 }}
+                                <div class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp5 u-mb-epsilon">
+                                    {{ partial "atoms/project-article-small" .}}
                                 </div>
-                            </div>
+                                {{ end }}
+                            {{ end }}
                         </div>
-
-                        <button class="c-carousel__arrow c-carousel__arrow--left js-button-prev">
-                            {{ partial "atoms/symbol" (dict "value" "arrow-left" "class" "c-carousel__arrow-symbol") }}
-                        </button>
-                        <button class="c-carousel__arrow c-carousel__arrow--right js-button-next">
-                            {{ partial "atoms/symbol" (dict "value" "arrow-right" "class" "c-carousel__arrow-symbol") }}
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="c-row c-row--lg c-row--divide">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section">
+                        <div class="u-max-width-optimal">
+                            <p class="c-type-meta u-mb-alpha u-ms-1 u-color-neutral-base">
+                                2MCT - Project 3
+                            </p>
+                            <h2 class="c-type-intro u-mb-zeta">
+                                Team Project
+                            </h2>
+                            <p>
+                                Op het einde van het 2de jaar werk je 4 weken lang in een team van 5 NMCT studenten op een bedrijfscase aangeleverd door een Belgische of Internationale onderneming. Je integreert verschillende inhouden en vaardigheden van verschillende opleidingsonderdelen in dit project. Bedrijven waar we reeds mee samenwerken zijn TVH, Smappee, Alvey Group, Ordina
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c-main-section">
+                        <div class="o-grid o-grid--gutter u-mb-epsilon-neg">
+                            {{ range .Pages }}
+                                {{ if eq .Params.project 3 }}
+                                <div class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp5 u-mb-epsilon">
+                                    {{ partial "atoms/project-article-small" .}}
+                                </div>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="c-row c-row--lg c-row--divide">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section">
+                        <div class="u-max-width-optimal">
+                            <p class="c-type-meta u-mb-alpha u-ms-1 u-color-neutral-base">
+                                2MCT - Startup
+                            </p>
+                            <h2 class="c-type-intro u-mb-zeta">
+                                Startup
+                            </h2>
+                            <p>
+                                Op het einde van het 2de jaar werk je 4 weken lang in een team van 5 NMCT studenten op een bedrijfscase aangeleverd door een Belgische of Internationale onderneming. Je integreert verschillende inhouden en vaardigheden van verschillende opleidingsonderdelen in dit project. Bedrijven waar we reeds mee samenwerken zijn TVH, Smappee, Alvey Group, Ordina
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c-main-section">
+                        <div class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp5 u-mb-epsilon">
+                            {{ range .Pages }}
+                                {{ if eq .Params.project "startup" }}
+                                <div class="o-grid__item u-1-of-2-bp3 u-mb-epsilon">
+                                    {{ partial "atoms/project-article-small" .}}
+                                </div>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial "components/cta.html" (dict "title" "Klaar om zelf te bouwen?" "paragraph" "STOOM JE KLAAR VOOR DE TOEKOMST EN SCHRIJF JE VANDAAG IN.") }}
 </main>
 {{ end }}

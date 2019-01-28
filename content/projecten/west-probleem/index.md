@@ -1,16 +1,20 @@
 ---
-title: West Probleem
-description: "Snel verantwoordelijken op de hoogte brengen van infrastructuur problemen? Het kan! Onze NMCT-studenten ontwikkelden in vier weken tijd de mobiele applicatie “West Probleem”."
 type: project
-year: 2NMCT
-project: Project 2
+title: West Probleem
+date: 2018-03-09T21:40:40+01:00
+description: "Howest en UGent campus Kortrijk zochten naar een snelle oplossing om infrastructuurproblemen te melden en te verzamelen."
+year: 2MCT
+project: 2
+featured: true
 cover: pexels-photo-668137.jpg
-video: 
-students:
-- Rune Vandebuerie
-- Aiko Van Ryssel
-- Johannes Gouwy
-- Markey Thibault
+# video:
+# students:
+# - Rune Vandebuerie
+# - Aiko Van Ryssel
+# - Johannes Gouwy
+# - Markey Thibault
 ---
 
-Hallo, ik ben extra content
+Onze NMCT-studenten ontwikkelden in vier weken tijd de mobiele applicatie “West-Probleem”, in **Xamarin** geschreven, **voor zowel Android als iOS**.
+
+Met deze app kunnen studenten en docenten eenvoudig een foto van het infrastructuurprobleem maken, de locatie aanduiden, een opmerking bijvoegen en alles doorsturen naar de verantwoordelijke.

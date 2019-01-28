@@ -82,6 +82,10 @@ li {
 	opacity: 0.9;
 }
 
+.u-text-normal {
+    font-weight: normal;
+}
+
 .c-main-section {
 	@include mq(bp2) {
 		& + & {
@@ -269,4 +273,13 @@ li {
 	flex-direction: column;
 	transition: opacity $animation-duration-gamma $animation-easing-alpha,
 		visibility $animation-duration-gamma $animation-easing-alpha;
+}
+
+.c-gallery {
+    display: flex;
+    overflow: hidden;
+}
+
+.c-gallery__item {
+    width: 100%;
 }

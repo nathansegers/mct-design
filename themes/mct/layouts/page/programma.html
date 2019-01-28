@@ -75,7 +75,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 1
 							</h3>
-							{{ range (where .Site.Pages "Type" "module") }}
+							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 1 }}
 									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
@@ -88,7 +88,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 2
                             </h3>
-							{{ range (where .Site.Pages "Type" "module") }}
+							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 2 }}
 								<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
 									<h4 class="c-module__title">{{ .Title }}</h4>
@@ -103,7 +103,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 3
                             </h3>
-							{{ range (where .Site.Pages "Type" "module") }}
+							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 3 }}
 									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
@@ -118,7 +118,7 @@
                             </h3>
 							<div class="c-curriculum__semester-holder--dynamic js-semester-4">
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "smart-tech-ai" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -130,7 +130,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-web-app-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "web-app" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -142,7 +142,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-ai-engineer-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "ai-engineer" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -154,7 +154,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-infrastructure-engineer-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "infrastructure-engineer" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -180,7 +180,7 @@
 							</h3>
 							<div class="c-curriculum__semester-holder--dynamic js-semester-5">
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "smart-tech-ai" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -192,7 +192,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-web-app-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "web-app" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -204,7 +204,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-ai-engineer-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "ai-engineer" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -216,7 +216,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-infrastructure-engineer-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "infrastructure-engineer" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -233,9 +233,9 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 6
 							</h3>
-							{{ range (where .Site.Pages "Type" "module") }}
+							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 6 }}
-									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--single c-module--link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
 										<p class="c-module__tags">{{ .Params.Tags }}</p>
 									</a>
@@ -274,7 +274,7 @@
             </div>
         </div>
     </div>
-    <div id="profile-smart-tech-ai" class="c-row c-row--lg c-row--divide">
+    <div id="profile-smart-tech-ai" class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
@@ -309,19 +309,19 @@
                     </div>
                     <div class="c-main-section-lg">
                         <p>
-                            <img src="/img/jpg/NMCT-shoot2-17.jpg" alt="">
+                            <img src="/img/jpg/mixed-reality.jpg" alt="">
                         </p>
                     </div>
                 </div>
                 <div class="o-grid__item u-6-of-12-bp4">
                     <p>
-                        <img src="/img/jpg/NMCT-shoot2-8.jpg" alt="">
+                        <img src="/img/jpg/cows.jpg" alt="">
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="profile-web-app" class="c-row c-row--lg c-row--clear-top">
+    <div id="profile-web-app" class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-6-of-12-bp4 u-push-6-of-12-bp4">
@@ -367,12 +367,12 @@
             </div>
         </div>
     </div>
-    <div id="profile-ai-engineer" class="c-row c-row--lg c-row--clear-top">
+    <div id="profile-ai-engineer" class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
                     <h2 class="c-type-title-lg">
-                        AI <br> Engineer
+                        AI Engineer
                     </h2>
                 </div>
             </div>
@@ -383,7 +383,7 @@
                             <div class="o-grid__item u-5-of-6-bp5 u-push-1-of-6-bp5">
                                 <div class="u-max-width-md">
                                     <p class="u-ms2">
-                                        
+										De AI Engineer ontwikkelt AI software, gebruik makend van eenvoudige regressies tot complexe deep learning en/of state of the art reinforcement learning modellen. Maar deze scherpzinnige developer gaat verder dan dat: hij/zij ontwikkelt een volledige back-end & API om de kracht van AI om te zetten in een innovatieve oplossing.
                                     </p>
                                     <h3 class="u-mb-alpha u-color-alpha-light">
                                         Jouw toekomst
@@ -396,20 +396,19 @@
                         </div>
                     </div>
                     <div class="c-main-section-lg">
-                        <p>
-                            <img src="/img/jpg/NMCT-shoot1-80.jpg" alt="">
-                        </p>
+						
                     </div>
                 </div>
-                <!-- <div class="o-grid__item u-6-of-12-bp4">
-                    <p>
-                        <img src="/img/jpg/NMCT-shoot2-8.jpg" alt="">
-                    </p>
-                </div> -->
+                <div class="o-grid__item u-6-of-12-bp4">
+					<p>
+						<img src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+						 alt="">
+					</p>
+                </div>
             </div>
         </div>
 	</div>
-	<div id="profile-infrastructure-engineer" class="c-row c-row--lg c-row--clear-top">
+	<div id="profile-infrastructure-engineer" class="c-row c-row--lg">
 		<div class="o-container">
 			<div class="o-grid o-grid--gutter-lg">
 				<div class="o-grid__item u-6-of-12-bp4 u-push-6-of-12-bp4">
@@ -442,13 +441,13 @@
 					</div>
 					<div class="c-main-section-lg">
 						<p>
-							<img src="/img/jpg/NMCT-shoot1-50.jpg" alt="">
+							<img src="/img/jpg/NMCT-shoot1-80.jpg" alt="">
 						</p>
 					</div>
 				</div>
 				<div class="o-grid__item u-6-of-12-bp4">
 					<p>
-						<img src="/img/jpg/NMCT-shoot1-67-2.jpg" alt="">
+						<img src="/img/jpg/NMCT-shoot2-8.jpg" alt="">
 					</p>
 				</div>
 			</div>
