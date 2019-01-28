@@ -2,17 +2,17 @@
 type: project
 title: West Probleem
 date: 2018-03-09T21:40:40+01:00
-description: "Voor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+description: "Howest en UGent campus Kortrijk zochten naar een snelle oplossing om infrastructuurproblemen te melden en te verzamelen."
 year: 2MCT
 project: 2
 featured: true
 cover: pexels-photo-668137.jpg
-video:
-students:
-- Rune Vandebuerie
-- Aiko Van Ryssel
-- Johannes Gouwy
-- Markey Thibault
+# video:
+# students:
+# - Rune Vandebuerie
+# - Aiko Van Ryssel
+# - Johannes Gouwy
+# - Markey Thibault
 ---
 
 Onze NMCT-studenten ontwikkelden in vier weken tijd de mobiele applicatie “West-Probleem”, in **Xamarin** geschreven, **voor zowel Android als iOS**.

@@ -17,4 +17,4 @@ __20u00 – 20u30:__ “Flanders is getting smarter”, première van de Sizing 
 
 __20u30 – 21u00:__ comedian Christian Makuta.
 
-__21u00- … :__ Napraten tijdens het dessert.
+__21u00- ... :__ Napraten tijdens het dessert.
