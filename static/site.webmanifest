@@ -1,8 +1,8 @@
 {
 	"name": "MCT",
 	"short_name": "MCT",
-	"theme_color": "#ffffff",
-	"background_color": "#e85e00",
+	"theme_color": "#e85e00",
+	"background_color": "#ffffff",
 	"display": "browser",
 	"scope": "/",
 	"start_url": "/",
