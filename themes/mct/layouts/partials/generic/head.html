@@ -6,7 +6,8 @@
     <!-- Mobile header colors -->
     <meta name="theme-color" content="#e85e00" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="msapplication-navbutton-color" content="#e85e00" />
+	<meta name="msapplication-navbutton-color" content="#e85e00" />
+	<meta name="msapplication-TileColor" content="#e85e00" />
 
     <!-- Mobile settings http://t.co/dKP3o1e -->
     <meta name="HandheldFriendly" content="True">
@@ -18,17 +19,28 @@
     <meta name="description" content="{{ .Params.Description }}">
     <title>{{ block "title" . }}{{ .Params.Title }} | {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
 
-    <link rel="stylesheet" href="https://use.typekit.net/zgq1yxl.css">
-
-    <!-- Stylesheets -->
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://use.typekit.net/zgq1yxl.css">
     {{ $style := resources.Get "scss/screen.scss" | toCSS | minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-    <link rel="icon" href="/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-precomposed.png">
+	<!-- Favicons: can all be found in /static -->
+	<!--[if IE]>
+		<link rel="shortcut icon" href="favicon.ico"/>
+	<![endif]-->
+	<link rel="icon" sizes="16x16 32x32 48x48 64x64" href="/favicon.ico" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <!--
-        Place all other favicons in website root (e.g. http://web.dev/favicon.ico).
-        Add your font license here, if necessary.
-    -->
+	<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-60.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-76.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-152.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-180.png" />
+	<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
+
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#e85e00">
+	<meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+	<link rel="manifest" href="/site.webmanifest">
 </head>
