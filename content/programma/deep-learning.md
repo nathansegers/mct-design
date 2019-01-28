@@ -8,7 +8,7 @@ tracks:
 - smart-tech-ai
 - ai-engineer
 ---
-De module deep learning gaat verder waar de <a href="/module/machine-learning/">module machine learning</a> is gestopt, namelijk bij de neurale netwerken.</p>
+De module deep learning gaat verder waar de <a href="/programma/machine-learning/">module machine learning</a> is gestopt, namelijk bij de neurale netwerken.</p>
 <ul>
 <li>Herhaling **neurale neurale** netwerken en introductie tot deep learing.</li>
 <li>**Convolutional Neural Networks (CNN)** die vooral gebruikt worden bij image recogntion.</li>
