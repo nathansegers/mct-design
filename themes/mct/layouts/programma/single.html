@@ -5,15 +5,13 @@
 				<div class="o-grid__item u-8-of-12-bp4 u-push-2-of-12-bp4 u-2-of-4-bp6 u-push-1-of-4-bp6">
 					<div class="u-max-width-lg u-align-horizontal">
 						<div class="c-main-section">
-							<ul class="o-list c-curriculum-legend">
+							<ul class="o-list c-curriculum-legend u-mb-gamma">
 								<li class="c-curriculum-legend__item">
 									<span class="c-curriculum-legend__swatch u-bgcolor-{{ .Params.Pillar }}-base"></span>
 									{{ .Params.Pillar }}
 								</li>
 							</ul>
-						</div>
-						<div class="c-main-section">
-							<h1 class="u-ms10-bp3 u-mb-beta">
+							<h1 class="u-ms10-bp3 u-mb-gamma">
 								{{ .Title }}
 							</h1>
 							<p class="c-type-meta u-ms-1 u-color-neutral-base">
@@ -24,6 +22,11 @@
 							<div class="s-content u-max-width-optimal">
 								{{ .Content }}
 							</div>
+						</div>
+						<div class="c-main-section">
+							<p>
+								<a class="c-link-more" href="{{ ref . "programma" }}">< Bekijk alle vakken</a>
+							</p>
 						</div>
 					</div>
 				</div>
