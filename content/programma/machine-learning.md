@@ -31,4 +31,4 @@ Vandaag de dag al zijn **data scientists en AI experts bij de meest gegeerde pro
 
 In deze module leer je de **concepten** van een aantal **machine learning algoritmes** en vooral hoe je ze **praktisch** kunt **toepassen** om ML problemen op te lossen.
 
-Tevens wordt **de basis** gelegd **voor** de module <a href="/module/deep-learning">deep learning</a> die hierop aansluit.
+Tevens wordt **de basis** gelegd **voor** de module <a href="/programma/deep-learning">deep learning</a> die hierop aansluit.

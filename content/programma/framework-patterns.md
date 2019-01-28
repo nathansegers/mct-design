@@ -7,7 +7,7 @@ pillar: code
 tracks:
 - web-app
 ---
-In de module framework en patterns bekijken we hoe we met een **JS-framework** een **web app** kunnen maken. Vanuit de kennis die we opgedaan hebben in de module <a href="/module/frontend">Frontend</a>, maken we een performante professionele app.
+In de module framework en patterns bekijken we hoe we met een **JS-framework** een **web app** kunnen maken. Vanuit de kennis die we opgedaan hebben in de module <a href="/programma/frontend">Frontend</a>, maken we een performante professionele app.
 
  - Geavanceerde development omgeving opzetten met Webpack
  - Bekijken en benoemen van verschillende JS-frameworks
