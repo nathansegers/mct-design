@@ -13,7 +13,7 @@ Start het project met ```hugo server```.
 
 ## 🧱 Structuur
 - Volgens de manier van werken in [Go Hugo](https://gohugo.io/getting-started/directory-structure/).
-- [ITCSS](https://xfive.co/blog/itcss-scalable-maintainable-css-architecture/) wordt gebruikt voor het schrijven van de SCSS.
+- Alle styling wordt aan de hand van [ITCSS](https://xfive.co/blog/itcss-scalable-maintainable-css-architecture/) opgebouwd met SCSS.
 
 ## 📮 Contact
 - Gelieve bij vragen of problemen contact op te nemen met @Simon of @Martijn, via [mct.be](https://mct.be/contact/).
