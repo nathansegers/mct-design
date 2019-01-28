@@ -75,7 +75,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 1
 							</h3>
-							{{ range (where .Site.Pages "Type" "module") }}
+							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 1 }}
 									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
@@ -88,7 +88,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 2
                             </h3>
-							{{ range (where .Site.Pages "Type" "module") }}
+							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 2 }}
 								<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
 									<h4 class="c-module__title">{{ .Title }}</h4>
@@ -103,7 +103,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 3
                             </h3>
-							{{ range (where .Site.Pages "Type" "module") }}
+							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 3 }}
 									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
@@ -118,7 +118,7 @@
                             </h3>
 							<div class="c-curriculum__semester-holder--dynamic js-semester-4">
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "smart-tech-ai" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -130,7 +130,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-web-app-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "web-app" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -142,7 +142,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-ai-engineer-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "ai-engineer" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -154,7 +154,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-infrastructure-engineer-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "infrastructure-engineer" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -180,7 +180,7 @@
 							</h3>
 							<div class="c-curriculum__semester-holder--dynamic js-semester-5">
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "smart-tech-ai" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -192,7 +192,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-web-app-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "web-app" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -204,7 +204,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-ai-engineer-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "ai-engineer" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -216,7 +216,7 @@
 									{{ end }}
 								</div>
 								<div class="c-curriculum__semester--dynamic js-dynamic-track js-infrastructure-engineer-track">
-									{{ range (where .Site.Pages "Type" "module") }}
+									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "infrastructure-engineer" }}
 												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
@@ -233,7 +233,7 @@
                             <h3 class="c-curriculum__semester-title">
                                 Semester 6
 							</h3>
-							{{ range (where .Site.Pages "Type" "module") }}
+							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 6 }}
 									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--single c-module--link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
