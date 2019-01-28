@@ -17,10 +17,9 @@
 	<script src="{{ (resources.Get "js/form.js").RelPermalink }}"></script>
 {{end}}
 
-{{ getenv "HUGO_ENV"}}
 
 {{/* Conditional Google Analytics & web font */}}
-{{ if eq (getenv "HUGO_ENV") "production" }}
+{{ if not .Site.IsServer }}
 	<script type="text/javascript">
 		WebFontConfig = {
 			google: { families: ['Roboto+Mono'] }
