@@ -1,14 +1,14 @@
 ---
 title: Frontend
+Description: Hoe kunnen we een performante user interface maken in de browser? We bekijken de volledige flow van een goede test-driven development omgeving tot optimalisatie in de browser.
 semester: 4
 weight: 10
 tags: "#javascript #css #html #passion"
 pillar: code
 tracks:
 - web-app
+tools: "Visual Studio Code, Chrome developer tools, Yarn en Gulp"
 ---
-
-**Frontend — Hoe kunnen we een performante user interface maken in de browser? We bekijken de volledige flow van een goede test-driven development omgeving tot optimalisatie in de browser.**
 
 We beginnen de module met een korte terugblik op eerdere modules. Een opfrissing van de module User interface design helpen om HTML & CSS weer goed te schrijven. We nemen ook notie van de beste semantische HTML-tags en wat er kan helpen om goede SEO te bereiken op onze website’s.
 
@@ -21,6 +21,3 @@ Een manier om dit proces te verbeteren in het gebruik van SCSS. We leren hoe we 
 Uiteindelijk maken we een web-project om alle onderdelen te combineren. We zetten een omgeving op waarbij we starten met testen die nog niet slagen. We werken onze JS-functionaliteiten uit totdat alle testen slagen en we werken ook de markup en de CSS uit, met oog voor de manier waarop een browser dit verwerkt.
 
 Doorheen de module is er veel tijd om deze onderdelen begeleid zelf in te oefenen. Dat is ook nodig want deze module legt de basis voor de module Frameworks & Patterns.
-
-### Tools:
-Visual Studio Code, Chrome developer tools, Yarn, Gulp
