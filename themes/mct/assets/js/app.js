@@ -243,4 +243,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (typeof mct_carousel != 'undefined') {
 		mct_carousel.initCarousel();
 	}
+
+	mct_sharing.init();
 });
