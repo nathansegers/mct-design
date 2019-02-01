@@ -7,14 +7,14 @@ year: 2MCT
 project: 2
 featured: true
 cover: bloom.jpg
-video: bloom
+video: bloom.mp4
 client: Hyperspace Ventures
 students:
 - Johannes Gouwy
 - Simon Coudeville
 - Martijn Loth
 - Dieter De Preester
-draft: true
+draft: false
 ---
 
 Hallo, ik ben extra content

@@ -7,7 +7,7 @@ year: 2MCT
 project: 3
 featured: true
 cover: control-room-for-the-future.jpg
-# video: control-room-for-the-future
+video: 
 client: VYNCKE nv.
 # students:
 # - Rune Vandebuerie
