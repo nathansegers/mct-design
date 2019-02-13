@@ -7,7 +7,7 @@ year: 2MCT
 project: 2
 featured: true
 cover: bloom.jpg
-video: bloom
+video: https://mctwebsite.blob.core.windows.net/video/bloom.mp4
 client: Hyperspace Ventures
 students:
 - Johannes Gouwy
