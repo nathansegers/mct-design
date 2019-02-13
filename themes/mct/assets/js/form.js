@@ -45,7 +45,7 @@ let formModule = (function() {
 		)
 			.then(r => r.json())
 			.then(json => {
-				console.log(json);
+				console.info(json);
 			});
 	};
 
@@ -80,7 +80,6 @@ let formModule = (function() {
 				goodToGo = false;
 			} else {
 				fields[i].parentNode.classList.remove('has-error');
-				console.log({ field: fields[i] });
 				valid[fields[i].getAttribute('data-form-name')] = true;
 			}
 			if (

@@ -41,7 +41,6 @@ function selectAndDeselectOptions(optionToSelect, allOptions, l, s) {
 }
 
 function addEscFunction(e) {
-	console.log('Pressing something!');
 	e = e || window.event;
 	var isEscape = false;
 	if ('key' in e) {
@@ -160,7 +159,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			);
 
 			if (window.location.hash.substring(0, 9) == '#profile-') {
-				// console.log('Hash changed!', tracks[window.location.hash.substring(7, window.location.hash.length)]);
 				getModules(moduleSlug);
 				selectAndDeselectOptions(tracks[moduleSlug], o, l, s);
 			}
