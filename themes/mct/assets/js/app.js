@@ -232,10 +232,26 @@ function initVideoPlayer() {
 	}
 }
 
+var checkNotification = function() {
+	const announcement = document.querySelector('.js-announcement');
+	if (announcement) {
+		var givenDate = announcement.getAttribute('data-due-date');
+		var currentDate = new Date();
+		givenDate = new Date(givenDate);
+		console.log({ givenDate });
+		console.log({ currentDate });
+
+		if (givenDate > currentDate) {
+			announcement.style.display = 'block';
+		}
+	}
+};
+
 document.addEventListener('DOMContentLoaded', function() {
 	initNavigation();
 	initVideoPlayer();
 	getReadyToRemoveCookie();
+	checkNotification();
 
 	const observer = lozad(); // lazy loads elements with default selector as ".lozad"
 	observer.observe();

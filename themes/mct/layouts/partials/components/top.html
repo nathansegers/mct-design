@@ -1,8 +1,5 @@
-{{ $t := (time .Site.Data.announcement.ends) }}
-{{ if $t.After now }}
-<div class="c-row c-row--top">
+<div class="c-row c-row--top js-announcement" style="display: none;" data-due-date="{{.Site.Data.announcement.ends}}">
     <div class="o-container">
         {{ partial "components/update" . }}
     </div>
 </div>
-{{end}}
