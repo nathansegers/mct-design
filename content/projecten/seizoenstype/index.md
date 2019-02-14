@@ -6,7 +6,7 @@ description: "Stylisten bepalen op basis van iemands haar-, huid- en oogkleur of
 year: 2MCT
 project: 2
 featured: false
-cover: seizoenstype.png
+cover: seizoenstype.jpg
 # video:
 # students:
 # - Rune Vandebuerie

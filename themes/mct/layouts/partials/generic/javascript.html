@@ -5,8 +5,9 @@
 {{ $carousel := resources.Get "js/carousel.js" }}
 {{ $curriculum := resources.Get "js/curriculum.js" }}
 {{ $contact := resources.Get "js/contact.js" }}
+{{ $sharing := resources.Get "js/sharing.js" }}
 
-{{ $js := slice $app $carousel $curriculum $contact | resources.Concat "js/app.js" | resources.Minify }}
+{{ $js := slice $app $carousel $curriculum $contact $sharing | resources.Concat "js/app.js" | resources.Minify }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 
 <script src="https://cdn.jsdelivr.net/npm/lozad"></script>

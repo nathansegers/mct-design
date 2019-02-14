@@ -20,8 +20,8 @@
     <title>{{ block "title" . }}{{ .Params.Title }} | {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
 
 	<!-- Stylesheets -->
-    {{ $style := resources.Get "scss/screen.scss" | toCSS | minify }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	{{ $style := resources.Get "scss/screen.scss" | toCSS | minify | fingerprint}}
+	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 	<link href="//www.google-analytics.com" rel="dns-prefetch">
 	{{/* Do we need this? <link rel="stylesheet" href="https://use.typekit.net/zgq1yxl.css"> */}}
 
