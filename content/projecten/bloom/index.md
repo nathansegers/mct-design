@@ -14,7 +14,7 @@ students:
 - Simon Coudeville
 - Martijn Loth
 - Dieter De Preester
-draft: false
+draft: true
 ---
 
 Hallo, ik ben extra content
