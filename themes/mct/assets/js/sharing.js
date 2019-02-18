@@ -10,7 +10,6 @@ const mct_sharing = (function() {
 	const init = function() {
 		const pageUrl = encodeURIComponent(document.URL);
 		const tweet = encodeURIComponent();
-		// jQuery("meta[property='og:description']").attr('content')
 
 		document
 			.querySelector('.js-share-facebook')
