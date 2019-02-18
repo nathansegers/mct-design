@@ -238,8 +238,6 @@ var checkNotification = function() {
 		var givenDate = announcement.getAttribute('data-due-date');
 		var currentDate = new Date();
 		givenDate = new Date(givenDate);
-		console.log({ givenDate });
-		console.log({ currentDate });
 
 		if (givenDate > currentDate) {
 			announcement.style.display = 'block';
@@ -260,5 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		mct_carousel.initCarousel();
 	}
 
-	mct_sharing.init();
+	if (document.querySelector('.js-sharing')) {
+		mct_sharing.init();
+	}
 });
