@@ -33,7 +33,7 @@
                         {{ else }}
                         <p class="c-media">
                             <picture class="c-media__picture c-media__picture--fixed-ratio">
-                                <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
+                                <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="{{ .Title }} afbeelding">
                             </picture>
                         </p>
                         {{ end }}
