@@ -18,11 +18,28 @@
                         </div>
                     </div>
                     <div class="c-main-section-lg">
+                        {{ if or .Params.mp4 .Params.webm }}
+                        <div class="c-video-player">
+                            <button class="c-video-play-button">
+                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
+                            </button>
+                            <video class="c-video-player__video" poster="{{ $scaledImage.Permalink }}">
+                                {{ if .Params.mp4 }}
+                                <source src="{{ .Params.mp4 }}" type="video/mp4">
+                                {{ end }}
+                                {{ if .Params.webm }}
+                                <source src="{{ .Params.webm }}" type="video/webm">
+                                {{ end }}
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        {{ else }}
                         <p class="c-media">
                             <picture class="c-media__picture c-media__picture--fixed-ratio">
                                 <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="{{ .Title }} afbeelding">
                             </picture>
                         </p>
+                        {{ end }}
                     </div>
                 </div>
                 <div class="c-main-section-lg">
