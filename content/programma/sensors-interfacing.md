@@ -1,5 +1,5 @@
 ---
-title: Data Communication
+title: Sensors & Interfacing
 semester: 2
 weight: 20
 tags: "#raspberrypi #sensoren #protocol #bitoperaties"
