@@ -6,7 +6,7 @@ tags: "#ui #design #HTML #CSS"
 tools: "Adobe XD, Photoshop en Atom"
 pillar: create
 ---
-Een goede User Interface draagt bij tot een betere <a href="/programma/user-experience">User experience</a>.
+Een goede User Interface draagt bij tot een betere <a href="/programma/user-experience-design/">User experience</a>.
 In deze module leer je hoe je de principes van visual design zoals typgrafie, kleur, layout en vertical rhythm kan toepassen om een aantrekkelijke, uitnodigende en gebruiksvriendelijke interface te ontwerpen.
 Je leert werken met **Adobe XD** om interfaces te ontwerpen. **Photoshop** gebruiken we om foto's te bewerken en assets aan te maken.
 
