@@ -6,15 +6,15 @@ weight: 20
 tags: "#linux #debian #operatingsystem #internet"
 pillar: connect
 tracks:
+- smart-tech-ai
 - infrastructure-engineer
 tools: "Debian GNU/Linux, Apache httpd, haproxy, bash, ssh, ..."
 ---
 
 Linux is alomtegenwoordig. Alleen weten veel mensen dat niet. Gebruik je soms Facebook? Of Instagram? Of Spotify? Of Twitter? Of Android? Dan **gebruik je onbewust Linux**. Want al deze diensten gebruiken achterliggend Linux.
- 
-We starten vanaf de basis met de installatie van een linux-gebaseerd operating system. We kiezen hierbij voor **Debian GNU/Linux** omdat het aan de basis staat van heel vele andere bekende linux distributies zoals onder andere Ubuntu, Kali linux, Knoppix, Element en Linux Mint.
- 
-Je leert er je weg vinden in een linux-gebaseerd Operating System, basis beheerstaken uitvoeren, servers opzetten, een volwaardig linux-gebaseerd netwerk uitbouwen,&nbsp;...
- 
-Je leert er over backup, over **loadbalancing**, over **high availability**, over **monitoring**, etc. Ook is er veel ruimte voor vragen en eigen inbreng om de lessen nog interessanter te maken.
 
+We starten vanaf de basis met de installatie van een linux-gebaseerd operating system. We kiezen hierbij voor **Debian GNU/Linux** omdat het aan de basis staat van heel vele andere bekende linux distributies zoals onder andere Ubuntu, Kali linux, Knoppix, Element en Linux Mint.
+
+Je leert er je weg vinden in een linux-gebaseerd Operating System, basis beheerstaken uitvoeren, servers opzetten, een volwaardig linux-gebaseerd netwerk uitbouwen,&nbsp;...
+
+Je leert er over backup, over **loadbalancing**, over **high availability**, over **monitoring**, etc. Ook is er veel ruimte voor vragen en eigen inbreng om de lessen nog interessanter te maken.

@@ -1,11 +1,10 @@
 ---
-title: Concept Visualisation
+title: Visualize & storytelling
 semester: 4
 weight: 40
 tags: "#aftereffects #motion"
 pillar: create
 tracks:
-- smart-tech-ai
 - web-app
 ---
 
