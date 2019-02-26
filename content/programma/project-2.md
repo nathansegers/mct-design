@@ -2,7 +2,11 @@
 title: Project 2
 semester: 3
 weight: 50
-tags: "#agile #sprints"
+tags: "#agile #sprints #teamwork #projectmanagement"
 pillar: project
 ---
-In deze module leren we de **Agile** concepten aan. We leren de basis van agile projectmanagement. **Sprints definieren** en **backlog** opvullen. Daarnaast werken de studenten een project uit voor een andere opleiding binnen Howest. In het verleden werd er reeds samengewerkt met <a href="https://www.howest.be/nl/opleidingen/bachelor/sport-en-bewegen" target="_blank">sport &amp; beweging</a> en <a href="https://www.howest.be/nl/opleidingen/bachelor/industrieel-productontwerpen" target="_blank">IPO</a>.
+Na alle modules en examens uit Semester 3 (Device Programming 2, Security, IoT Cloud en Interaction Design), volgt Project 2, een traject van 3 à 4 weken. De opgedane kennis uit de vorige modules wordt tijdens deze projectweken in de praktijk omgezet in een **interne case**.
+
+Het voornaamste doel van deze module is om de **rollen & werkmethodes** in **projectmanagement** te leren kennen en deze ook te integreren in een **project van begin tot einde**. Deze case wordt binnen een **team** uitgewerkt en gepresenteerd. 
+
+Aan de hand van de **agile methode**, leer je voor het eerst samenwerken en communiceren in een team en met interne klanten van een andere opleiding (**Sport en Beweging**). Elke week presenteer je een stand van zaken bij de docenten en word je gecoacht om het project bij te sturen en tot een goed einde te brengen.
