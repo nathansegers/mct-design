@@ -1,5 +1,5 @@
 ---
-title: Concept Visualisation
+title: Visualize & storytelling
 semester: 4
 weight: 40
 tags: "#aftereffects #motion"
