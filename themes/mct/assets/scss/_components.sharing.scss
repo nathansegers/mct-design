@@ -3,30 +3,12 @@
     ---
     A small box that allows the sharing of the current page URL to the top social media.
 */
+
 .c-sharing {
-}
-
-.c-sharing-list {
 	display: flex;
+	align-items: center;
 }
 
-.c-sharing-list__item {
-	& + & {
-		margin-left: 16px;
-	}
-}
-
-.c-sharing-list__symbol {
-	display: block;
-	height: 16px;
-
-	opacity: 0.5;
-	will-change: opacity;
-
-	cursor: pointer;
-	// transition:
-
-	&:hover {
-		opacity: 1;
-	}
+.c-sharing__title {
+	@include margin-right($columns-gutter);
 }
