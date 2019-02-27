@@ -26,3 +26,9 @@
             color: palette(color-alpha);
         }
     }
+
+    .c-social-list__link--lg {
+        padding: $alpha-leading * .25px;
+        border-radius: 100%;
+        background-color: palette(color-neutral,xxx-light);
+    }

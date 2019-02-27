@@ -44,4 +44,12 @@
 	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#e85e00">
 	<meta name="msapplication-TileImage" content="/mstile-150x150.png" />
 	<link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:url" content="{{ .URL | absURL }}" />
+    <meta property="og:title" content="{{ .Params.Title }}" />
+    <meta property="og:description" content="{{ .Params.Description }}" />
+    {{ if .Params.cover }}
+    <meta property="og:image" content="{{ (.Resources.GetMatch .Params.cover).Permalink }}" />
+    {{ end }}
+
 </head>
