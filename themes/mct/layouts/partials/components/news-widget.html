@@ -3,17 +3,21 @@
         <img class="c-type-svg__svg" src="/img/svg/word-news.svg" alt="Nieuws">
     </h2>
     <div class="c-news__body">
-        <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
-            {{ range first 4 (where .Data.Pages "Type" "news") }}
-                <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
-                    {{ partial "atoms/news-article" .}}
-                </article>
-            {{ end }}
+        <div class="c-main-section">
+            <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+                {{ range first 4 (where .Data.Pages "Type" "news") }}
+                    <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
+                        {{ partial "atoms/news-article" .}}
+                    </article>
+                {{ end }}
+            </div>
         </div>
-        <p class="o-grid__item o-flex o-flex--justify-end">
-            <a class="c-link-more" href="{{ ref . "nieuws" }}">
-                Meer nieuws <span class="c-link-more__symbol">&gt;</span>
-            </a>
-        </p>
+        <div class="c-main-section">
+            <p>
+                <a class="c-link-more" href="{{ ref . "nieuws" }}">
+                    Meer nieuws <span class="c-link-more__symbol">&gt;</span>
+                </a>
+            </p>
+        </div>
     </div>
 </div>
