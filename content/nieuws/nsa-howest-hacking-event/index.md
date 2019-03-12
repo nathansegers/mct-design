@@ -10,7 +10,7 @@ draft: false
 We organiseren voor de eerste keer een Capture-the-Flag event, NSA Hack. Het event gaat simultaan door in de Universiteit van Skövde, Zweden. De naam komt van de opleiding Network & Systems Administrator in Skövde. Zij zijn begonnen met dit initiatief en organiseren het al voor de achtste keer. Het wordt dit jaar een match België-Zweden...
 
 We nodigen jullie uit om teams te vormen met 2 à 4 studenten om deze challenge aan te gaan.
-Jullie kunnen zich al inschrijven op [www.nsahack.be](www.nsahack.be).
+Jullie kunnen zich al inschrijven op [www.nsahack.be](https://www.nsahack.be).
 
 
 ## Praktisch
@@ -22,6 +22,6 @@ Alles gaat door in Campus Kortrijk-Weide - gebouw A & B, Graaf Karel de Goedelaa
 
 Tijdens het event wordt er drank en eten voorzien. Er zullen wat foodtrucks aanwezig zijn. Op zaterdagochtend wordt er een gratis ontbijt aangeboden.
 
-Meer informatie vind je op dezelfde site: [www.nsahack.be](www.nsahack.be).
+Meer informatie vind je op dezelfde site: [www.nsahack.be](https://www.nsahack.be).
 
 Veel succes!
