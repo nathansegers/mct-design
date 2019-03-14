@@ -1,6 +1,6 @@
 ---
 title: Multimedia & communicatie technologie
-description: Wij zijn een toegepaste opleiding rond nieuwe informatica! We werken vanaf een goede user interface tot deep learning aan de internet of things wereld van de toekomst.
+description: "Welkom bij De IoT generatie Van user interface tot artificial intelligence. Als cutting-edge MCT-student wil jij het internet van morgen ontwikkelen."
 type: page
 
 subheader: "Multimedia & Communicatie Technologie"
