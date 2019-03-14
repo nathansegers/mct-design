@@ -1,5 +1,6 @@
 ---
 title: Contact
+description: "Heb Je vragen over de opleiding aarzel niet om ons te contacteren. Onze opleidingscoördinator, stagebegeleider en howest zelf helpen je graag verder."
 identifier: contact
 type: page
 

@@ -15,6 +15,9 @@ Jullie kunnen zich al inschrijven op [www.nsahack.be](https://www.nsahack.be).
 
 ## Praktisch
 
+{{< gallery dir="/" />}}
+{{< load-photoswipe >}}
+
 We starten om __vrijdag 22 maart__ om 17u en maken het winnend team bekend op zaterdag 23 maart om 11u.
 Stagestudenten kunnen perfect deelnemen volgens deze timing.
 
