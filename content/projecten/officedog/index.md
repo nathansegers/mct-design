@@ -16,4 +16,9 @@ students:
 draft: true
 ---
 
-Content here!
+De taak was simpel en helder: "Kunnen jullie ons helpen met het maken van een robot die door ons kantoor rijdt en die mensen kan begeleiden, aan de hand van een chatbot?".
+
+Als je nog nooit met het Robot Operating System gewerkt hebt is dit een mooie uitdaging. Zeker als je daar meteen een LIDAR aan moet koppelen. Maar met de nodige expertise van Sweet Mustard hebben onze studenten hier hun tanden in gezet en zijn ze aan de slag gegaan. Een van de grootste moeilijkheden was het maken van een goede mapping van de ruimte en de robot daarin aan te sturen. Het is ook altijd een goede denkoefening om te bekijken hoe je het beste een realtime verbinding in de website implementeert en de hoe je de hardware aanstuurt.
+
+## Resultaat
+Uiteindelijk kan de robot via een web-interface bevraagd worden. De robot kan zelf op zoek gaan naar iemand, of je kan ervoor kiezen om via de website de robot te laten rondrijden.
