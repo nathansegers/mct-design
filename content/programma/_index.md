@@ -1,5 +1,6 @@
 ---
 title: Programma
+description: "De cursussen binnen de opleiding MCT worden steeds gelinkt aan 5 pijlers: code, connect, analyze, create en integrate."
 layout: programma
 identifier: programma
 type: page

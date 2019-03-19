@@ -1,5 +1,6 @@
 ---
 title: Microdegree Machine Learning en Deep Learning
+description: "Artificial Intelligence @ home! Voor professionele / werkstudenten met interesse voor AI. Nederlandstalige video-opnames van MCT dagonderwijs en practica!"
 layout: at-home
 identifier: at-home
 type: page
