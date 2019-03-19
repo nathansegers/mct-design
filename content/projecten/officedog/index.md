@@ -4,7 +4,7 @@ title: "Officedog"
 date: 2019-02-01T14:18:39+01:00
 description: "Samen met Sweet Mustard maakten onze studenten een office robot die weet waar iedereen is."
 year: 2MCT
-project: 2
+project: 3
 cover: officedog-cover.jpg
 mp4: https://mctwebsite.blob.core.windows.net/video/officedog.mp4
 client: Sweet Mustard
@@ -13,7 +13,6 @@ students:
 - Perrine Debrabandere
 - Lucas Tyteca
 - Timothy Vanhee
-draft: true
 ---
 
 De taak was simpel en helder: "Kunnen jullie ons helpen met het maken van een robot die door ons kantoor rijdt en die mensen kan begeleiden, aan de hand van een chatbot?".
