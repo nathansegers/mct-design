@@ -7,4 +7,4 @@ cover: mct-studenten-winnen-de-delaware-belux-hackathon.jpg
 draft: false
 ---
 
-Zowel Nathan, Jonas, Elien als Jonas behoren tot onze eerste generatie [Smart Tech & AI Creators]({{< ref "programma/_index.md#profile-smart-tech-ai" >}}) die dit jaar afstuderen en opgeleid werden in data engineering, Machine & Deep Learning.
+Zowel Nathan, Jonas, Elien als Jonas behoren tot onze eerste generatie [Smart Tech & AI Creators]({{< ref "/programma/_index.md#profile-smart-tech-ai" >}}) die dit jaar afstuderen en opgeleid werden in data engineering, Machine & Deep Learning.
