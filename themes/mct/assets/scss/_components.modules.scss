@@ -43,9 +43,9 @@
 		border-color: palette(color-project);
 	}
 
-	&--single {
-		height: calc(100% - 33px);
-	}
+	// &--single {
+	// 	min-height: calc(100% - 33px);
+	// }
 }
 
 .c-module--link {
