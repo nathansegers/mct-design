@@ -169,9 +169,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			makeModulesFullHeight();
 		});
 
-		document.addEventListener('scroll', function() {
-			checkScrolling(cT, p);
-		});
+		// document.addEventListener('scroll', function() {
+		// 	checkScrolling(cT, p);
+		// });
 
 		makeModulesFullHeight();
 	}
