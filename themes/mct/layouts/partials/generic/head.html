@@ -20,10 +20,10 @@
     <title>{{ block "title" . }}{{ .Params.Title }} | {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
 
 	<!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 	{{ $style := resources.Get "scss/screen.scss" | toCSS | minify | fingerprint}}
 	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 	<link href="//www.google-analytics.com" rel="dns-prefetch">
-	{{/* Do we need this? <link rel="stylesheet" href="https://use.typekit.net/zgq1yxl.css"> */}}
 
 	<!-- Favicons: can all be found in /static -->
 	<!--[if IE]>
