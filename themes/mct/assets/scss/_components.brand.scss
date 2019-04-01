@@ -12,11 +12,9 @@
 
 $logo-ratio:     .680555555555556;
 $logo-height:    $alpha-leading * 2.5;
-$logo-width:     $logo-height * $logo-ratio;
 
 $logo-box-ratio:     .76;
 $logo-box-height:    $alpha-leading * 3;
-$logo-box-width:     $logo-box-height * $logo-box-ratio;
 
 .c-logo {
     display: block;
@@ -38,11 +36,15 @@ $logo-box-width:     $logo-box-height * $logo-box-ratio;
     .c-logo__mark {
         display: block;
         height: #{$logo-height}px;
-        width: #{$logo-width}px;
 
         .c-logo--boxed & {
             height: #{$logo-box-height}px;
-            width: #{$logo-box-width}px;
+        }
+    }
+
+    .c-logo__mark {
+        .c-logo--boxed & {
+            fill: palette(color-alpha);
         }
     }
 
