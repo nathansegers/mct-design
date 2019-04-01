@@ -38,98 +38,152 @@
 
 // Palette function > eg. palette(color-alpha,base)
 @function palette($palette, $tone: 'base') {
-    @return map-get(map-get($palettes, $palette), $tone);
+	@return map-get(map-get($palettes, $palette), $tone);
 }
 
 // Base colors
-$color-alpha: #E85E00 !default; // #E85E00 = original - #f06400  #f55e00 #ff5c0a
-$color-beta: #2612B5 !default;
+$color-alpha: HotPink !default; // #E85E00 = original - #f06400  #f55e00 #ff5c0a
+$color-beta: #2612b5 !default;
 
-$color-error: #FF4136 !default;
-$color-success: #2ECC40 !default;
-$color-notice: #FF851B !default;
+$color-error: #ff4136 !default;
+$color-success: #2ecc40 !default;
+$color-notice: #ff851b !default;
 
-$color-neutral: hsl(hue($color-beta),5,50) !default;
+$color-neutral: hsl(hue($color-beta), 5, 50) !default;
 
-$color-code: #01A8C1;
-$color-connect: #EF3696;
-$color-create: #FB9D3C;
-$color-analysis: #A46B50;
-$color-project: #7B9641;
+$color-code: #01a8c1;
+$color-connect: #ef3696;
+$color-create: #fb9d3c;
+$color-analysis: #a46b50;
+$color-project: #7b9641;
 
 // Palettes
 $palettes: (
-    color-neutral: (
-        xxxxx-light: hsl(hue($color-neutral),saturation($color-neutral),100),
-        xxxx-light: hsl(hue($color-neutral),saturation($color-neutral),97.5),
-        xxx-light: hsl(hue($color-neutral),saturation($color-neutral),95),
-        xx-light: hsl(hue($color-neutral),saturation($color-neutral),90),
-        x-light: hsl(hue($color-neutral),saturation($color-neutral),80),
-        light: hsl(hue($color-neutral),saturation($color-neutral),65),
-        base: $color-neutral,
-        dark: hsl(hue($color-neutral),saturation($color-neutral),40),
-        x-dark: hsl(hue($color-neutral),saturation($color-neutral),30),
-        xx-dark: hsl(hue($color-neutral),saturation($color-neutral),15),
-        xxx-dark: hsl(hue($color-neutral),saturation($color-neutral),10),
-        xxxx-dark: hsl(hue($color-neutral),saturation($color-neutral),5)
-    ),
-    color-alpha: (
-        xxxx-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 50),
-        xxx-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 40),
-        xx-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 30),
-        x-light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 20),
-        light: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) + 10),
-        base: $color-alpha,
-        dark: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) - 10),
-        x-dark: hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha) - 20),
-    ),
-    color-beta: (
-        x-light: hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) + 20),
-        light: hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) + 10),
-        base: $color-beta,
-        dark: hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) - 10),
-        x-dark: hsl(hue($color-beta),saturation($color-beta),lightness($color-beta) - 20),
-    ),
-    color-error: (
-        light: hsl(hue($color-error),70,60),
-        base: $color-error,
-        dark: hsl(hue($color-error),100,35),
-    ),
-    color-success: (
-        light: hsl(hue($color-success),70,60),
-        base: $color-success,
-        dark: hsl(hue($color-success),100,35),
-    ),
-    color-notice: (
-        light: hsl(hue($color-notice),70,60),
-        base: $color-notice,
-        dark: hsl(hue($color-notice),100,35),
-    ),
-    color-code: (
-        base: $color-code,
-    ),
-    color-connect: (
-        base: $color-connect,
-    ),
-    color-create: (
-        base: $color-create,
-    ),
-    color-analysis: (
-        base: $color-analysis,
-    ),
-    color-project: (
-        base: $color-project,
-    ),
+	color-neutral: (
+		xxxxx-light: hsl(hue($color-neutral), saturation($color-neutral), 100),
+		xxxx-light: hsl(hue($color-neutral), saturation($color-neutral), 97.5),
+		xxx-light: hsl(hue($color-neutral), saturation($color-neutral), 95),
+		xx-light: hsl(hue($color-neutral), saturation($color-neutral), 90),
+		x-light: hsl(hue($color-neutral), saturation($color-neutral), 80),
+		light: hsl(hue($color-neutral), saturation($color-neutral), 65),
+		base: $color-neutral,
+		dark: hsl(hue($color-neutral), saturation($color-neutral), 40),
+		x-dark: hsl(hue($color-neutral), saturation($color-neutral), 30),
+		xx-dark: hsl(hue($color-neutral), saturation($color-neutral), 15),
+		xxx-dark: hsl(hue($color-neutral), saturation($color-neutral), 10),
+		xxxx-dark: hsl(hue($color-neutral), saturation($color-neutral), 5),
+	),
+	color-alpha: (
+		xxxx-light:
+			hsl(
+				hue($color-alpha),
+				saturation($color-alpha),
+				lightness($color-alpha) + 50
+			),
+		xxx-light:
+			hsl(
+				hue($color-alpha),
+				saturation($color-alpha),
+				lightness($color-alpha) + 40
+			),
+		xx-light:
+			hsl(
+				hue($color-alpha),
+				saturation($color-alpha),
+				lightness($color-alpha) + 30
+			),
+		x-light:
+			hsl(
+				hue($color-alpha),
+				saturation($color-alpha),
+				lightness($color-alpha) + 20
+			),
+		light:
+			hsl(
+				hue($color-alpha),
+				saturation($color-alpha),
+				lightness($color-alpha) + 10
+			),
+		base: $color-alpha,
+		dark:
+			hsl(
+				hue($color-alpha),
+				saturation($color-alpha),
+				lightness($color-alpha) - 10
+			),
+		x-dark:
+			hsl(
+				hue($color-alpha),
+				saturation($color-alpha),
+				lightness($color-alpha) - 20
+			),
+	),
+	color-beta: (
+		x-light:
+			hsl(
+				hue($color-beta),
+				saturation($color-beta),
+				lightness($color-beta) + 20
+			),
+		light:
+			hsl(
+				hue($color-beta),
+				saturation($color-beta),
+				lightness($color-beta) + 10
+			),
+		base: $color-beta,
+		dark:
+			hsl(
+				hue($color-beta),
+				saturation($color-beta),
+				lightness($color-beta) - 10
+			),
+		x-dark:
+			hsl(
+				hue($color-beta),
+				saturation($color-beta),
+				lightness($color-beta) - 20
+			),
+	),
+	color-error: (
+		light: hsl(hue($color-error), 70, 60),
+		base: $color-error,
+		dark: hsl(hue($color-error), 100, 35),
+	),
+	color-success: (
+		light: hsl(hue($color-success), 70, 60),
+		base: $color-success,
+		dark: hsl(hue($color-success), 100, 35),
+	),
+	color-notice: (
+		light: hsl(hue($color-notice), 70, 60),
+		base: $color-notice,
+		dark: hsl(hue($color-notice), 100, 35),
+	),
+	color-code: (
+		base: $color-code,
+	),
+	color-connect: (
+		base: $color-connect,
+	),
+	color-create: (
+		base: $color-create,
+	),
+	color-analysis: (
+		base: $color-analysis,
+	),
+	color-project: (
+		base: $color-project,
+	),
 ) !default;
-
 
 // ---
 // Modular scale
 // ---
 
 $modularscale: (
-    base: 16px,
-    ratio: 1.125
+	base: 16px,
+	ratio: 1.125,
 );
 
 // ---
@@ -139,9 +193,9 @@ $modularscale: (
 // $alpha-font-family: 'Roboto', sans-serif !default;
 // $alpha-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !default;
 // $alpha-font-family: 'acumin-pro', sans-serif !default;
-$alpha-font-family: 'Inter UI', sans-serif !default;
+$alpha-font-family: 'Comic Sans MS', sans-serif !default; // default = 'Inter UI', sans-serif !default;
 // $alpha-font-family: 'aktiv-grotesk', sans-serif !default;
-$beta-font-family: 'Roboto Mono', monospace !default;
+$beta-font-family: 'Papyrus', monospace !default; //'Roboto Mono', monospace !default;
 
 $alpha-font-size: ms(0) !default;
 
@@ -168,18 +222,17 @@ $radius: 2px !default;
 $border-width: 1px !default;
 $border-style: solid !default;
 
-
 // ---
 // Z-indexes
 // ---
 
 // This make zero sense...
 $z-indexes: (
-    alpha: 1,
-    beta: 2,
-    gamma: 3,
-    delta: 4,
-    epsilon: 5
+	alpha: 1,
+	beta: 2,
+	gamma: 3,
+	delta: 4,
+	epsilon: 5,
 ) !default;
 
 // ---
@@ -188,13 +241,13 @@ $z-indexes: (
 
 // Very easy to read and use... NOT 🤬
 $breakpoints: (
-    bp1: 321px,
-    bp2: 480px,
-    bp3: 680px,
-    bp4: 960px,
-    bp5: 1140px,
-    bp6: 1440px,
-    bp7: 1640px
+	bp1: 321px,
+	bp2: 480px,
+	bp3: 680px,
+	bp4: 960px,
+	bp5: 1140px,
+	bp6: 1440px,
+	bp7: 1640px,
 ) !default;
 
 // ---
@@ -205,42 +258,38 @@ $breakpoints: (
 $columns-gutter: $alpha-leading !default;
 
 // Define the amount of columns in the grid
-$columns: (
-    2,
-    3,
-    4,
-    5,
-    6,
-    8,
-    9,
-    12
-) !default;
+$columns: (2, 3, 4, 5, 6, 8, 9, 12) !default;
 
 // ---
 // Increments
 // ---
 
 $increments: (
-    alpha: 0,
-    beta: $alpha-leading * .25,
-    gamma: $alpha-leading * .5,
-    delta: $alpha-leading * .75,
-    epsilon: $alpha-leading,
-    zeta: $alpha-leading * 1.25,
-    eta: $alpha-leading * 1.5,
-    theta: $alpha-leading * 1.75,
-    iota: $alpha-leading * 2
+	alpha: 0,
+	beta: $alpha-leading * 0.25,
+	gamma: $alpha-leading * 0.5,
+	delta: $alpha-leading * 0.75,
+	epsilon: $alpha-leading,
+	zeta: $alpha-leading * 1.25,
+	eta: $alpha-leading * 1.5,
+	theta: $alpha-leading * 1.75,
+	iota: $alpha-leading * 2,
 ) !default;
 
 // ---
 // Animations
 // ---
 
-$animation-duration-alpha: .1s !default;
-$animation-duration-beta: .2s !default;
-$animation-duration-gamma: .3s !default;
+$animation-duration-alpha: 0.1s !default;
+$animation-duration-beta: 0.2s !default;
+$animation-duration-gamma: 0.3s !default;
 $animation-easing-alpha: ease-in-out !default;
-$animation-easing-beta: cubic-bezier(.68, -.55, .265, 1.55) !default; // bouncy
+$animation-easing-beta: cubic-bezier(
+	0.68,
+	-0.55,
+	0.265,
+	1.55
+) !default; // bouncy
 
 // ---
 // Page
@@ -256,13 +305,13 @@ $html-responsive-font-breakpoint: bp5 !default;
 $html-responsive-font-magnification: 112.5% !default;
 
 $html-background-color: palette(color-alpha) !default;
-$body-color: palette(color-neutral,xx-dark) !default;
+$body-color: palette(color-neutral, xx-dark) !default;
 
 $body-font-smoothing: true !default;
 
 $change-selection-color: true !default;
 $body-selection-background-color: palette(color-alpha) !default;
-$body-selection-color: palette(color-neutral,xxxxx-light) !default;
+$body-selection-color: palette(color-neutral, xxxxx-light) !default;
 $body-selection-text-shadow: none !default;
 
 // ---
@@ -272,128 +321,128 @@ $body-selection-text-shadow: none !default;
 // set to false to hide the baseline and backround
 $show-baseline: false;
 
-$h1-font-family                     : $alpha-font-family !default;
-$h1-font-weight                     : $delta-font-weight !default;
-$h1-margin-bottom                   : $alpha-leading !default;
+$h1-font-family: $alpha-font-family !default;
+$h1-font-weight: $delta-font-weight !default;
+$h1-margin-bottom: $alpha-leading !default;
 
-$h2-font-family                     : $alpha-font-family !default;
-$h2-font-weight                     : $delta-font-weight !default;
-$h2-margin-bottom                   : $alpha-leading !default;
+$h2-font-family: $alpha-font-family !default;
+$h2-font-weight: $delta-font-weight !default;
+$h2-margin-bottom: $alpha-leading !default;
 
-$h3-font-family                     : $alpha-font-family !default;
-$h3-font-weight                     : $delta-font-weight !default;
-$h3-margin-bottom                   : $alpha-leading !default;
+$h3-font-family: $alpha-font-family !default;
+$h3-font-weight: $delta-font-weight !default;
+$h3-margin-bottom: $alpha-leading !default;
 
-$h4-font-family                     : $alpha-font-family !default;
-$h4-font-weight                     : $delta-font-weight !default;
-$h4-margin-bottom                   : 0 !default;
+$h4-font-family: $alpha-font-family !default;
+$h4-font-weight: $delta-font-weight !default;
+$h4-margin-bottom: 0 !default;
 
-$h5-font-family                     : $alpha-font-family !default;
-$h5-font-weight                     : $alpha-font-weight !default;
-$h5-margin-bottom                   : $alpha-leading !default;
+$h5-font-family: $alpha-font-family !default;
+$h5-font-weight: $alpha-font-weight !default;
+$h5-margin-bottom: $alpha-leading !default;
 
-$h6-font-family                     : $alpha-font-family !default;
-$h6-font-weight                     : $alpha-font-weight !default;
-$h6-margin-bottom                   : $alpha-leading !default;
+$h6-font-family: $alpha-font-family !default;
+$h6-font-weight: $alpha-font-weight !default;
+$h6-margin-bottom: $alpha-leading !default;
 
-$base-font-size                     : $alpha-font-size !default;
-$base-line-height                   : 1 !default;
-$base-margin-bottom                 : $alpha-leading !default;
-$base-indent                        : 2 !default;
+$base-font-size: $alpha-font-size !default;
+$base-line-height: 1 !default;
+$base-margin-bottom: $alpha-leading !default;
+$base-indent: 2 !default;
 
-$blockquote-font-style              : italic !default;
-$blockquote-font-size               : ms(1) !default;
-$blockquote-line-height             : 1 !default;
-$blockquote-margin-bottom           : $alpha-leading !default;
+$blockquote-font-style: italic !default;
+$blockquote-font-size: ms(1) !default;
+$blockquote-line-height: 1 !default;
+$blockquote-margin-bottom: $alpha-leading !default;
 
-$small-font-size                    : ms(-1) !default;
-$small-line-height                  : 1 !default;
-$small-margin-bottom                : $alpha-leading !default;
+$small-font-size: ms(-1) !default;
+$small-line-height: 1 !default;
+$small-margin-bottom: $alpha-leading !default;
 
-$horizontal-rule-border-width       : 1px 0 0 !default;
-$horizontal-rule-border-style       : solid !default;
-$horizontal-rule-border-color       : palette(color-neutral,light) !default;
+$horizontal-rule-border-width: 1px 0 0 !default;
+$horizontal-rule-border-style: solid !default;
+$horizontal-rule-border-color: palette(color-neutral, light) !default;
 
-$horizontal-rule-margin-top         : 0 !default;
-$horizontal-rule-margin-bottom      : $alpha-leading !default;
+$horizontal-rule-margin-top: 0 !default;
+$horizontal-rule-margin-bottom: $alpha-leading !default;
 
-$link-transition                    : all $animation-duration-alpha $animation-easing-alpha !default;
+$link-transition: all $animation-duration-alpha $animation-easing-alpha !default;
 
-$link-decoration                    : none !default;
-$link-decoration--hover             : underline !default;
+$link-decoration: none !default;
+$link-decoration--hover: underline !default;
 
-$link-color                         : palette(color-alpha) !default;
-$link-color--visited                : palette(color-alpha) !default;
-$link-color--hover                  : palette(color-alpha,light) !default;
-$link-color--focus                  : palette(color-alpha,light) !default;
+$link-color: palette(color-alpha) !default;
+$link-color--visited: palette(color-alpha) !default;
+$link-color--hover: palette(color-alpha, light) !default;
+$link-color--focus: palette(color-alpha, light) !default;
 
-$link-outline                       : 0 !default;
-$link-outline--focus                : thin dotted !default;
+$link-outline: 0 !default;
+$link-outline--focus: thin dotted !default;
 
 // ---
 // Images
 // ---
 
-$img-max-width                      : 100% !default;
-$img-border                         : 0 !default;
+$img-max-width: 100% !default;
+$img-border: 0 !default;
 
 // ---
 // Forms
 // ---
 
-$fieldset-border                    : 0 !default;
-$fieldset-margin-bottom             : $alpha-leading !default;
+$fieldset-border: 0 !default;
+$fieldset-margin-bottom: $alpha-leading !default;
 
-$legend-font-size                   : $alpha-font-size !default;
-$legend-line-height                 : $alpha-line-height !default;
-$legend-margin-bottom               : $alpha-leading !default;
+$legend-font-size: $alpha-font-size !default;
+$legend-line-height: $alpha-line-height !default;
+$legend-margin-bottom: $alpha-leading !default;
 
-$label-font-size                    : $alpha-font-size !default;
-$label-line-height                  : $alpha-line-height !default;
-$label-margin-bottom                : $alpha-leading !default;
+$label-font-size: $alpha-font-size !default;
+$label-line-height: $alpha-line-height !default;
+$label-margin-bottom: $alpha-leading !default;
 
-$placeholder-font-family            : $alpha-font-family !default;
-$placeholder-font-style             : normal !default;
-$placeholder-color                  : palette(color-neutral) !default;
+$placeholder-font-family: $alpha-font-family !default;
+$placeholder-font-style: normal !default;
+$placeholder-color: palette(color-neutral) !default;
 
-$firefox-inner-border-fix           : true !default;
+$firefox-inner-border-fix: true !default;
 
 // ---
 // Tables
 // ---
 
-$table-font-family                  : $alpha-font-family !default;
-$table-align                        : left !default;
+$table-font-family: $alpha-font-family !default;
+$table-align: left !default;
 
-$caption-font-family                : $alpha-font-family !default;
-$caption-font-weight                : $beta-font-weight;
-$caption-align                      : center !default;
-$caption-margin-bottom              : $alpha-leading !default;
-$caption-padding-bottom             : $alpha-leading !default;
+$caption-font-family: $alpha-font-family !default;
+$caption-font-weight: $beta-font-weight;
+$caption-align: center !default;
+$caption-margin-bottom: $alpha-leading !default;
+$caption-padding-bottom: $alpha-leading !default;
 
 // ---
 // Grid
 // ---
 
-$grid-max-width                     : map-get($breakpoints,bp6) !default;
-$grid-gutter                        : $columns-gutter !default;
+$grid-max-width: map-get($breakpoints, bp6) !default;
+$grid-gutter: $columns-gutter !default;
 
 // ---
 // Media
 // ---
 
-$media-object-gutter                : $columns-gutter !default;
-$media-object-margin-bottom         : $alpha-leading !default;
+$media-object-gutter: $columns-gutter !default;
+$media-object-margin-bottom: $alpha-leading !default;
 
 // ---
 // Media-embed
 // ---
 
-$media-embed-ratio                  : 62.5% !default;
-$media-embed-margin-bottom          : $alpha-leading !default;
+$media-embed-ratio: 62.5% !default;
+$media-embed-margin-bottom: $alpha-leading !default;
 
 // ---
 // Debug
 // ---
 
-$debug-mode                         : false !default; // toggles the debug mode
+$debug-mode: false !default; // toggles the debug mode
