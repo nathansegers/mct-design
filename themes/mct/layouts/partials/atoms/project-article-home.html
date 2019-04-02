@@ -7,19 +7,21 @@
         <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
     </picture>
     <div class="c-media__body">
-        <div class="c-media__content u-max-width-optimal">
+        <div class="c-media__content u-max-width-sm">
             <p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
                 {{ .Params.Year }} - Project {{ .Params.Project }}
             </p>
             <h2 class="c-media__title u-ms2 u-mb-gamma">
                 {{ .Title }}
             </h2>
-            <p class="c-media__text">
+            <p class="c-media__text u-mb-gamma">
                 {{ .Description }}
             </p>
-            <!-- <p class="c-media__more-link">
-                Bekijk dit project
-            </p> -->
+            <p>
+                <a class="c-link-more" href="{{ .Permalink }}">
+                    Bekijk dit project
+                </a>
+            </p>
         </div>
     </div>
 </div>
