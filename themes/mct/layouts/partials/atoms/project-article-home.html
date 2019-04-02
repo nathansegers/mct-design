@@ -2,7 +2,7 @@
 {{ $image := .Resources.GetMatch $cover }}
 {{ $scaledImage := $image.Fill "800x448" }}
 
-<a class="c-media c-media--link" href="{{ .Permalink }}">
+<div class="c-media">
     <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon">
         <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
     </picture>
@@ -22,4 +22,4 @@
             </p> -->
         </div>
     </div>
-</a>
+</div>
