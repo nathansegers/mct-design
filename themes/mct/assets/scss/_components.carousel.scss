@@ -45,18 +45,22 @@
     }
 
     .c-carousel__items {
+        --n: 4;
+        --i: 0;
+        --tx: 0px;
         display: flex;
         align-items: baseline;
-        // transform: translateX(-100%); //Use this to move the carousel left or right
+        width: calc(var(--n) * 100%);
         transition: transform $animation-duration-gamma $animation-easing-alpha;
+        transform: translate(calc(var(--tx, 0px) + var(--i, 0)/var(--n)*-100%));
 
         @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
-            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 2}px);
+            width: calc(((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 2}px) * var(--n));
         }
     }
 
     .c-carousel__item {
-        min-width: 100%;
+        width: calc(100%/var(--n));
         opacity: .5;
         transition: opacity $animation-duration-alpha $animation-easing-alpha;
         @include padding-lr($columns-gutter,$columns-gutter);
@@ -69,6 +73,10 @@
             .c-media--link {
                 cursor: default;
             }
+        }
+
+        @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
+            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 2}px);
         }
     }
 
