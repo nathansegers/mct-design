@@ -80,7 +80,7 @@
 
 	function lock(e) {
 		x0 = unify(e).clientX;
-		_C.classList.toggle('smooth', !(locked = true));
+		_C.classList.toggle('is-released', !(locked = true));
 	}
 
 	function drag(e) {
@@ -108,7 +108,7 @@
 
 			_C.style.setProperty('--tx', '0px');
 			_C.style.setProperty('--f', f);
-			_C.classList.toggle('smooth', !(locked = false));
+			_C.classList.toggle('is-released', !(locked = false));
 			x0 = null;
 		}
 	}

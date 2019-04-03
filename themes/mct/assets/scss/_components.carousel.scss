@@ -34,9 +34,6 @@
     }
 
     .c-carousel__items {
-        --n: 4;
-        --i: 0;
-        --tx: 0px;
         display: flex;
         align-items: baseline;
         width: calc(var(--n) * 100%);
