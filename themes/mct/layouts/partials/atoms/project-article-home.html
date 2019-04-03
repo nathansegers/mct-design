@@ -3,7 +3,7 @@
 {{ $scaledImage := $image.Fill "800x448" }}
 
 <div class="c-media">
-    <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon">
+    <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon no-drag">
         <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
     </picture>
     <div class="c-media__body">
