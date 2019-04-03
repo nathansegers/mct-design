@@ -40,13 +40,14 @@
         display: flex;
         align-items: baseline;
         width: calc(var(--n) * 100%);
-        transition: transform  calc(var(--f, 1)*.5s) ease-out;
         transform: translate(calc(var(--tx, 0px) + var(--i, 0)/var(--n)*-100%));
 
         @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
             width: calc(((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 2}px) * var(--n));
         }
     }
+
+    .is-released { transition: transform  calc(var(--f, 1)*.5s) ease-out }
 
     .c-carousel__item {
         width: calc(100%/var(--n));
