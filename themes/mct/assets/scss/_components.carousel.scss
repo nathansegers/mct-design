@@ -80,8 +80,8 @@
         justify-content: center;
         width: #{$alpha-leading * 2}px;
         height: #{$alpha-leading * 2}px;
-        // border-radius: 100%;
-        // background-color: #fff;
+        background-color: rgba(white,.95);
+        border-radius: 100%;
         color: palette(color-alpha);
         transition: color $animation-duration-alpha $animation-easing-alpha;
 
