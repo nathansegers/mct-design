@@ -84,8 +84,9 @@
 	}
 
 	function drag(e) {
-		e.preventDefault();
+		// console.log(e);
 
+		// e.preventDefault();
 		if (locked)
 			_C.style.setProperty(
 				'--tx',
@@ -94,6 +95,8 @@
 	}
 
 	function move(e) {
+		console.log(e);
+
 		if (locked) {
 			let dx = unify(e).clientX - x0,
 				s = Math.sign(dx),
