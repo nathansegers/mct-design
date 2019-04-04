@@ -11,7 +11,7 @@ tracks:
 - infrastructure-engineer
 ---
 
-Na alle modules en examens uit Semester 4, volgt Project&nbsp;3, een traject van 4 à 5 weken. De opgedane kennis uit de vorige modules wordt tijdens deze projectweken in de praktijk omgezet in een **externe case**.
+**Na alle modules en examens uit Semester 4, volgt Project&nbsp;3, een traject van 4 à 5 weken. De opgedane kennis uit de vorige modules wordt tijdens deze projectweken in de praktijk omgezet in een externe case.**
 
 Deze module werkt verder op de <a href="/programma/project-2/">Project 2 module</a>. In deze module zal er een project uitgewerkt worden voor een **bedrijf**.Hierbij worden alle rollen en werkmethodes in projectmanagement vlot toegepast. De druk en verwachtingen liggen hier een stuk hoger. Hierbij is een goede communicatie met **externe partijen** dus van groot belang. De projecten situeren zich in de context van **web application**, **AI & machine learning** en **infrastructure**.
 
