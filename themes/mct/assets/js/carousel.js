@@ -1,125 +1,138 @@
-let mct_carousel = (function(){
-	var slidesCount = 0,
-		posRegex = /\.*translateX\((.*)%\)/i;
-	
-	function translateHolder(newPosition, holder, subNavItems, prBtn, nxBtn) {
-		holder.style.transform = 'translateX(' + newPosition + '%)';
-		updateCount(subNavItems, (newPosition * -1) / 100)
-		// holder.classList.add( 'is-selected' );
+(function() {
+	const _C = document.querySelector('.js-carousel-items'),
+		SLIDES = document.querySelectorAll('.js-carousel-item'),
+		COUNTER = document.querySelectorAll('.js-carousel-nav-list-item'),
+		PREV_ARROW = document.querySelector('.js-button-prev'),
+		NEXT_ARROW = document.querySelector('.js-button-next'),
+		N = _C.children.length;
 
-		activateSlide(holder, subNavItems, prBtn, nxBtn);
+	let i = 0,
+		x0 = null,
+		locked = false,
+		w;
 
-		if (newPosition == 0) {
-			disableButton(prBtn);
-			enableButton(nxBtn);
-			// activateLink( holder.children, subNavItems, holder, prBtn, nxBtn );
-		} else if (newPosition == ((parseInt(slidesCount) * -100) + 100)) {
-			enableButton(prBtn);
-			disableButton(nxBtn);
+	// CUSTOM FUNCTIONS
+	function selectCurrentSlide(activeSlide) {
+		for (const s of SLIDES) {
+			if (s === SLIDES[activeSlide]) {
+				s.classList.add('is-selected');
+			} else {
+				s.classList.remove('is-selected');
+			}
+		}
+		for (const c of COUNTER) {
+			if (c === COUNTER[activeSlide]) {
+				c.classList.add('is-selected');
+			} else {
+				c.classList.remove('is-selected');
+			}
+		}
+
+		updateArrows(activeSlide);
+	}
+
+	function updateArrows(activeSlide) {
+		if (activeSlide == 0) {
+			PREV_ARROW.classList.add('is-disabled');
+			PREV_ARROW.setAttribute('disabled', 'disabled');
+			NEXT_ARROW.classList.remove('is-disabled');
+			NEXT_ARROW.removeAttribute('disabled');
+		} else if (activeSlide == N - 1) {
+			NEXT_ARROW.classList.add('is-disabled');
+			NEXT_ARROW.setAttribute('disabled', 'disabled');
+			PREV_ARROW.classList.remove('is-disabled');
+			PREV_ARROW.removeAttribute('disabled');
 		} else {
-			enableButton(prBtn);
-			enableButton(nxBtn);
-			// activateLink( holder.children, subNavItems, holder, prBtn, nxBtn );
+			NEXT_ARROW.classList.remove('is-disabled');
+			PREV_ARROW.classList.remove('is-disabled');
+			NEXT_ARROW.removeAttribute('disabled');
+			PREV_ARROW.removeAttribute('disabled');
 		}
 	}
 
-	function slide(direction, slidesCount, subNavItems, holder, prBtn, nxBtn) {
-		var maxPercent = (slidesCount * -100) + 100;
-
-		if (holder.style.transform) {
-			var pos = posRegex.exec(holder.style.transform)[1];
-		} else {
-			var pos = 0;
-		}
-
-		if (direction == 'left') {
-			if (pos >= 0) {
-				// Not possible
-				console.error('That direction is not possible right now... ✋🏽');
-			} else {
-				// enableButton( prBtn );
-				translateHolder(parseInt(pos) + 100, holder, subNavItems, prBtn, nxBtn);
-			}
-		} else if (direction == 'right') {
-			if (pos <= maxPercent) {
-				// not possible
-				console.error('That direction is not possible right now... ✋🏽');
-			} else {
-				translateHolder(parseInt(pos) - 100, holder, subNavItems, prBtn, nxBtn);
-			}
-		} else {
-			console.warning('An error occured... 😭.');
-		}
-	}
-
-	function enableSubNav(navItems, holder, prevButton, nextButton) {
-		for (var i = navItems.length - 1; i >= 0; i--) {
-			navItems[i].addEventListener('click', function (e) {
-				translateHolder((e.srcElement.attributes['data-slide'].value * -1) * 100, holder, navItems, prevButton, nextButton);
+	function listenToItemsCounter() {
+		for (const c of COUNTER) {
+			c.addEventListener('click', function() {
+				i = this.dataset.slide;
+				_C.style.setProperty('--i', i);
+				selectCurrentSlide(i);
 			});
 		}
 	}
 
-	function activateSlide(holder, navList, prBtn, nxBtn) {
-		var curActive = (posRegex.exec(holder.style.transform)[1] / -100);
-		for (var i = holder.children.length - 1; i >= 0; i--) {
-			if (holder.children[i].attributes['data-slide'].value == curActive) {
-				holder.children[i].classList.add('is-selected');
-				holder.children[i].classList.remove('is-not-selected');
-			} else {
-				holder.children[i].classList.add('is-not-selected');
-				holder.children[i].classList.remove('is-selected');
+	function listenToArrows() {
+		PREV_ARROW.addEventListener('click', function() {
+			i = i - 1;
+			_C.style.setProperty('--i', i);
+			selectCurrentSlide(i);
+		});
+		NEXT_ARROW.addEventListener('click', function() {
+			i = i + 1;
+			_C.style.setProperty('--i', i);
+			selectCurrentSlide(i);
+		});
+	}
+	// END CUSTOM FUNCTIONS
+
+	function unify(e) {
+		return e.changedTouches ? e.changedTouches[0] : e;
+	}
+
+	function lock(e) {
+		x0 = unify(e).clientX;
+		_C.classList.toggle('is-released', !(locked = true));
+	}
+
+	function drag(e) {
+		// console.log(e);
+
+		// e.preventDefault();
+		if (locked)
+			_C.style.setProperty(
+				'--tx',
+				`${Math.round(unify(e).clientX - x0)}px`
+			);
+	}
+
+	function move(e) {
+		if (locked) {
+			let dx = unify(e).clientX - x0,
+				s = Math.sign(dx),
+				f = +((s * dx) / w).toFixed(2);
+
+			if ((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > 0.2) {
+				_C.style.setProperty('--i', (i -= s));
+				f = 1 - f;
+				selectCurrentSlide(i);
 			}
+
+			_C.style.setProperty('--tx', '0px');
+			_C.style.setProperty('--f', f);
+			_C.classList.toggle('is-released', !(locked = false));
+			x0 = null;
 		}
 	}
 
-	function initCarousel() {
-		var projectHolder = document.querySelector('.js-carousel-items'),
-			navList = document.querySelector('.js-nav-list'),
-			prevButton = document.querySelector('.js-button-prev'),
-			nextButton = document.querySelector('.js-button-next');
-
-		if (projectHolder) {
-			var slides = projectHolder.children;
-			slidesCount = slides.length;
-
-			// listen to clicks
-			prevButton.addEventListener('click', function (e) {
-				slide('left', slidesCount, navList.children, projectHolder, prevButton, nextButton);
-			});
-
-			nextButton.addEventListener('click', function (e) {
-				slide('right', slidesCount, navList.children, projectHolder, prevButton, nextButton);
-			});
-
-			updateCount(navList.children, 0);
-			enableSubNav(navList.children, projectHolder, prevButton, nextButton);
-			disableButton(prevButton);
-			activateSlide(projectHolder, navList.children, prevButton, nextButton);
-		}
+	function size() {
+		w = window.innerWidth;
 	}
 
-	function disableButton(button) {
-		button.classList.add('is-disabled');
-		button.setAttribute('disabled', 'disabled');
-	}
+	size();
+	_C.style.setProperty('--n', N);
+	selectCurrentSlide(0);
 
-	function enableButton(button) {
-		button.removeAttribute('disabled', 'disabled');
-		button.classList.remove('is-disabled');
-	}
+	addEventListener('resize', size, false);
 
-	function updateCount(numbers, currentSlide) {
-		for (var i = numbers.length - 1; i >= 0; i--) {
-			if (numbers[i].attributes['data-slide'].value == currentSlide) {
-				numbers[i].classList.add('is-selected');
-			} else {
-				numbers[i].classList.remove('is-selected');
-			}
-		}
-	}
+	_C.addEventListener('mousedown', lock, false);
+	_C.addEventListener('touchstart', lock, false);
 
-	return {
-		initCarousel: initCarousel
-	};
+	_C.addEventListener('mousemove', drag, false);
+	_C.addEventListener('touchmove', drag, false);
+
+	_C.addEventListener('mouseup', move, false);
+	_C.addEventListener('touchend', move, false);
+
+	// CUSTOM FUNCTIONS
+	listenToItemsCounter();
+	listenToArrows();
 })();

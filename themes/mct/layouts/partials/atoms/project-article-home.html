@@ -2,8 +2,8 @@
 {{ $image := .Resources.GetMatch $cover }}
 {{ $scaledImage := $image.Fill "800x448" }}
 
-<a class="c-media c-media--link" href="{{ .Permalink }}">
-    <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon">
+<div class="c-media">
+    <picture class="c-media__picture c-media__picture--fixed-ratio u-mb-epsilon no-drag">
         <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="">
     </picture>
     <div class="c-media__body">
@@ -14,12 +14,14 @@
             <h2 class="c-media__title u-ms2 u-mb-gamma">
                 {{ .Title }}
             </h2>
-            <p class="c-media__text">
+            <p class="c-media__text u-mb-gamma">
                 {{ .Description }}
             </p>
-            <!-- <p class="c-media__more-link">
-                Bekijk dit project
-            </p> -->
+            <p>
+                <a class="c-link-more" href="{{ .Permalink }}">
+                    Bekijk dit project
+                </a>
+            </p>
         </div>
     </div>
-</a>
+</div>
