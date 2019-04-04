@@ -95,8 +95,6 @@
 	}
 
 	function move(e) {
-		console.log(e);
-
 		if (locked) {
 			let dx = unify(e).clientX - x0,
 				s = Math.sign(dx),
@@ -105,7 +103,6 @@
 			if ((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > 0.2) {
 				_C.style.setProperty('--i', (i -= s));
 				f = 1 - f;
-				console.log('count is i:', i, 's is:', s);
 				selectCurrentSlide(i);
 			}
 

@@ -69,6 +69,8 @@
 	width: calc(var(--n) * 100%);
 	transform: translate(calc(var(--tx, 0) + var(--i, 0) / var(--n) * -100%));
 
+	touch-action: pan-x;
+
 	@include mq(#{map-get($breakpoints, bp6) + ($columns-gutter * 4) + 20px}) {
 		width: calc(
 			(
