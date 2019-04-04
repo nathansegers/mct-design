@@ -4,8 +4,8 @@ semester: 5
 weight: 10
 tags: "#webpack #jsframework #performance #PWA"
 pillar: code
-tracks:
-- web-app
+tracks: web-app
+tools: "Visual Studio Code, Vue developer tools, Webpack, Yarn, Node.js, i18n, Vuex"
 ---
 **Frameworks & Patterns — Hoe bouw je met een JS-framework een professionele web app? State-of-the-art frontend webdevelopment werkt als een PWA, mét een virtual DOM, two-way data-binding en state-management.**
 
@@ -23,6 +23,3 @@ Het efficient meertalig maken van een web-app. Dit doen we aan de hand van een c
 Het uitwerken van een progressive web-app. We garanderen een werking van onze website ook als de netwerk-verbinding (tijdelijk) wegvalt. We maken onze PWA ook toegankelijk zoals een native app, met het behoud van de voordelen van een website.
 
 Onze single page application gaan we ook connecteren met de parallel lopende module full-stack development. Deze module zal inspelen op het coderen van een backend die is voorbereid op een offline-werking van de frontend. Ook worden dan verschillende manieren van authenticatie toegevoegd aan de frontend. Denk aan het gebruik van een JWT en een veilige flow tussen de front- en backend.
-
-### Tools:
-Visual Studio Code, Vue developer tools, Webpack, Yarn, Node.js, i18n, Vuex

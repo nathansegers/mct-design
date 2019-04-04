@@ -5,5 +5,14 @@ weight: 10
 tags: "#Python #Flask #Javascript #Jinja"
 pillar: code
 ---
+**In deze module kan je leren hoe je een volledig API-driven website kan maken en van A tot Z coderen.
+Omdat je als bachelor MCT kan kiezen voor de specialisatie App Web developer moet je in staat zijn om volledige (full-stack) websites te bouwen.**
+ 
+In deze module maken wij vanaf het begin een duidelijke splitsing tussen de kant van de website die voor de gebruiker bestemd is (de frontend) en de kant waar de gegevens opgehaald en verwerkt worden (de backend).
 
-In deze module wordt de focus gelegd op twee programmeertalen: **Javascript** en **Python**. We ontwikkelen websites met behulp van HTML, CSS, Javascript en Flask. Hiervoor gebruiken we de kennis die voor HTML en CSS aangeleverd wordt vanuit <a href="/programma/user-interface-design/">User Interface Design</a> en passen we ook de kennis van <a href="/programma/data-management/">Datamanagement</a> toe om te communiceren met de database. Om intelligentie in de website te brengen maken we gebruik van Jinja templates en macro’s.
+Om deze beide zijdes te kunnen programmeren of te scripten maken we gebruik van twee programmeertalen: Javascript voor de frontend ontwikkeling en Python voor de backend ontwikkeling.
+
+Het uitzicht van de website bepalen en ontwikkelen enerzijds en hoe je databanken manipuleert anderzijds zal je aanleren in de modules <a href="/programma/user-interface-design/">User Interface Design</a> en <a href="/programma/data-management/">Datamanagement</a>.
+
+Het ultieme doel van deze module is ervoor zorgen dat er een real-time tweewegs-communicatie ontstaat tussen sensoren en actuatoren op je Raspberry Pi en je zelfgemaakte website.
+
