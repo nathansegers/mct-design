@@ -17,7 +17,7 @@ type: page
 						<p>Hieronder een oplijsting van de relevante documenten in verband met de MCT stages en bachelorproeven.</p>
 						<h2>Stageprojecten</h2>
 						<ul>
-							<li><a href="https://mctwebsite.blob.core.windows.net/docs/stagehandleiding.pdf">Stagehandleiding</a></li>
+							<li><a href="https://mctwebsite.blob.core.windows.net/docs/stagehandleiding.pdf" target="_blank">Stagehandleiding</a></li>
 							<li><a href="https://mctwebsite.blob.core.windows.net/docs/stage_evaluatie_tussentijds.docx" target="_blank" rel="noopener">stage_evaluatie_tussentijds</a>&nbsp;(NL)</li>
 							<li><a href="https://mctwebsite.blob.core.windows.net/docs/stage_evaluatie_eind.docx" target="_blank" rel="noopener">stage_evaluatie_eind</a>&nbsp;(NL)</li>
 							<li><a href="https://mctwebsite.blob.core.windows.net/docs/assessment_interim.docx" target="_blank" rel="noopener">assessment_interim</a>&nbsp;(EN)</li>
