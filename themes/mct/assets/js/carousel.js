@@ -118,8 +118,6 @@
 			w = window.innerWidth;
 		}
 
-		if (condition) {
-		}
 		size();
 		_C.style.setProperty('--n', N);
 		selectCurrentSlide(0);
