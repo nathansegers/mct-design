@@ -68,8 +68,6 @@
 	}
 
 	@include mq(#{map-get($breakpoints, bp6) + ($columns-gutter * 4) + 20px}) {
-		width: calc(
-			(#{map-get($breakpoints, bp6) + $columns-gutter * 2 * 2}/ 12 * 7) -
 		width: calc((#{map-get($breakpoints, bp6) + $columns-gutter * 2 * 2}/ 12 * 7) - #{$columns-gutter * 2}px);
 	}
 }
