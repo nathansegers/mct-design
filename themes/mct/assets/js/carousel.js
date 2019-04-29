@@ -74,6 +74,9 @@
 			});
 		}
 		// END CUSTOM FUNCTIONS
+		function unify(e) {
+			return e.changedTouches ? e.changedTouches[0] : e;
+		}
 
 		function lock(e) {
 			x0 = unify(e).clientX;
