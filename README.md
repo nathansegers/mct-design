@@ -6,6 +6,7 @@
 
 ### Start de development omgeving
 Start het project met ```hugo server```.
+Om lokaal de site te testen kan je gebruik maken van het volgende command: ```hugo server -D --bind 192.168.1.37 --baseURL http://192.168.1.37```.
 
 ### Deployment (work in progress)
 - Alle commits die naar de ```master``` gepushd worden, zullen automatisch gebuild en gedeployd worden (naar Azure).
