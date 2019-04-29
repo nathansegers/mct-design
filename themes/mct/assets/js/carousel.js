@@ -62,12 +62,12 @@
 
 	function listenToArrows() {
 		PREV_ARROW.addEventListener('click', function() {
-			i = i - 1;
+			i = +i - 1;
 			_C.style.setProperty('--i', i);
 			selectCurrentSlide(i);
 		});
 		NEXT_ARROW.addEventListener('click', function() {
-			i = i + 1;
+			i = +i + 1;
 			_C.style.setProperty('--i', i);
 			selectCurrentSlide(i);
 		});
