@@ -1,154 +1,154 @@
 /*
-    Components: Carousel
+	Components: Carousel
 */
 
 // Calculation width:
 // calc(((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) + ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)) + (#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12) - $columns-gutter));
 // = calc(((1536px/12*7) + ((100vw - 1536px)/2)) + 104px)
 // 1536px = o-container width (bp6) + dubbele gutter links en rechts = #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}
-// ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)) = 100vw min de overschot van de max-width container links en rechts: wat is margin: auto van o-container.
+// ((100vw - #{map-get($breakpoints,bp6) + $columns-gutter * 2 * 2})/2)) = 100vw min de overschot van de max-width container links en rechts: wat is margin: auto van o-container.
 // 104px = #{(map-get($breakpoints,bp6) + $columns-gutter * 2 * 2)/12 - $columns-gutter})
 
 .c-carousel {
-    position: relative;
+	position: relative;
 }
 
-    .c-carousel-holder {
-        overflow: hidden;
+.c-carousel-holder {
+	overflow: hidden;
 
-        @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
-            width: calc(((#{map-get($breakpoints,bp6) + $columns-gutter * 2 * 2}/12*7) + ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)) + #{(map-get($breakpoints,bp6) + $columns-gutter * 2 * 2)/12});
-        }
-    }
+	@include mq(#{map-get($breakpoints, bp6) + ($columns-gutter * 4) + 20px}) {
+		width: calc(((#{map-get($breakpoints, bp6) + $columns-gutter * 2 * 2}/ 12 * 7) + ((100vw - #{map-get($breakpoints, bp6) + $columns-gutter * 2 * 2}) / 2)) + #{(map-get($breakpoints, bp6) + $columns-gutter * 2 * 2) / 12});
+	}
+}
 
-    .c-carousel__items-holder {
-        position: relative;
-        z-index: 10;
-        overflow: hidden;
-        @include margin-lr($columns-gutter * -1);
+.c-carousel__items-holder {
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	@include margin-lr($columns-gutter * -1);
 
-        // 20px = scrollbar safe zone
-        @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
-            width: calc(((#{map-get($breakpoints,bp6) + $columns-gutter * 2 * 2}/12*7) + ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)) + #{(map-get($breakpoints,bp6) + $columns-gutter * 2 * 2)/12 - $columns-gutter});
+	// 20px = scrollbar safe zone
+	@include mq(#{map-get($breakpoints, bp6) + ($columns-gutter * 4) + 20px}) {
+		width: calc(((#{map-get($breakpoints, bp6) + $columns-gutter * 2 * 2}/ 12 * 7) + ((100vw - #{map-get($breakpoints, bp6) + $columns-gutter * 2 * 2}) / 2)) + #{(map-get($breakpoints, bp6) + $columns-gutter * 2 * 2) / 12 - $columns-gutter});
+	}
+}
 
-            // add a transparent layer over the remaining space to prevent clicking on the next item's link
-            &:after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                width: calc(((#{map-get($breakpoints,bp6) + $columns-gutter * 2 * 2}/12) + ((100vw - #{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2})/2)));
-            }
-        }
-    }
+.c-carousel__items {
+	--i: 0;
+	--tx: 0px;
 
-    .c-carousel__items {
-        display: flex;
-        align-items: baseline;
-        // transform: translateX(-100%); //Use this to move the carousel left or right
-        transition: transform $animation-duration-gamma $animation-easing-alpha;
+	display: flex;
+	align-items: baseline;
+	width: calc(var(--n) * 100%);
+	transform: translate(calc(var(--tx, 0) + var(--i, 0) / var(--n) * -100%));
 
-        @include mq(#{map-get($breakpoints,bp6)  + ($columns-gutter * 4) + 20px}) {
-            width: calc((#{map-get($breakpoints,bp6)  + $columns-gutter * 2 * 2}/12*7) - #{$columns-gutter * 2}px);
-        }
-    }
+	@include mq(#{map-get($breakpoints, bp6) + ($columns-gutter * 4) + 20px}) {
+		width: calc(((#{map-get($breakpoints, bp6) + $columns-gutter * 2 * 2}/ 12 * 7) - #{$columns-gutter * 2}px) * var(--n));
+	}
+}
 
-    .c-carousel__item {
-        min-width: 100%;
-        opacity: .5;
-        transition: opacity $animation-duration-alpha $animation-easing-alpha;
-        @include padding-lr($columns-gutter,$columns-gutter);
+.is-released {
+	transition: transform calc(var(--f, 1) * 0.5s) ease-out;
+}
 
-        &.is-selected {
-            opacity: 1;
-        }
+.c-carousel__item {
+	width: calc(100% / var(--n));
+	opacity: 0.5;
+	transition: opacity $animation-duration-alpha $animation-easing-alpha;
+	@include padding-lr($columns-gutter, $columns-gutter);
 
-        &.is-not-selected {
-            .c-media--link {
-                cursor: default;
-            }
-        }
-    }
+	&.is-selected {
+		opacity: 1;
+	}
 
-    .c-carousel__arrow {
-        position: absolute;
-        top: -#{$alpha-leading / 2}px;
-        left: -#{$columns-gutter / 1.5}px;
-        z-index: 30;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: #{$alpha-leading * 2}px;
-        height: #{$alpha-leading * 2}px;
-        // border-radius: 100%;
-        // background-color: #fff;
-        color: palette(color-alpha);
-        transition: color $animation-duration-alpha $animation-easing-alpha;
+	&.is-not-selected {
+		.c-media--link {
+			cursor: default;
+		}
+	}
 
-        &:hover,
-        &:focus {
-            color: palette(color-alpha,light);
-            outline: none;
-        }
+	@include mq(#{map-get($breakpoints, bp6) + ($columns-gutter * 4) + 20px}) {
+		width: calc((#{map-get($breakpoints, bp6) + $columns-gutter * 2 * 2}/ 12 * 7) - #{$columns-gutter * 2}px);
+	}
+}
 
-        &.is-disabled {
-            color: palette(color-neutral,xx-light);
-        }
+.c-carousel__arrow {
+	position: absolute;
+	top: -#{$alpha-leading / 2}px;
+	left: -#{$columns-gutter / 1.5}px;
+	z-index: 30;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: #{$alpha-leading * 2}px;
+	height: #{$alpha-leading * 2}px;
+	background-color: rgba(white, 0.95);
+	border-radius: 100%;
+	color: palette(color-alpha);
+	transition: color $animation-duration-alpha $animation-easing-alpha;
 
-        @include mq(bp3) {
-            top: 50%;
-            transform: translateY(-50%);
-            left: -#{$columns-gutter * 2}px;
-        }
-    }
+	&:hover,
+	&:focus {
+		color: palette(color-alpha, light);
+		outline: none;
+	}
 
-    .c-carousel__arrow--right {
-        left: auto;
-        right: -#{$columns-gutter / 1.5}px;
+	&.is-disabled {
+		color: palette(color-neutral, xx-light);
+	}
 
-        @include mq(bp3) {
-            right: -#{$alpha-leading * 2}px;
-        }
-    }
+	@include mq(bp3) {
+		top: 50%;
+		transform: translateY(-50%);
+		left: -#{$columns-gutter * 2}px;
+	}
+}
 
-    .c-carousel__arrow-symbol {
-        display: block;
-    }
+.c-carousel__arrow--right {
+	left: auto;
+	right: -#{$columns-gutter / 1.5}px;
+
+	@include mq(bp3) {
+		right: -#{$alpha-leading * 2}px;
+	}
+}
+
+.c-carousel__arrow-symbol {
+	display: block;
+}
 
 // Carousel nav
 
 .c-carousel-nav {
-    position: relative;
-    z-index: 20;
+	position: relative;
+	z-index: 20;
 }
 
-    .c-carousel-nav-list {
-        display: flex;
-        justify-content: center;
-        font-family: $beta-font-family;
-        @include ms-1;
-        @include margin-lr($columns-gutter / -2,$columns-gutter / -2);
+.c-carousel-nav-list {
+	display: flex;
+	justify-content: center;
+	font-family: $beta-font-family;
+	@include ms-1;
+	@include margin-lr($columns-gutter / -2, $columns-gutter / -2);
 
-        @include mq(bp3) {
-            justify-content: flex-end;
-        }
-    }
+	@include mq(bp3) {
+		justify-content: flex-end;
+	}
+}
 
-    .c-carousel-nav-list__item {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        color: palette(color-neutral);
-        transition: all $animation-duration-alpha $animation-easing-alpha;
-        text-align: center;
-        @include padding-lr($columns-gutter / 2,$columns-gutter / 2);
+.c-carousel-nav-list__item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: palette(color-neutral);
+	transition: all $animation-duration-alpha $animation-easing-alpha;
+	text-align: center;
+	@include padding-lr($columns-gutter / 2, $columns-gutter / 2);
 
-        &:hover,
-        &.is-selected {
-            color: palette(color-alpha);
-        }
-    }
+	&:hover,
+	&.is-selected {
+		color: palette(color-alpha);
+	}
+}

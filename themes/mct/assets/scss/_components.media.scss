@@ -3,122 +3,126 @@
 */
 
 .c-media {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    transition: all $animation-duration-beta $animation-easing-alpha;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	transition: all $animation-duration-beta $animation-easing-alpha;
+	width: 100%;
 }
 
 .c-media--link {
-    &:hover,
-    &:focus {
-        text-decoration: none;
-    }
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
 }
 
-    .c-media__body {
-        flex-grow: 1;
-    }
+.c-media__body {
+	flex-grow: 1;
+}
 
-    .c-media__content {
-        margin-top: auto;
-        overflow: hidden;
-    }
+.c-media__content {
+	margin-top: auto;
+	overflow: hidden;
+}
 
-    .c-media__image-link {
-        display: block;
-    }
+.c-media__image-link {
+	display: block;
+}
 
-    .c-media__title,
-    .c-media__text,
-    .c-media__meta {
-        transition: color $animation-duration-alpha $animation-easing-alpha;
-    }
+.c-media__title,
+.c-media__text,
+.c-media__meta {
+	transition: color $animation-duration-alpha $animation-easing-alpha;
+}
 
-    .c-media__title {
-        width: 100%;
+.c-media__title {
+	width: 100%;
 
-        .c-media--link &,
-        .c-media--link:visited & {
-            color: palette(color-neutral,xxxx-dark);
-        }
+	.c-media--link &,
+	.c-media--link:visited & {
+		color: palette(color-neutral, xxxx-dark);
+	}
 
-        .c-media--link:hover &,
-        .c-media--link:focus & {
-            color: $link-color;
+	.c-media--link:hover &,
+	.c-media--link:focus & {
+		color: $link-color;
 
-            // override this when it's inside the carousel on the homepage
-            .c-carousel__item.is-not-selected & {
-                color: palette(color-neutral,xxxx-dark);
-            }
-        }
-    }
+		// override this when it's inside the carousel on the homepage
+		.c-carousel__item.is-not-selected & {
+			color: palette(color-neutral, xxxx-dark);
+		}
+	}
+}
 
-    .c-media__text {
-        color: palette(color-neutral);
+.c-media__text {
+	color: palette(color-neutral);
 
-        .c-media--link:hover &,
-        .c-media--link:focus & {
-            color: $link-color;
-        }
+	.c-media--link:hover &,
+	.c-media--link:focus & {
+		color: $link-color;
+	}
 
-        // override this when it's inside the carousel on the homepage
-        .c-carousel__item.is-not-selected & {
-            color: palette(color-neutral);
-        }
-    }
+	// override this when it's inside the carousel on the homepage
+	.c-carousel__item.is-not-selected & {
+		color: palette(color-neutral);
+	}
+}
 
-    .c-media__meta {
-        font-family: $beta-font-family;
-        text-transform: uppercase;
+.c-media__meta {
+	font-family: $beta-font-family;
+	text-transform: uppercase;
 
-        .c-media--link:hover &,
-        .c-media--link:focus & {
-            color: $link-color;
-        }
-    }
+	.c-media--link:hover &,
+	.c-media--link:focus & {
+		color: $link-color;
+	}
+}
 
-    .c-media__more-link {
-        display: inline-block;
-        position: relative;
-        border-bottom: 1px solid palette(color-alpha);
-        font-family: $beta-font-family;
-        text-transform: uppercase;
-        @include ms-1;
-    }
+.c-media__more-link {
+	display: inline-block;
+	position: relative;
+	border-bottom: 1px solid palette(color-alpha);
+	font-family: $beta-font-family;
+	text-transform: uppercase;
+	@include ms-1;
+}
 
-    .c-media__picture {
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        height: 100%;
-        background-color: palette(color-alpha);
-    }
+.c-media__picture {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+	background-color: palette(color-alpha);
 
-    .c-media__picture--fixed-ratio {
-        height: 0;
-        padding-bottom: 56%;
-    }
+	&.no-drag {
+		pointer-events: none;
+	}
+}
 
-    .c-media__image {
-        min-width: 100%;
-        will-change: opacity;
-        transition: opacity $animation-duration-beta $animation-easing-alpha;
+.c-media__picture--fixed-ratio {
+	height: 0;
+	padding-bottom: 56%;
+}
 
-        .c-media--link:hover & {
-           opacity: .75;
+.c-media__image {
+	min-width: 100%;
+	will-change: opacity;
+	transition: opacity $animation-duration-beta $animation-easing-alpha;
 
-           .c-carousel__item.is-not-selected & {
-               opacity: 1;
-           }
-        }
+	.c-media--link:hover & {
+		opacity: 0.75;
 
-        .c-media__picture--fixed-ratio & {
-            position: absolute;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
+		.c-carousel__item.is-not-selected & {
+			opacity: 1;
+		}
+	}
+
+	.c-media__picture--fixed-ratio & {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
