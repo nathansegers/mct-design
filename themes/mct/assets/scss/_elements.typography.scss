@@ -55,7 +55,8 @@ ol,
 ul,
 dl,
 table,
-address {
+address,
+figure {
     // @include ms0;
     @include margin-bottom($base-margin-bottom);
 
@@ -97,6 +98,15 @@ blockquote {
         @include ms5;
         @include padding-left($columns-gutter * 2);
     }
+}
+
+figcaption {
+    text-transform: uppercase;
+    font-family: $beta-font-family;
+    font-weight: $alpha-font-weight;
+    color: palette(color-neutral);
+    @include padding-top($alpha-leading/2);
+    @include ms-1;
 }
 
 small {

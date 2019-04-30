@@ -41,6 +41,10 @@
     //         }
     //     }
     // }
+
+    figure {
+        @include margin-tb($alpha-leading*2, $alpha-leading*2);
+    }
 }
 
 .s-content-white {
