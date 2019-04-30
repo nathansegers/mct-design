@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $cover := .Params.Cover }}
 {{ $image := .Resources.GetMatch $cover }}
-{{ $scaledImage := $image.Fill "896x502" }}
+{{ $scaledImage := $image.Fill "896x502 Center" }}
 
 <section class="c-row c-row--lg">
 	<div class="o-container">

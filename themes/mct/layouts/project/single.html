@@ -2,7 +2,7 @@
 
 {{ $cover := .Params.Cover }}
 {{ $image := .Resources.GetMatch $cover }}
-{{ $scaledImage := $image.Fill "1184x666" }}
+{{ $scaledImage := $image.Fill "1184x666 Center" }}
 
 <main class="c-row c-row--lg">
     <div class="o-container">
