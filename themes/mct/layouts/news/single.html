@@ -2,47 +2,44 @@
 {{ $cover := .Params.Cover }}
 {{ $image := .Resources.GetMatch $cover }}
 {{ $scaledImage := $image.Fill "896x502" }}
-
     <section class="c-row c-row--lg">
-        <div class="o-container">
-            <div class="u-max-width-lg u-align-horizontal">
-                <div class="c-main-section-lg">
-                    <div class="c-main-section-lg">
-                        <div class="u-max-width-xl">
-                            <p class="c-type-meta u-ms-1 u-color-neutral-base u-mb-beta">
-                                {{ .Date.Format "02/01/2006" }}
-                            </p>
-                            <h1 class="u-ms10-bp3 u-ms12-bp4">
-                                {{ .Title }}
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="c-main-section-lg">
-                        {{ if or .Params.mp4 .Params.webm }}
-                        <div class="c-video-player">
-                            <button class="c-video-play-button">
-                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
-                            </button>
-                            <video class="c-video-player__video" poster="{{ $scaledImage.Permalink }}">
-                                {{ if .Params.webm }}
-                                <source src="{{ .Params.webm }}" type="video/webm">
-                                {{ end }}
-                                {{ if .Params.mp4 }}
-                                <source src="{{ .Params.mp4 }}" type="video/mp4">
-                                {{ end }}
-                                Your browser does not support HTML5 video.
-                            </video>
-                        </div>
-                        {{ else }}
-                        <p class="c-media">
-                            <picture class="c-media__picture c-media__picture--fixed-ratio">
-                                <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="{{ .Title }} afbeelding">
-                            </picture>
+        <div class="o-container u-max-width-optimal">
+            <div class="c-main-section-lg">
+                <div class="c-main-section">
+                    <div class="u-max-width-xl">
+                        <p class="c-type-meta u-ms-1 u-color-neutral-base u-mb-beta">
+                            {{ .Date.Format "02/01/2006" }}
                         </p>
-                        {{ end }}
+                        <h1 class="u-ms10-bp3 u-ms12-bp4">
+                            {{ .Title }}
+                        </h1>
                     </div>
                 </div>
-                <div class="c-main-section-lg">
+                <div class="c-main-section">
+                    {{ if or .Params.mp4 .Params.webm }}
+                    <div class="c-video-player">
+                        <button class="c-video-play-button">
+                            {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
+                        </button>
+                        <video class="c-video-player__video" poster="{{ $scaledImage.Permalink }}">
+                            {{ if .Params.webm }}
+                            <source src="{{ .Params.webm }}" type="video/webm">
+                            {{ end }}
+                            {{ if .Params.mp4 }}
+                            <source src="{{ .Params.mp4 }}" type="video/mp4">
+                            {{ end }}
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                    {{ else }}
+                    <p class="c-media">
+                        <picture class="c-media__picture c-media__picture--fixed-ratio">
+                            <img class="c-media__image lozad" data-src="{{ $scaledImage.Permalink }}" alt="{{ .Title }} afbeelding">
+                        </picture>
+                    </p>
+                    {{ end }}
+                </div>
+                <div class="c-main-section">
                     <div class="u-max-width-optimal">
                         <div class="s-content">
                             <p>
@@ -50,16 +47,16 @@
                             </p>
                             {{ .Content }}
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-                <div class="c-main-section-lg">
-                    {{ partial "components/sharing" . }}
-                </div>
-                <div class="c-main-section-lg">
-                    <p>
-                        <a class="c-link-more" href="{{ ref . "/nieuws" }}">< Meer nieuws</a>
-                    </p>
-                </div>
+            </div>
+            <div class="c-main-section-lg">
+                {{ partial "components/sharing" . }}
+            </div>
+            <div class="c-main-section-lg">
+                <p>
+                    <a class="c-link-more" href="{{ ref . "/nieuws" }}">< Meer nieuws</a>
+                </p>
             </div>
         </div>
     </section>
