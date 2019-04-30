@@ -6,7 +6,7 @@
                 <div class="c-main-section">
                     <p class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
                         Uitstroomprofiel
-                    </p>    
+                    </p>
                     <h1 class="c-type-title-lg">
                         {{ .Title }}
                     </h1>
@@ -31,6 +31,121 @@
                 <div class="c-main-section">
                     <div class="s-content">
                         {{ .Content }}
+                    </div>
+                </div>
+                <div class="c-main-section">
+                    <h3>
+                        Specifieke modules voor {{ .Title }}
+                    </h3>
+                    <div class="c-curriculum c-curriculum--single">
+                        <section class="c-curriculum__profile">
+                            <div class="c-curriculum__semester">
+                                <h3 class="c-curriculum__semester-title">
+                                    Semester 4
+    							</h3>
+                                {{ if in .Params.Track "ai-engineer" }}
+                                    {{ range (where .Site.Pages "Type" "programma") }}
+                                        {{ if eq .Params.Semester 4 }}
+                                            {{ if in .Params.Tracks "ai-engineer" }}
+                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                {{ if in .Params.Track "smart-tech-ai" }}
+                                    {{ range (where .Site.Pages "Type" "programma") }}
+                                        {{ if eq .Params.Semester 4 }}
+                                            {{ if in .Params.Tracks "smart-tech-ai" }}
+                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                {{ if in .Params.Track "web-app" }}
+                                    {{ range (where .Site.Pages "Type" "programma") }}
+                                        {{ if eq .Params.Semester 4 }}
+                                            {{ if in .Params.Tracks "web-app" }}
+                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                {{ if in .Params.Track "infrastructure-engineer" }}
+                                    {{ range (where .Site.Pages "Type" "programma") }}
+                                        {{ if eq .Params.Semester 4 }}
+                                            {{ if in .Params.Tracks "infrastructure-engineer" }}
+                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                            <div class="c-curriculum__semester">
+                                <h3 class="c-curriculum__semester-title">
+                                    Semester 5
+                                </h3>
+                                {{ if in .Params.Track "ai-engineer" }}
+                                    {{ range (where .Site.Pages "Type" "programma") }}
+                                        {{ if eq .Params.Semester 5 }}
+                                            {{ if in .Params.Tracks "ai-engineer" }}
+                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                {{ if in .Params.Track "smart-tech-ai" }}
+                                    {{ range (where .Site.Pages "Type" "programma") }}
+                                        {{ if eq .Params.Semester 5 }}
+                                            {{ if in .Params.Tracks "smart-tech-ai" }}
+                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                {{ if in .Params.Track "web-app" }}
+                                    {{ range (where .Site.Pages "Type" "programma") }}
+                                        {{ if eq .Params.Semester 5 }}
+                                            {{ if in .Params.Tracks "web-app" }}
+                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                {{ if in .Params.Track "infrastructure-engineer" }}
+                                    {{ range (where .Site.Pages "Type" "programma") }}
+                                        {{ if eq .Params.Semester 5 }}
+                                            {{ if in .Params.Tracks "infrastructure-engineer" }}
+                                                <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+                                                    <h4 class="c-module__title">{{ .Title }}</h4>
+                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

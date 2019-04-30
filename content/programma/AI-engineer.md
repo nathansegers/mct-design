@@ -2,6 +2,7 @@
 title: AI Engineer
 intro: Het verkeer slimmer aansturen, kanker sneller opsporen, misdaden oplossen door het verbeteren van lage resolutie beelden en robots aansturen. Supervised learning en Neurale netwerken doen jou dromen van het ontwikkelen van AI software die zelf leert patronen ontdekken, voorspellingen maken of objecten herkennen. Software die net dat beetje slimmer is en nieuwe inzichten vindt in de immer streamende data.
 layout: profile
+track: ai-engineer
 future:
 - AI Analyst
 - Data Scientist
@@ -23,10 +24,6 @@ Met “Big Data software” en Azure/AWS/Google cloud services leer je streaming
 ## Waarom MCT?
 
 Onze docenten waren voor de hype reeds actief in AI. Onze top expert Wouter Gevaert zelfs sinds 2008. Reeds in 2014 starte een groep van docenten en onderzoekers met projecten rond IoT, data analyse en AI.  Ook vandaag voeren 4 gespecialiseerde onderzoekers AI projecten uit voor Vlaamse bedrijven. Zij delen hun expertise regelmatig met jou, en zorgen voor een uitgebreid netwerk van AI gerelateerde bedrijven (stages, gastlectoren, studentenprojecten…).
-
-Machine Learning is sinds 2015 deel van ons curriculum.  In 2017 werd het AI curriculum grondig verbeterd op basis van onze ervaringen. De opbouw en ervaring die in ons curriculum bevat zit maakt jou een veel completer AI Engineer (CI/CD voor AI, Deep Learning, Big Data architectuur).
-
-De studenten die het complete AI curriculum (Big Data, AI software dev, Machine/Deep Learning) kregen vertrokken op stage begin 2019, op het moment dat andere AI bachelors niet meer dan een pers bericht waren. Nog voor ze op stage vertrokken, voerden onze studenten een bedrijfs en research AI project uit voor o.a. Touring Mobilis, TVH, Ordina, RouteYou, Scott Automation e.a. Dat is ook de reden dat MCT studenten weinig moeite hebben om een stageplaats met AI opdracht te veroveren.
 
 {{< figure src="/img/jpg/JameiSweetMustard.jpg" title="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" >}}
 
