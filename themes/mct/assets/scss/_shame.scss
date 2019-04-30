@@ -283,3 +283,16 @@ li {
 .c-gallery__item {
     width: 100%;
 }
+
+.c-columns {
+	-webkit-column-width: 24em;
+	-moz-column-width: 24em;
+	column-width: 24em;
+	// -webkit-column-count: 2; /* Ch, Saf, And, BB  */
+    //  -moz-column-count: 2; /* Fx */
+    //       column-count: 2; /* IE 10, Op 11.1+ */
+    -webkit-column-gap: $columns-gutter * 1px;
+    -moz-column-gap: $columns-gutter * 1px;
+    column-gap: $columns-gutter * 1px;
+	box-decoration-break: clone; 
+}

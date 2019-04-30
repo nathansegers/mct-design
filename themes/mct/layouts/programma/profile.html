@@ -1,0 +1,109 @@
+{{ define "main" }}
+<main>
+    <div class="c-row c-row--lg">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section-lg">
+                        <div class="u-max-width-optimal">
+                            <div class="c-main-section">
+                                <p class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
+    								{{.Params.Subheader}}
+                                </p>
+                                <!-- <h1 class="c-type-intro">
+    								{{ .Title }} &#8212; {{.Params.Intro | markdownify}}
+                                </h1> -->
+                                <h1 class="c-type-title-lg">
+    								{{ .Title }}
+                                </h1>
+
+                                <p class="u-ms2">
+                                    {{.Params.Intro | markdownify}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-main-section-lg">
+                        <div class="c-video-player">
+                            <button class="c-video-play-button">
+                                {{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
+                            </button>
+                            <video class="c-video-player__video" poster="/img/jpg/wouter-at-home-promo.jpg">
+                                <source src="https://mctwebsite.blob.core.windows.net/video/IOTfest_AIonly.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="c-main-section-lg">
+                        <div class="o-grid o-grid--gutter-lg">
+                            <div class="o-grid__item u-8-of-12-bp4">
+                                <div class="c-main-section">
+                                    <div class="s-content u-max-width-optimal">
+                                        {{ .Content }}
+                                    </div>
+                                </div>
+    						</div>
+                            <aside class="o-grid__item u-4-of-12-bp4">
+    							{{ if isset .Params "future" }}
+    								<div class="c-main-section">
+    									<h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+    										Jouw toekomst
+    									</h3>
+    									<p class="u-color-neutral-base">
+    										{{ delimit .Params.future ", " " of " }}
+    									</p>
+    								</div>
+    							{{ end }}
+                                {{ if .Params.client }}
+    								<div class="c-main-section">
+    									<h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+    										Opdrachtgever
+    									</h3>
+    									<p class="u-color-neutral-base">
+    										{{ .Params.client }}
+    									</p>
+    								</div>
+                                {{ end }}
+                            </aside>
+                        </div>
+    				</div>
+                    <!-- <div class="c-main-section-lg">
+                        <div class="c-main-section">
+                            <div class="s-content c-columns">
+                                {{ .Content }}
+                            </div>
+                        </div>
+                        <aside class="c-main-section">
+							{{ if isset .Params "future" }}
+								<div class="c-main-section">
+									<h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+										Jouw toekomst
+									</h3>
+									<p class="u-color-neutral-base">
+										{{ delimit .Params.future ", " " of " }}
+									</p>
+								</div>
+							{{ end }}
+                            {{ if .Params.client }}
+								<div class="c-main-section">
+									<h3 class="u-ms1 u-mb-alpha u-color-alpha-light">
+										Opdrachtgever
+									</h3>
+									<p class="u-color-neutral-base">
+										{{ .Params.client }}
+									</p>
+								</div>
+                            {{ end }}
+                        </aside>
+    				</div> -->
+					<div class="c-main-section-lg">
+						<p>
+							<a class="c-link-more" href="{{ ref . "/programma" }}">< Het volledige programma</a>
+						</p>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}
