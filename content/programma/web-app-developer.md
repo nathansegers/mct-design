@@ -33,4 +33,6 @@ De ingrediënten hiervoor zijn een goede kennis van ASP.NET Core voor de backend
 
 Aan de frontend kant werken we vooral met JS. Als we goed snappen hoe dit werkt en we de meest gangbare patterns kunnen schrijven, stappen we over op een JS-framework.
 Daarnaast verdiepen we ons in de werking van een browser. Op die manier schaven we kostbare milliseconden van onze laadtijd af.
-Na de modules [frontend](/programma/frontend-development) en [frameworks and patterns](/programma/frameworks-patterns) klinken termen als: de eventloop, Vue.js en het critical render path je vertrouwd in de oren!
+Na de modules frontend en frameworks and patterns klinken termen als: de eventloop, Vue.js en het critical render path je vertrouwd in de oren!
+
+TODO: Tekst over concept visualisation en mixed reality!
