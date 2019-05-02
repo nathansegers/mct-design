@@ -156,5 +156,17 @@
 			</div>
         </div>
     </div>
+    {{ if in .Params.Track "ai-engineer" }}
+    {{ partial "components/cta.html" (dict "title" "Kies jij AI Engineer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
+    {{ end }}
+    {{ if in .Params.Track "smart-tech-ai" }}
+    {{ partial "components/cta.html" (dict "title" "Kies jij Smart Tech & AI Creator?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
+    {{ end }}
+    {{ if in .Params.Track "infrastructure-engineer" }}
+    {{ partial "components/cta.html" (dict "title" "Kies jij AI Engineer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
+    {{ end }}
+    {{ if in .Params.Track "web-app" }}
+    {{ partial "components/cta.html" (dict "title" "Kies jij Web App Developer?" "paragraph" "Stoom je klaar voor de toekomst en schrijf je vandaag in.") }}
+    {{ end }}
 </main>
 {{ end }}
