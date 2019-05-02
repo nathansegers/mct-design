@@ -5,7 +5,6 @@
 */
 
 .c-type-lead {
-    // color: palette(color-neutral);
     font-weight: $delta-font-weight;
     @include ms2;
 }
@@ -23,17 +22,7 @@
     a {
         position: relative;
         display: inline-block;
-
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 2px;
-            width: 100%;
-            background-color: rgba(palette(color-neutral,xxxx-dark),.5);
-            transition: background $animation-duration-alpha $animation-easing-alpha;
-        }
+        text-decoration: underline;
 
         &,
         &:visited {
@@ -42,24 +31,12 @@
             .c-row--intro &,
             .c-row--alpha & {
                 color: palette(color-neutral,xxxxx-light);
-
-                &:after {
-                    background-color: rgba(palette(color-neutral,xxxxx-light),.5);
-                }
             }
         }
 
         &:hover {
-            text-decoration: none;
-
-            &:after {
-                background-color: rgba(palette(color-neutral,xxxx-dark),1);
-
-                .c-row--intro &,
-                .c-row--alpha & {
-                    background-color: rgba(palette(color-neutral,xxxxx-light),1);
-                }
-            }
+            opacity: .5;
+            // color: palette(color-alpha,base);
         }
     }
 
@@ -74,7 +51,6 @@
 
 .c-type-intro-small {
     font-weight: $delta-font-weight;
-    // @include ms2;
 }
 
 .c-type-svg {
@@ -108,10 +84,6 @@
             @include mq(bp4) {
                 max-width: 1286px;
             }
-
-            // @include mq(bp6) {
-            //     max-width: 1286px;
-            // }
         }
 
         .c-type-svg--news & {
@@ -133,7 +105,6 @@
 
 .c-type-title-md {
     @include mq(bp3) {
-        // font-weight: $jota-font-weight;
         @include ms6;
     }
 
@@ -144,7 +115,6 @@
 
 .c-type-title-lg {
     @include mq(bp3) {
-        // font-weight: $jota-font-weight;
         @include ms10;
     }
 
