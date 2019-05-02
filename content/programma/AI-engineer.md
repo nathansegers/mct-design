@@ -29,7 +29,7 @@ Onze docenten waren lang voor de hype reeds actief in AI, sinds 2008. Reeds in 2
 
 Machine Learning is sinds 2015 deel van ons curriculum. De opbouw en ervaring die in ons curriculum bevat zit maakt jou een completer AI Engineer (CI/CD voor AI, Deep Learning, Big Data architectuur).
 
-{{< figure src="/img/jpg/JameiSweetMustard.jpg" title="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" >}}
+{{< figure src="/img/jpg/JameiSweetMustard.jpg" alt="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" title="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" >}}
 
 Nog voor ze op stage vertrekken, voeren onze studenten een bedrijfs en research AI project uit voor o.a. Touring Mobilis, TVH, Ordina, Scott Automation e.a. Dat is ook de reden dat MCT studenten een stageplaats met een AI opdracht veroveren. MCT studenten die zich verdiepten in AI komen terecht in  innovatieve bedrijven zoals Sweet mustard, Korazon, Be-mobile of ML6.
 
