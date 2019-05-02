@@ -23,8 +23,14 @@ Met “Big Data software” en Azure/AWS/Google cloud services leer je streaming
 
 ## Waarom MCT?
 
-Onze docenten waren voor de hype reeds actief in AI. Onze top expert Wouter Gevaert zelfs sinds 2008. Reeds in 2014 starte een groep van docenten en onderzoekers met projecten rond IoT, data analyse en AI.  Ook vandaag voeren 4 gespecialiseerde onderzoekers AI projecten uit voor Vlaamse bedrijven. Zij delen hun expertise regelmatig met jou, en zorgen voor een uitgebreid netwerk van AI gerelateerde bedrijven (stages, gastlectoren, studentenprojecten…).
+Onze docenten waren lang voor de hype reeds actief in AI, sinds 2008. Reeds in 2014 startte een groep van docenten en onderzoekers met AI projecten. Ook vandaag voeren 4 gespecialiseerde onderzoekers AI projecten uit voor Vlaamse bedrijven. Zij delen hun expertise regelmatig met jou, en zorgen voor een uitgebreid netwerk van AI gerelateerde bedrijven (stages, gastlectoren, studentenprojecten…).
+
+{{< quote "Kiezen voor een MCT AI keuzetraject is simpelweg kiezen voor de AI Bachelor met de beste AI traditie, onderwijs en onderzoek." >}}
+
+Machine Learning is sinds 2015 deel van ons curriculum. De opbouw en ervaring die in ons curriculum bevat zit maakt jou een completer AI Engineer (CI/CD voor AI, Deep Learning, Big Data architectuur).
 
 {{< figure src="/img/jpg/JameiSweetMustard.jpg" title="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" >}}
 
-MCT studenten die zich verdiepten in AI komen terecht in een innovatieve bedrijven zoals Sweet mustard of ML6. Dat laatste bedrijf is een internationale topper in AI consulting. Kiezen voor een MCT AI keuzetraject is simpelweg kiezen voor de AI Bachelor met de beste AI traditie, onderwijs en onderzoek.
+Nog voor ze op stage vertrekken, voeren onze studenten een bedrijfs en research AI project uit voor o.a. Touring Mobilis, TVH, Ordina, Scott Automation e.a. Dat is ook de reden dat MCT studenten een stageplaats met een AI opdracht veroveren. MCT studenten die zich verdiepten in AI komen terecht in  innovatieve bedrijven zoals Sweet mustard, Korazon, Be-mobile of ML6.
+
+Last but not least, de modules machine & deep learning worden ook aangeboden aan  meer dan 70 professionals in afstandsonderwijs en goed bevonden. De reality check met kritische professionals is voor ons een must.
