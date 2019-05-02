@@ -95,12 +95,13 @@ function makeModulesFullHeight() {
 	var m = document.querySelectorAll('.c-module'),
 		h = 0;
 	// Skip the largest (last) column
-	for (var i = m.length - 2; i >= 0; i--) {
+	for (var i = m.length - 1; i >= 0; i--) {
+		m[i].style.minHeight = '';
 		if (m[i].offsetHeight > h) {
 			h = m[i].offsetHeight;
 		}
 	}
-	for (var i = m.length - 2; i >= 0; i--) {
+	for (var i = m.length - 1; i >= 0; i--) {
 		m[i].style.minHeight = h + 'px';
 	}
 }
@@ -164,14 +165,16 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		});
 
-		window.addEventListener('resize', function() {
-			// Always check the modules when resizing the window1
-			makeModulesFullHeight();
-		});
-
 		// document.addEventListener('scroll', function() {
 		// 	checkScrolling(cT, p);
 		// });
+	}
+
+	// If there is a module, make them all the same height.
+	if (document.querySelector('.c-module')) {
+		window.addEventListener('resize', function() {
+			makeModulesFullHeight();
+		});
 
 		makeModulesFullHeight();
 	}
