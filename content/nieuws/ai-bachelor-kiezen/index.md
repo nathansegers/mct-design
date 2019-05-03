@@ -24,6 +24,8 @@ Uit voorgaande is wel duidelijk dat een AI-bachelor meer moet zijn dan een keuze
 Het heeft ook geen zin om het warm water opnieuw uit te vinden. Als Google, Microsoft of Amazon met een superintelligente AI-(cloud)service op de proppen komen, moet je daar maximaal gebruik van maken. Continuous Integration en Continuous Deployment moeten gecombineerd worden met voldoende kennis van hoe AI-software werkt om je plaatsje binnen een AI-dienst of AI-bedrijf te veroveren. 
 Toen wij in 2015 begonnen met onze Internet-of-Things-opleiding en een module machine learning en neurale netwerken aanboden merkten we al gauw dat het een mooie stap vooruit is, maar dat dit zeker niet voldoende is anno 2019.  De ervaring die we opdeden met onze eerste generatie Smart Tech & AI-studenten hebben ons toegelaten om ons curriculum steeds verder te perfectioneren, in dialoog met onze studenten MCT en de juiste bedrijven.
 
+![De implementatie van een feedforward neuraal netwerk leren.](artificial-intelligence-leren-in-bachelor.jpg)
+
 Last but not least, zowel jij als je lector moeten echte AI-projecten succesvol afronden. Sinds 2014 voerden verscheidene lectoren en vier onderzoekers 5 jaar ononderbroken onderzoek uit in samenwerking met de industrie. Realworld AI-projecten waren de inspiratie voor onze AI-bachelors “Smart Tech & AI” en “AI Engineer”.
 
 <!-- Figuur: overzicht van een paar videos van AI-projecten (zijn nu gehost op Facebook) -->
