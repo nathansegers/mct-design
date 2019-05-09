@@ -1,5 +1,5 @@
 ---
 type: project
-title: Projecten van studenten
+title: Projectweken
 draft: true
 ---
