@@ -2,8 +2,8 @@
 type: news
 title: "Eerste AI-studenten van Howest studeren af"
 date: 2019-05-09T14:25:45+02:00
-description: "In Juni studeren de eerste studenten Smart Tech & AI Creator af aan de opleiding MCT. Deze 30-tal studenten mogen zich alvast pioniers voelen. Ze gaan als eersten de arbeidsmarkt voor AI-bachelors verkennen."
-cover: MCTShootMrt2019-13.jpg
+description: "In juni studeren de eerste studenten Smart Tech & AI Creator af aan de opleiding MCT. Deze 30-tal studenten mogen zich alvast pioniers voelen. Ze gaan als eersten de arbeidsmarkt voor AI-bachelors verkennen."
+cover: eerste-ai-bachelors-van-howest-studeren-af.jpg
 draft: false
 ---
 
