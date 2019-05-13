@@ -25,17 +25,17 @@ enableEmoji = true
     identifier = "programma"
 	weight = 30
 
-  [[menu.main]]
-    name = "Nieuws"
-    url = "/nieuws/"
-    identifier = "nieuws"
-	weight = 40
-
 #   [[menu.main]]
-#     name = "Projecten"
-#     url = "/projecten/"
-#     identifier = "projecten"
+#     name = "Nieuws"
+#     url = "/nieuws/"
+#     identifier = "nieuws"
 # 	weight = 40
+
+  [[menu.main]]
+    name = "Projecten"
+    url = "/projecten/"
+    identifier = "projecten"
+	weight = 40
 
   [[menu.main]]
     name = "@Home"
