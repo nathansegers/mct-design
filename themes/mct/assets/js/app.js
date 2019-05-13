@@ -222,13 +222,19 @@ function initVideoPlayer() {
 	var videoplayer = document.querySelector('.c-video-player');
 	if (videoplayer) {
 		var v = videoplayer.querySelector('.c-video-player__video'),
-			btnPlay = videoplayer.querySelector('.c-video-play-button');
+			playBtns = document.querySelectorAll('.c-video-play-button');
 
-		btnPlay.addEventListener('click', function() {
-			v.play();
-			v.setAttribute('controls', 'controls');
-			btnPlay.classList.add('is-hidden');
-		});
+		console.log(playBtns);
+
+		for (const btnPlay of playBtns) {
+			btnPlay.addEventListener('click', function() {
+				btnPlay.parentNode.querySelector('video').play();
+				btnPlay.parentNode
+					.querySelector('video')
+					.setAttribute('controls', 'controls');
+				btnPlay.classList.add('is-hidden');
+			});
+		}
 	}
 }
 
