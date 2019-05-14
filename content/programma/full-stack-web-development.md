@@ -1,5 +1,5 @@
 ---
-title: Device Programming 1
+title: Full Stack Web Development
 semester: 2
 weight: 10
 tags: "#Python #Flask #Javascript #Jinja"

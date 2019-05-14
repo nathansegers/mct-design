@@ -1,5 +1,5 @@
 ---
-title: Device Programming 2
+title: Device Programming
 semester: 3
 weight: 10
 tags: "#csharp #xamarinforms #oop #android"
