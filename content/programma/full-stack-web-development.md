@@ -1,5 +1,5 @@
 ---
-title: Full Stack Web Development
+title: Full-stack Web Development
 semester: 2
 weight: 10
 tags: "#Python #Flask #Javascript #Jinja"
