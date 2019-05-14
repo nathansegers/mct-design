@@ -224,8 +224,6 @@ function initVideoPlayer() {
 		var v = videoplayer.querySelector('.c-video-player__video'),
 			playBtns = document.querySelectorAll('.c-video-play-button');
 
-		console.log(playBtns);
-
 		for (const btnPlay of playBtns) {
 			btnPlay.addEventListener('click', function() {
 				btnPlay.parentNode.querySelector('video').play();
