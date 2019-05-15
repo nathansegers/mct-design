@@ -3,14 +3,45 @@ const modal = (function() {
 	const setup = function() {
 		const modules = document.querySelectorAll('.c-module--link');
 
-		if (modules) {
-			for (const m of modules) {
-				m.addEventListener('click', function(e) {
-					e.preventDefault();
-					console.log(m);
-				});
+		enableListeners(modules);
+
+		window.addEventListener('popstate', function(event) {
+			// Check if we came from a modal
+			if (event.state && event.state.inModal) {
+				console.log('Coming from a deeper level inside the popup...');
+
+				// if we did, get current url and fetch the data
+				// window.location = 'http://localhost:1313/programma/';
+				// console.log(window.location);
+			}
+		});
+	};
+
+	const enableListeners = function(nodeList) {
+		if (nodeList) {
+			for (const m of nodeList) {
+				m.addEventListener('click', attachModel);
 			}
 		}
+	};
+
+	const showModal = function() {};
+
+	const getModuleData = function(url) {
+		return fetch(`${url}index.json`)
+			.then(r => r.json())
+			.then(d => d);
+	};
+
+	const attachModel = async function(e) {
+		e.preventDefault();
+		showModal();
+
+		const data = await getModuleData(this.href);
+
+		history.pushState({ inModal: true }, data.title, this.href);
+
+		console.log(data);
 	};
 
 	return {
