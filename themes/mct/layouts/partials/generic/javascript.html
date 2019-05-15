@@ -6,9 +6,10 @@
 {{ $curriculum := resources.Get "js/curriculum.js" }}
 {{ $contact := resources.Get "js/contact.js" }}
 {{ $sharing := resources.Get "js/sharing.js" }}
+{{ $dialog := resources.Get "js/polyfill/dialog.js" }}
 {{ $modal := resources.Get "js/modal.js" }}
 
-{{ $js := slice $app $carousel $curriculum $contact $sharing $modal | resources.Concat "js/app.js" | resources.Minify }}
+{{ $js := slice $app $carousel $curriculum $contact $sharing $dialog $modal | resources.Concat "js/app.js" | resources.Minify }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 
 <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
