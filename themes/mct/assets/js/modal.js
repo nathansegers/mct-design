@@ -55,7 +55,7 @@ const modal = (function() {
 
 	const showModal = function() {
 		modal.show();
-		body.classList.add('has-model');
+		body.classList.add('has-modal');
 	};
 
 	const closeModal = function() {
