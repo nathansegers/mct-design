@@ -5,11 +5,25 @@ const modal = (function() {
 
 		enableListeners(modules);
 
-		window.addEventListener('popstate', function(event) {
+		window.addEventListener('popstate', async function(event) {
 			// Check if we came from a modal
 			if (event.state && event.state.inModal) {
 				console.log('Coming from a deeper level inside the popup...');
 
+				const curriculumPage = await fetch(
+					`${window.location}index.json`
+				)
+					.then(r => {
+						// console.log(r);
+						return r.text();
+					})
+					.then(d => {
+						// document.open();
+						// document.write(d);
+						// document.close();
+						// window.innerHTML = 'TEST';
+						console.log(d);
+					});
 				// if we did, get current url and fetch the data
 				// window.location = 'http://localhost:1313/programma/';
 				// console.log(window.location);
