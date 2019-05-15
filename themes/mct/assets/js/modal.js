@@ -1,7 +1,10 @@
 const modal = (function() {
 	console.log('Ready to enable Modal');
 	const setup = function() {
-		const modules = document.querySelectorAll('.c-module--link');
+		const modules = document.querySelectorAll('.js-module-link');
+		const closeBtn = document.querySelector('.js-dialog-close');
+		const modal = document.querySelector('.js-dialog');
+		const body = document.querySelector('body');
 
 		enableListeners(modules);
 
@@ -40,6 +43,11 @@ const modal = (function() {
 			for (const m of nodeList) {
 				m.addEventListener('click', attachModel);
 			}
+			closeBtn.addEventListener('click', () => {
+				// + escape toets ook
+				modal.close();
+				body.classList.remove("has-modal");
+			});
 		}
 	};
 
