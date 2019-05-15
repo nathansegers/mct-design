@@ -15,10 +15,6 @@
 <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
 <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 
-<script type="text/javascript">
-
-</script>
-
 {{ if eq .Params.Identifier "contact" }}
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBit5aFgJO91h5puuF2lOHl-K06__ZvFOc&callback=initMap"></script>
 	{{/*<script src="{{ (resources.Get "js/form.js").RelPermalink }}"></script>*/}}
