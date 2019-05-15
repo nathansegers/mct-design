@@ -48,3 +48,6 @@ enableEmoji = true
     url = "/contact/"
     identifier = "contact"
 	weight = 60
+
+[outputs]
+    page = ["HTML", "json"]
