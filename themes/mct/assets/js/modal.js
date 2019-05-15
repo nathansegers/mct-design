@@ -44,24 +44,39 @@ const modal = (function() {
 			});
 		}
 
+		// modal events?
+
 		if (modal) {
+			modal.addEventListener('close', function() {
+				body.classList.remove('has-modal');
+			});
+
+			// We are good with cancel only.
+			// modal.addEventListener('cancel', function() {
+			// 	console.log('modal canceled');
+			// });
+
 			document.addEventListener('keydown', function(e) {
 				if(e.key === "Escape") {
-					closeModal();
+					// Todo
+					if (body.classList.contains('has-modal')) {
+						body.classList.add('has-modal');
+					} else {
+						body.classList.add('has-modal');
+					}
 				}
 			});
 		}
 	};
 
 	const showModal = function() {
-		modal.show();
+		modal.showModal();
 		body.classList.add('has-modal');
 	};
 
 	const closeModal = function() {
 		modal.close();
 		history.replaceState({}, window.title, baseUrl);
-		body.classList.remove('has-modal');
 	}
 
 	const listenToNestedModules = function() {		
@@ -105,8 +120,11 @@ const modal = (function() {
 			e.preventDefault();
 			moduleUrl = this.href;
 		}
+		
+		if (!modal.open) {
+			showModal();
+		}
 
-		showModal();
 
 		const data = await getModuleData(moduleUrl);
 		
