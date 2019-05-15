@@ -102,7 +102,10 @@ const modal = (function() {
 
 		tags.innerText = data.tags;
 
-		description.innerText = data.description;
+		if (data.description) {
+			description.innerText = data.description;
+		} else {
+		}
 
 		content.innerHTML = data.content;
 
