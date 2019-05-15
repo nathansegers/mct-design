@@ -16,6 +16,6 @@ De huidige generatie van autonome robots kunnen dus met behulp van IoT en AI vee
 
 In de module "A en Robotics" wordt de huidige stand van moderne commerciële en industriële robotica verkend. De student wordt uitgedaagd een visie te ontwikkelen op de mogelijkheden van de producten van de toekomst.
 
-Maar daar blijft het niet bij. In de practica ga je zelf aan de slag met bestaande robots, die je slimmer maakt en uitbreidt met baanbrekende nieuwe functionaliteiten dankzij wat je geleerd hebt in de modules <a href="/programma/cloud-1/">IoT Cloud</a>, <a href="/programma/artificial-intelligence-big-data/">Big Data</a>, <a href="/programma/machine-learning/">Machine Learning</a> en <a href="/programma/deep-learning/">Deep Learning</a>.
+Maar daar blijft het niet bij. In de practica ga je zelf aan de slag met bestaande robots, die je slimmer maakt en uitbreidt met baanbrekende nieuwe functionaliteiten dankzij wat je geleerd hebt in de modules <a class="js-module-link" href="/programma/iot-cloud/">IoT Cloud</a>, <a class="js-module-link" href="/programma/artificial-intelligence-big-data/">Big Data</a>, <a class="js-module-link" href="/programma/machine-learning/">Machine Learning</a> en <a class="js-module-link" href="/programma/deep-learning/">Deep Learning</a>.
 
 Inzichten in robotica, sensoren, dataverwerking, AI en Computer vision worden aangebracht met technologieën zoals MQTT, ESP32, LoraWAN, OpenCV en Nvidia Jetson GPU processing.

@@ -12,7 +12,7 @@ In deze module maken wij vanaf het begin een duidelijke splitsing tussen de kant
 
 Om deze beide zijdes te kunnen programmeren of te scripten maken we gebruik van twee programmeertalen: Javascript voor de frontend ontwikkeling en Python voor de backend ontwikkeling.
 
-Het uitzicht van de website bepalen en ontwikkelen enerzijds en hoe je databanken manipuleert anderzijds zal je aanleren in de modules <a href="/programma/user-interface-design/">User Interface Design</a> en <a href="/programma/data-management/">Datamanagement</a>.
+Het uitzicht van de website bepalen en ontwikkelen enerzijds en hoe je databanken manipuleert anderzijds zal je aanleren in de modules <a class="js-module-link" href="/programma/user-interface-design/">User Interface Design</a> en <a class="js-module-link" href="/programma/data-management/">Datamanagement</a>.
 
 Het ultieme doel van deze module is ervoor zorgen dat er een real-time tweewegs-communicatie ontstaat tussen sensoren en actuatoren op je Raspberry Pi en je zelfgemaakte website.
 
