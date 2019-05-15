@@ -85,7 +85,7 @@ const modal = (function() {
 		const description = modal.querySelector('.js-description');
 		const content = modal.querySelector('.js-content');
 
-		dialogBody.className = `c-modal__body c-modal__body--module c-modal__body--module-${data.pillar} u-max-width-optimal js-dialog-body`;
+		dialogBody.className = `c-modal__body c-modal__body--module c-modal__body--module-${data.pillar} js-dialog-body`;
 
 		legend.innerText = data.pillar;
 		swatch.className = `c-curriculum-legend__swatch js-swatch u-bgcolor-${data.pillar}-base`;
