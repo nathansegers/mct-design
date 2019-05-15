@@ -18,7 +18,7 @@ const modal = (function() {
 				)
 					.then(r => {
 						// console.log(r);
-						return r.text();
+						return r.json();
 					})
 					.then(d => {
 						// document.open();
@@ -30,6 +30,10 @@ const modal = (function() {
 				// if we did, get current url and fetch the data
 				// window.location = 'http://localhost:1313/programma/';
 				// console.log(window.location);
+
+			// otherwise, we remove the modal
+			} else {
+				
 			}
 			closeBtn.addEventListener('click', () => {
 				// + escape toets ook
