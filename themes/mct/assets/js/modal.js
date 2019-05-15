@@ -39,7 +39,6 @@ const modal = (function() {
 
 		if (closeBtn) {
 			closeBtn.addEventListener('click', () => {
-				// + escape toets ook
 				closeModal();
 			});
 		}
@@ -49,23 +48,13 @@ const modal = (function() {
 		if (modal) {
 			modal.addEventListener('close', function() {
 				body.classList.remove('has-modal');
+				history.replaceState({}, window.title, baseUrl);
 			});
 
 			// We are good with cancel only.
 			// modal.addEventListener('cancel', function() {
 			// 	console.log('modal canceled');
 			// });
-
-			document.addEventListener('keydown', function(e) {
-				if(e.key === "Escape") {
-					// Todo
-					if (body.classList.contains('has-modal')) {
-						body.classList.add('has-modal');
-					} else {
-						body.classList.add('has-modal');
-					}
-				}
-			});
 		}
 	};
 
