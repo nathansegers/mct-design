@@ -12,6 +12,7 @@ future:
 - Xamarin developer
 - .NET developer
 ---
+<!-- TODO: modules in overlay? -->
 
 Het web app uitstroomprofiel ligt ons nauw aan het hart. Jaren geleden begon het hele MCT verhaal met een sterke focus en een lange termijn visie op web-ontwikkeling. Ook nu is dat niet anders.
 
