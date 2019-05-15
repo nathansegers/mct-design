@@ -6,14 +6,30 @@ const modal = (function() {
 		const modal = document.querySelector('.js-dialog');
 		const body = document.querySelector('body');
 
-		if (modules) {
-			for (const m of modules) {
-				m.addEventListener('click', function(e) {
-					e.preventDefault();
-					console.log(m);
-					modal.showModal();
-					body.classList.add("has-modal");
-				});
+		enableListeners(modules);
+
+		window.addEventListener('popstate', async function(event) {
+			// Check if we came from a modal
+			if (event.state && event.state.inModal) {
+				console.log('Coming from a deeper level inside the popup...');
+
+				const curriculumPage = await fetch(
+					`${window.location}index.json`
+				)
+					.then(r => {
+						// console.log(r);
+						return r.text();
+					})
+					.then(d => {
+						// document.open();
+						// document.write(d);
+						// document.close();
+						// window.innerHTML = 'TEST';
+						console.log(d);
+					});
+				// if we did, get current url and fetch the data
+				// window.location = 'http://localhost:1313/programma/';
+				// console.log(window.location);
 			}
 			closeBtn.addEventListener('click', () => {
 				// + escape toets ook
