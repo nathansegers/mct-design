@@ -1,6 +1,5 @@
 const modal = (function() {
 	const baseUrl = window.location.href;
-	console.log('Base', baseUrl);
 	
 	let modules = null;
 	let closeBtn = null;
@@ -44,6 +43,14 @@ const modal = (function() {
 				closeModal();
 			});
 		}
+
+		if (modal) {
+			document.addEventListener('keydown', function(e) {
+				if(e.key === "Escape") {
+					closeModal();
+				}
+			});
+		}
 	};
 
 	const showModal = function() {
@@ -57,7 +64,7 @@ const modal = (function() {
 		body.classList.remove('has-modal');
 	}
 
-	const listenToNestedModules = function() {
+	const listenToNestedModules = function() {		
 		const followModules = modal.querySelectorAll('.js-module-link');
 		for (const m of followModules) {
 			m.addEventListener('click', attachModel);
