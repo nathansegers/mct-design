@@ -51,11 +51,11 @@ $color-notice: #ff851b !default;
 
 $color-neutral: hsl(hue($color-beta), 5, 50) !default;
 
-$color-code: #01a8c1;
+$color-code: lighten(#01a8c1,2.5);
 $color-connect: #ef3696;
 $color-create: #fb9d3c;
-$color-analysis: #a46b50;
-$color-project: #7b9641;
+$color-analysis: lighten(#a46b50,5);
+$color-project: lighten(#7b9641,7.5);
 
 // Palettes
 $palettes: (
