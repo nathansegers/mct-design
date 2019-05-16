@@ -11,9 +11,6 @@ tracks:
 tools: "Debian GNU/Linux, Apache httpd, haproxy, bash, ssh, ..."
 ---
 
-**Waar kan een onderneming voordeel uithalen door het gebruik van Linux? We leren hoe alomtegenwoordig linux is waarvoor het best gebruikt kan worden, hoe je het opzet, beheert en optimaliseert.**
-
-
 Linux is alomtegenwoordig. Alleen weten veel mensen dat niet. Gebruik je soms Facebook? Of Instagram? Of Spotify? Of Twitter? Of Android? Dan **gebruik je onbewust Linux**. Want al deze diensten gebruiken achterliggend Linux.
 
 We starten vanaf de basis met de installatie van een linux-gebaseerd operating system. We kiezen hierbij voor **Debian GNU/Linux** omdat het aan de basis staat van heel vele andere bekende linux distributies zoals onder andere Ubuntu, Kali linux, Knoppix, Element en Linux Mint.
