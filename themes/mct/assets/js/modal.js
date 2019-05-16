@@ -1,6 +1,6 @@
 const modal = (function() {
 	const baseUrl = window.location.href;
-	
+
 	let modules = null;
 	let closeBtn = null;
 	let modal = null;
@@ -19,12 +19,14 @@ const modal = (function() {
 			if (e.state && e.state.inModal) {
 				// We need a modal with the current url pls...
 				attachModel(null, window.location);
-
 			// otherwise, we remove the modal
 			}
 			else {
 				if (modal) {
 					closeModal();
+				} else {
+					// When there is no modal, we reload the page to prevent a wrong url... Maybe we are just getting a url from the history without really 'using' that page.
+					window.location = window.location;
 				}
 			}
 		});
@@ -49,18 +51,15 @@ const modal = (function() {
 			modal.addEventListener('close', function() {
 				body.classList.remove('has-modal');
 				history.replaceState({}, window.title, baseUrl);
+				ga('send', 'pageview', location.pathname);
 			});
-
-			// We are good with cancel only.
-			// modal.addEventListener('cancel', function() {
-			// 	console.log('modal canceled');
-			// });
 		}
 	};
 
 	const showModal = function() {
 		modal.showModal();
 		body.classList.add('has-modal');
+		// ga('send', 'pageview', location.pathname);
 	};
 
 	const closeModal = function() {
@@ -84,6 +83,7 @@ const modal = (function() {
 		const tags = modal.querySelector('.js-tags');
 		const description = modal.querySelector('.js-description');
 		const content = modal.querySelector('.js-content');
+		const tools = modal.querySelector('.js-tools');
 
 		dialogBody.className = `c-modal__body c-modal__body--module c-modal__body--module-${data.pillar} js-dialog-body`;
 
@@ -96,7 +96,13 @@ const modal = (function() {
 
 		if (data.description) {
 			description.innerText = data.description;
+		}
+
+		if (data.tools) {
+			tools.parentNode.style.display = 'block';
+			tools.innerHTML = data.tools;
 		} else {
+			tools.parentNode.style.display = 'none';
 		}
 
 		content.innerHTML = data.content;
@@ -115,24 +121,23 @@ const modal = (function() {
 			e.preventDefault();
 			moduleUrl = this.href;
 		}
-		
-		if (!modal.open) {
-			showModal();
-		}
-
 
 		const data = await getModuleData(moduleUrl);
-		
 		populateModal(data);
 
 		// This happened by an event
 		if (e) {
 			history.pushState({ inModal: true }, data.title, moduleUrl);
-
 		// This happened by history navigation
 		} else {
 			history.replaceState({ inModal: true }, data.title, moduleUrl);
 		}
+
+		if (!modal.open) {
+			showModal();
+		}
+
+		ga('send', 'pageview', location.pathname);
 	};
 
 	return {
