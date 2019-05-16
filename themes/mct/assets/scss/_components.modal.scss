@@ -43,7 +43,7 @@
 	background-color: #fff;
 	box-shadow: 0 0 20px rgba(palette(color-neutral,xxxx-dark),.1);
 	margin: auto;
-	max-width: calc(43.5em + #{$columns-gutter * 4});
+	max-width: calc(43.5em + #{$columns-gutter * 4}px);
 	@include padding-lr($columns-gutter);
 	@include padding-tb($columns-gutter,0);
 
