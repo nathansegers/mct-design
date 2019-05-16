@@ -450,32 +450,27 @@
 		<button class="c-modal__close js-dialog-close" aria-label="Close dialog">
 			{{ partial "atoms/symbol" (dict "value" "close" "class" "c-nav-main-trigger__symbol")}}
 		</button>
-
-		<ul class="o-list c-curriculum-legend">
-			<li class="c-curriculum-legend__item">
-				<span class="c-curriculum-legend__swatch js-swatch"></span>
-				<span class="js-legend"></span>
-			</li>
-		</ul>
-		<h1 class="c-type-intro u-mb-alpha js-title">
-
-		</h1>
-		<p class="c-type-meta u-ms-1 u-color-neutral-base js-tags">
-
-		</p>
-		<div class="u-max-width-optimal">
-			<p class="c-type-intro-small js-description">
-
-			</p>
-			<div class="s-content js-content">
-			</div>
-			<h3 class="u-mb-alpha u-color-alpha-light">
+		<div class="c-main-section">
+			<ul class="o-list c-curriculum-legend">
+				<li class="c-curriculum-legend__item">
+					<span class="c-curriculum-legend__swatch js-swatch"></span>
+					<span class="js-legend"></span>
+				</li>
+			</ul>
+			<h1 class="c-type-intro u-mb-alpha js-title"></h1>
+			<p class="c-type-meta u-ms-1 u-color-neutral-base js-tags"></p>
+			<p class="c-type-intro-small js-description"></p>
+			<h3 class="u-mb-alpha">
 				Tools: <span class="u-color-neutral-base"></span>
 			</h3>
 			<p class="u-color-neutral-base">
-				{{ .Params.Tools }}
+				Visual Studio Code, Chrome developer tools, Yarn en Gulp
 			</p>
+		
+			<div class="s-content js-content">
+			</div>
 		</div>
+
 	</div>
 </dialog>
 {{ end }}
