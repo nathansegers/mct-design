@@ -737,7 +737,7 @@
 	    // Polyfill
 		var dialog = document.querySelector('dialog');
 		if (dialog) {
+			// Now dialog acts like a native <dialog>
 			dialogPolyfill.registerDialog(dialog);
 		}
-		// Now dialog acts like a native <dialog>.
   })();
