@@ -2,7 +2,7 @@
 title: Computer Networks
 semester: 1
 weight: 20
-tags: "#security #debian #r.pi #raspbian #apache #mysql #ccna #cisco"
+tags: "#networks #security #windows10 #debian #r.pi #raspbian #apache #mysql #ccna #cisco"
 pillar: connect
 tools: "Windows 10, Debian Linux, Raspberry Pi, Soho router, Hyper-V virtualisatie"
 ---

@@ -2,7 +2,7 @@
 title: Backend Development
 semester: 4
 weight: 30
-tags: "#ASP #netcore #auth #crossplatform #AI-architect"
+tags: "#ASP #netcore #authenticatie #crossplatform #AI-Architectuur"
 pillar: code
 tracks:
 - web-app
