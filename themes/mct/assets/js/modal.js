@@ -1,6 +1,6 @@
 const modal = (function() {
 	const baseUrl = window.location.href;
-	
+
 	let modules = null;
 	let closeBtn = null;
 	let modal = null;
@@ -19,12 +19,14 @@ const modal = (function() {
 			if (e.state && e.state.inModal) {
 				// We need a modal with the current url pls...
 				attachModel(null, window.location);
-
 			// otherwise, we remove the modal
 			}
 			else {
 				if (modal) {
 					closeModal();
+				} else {
+					// When there is no modal, we reload the page to prevent a wrong url... Maybe we are just getting a url from the history without really 'using' that page.
+					window.location = window.location;
 				}
 			}
 		});
@@ -114,13 +116,11 @@ const modal = (function() {
 		}
 
 		const data = await getModuleData(moduleUrl);
-		
 		populateModal(data);
 
 		// This happened by an event
 		if (e) {
 			history.pushState({ inModal: true }, data.title, moduleUrl);
-
 		// This happened by history navigation
 		} else {
 			history.replaceState({ inModal: true }, data.title, moduleUrl);
