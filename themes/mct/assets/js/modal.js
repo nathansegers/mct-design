@@ -49,18 +49,15 @@ const modal = (function() {
 			modal.addEventListener('close', function() {
 				body.classList.remove('has-modal');
 				history.replaceState({}, window.title, baseUrl);
+				ga('send', 'pageview', location.pathname);
 			});
-
-			// We are good with cancel only.
-			// modal.addEventListener('cancel', function() {
-			// 	console.log('modal canceled');
-			// });
 		}
 	};
 
 	const showModal = function() {
 		modal.showModal();
 		body.classList.add('has-modal');
+		// ga('send', 'pageview', location.pathname);
 	};
 
 	const closeModal = function() {
@@ -115,11 +112,6 @@ const modal = (function() {
 			e.preventDefault();
 			moduleUrl = this.href;
 		}
-		
-		if (!modal.open) {
-			showModal();
-		}
-
 
 		const data = await getModuleData(moduleUrl);
 		
@@ -133,6 +125,12 @@ const modal = (function() {
 		} else {
 			history.replaceState({ inModal: true }, data.title, moduleUrl);
 		}
+
+		if (!modal.open) {
+			showModal();
+		}
+
+		ga('send', 'pageview', location.pathname);
 	};
 
 	return {
