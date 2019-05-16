@@ -2,13 +2,11 @@ const modal = (function() {
 	const baseUrl = window.location.href;
 
 	let modules = null;
-	let closeBtn = null;
 	let modal = null;
 	let body = null;
 
 	const setup = function() {
 		modules = document.querySelectorAll('.js-module-link');
-		closeBtn = document.querySelector('.js-dialog-close');
 		modal = document.querySelector('.js-dialog');
 		body = document.querySelector('body');
 
@@ -39,14 +37,6 @@ const modal = (function() {
 			}
 		}
 
-		if (closeBtn) {
-			closeBtn.addEventListener('click', () => {
-				closeModal();
-			});
-		}
-
-		// modal events?
-
 		if (modal) {
 			modal.addEventListener('close', function() {
 				body.classList.remove('has-modal');
@@ -67,7 +57,14 @@ const modal = (function() {
 		history.replaceState({}, window.title, baseUrl);
 	}
 
-	const listenToNestedModules = function() {		
+	const listenToGeneratedModal = function() {
+		const closeBtn = modal.querySelector('.js-dialog-close');
+		if (closeBtn) {
+			closeBtn.addEventListener('click', () => {
+				closeModal();
+			});
+		}
+
 		const followModules = modal.querySelectorAll('.js-module-link');
 		for (const m of followModules) {
 			m.addEventListener('click', attachModel);
@@ -75,39 +72,50 @@ const modal = (function() {
 	}
 
 	const populateModal = function(data) {
-		// Get the current content
-		const dialogBody = document.querySelector('.js-dialog-body');
-		const legend = modal.querySelector('.js-legend');
-		const swatch = modal.querySelector('.js-swatch');
-		const title = modal.querySelector('.js-title');
-		const tags = modal.querySelector('.js-tags');
-		const description = modal.querySelector('.js-description');
-		const content = modal.querySelector('.js-content');
-		const tools = modal.querySelector('.js-tools');
+		const modalHTML = `
+			<div class="c-modal__body c-modal__body--module c-modal__body--module-${data.pillar}">
+				<button class="c-modal__close js-dialog-close" aria-label="Close dialog">
+					<svg role="img" class="c-symbol c-symbol-close c-nav-main-trigger__symbol">
+						<use xlink:href="/img/svg/svg-symbols.svg#c-symbol-close"></use>
+					</svg>
+				</button>
+		
+				<ul class="o-list c-curriculum-legend">
+					<li class="c-curriculum-legend__item">
+						<span class="c-curriculum-legend__swatch u-bgcolor-${data.pillar}-base"></span>
+						${data.pillar}
+					</li>
+				</ul>
+				<h1 class="c-type-intro u-mb-alpha">
+					${data.title}
+				</h1>
+				<p class="c-type-meta u-ms-1 u-color-neutral-base">
+					${data.tags}
+				</p>
+				<div class="u-max-width-optimal">
+					${(data.description) ? `
+						<p class="c-type-intro-small ">
+							${data.description}
+						</p>
+					`: ``}
 
-		dialogBody.className = `c-modal__body c-modal__body--module c-modal__body--module-${data.pillar} js-dialog-body`;
+					<div class="s-content ">
+						${data.content}
+					</div>
 
-		legend.innerText = data.pillar;
-		swatch.className = `c-curriculum-legend__swatch js-swatch u-bgcolor-${data.pillar}-base`;
+					${(data.tools) ? `
+						<h3 class="u-mb-alpha u-color-alpha-light">
+							Tools: <span class="u-color-neutral-base"></span>
+						</h3>
+						<p class="u-color-neutral-base">
+							${data.tools}
+						</p>
+					`: ``}
+				</div>
+			</div>`;
 
-		title.innerText = data.title;
-
-		tags.innerText = data.tags;
-
-		if (data.description) {
-			description.innerText = data.description;
-		}
-
-		if (data.tools) {
-			tools.parentNode.style.display = 'block';
-			tools.innerHTML = data.tools;
-		} else {
-			tools.parentNode.style.display = 'none';
-		}
-
-		content.innerHTML = data.content;
-
-		listenToNestedModules();
+		modal.innerHTML = modalHTML;
+		listenToGeneratedModal()
 	}
 
 	const getModuleData = function(url) {
