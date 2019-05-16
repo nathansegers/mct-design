@@ -450,6 +450,7 @@
 		<button class="c-modal__close js-dialog-close" aria-label="Close dialog">
 			{{ partial "atoms/symbol" (dict "value" "close" "class" "c-nav-main-trigger__symbol")}}
 		</button>
+
 		<ul class="o-list c-curriculum-legend">
 			<li class="c-curriculum-legend__item">
 				<span class="c-curriculum-legend__swatch js-swatch"></span>
@@ -466,15 +467,16 @@
 			<p class="c-type-intro-small js-description">
 
 			</p>
-			<h3 class="u-mb-alpha">
-				Tools:
-			</h3>
-			<p class="u-color-neutral-base js-tools">
-					
-			</p>
 			<div class="s-content js-content">
 			</div>
+			<h3 class="u-mb-alpha u-color-alpha-light">
+				Tools: <span class="u-color-neutral-base js-tools"></span>
+			</h3>
+			<p class="u-color-neutral-base">
+				{{ .Params.Tools }}
+			</p>
 		</div>
+
 	</div>
 </dialog>
 {{ end }}
