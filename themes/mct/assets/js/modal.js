@@ -83,6 +83,7 @@ const modal = (function() {
 		const tags = modal.querySelector('.js-tags');
 		const description = modal.querySelector('.js-description');
 		const content = modal.querySelector('.js-content');
+		const tools = modal.querySelector('.js-tools');
 
 		dialogBody.className = `c-modal__body c-modal__body--module c-modal__body--module-${data.pillar} js-dialog-body`;
 
@@ -95,7 +96,13 @@ const modal = (function() {
 
 		if (data.description) {
 			description.innerText = data.description;
+		}
+
+		if (data.tools) {
+			tools.parentNode.style.display = 'block';
+			tools.innerHTML = data.tools;
 		} else {
+			tools.parentNode.style.display = 'none';
 		}
 
 		content.innerHTML = data.content;
