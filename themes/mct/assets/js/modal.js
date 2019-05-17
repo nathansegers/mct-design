@@ -79,7 +79,7 @@ const modal = (function() {
 						<use xlink:href="/img/svg/svg-symbols.svg#c-symbol-close"></use>
 					</svg>
 				</button>
-		
+
 				<ul class="o-list c-curriculum-legend">
 					<li class="c-curriculum-legend__item">
 						<span class="c-curriculum-legend__swatch u-bgcolor-${data.pillar}-base"></span>
@@ -98,19 +98,18 @@ const modal = (function() {
 							${data.description}
 						</p>
 					`: ``}
-
-					<div class="s-content ">
-						${data.content}
-					</div>
-
 					${(data.tools) ? `
-						<h3 class="u-mb-alpha u-color-alpha-light">
+						<h3 class="u-mb-alpha">
 							Tools: <span class="u-color-neutral-base"></span>
 						</h3>
 						<p class="u-color-neutral-base">
 							${data.tools}
 						</p>
 					`: ``}
+					<div class="s-content ">
+						${data.content}
+					</div>
+
 				</div>
 			</div>`;
 
