@@ -13,7 +13,7 @@
 }
 
 @mixin ms-1 {
-    @include text-dimensions(ms(-1),.875);
+    @include text-dimensions(ms(-1),1);
 }
 
 @mixin ms0 {
