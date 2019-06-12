@@ -1,5 +1,5 @@
 ---
-title: Start-up
+title: Fast Forward
 semester: 5
 weight: 40
 tags: "#international #business #mvp #entrepreneurs"
