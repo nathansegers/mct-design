@@ -78,7 +78,7 @@
                         <div class="c-curriculum u-pt-alpha">
                             <div class="c-curriculum__semester u-pt-alpha">
                                 <h3 class="c-curriculum__semester-title">
-                                    Oktober 2018
+                                    Oktober {{ now.Year }}
                                 </h3>
                                 <a href="{{ ref . "/programma/machine-learning" }}" class="c-module c-module--analysis c-module--link">
                                     <h4 class="c-module__title">Machine Learning</h4>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="c-curriculum__semester u-pt-alpha">
                                 <h3 class="c-curriculum__semester-title">
-                                    Q1 2019
+                                    Q1 {{ add (int now.Year) 1 }}
                                 </h3>
                                 <a href="{{ ref . "/programma/deep-learning" }}" class="c-module c-module--analysis c-module--link">
                                     <h4 class="c-module__title">Deep Learning</h4>
