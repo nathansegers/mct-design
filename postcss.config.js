@@ -1,6 +1,6 @@
 module.exports = {
 	plugins: {
-		'\node_modules\@fullhuman\postcss-purgecss': {
+		'/node_modules/@fullhuman/postcss-purgecss': {
 			content: ['themes/mct/layouts/**/*.html'],
 			whitelist: [
 				'c-module--analysis',
