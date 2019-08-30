@@ -21,7 +21,6 @@
 
 	<!-- Stylesheets -->
 	{{ $style := resources.Get "scss/screen.scss" | toCSS | minify | fingerprint }}
-	<!-- {{ $style := resources.Get "scss/screen.scss" | toCSS | postCSS | minify | fingerprint }} -->
 	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
 	<link href="//www.google-analytics.com" rel="dns-prefetch">
