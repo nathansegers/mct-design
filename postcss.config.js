@@ -1,10 +1,6 @@
-const purgecss = require('@fullhuman/postcss-purgecss'),
-	autoprefixer = require('autoprefixer'),
-	cssnano = require('cssnano');
-
 module.exports = {
-	plugins: [
-		purgecss({
+	plugins: {
+		'@fullhuman/postcss-purgecss': {
 			content: ['themes/mct/layouts/**/*.html'],
 			whitelist: [
 				'c-module--analysis',
@@ -21,8 +17,8 @@ module.exports = {
 				'ul',
 				'li',
 			],
-		}),
-		autoprefixer({}),
-		cssnano({ preset: 'default' }),
-	],
+		},
+		autoprefixer: {},
+		cssnano: { preset: 'default' },
+	},
 };
