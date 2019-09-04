@@ -20,7 +20,7 @@
     <title>{{ block "title" . }}{{ .Params.Title }} | {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}</title>
 
 	<!-- Stylesheets -->
-	{{ $style := resources.Get "scss/screen.scss" | toCSS | minify | postCSS | fingerprint }}
+	{{ $style := resources.Get "scss/screen.scss" | toCSS | minify | postCSS | fingerprint }}
 	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
 	<link href="//www.google-analytics.com" rel="dns-prefetch">
