@@ -74,7 +74,7 @@
                                             <div class="c-carousel__items js-carousel-items is-released" style="--n:4; --i:0; --tx:0px; --f:0.5">
                                                 {{ range $i, $sequence := (first 4 (where .Data.Pages "Type" "project")) }}
                                                     <div class="c-carousel__item{{ if (eq $i 0) }} is-selected{{ end }} js-carousel-item" data-slide="{{ $i }}">
-                                                        {{ partial "atoms/project-article-home" .}}
+                                                        {{ partial "atoms/project-article-home" . }}
                                                     </div>
                                                 {{ end }}
                                             </div>
