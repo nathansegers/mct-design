@@ -3,7 +3,7 @@ type: news
 title: "Howest MCT Instapcursussen 2018"
 date: 2018-06-14T22:37:30+01:00
 description: "Sta je te popelen om NMCT te studenten maar ben je wat onzeker over je kennis Windows, HTML, CSS, Arduino, Python of wiskunde? Howest NMCT biedt haar nieuwe studenten verschillende instapcursussen aan in september 2018!"
-cover: howest-nmct-instapcursussen-2018.jpg
+cover: "howest-nmct-instapcursussen-2018.jpg"
 draft: false
 ---
 

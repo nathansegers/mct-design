@@ -3,7 +3,7 @@ type: news
 title: "Als MCT-student naar China"
 date: 2019-05-29T08:20:40+01:00
 description: "Een van onze studenten, Bram, vertelt ons zijn ervaringen tijdens de reis in China. \"Internet of Things devices en -applicaties maken er deel uit van het dagelijkse leven.\""
-cover: mct-in-china.jpg
+cover: "mct-in-china.jpg"
 draft: false
 ---
 
