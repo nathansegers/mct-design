@@ -3,7 +3,7 @@ type: news
 title: "International Week"
 date: 2019-04-01T16:47:14+02:00
 description: "De week voor het paasverlof staat volledig in teken van het uitbouwen en in stand houden van internationale ervaringen en relaties."
-cover: Internationals.jpg
+cover: "Internationals.jpg"
 draft: false
 ---
 
