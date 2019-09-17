@@ -1,4 +1,4 @@
-{{ $cover := .Params.Cover }}
+{{ $cover := .Params.cover }}
 {{ $image := .Resources.GetMatch $cover }}
 {{ $scaledImage := $image.Resize "400x" }}
 

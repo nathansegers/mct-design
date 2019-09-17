@@ -1,4 +1,4 @@
 ---
-type: project
+# type: project
 title: Projectweken
 ---
