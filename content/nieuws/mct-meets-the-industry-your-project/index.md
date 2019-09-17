@@ -1,5 +1,4 @@
 ---
-type: news
 title: "MCT meets the industry: your project"
 date: 2019-06-25T13:04:40+01:00
 description: "Onze 1ste jaars MCT’ers hebben er 4 geweldig drukke weken op zitten. Een jaar lang hebben ze het beste van zichzelf gegeven tijdens de les en onlangs kregen ze eindelijk de opdracht hun eerste project uit te werken. "

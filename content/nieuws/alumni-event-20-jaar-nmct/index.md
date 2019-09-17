@@ -1,5 +1,4 @@
 ---
-type: news
 title: "Alumni Event 20 Jaar NMCT"
 date: 2018-03-09T21:40:40+01:00
 description: "20 jaar NMCT: een NMCT event voor haar alumni en studenten op zaterdag 21 april, vanaf 18u."
