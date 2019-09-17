@@ -1,5 +1,4 @@
 ---
-type: news
 title: "NMCT Summer Pizza Party"
 date: 2018-06-04T22:37:56+01:00
 description: "Howest NMCT organiseert dinsdagavond 26 juni 2018 voor al haar studenten en oud-studenten een NMCT Summer Pizza Party!"

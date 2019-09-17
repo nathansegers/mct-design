@@ -1,5 +1,4 @@
 ---
-type: news
 title: "Howest in motion"
 date: 2019-06-28T10:23:44+01:00
 description: "Elk jaar gaat de sportinnovatiecampus van Howest op zoek naar mogelijkheden om mensen op een laagdrempelige manier aan het bewegen te zetten door ook de nieuwste technologieën te gebruiken."

@@ -1,5 +1,4 @@
 ---
-type: news
 title: "Start-up beurs"
 date: 2019-02-19T10:23:44+01:00
 description: "De studenten Howest NMCT, Howest Industrieel ProductOntwerpen, Howest Energiemanagement en Howest Netwerkeconomie hebben hun beste beentje voorgezet op de start-up beurs in de Depart. "

@@ -1,5 +1,4 @@
 ---
-type: project
 title: Bloom
 date: 2018-03-09T21:40:40+01:00
 description: "Samen met Hyperspace Ventures ontwikkelde onze studenten een IOT app die het verlichtingsproduct Bloom slim maakt."
