@@ -1,5 +1,4 @@
 ---
-type: news
 title: "NSA hacking event"
 date: 2019-03-01T10:53:00+01:00
 description: "Samen met de collega's van Toegepaste informatica organiseert ons Infrastructure Engineer Team een Capture The Flag event in onze kortrijk Campus in de lokalen van Howest NMCT."
