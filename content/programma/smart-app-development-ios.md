@@ -2,10 +2,17 @@
 title: Smart App Development
 semester: 4
 weight: 20
-tags: "#iOS #C# #Xamarin"
+tags: "#expo #reactNative #iOS #Android"
 pillar: code
+tools: "Expo, webpack, JS, ReactNative, Lottie"
 tracks:
 - web-app
 ---
 
-Ontwikkelen van **Xamarin applicaties** met behulp van **Visual Studio**. In deze module leren we Xamarin applicaties bouwen op een professionele manier en dit voor Android en iOS. Dit wil zeggen dat de applicaties volgens een bepaald patroon gebouwd moeten worden (**MVVM**) zodat we ze achteraf makkelijk kunnen uitbreiden of aanpassen. Daarnaast is het ook de bedoeling dat we onze **code leren testen** via **automated testing**.
+**Smart App Development — Hoe maken we performante en mooie apps die een zo veel mogelijk gedeelde codebase hebben tussen iOS & Android?**
+
+We bekijken hoe we met React Native een hybride mobile app kunnen maken met een zo veel mogelijk shared codebase. Aan de hand van Expo zetten we een vlotte development structuur op. We bekijken welke device-API's we kunnen gebruiken, hoe we met data werken en hoe we platform specifieke logica toevoegen.
+
+Ook komen animaties aan bod, basis microinteracties en het gestructureerd werken met Javascript.
+
+Deze module is ook een aanzet naar de web-based [JS-frameworks en patterns](/programma/framework-patterns/).
