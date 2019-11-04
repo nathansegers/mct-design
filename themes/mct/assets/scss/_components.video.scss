@@ -6,6 +6,7 @@
     position: relative;
     // background: palette(color-neutral, xxxx-light);
     background-color: palette(color-alpha);
+    border-radius: $radius-md;
     @include margin-bottom($alpha-leading);
     // @include box-shadow-xl;
 
@@ -75,6 +76,7 @@
         width: 100%;
         position: relative;
         z-index: 10;
+        border-radius: $radius-md;
 
         &::-webkit-media-controls-enclosure {
             overflow:hidden;

@@ -47,7 +47,7 @@ button::-moz-focus-inner {
     touch-action: manipulation; /* [1] */
     background-image: none; /* [2] */
     white-space: nowrap; /* [3] */
-    border-radius: 0;
+    border-radius: $radius-md;
     border-width: 0;
     transition-duration: $animation-duration-alpha;
     transition-timing-function: $animation-easing-alpha;
