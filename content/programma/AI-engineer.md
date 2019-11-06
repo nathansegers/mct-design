@@ -27,7 +27,7 @@ Onze docenten waren lang voor de hype reeds actief in AI, sinds 2008. Reeds in 2
 
 {{< quote "Kiezen voor een MCT AI keuzetraject is simpelweg kiezen voor de AI Bachelor met de beste AI traditie, onderwijs en onderzoek." >}}
 
-Machine Learning is sinds 2015 deel van ons curriculum. De opbouw en ervaring die in ons curriculum bevat zit maakt jou een completer AI Engineer (CI/CD voor AI, Deep Learning, Big Data architectuur).
+Machine Learning is sinds 2015 deel van ons curriculum. De opbouw en ervaring die in ons curriculum bevat zit maakt jou een complete AI Engineer (CI/CD voor AI, Deep Learning, Big Data architectuur).
 
 {{< figure-custom src="/img/jpg/JameiSweetMustard.jpg" alt="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" title="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" >}}
 
