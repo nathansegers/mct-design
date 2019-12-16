@@ -45,17 +45,17 @@
 }
 
 .c-update {
-    color: palette(color-neutral,xxxx-dark);
+    color: palette(color-neutral,xxxxx-light);
     margin-bottom: 0;
     display: flex;
     @include ms-1;
 
     a {
-		color: palette(color-neutral,xxxx-dark);
+		color: palette(color-neutral,xxxxx-light);
 
 		&,
         &:visited {
-            color: palette(color-neutral,xxxx-dark);
+            color: palette(color-neutral,xxxxx-light);
             text-decoration: underline;
             font-weight: $delta-font-weight;
         }
@@ -73,7 +73,7 @@
 }
 
 .c-update__symbol {
-    fill: palette(color-neutral,xxxx-dark);
+    fill: palette(color-neutral,xxxxx-light);
 }
 
 .c-update__symbol--bell {
