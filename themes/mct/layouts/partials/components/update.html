@@ -1,8 +1,8 @@
 <p class="c-update">
-    <span class="c-update__symbol-holder">
-        {{ partial "atoms/symbol" (dict "value" "notifications" "class" "c-update__symbol c-update__symbol--bell") }}
-    </span>
-    <span class="c-update__text">
-        {{.Site.Data.announcement.content | markdownify}}
-    </span>
+	<span class="c-update__symbol-holder">
+		{{ partial "atoms/symbol" (dict "value" "notifications" "class" "c-update__symbol c-update__symbol--bell") }}
+	</span>
+	<span class="c-update__text">
+		{{.Site.Data.announcement.content | markdownify}}
+	</span>
 </p>
