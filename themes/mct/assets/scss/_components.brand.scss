@@ -60,7 +60,9 @@ $logo-box-height:    $alpha-leading * 3;
     // justify-content: flex-end;
     // justify-content: center;
 	margin-bottom: 0;
-	@include text-dimensions(ms(-1),1);
+    color: white;
+    @include ms-1;
+	// @include text-dimensions(ms(-1),1);
 }
 
 .c-howest-badge__logo {
