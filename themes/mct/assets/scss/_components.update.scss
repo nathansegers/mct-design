@@ -51,7 +51,9 @@
     @include ms-1;
 
     a {
-        &,
+		color: palette(color-neutral,xxxxx-light);
+
+		&,
         &:visited {
             color: palette(color-neutral,xxxxx-light);
             text-decoration: underline;
@@ -71,7 +73,7 @@
 }
 
 .c-update__symbol {
-    fill: white;
+    fill: palette(color-neutral,xxxxx-light);
 }
 
 .c-update__symbol--bell {

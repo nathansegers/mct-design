@@ -5,71 +5,71 @@
 */
 
 .c-row {
-    position: relative;
-    background-color: palette(color-neutral, xxxxx-light);
-    z-index: 10;
-    @include clearfix;
-    @include padding-lr($columns-gutter,$columns-gutter);
-    @include padding-tb($alpha-leading * 2,$alpha-leading * 1);
+	position: relative;
+	background-color: palette(color-neutral, xxxxx-light);
+	z-index: 10;
+	@include clearfix;
+	@include padding-lr($columns-gutter, $columns-gutter);
+	@include padding-tb($alpha-leading * 2, $alpha-leading * 1);
 
-    @include mq(bp3) {
-        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
-    }
+	@include mq(bp3) {
+		@include padding-lr($columns-gutter * 2, $columns-gutter * 2);
+	}
 }
 
 .c-row--lg {
-    @include mq(bp4) {
-        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
-    }
+	@include mq(bp4) {
+		@include padding-tb($alpha-leading * 4, $alpha-leading * 3);
+	}
 }
 
 .c-row--xl {
-    @include mq(bp3) {
-        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
-    }
+	@include mq(bp3) {
+		@include padding-tb($alpha-leading * 4, $alpha-leading * 3);
+	}
 
-    @include mq(bp6) {
-        @include padding-tb($alpha-leading * 6,$alpha-leading * 5);
-    }
+	@include mq(bp6) {
+		@include padding-tb($alpha-leading * 6, $alpha-leading * 5);
+	}
 }
 
 .c-row--alpha {
-    background-color: palette(color-alpha);
-    color: palette(color-neutral,xxxxx-light);
+	background-color: palette(color-alpha);
+	color: palette(color-neutral, xxxxx-light);
 }
 
 .c-row--beta {
-    background-color: palette(color-neutral,xxxx-dark);
-    color: palette(color-neutral,xxxxx-light);
+	background-color: palette(color-neutral, xxxx-dark);
+	color: palette(color-neutral, xxxxx-light);
 }
 
 .c-row--gamma {
-    background: palette(color-neutral,xx-dark);
-    color: palette(color-neutral, xxxxx-light);
+	background: palette(color-neutral, xx-dark);
+	color: palette(color-neutral, xxxxx-light);
 }
 
 .c-row--divide {
-    border-top: 1px solid palette(color-neutral,xxx-light);
+	border-top: 1px solid palette(color-neutral, xxx-light);
 }
 
 .c-row--top {
-    background-color: palette(color-alpha, base);
-    z-index: 30;
-    // box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxxx-light),.15);
-    border-bottom: 1px solid rgba(palette(color-neutral,xxxxx-light),.15);
+	background-color: palette(color-alpha, base);
+	border-top: 1px solid palette(color-neutral, xxx-light);
+	z-index: 30;
+	// box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxxx-light),.15);
+	border-bottom: 1px solid rgba(palette(color-neutral, xxxxx-light), 0.15);
 
-    @include padding-tb($alpha-leading * .5, $alpha-leading * .5);
+	@include padding-tb($alpha-leading * 0.5, $alpha-leading * 0.5);
 }
 
 .c-row--header {
-    background-color: palette(color-alpha);
-    z-index: 20;
-    @include padding-tb($alpha-leading,$alpha-leading);
+	background-color: palette(color-alpha);
+	z-index: 20;
+	@include padding-tb($alpha-leading, $alpha-leading);
 
-    @include mq(bp3) {
-        // @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
-        @include padding-tb($alpha-leading * .5,$alpha-leading * 2);
-    }
+	@include mq(bp3) {
+		@include padding-tb($alpha-leading * 2, $alpha-leading * 2);
+	}
 }
 
 .c-row--howest {
@@ -79,53 +79,53 @@
 }
 
 .c-row--intro {
-    background-color: palette(color-alpha);
-    color: palette(color-neutral,xxxxx-light);
+	background-color: palette(color-alpha);
+	color: palette(color-neutral, xxxxx-light);
 }
 
 .c-row--visual {
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -7.5%;
-        height: 50%;
-        background-color: #fff;
-        transform: skewY(-3deg);
-    }
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -7.5%;
+		height: 50%;
+		background-color: #fff;
+		transform: skewY(-3deg);
+	}
 }
 
 .c-row--footer {
-    border-top: 1px solid palette(color-neutral,xxx-light);
-	border-bottom: $alpha-leading * .25px solid palette(color-alpha);
+	border-top: 1px solid palette(color-neutral, xxx-light);
+	border-bottom: $alpha-leading * 0.25px solid palette(color-alpha);
 }
 
 .c-row--404 {
-    background-color: palette(color-alpha);
-    color: white;
-    min-height: calc(100vh - #{$alpha-leading * 5}px);
-    display: flex;
-    align-items: center;
+	background-color: palette(color-alpha);
+	color: white;
+	min-height: calc(100vh - #{$alpha-leading * 5}px);
+	display: flex;
+	align-items: center;
 
-    @include mq(bp3) {
-        min-height: calc(100vh - #{$alpha-leading * 7}px);
-    }
+	@include mq(bp3) {
+		min-height: calc(100vh - #{$alpha-leading * 7}px);
+	}
 }
 
 .c-row--no-overflow {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .c-row--clear {
-    padding: 0;
+	padding: 0;
 }
 
 .c-row--clear-top {
-    padding-top: 0;
+	padding-top: 0;
 }
 
 .c-row--clear-bottom {
-    padding-bottom: 0;
+	padding-bottom: 0;
 }
