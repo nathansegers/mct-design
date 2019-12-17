@@ -67,8 +67,15 @@
     @include padding-tb($alpha-leading,$alpha-leading);
 
     @include mq(bp3) {
-        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+        // @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+        @include padding-tb($alpha-leading * .5,$alpha-leading * 2);
     }
+}
+
+.c-row--howest {
+    background-color: palette(color-alpha);
+    color: white;
+    @include padding-tb($alpha-leading * .5, 0);
 }
 
 .c-row--intro {
