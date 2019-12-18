@@ -48,6 +48,7 @@
 	.c-media--link:hover &,
 	.c-media--link:focus & {
 		color: $link-color;
+		text-decoration: underline;
 
 		// override this when it's inside the carousel on the homepage
 		.c-carousel__item.is-not-selected & {
@@ -59,10 +60,10 @@
 .c-media__text {
 	color: palette(color-neutral);
 
-	.c-media--link:hover &,
-	.c-media--link:focus & {
-		color: $link-color;
-	}
+	// .c-media--link:hover &,
+	// .c-media--link:focus & {
+	// 	color: $link-color;
+	// }
 
 	// override this when it's inside the carousel on the homepage
 	.c-carousel__item.is-not-selected & {
@@ -74,10 +75,10 @@
 	font-family: $beta-font-family;
 	text-transform: uppercase;
 
-	.c-media--link:hover &,
-	.c-media--link:focus & {
-		color: $link-color;
-	}
+	// .c-media--link:hover &,
+	// .c-media--link:focus & {
+	// 	color: $link-color;
+	// }
 }
 
 .c-media__more-link {
