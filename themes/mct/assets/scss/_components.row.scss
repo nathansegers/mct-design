@@ -55,12 +55,13 @@
 .c-row--top {
 	background-color: palette(color-alpha, base);
 	z-index: 30;
-	// box-shadow: 0 0 0 1px rgba(palette(color-neutral,xxxxx-light),.15);
-	// border-bottom: 1px solid rgba(palette(color-neutral, xxxxx-light), 0.15);
+	border-bottom: 1px solid rgba(palette(color-neutral, xxxxx-light), 0.25);
 
-	// @include padding-tb($alpha-leading * 0.5, $alpha-leading * 0.5);
-	@include margin-tb(0, $alpha-leading * -1);
-	@include padding-tb($alpha-leading * 0.75, 0);
+	@include padding-tb($alpha-leading * 0.5, $alpha-leading * 0.5);
+
+	@include mq(bp3) {
+		@include margin-tb(0, $alpha-leading * -1);
+	}
 }
 
 .c-row--header {

@@ -57,12 +57,23 @@ $logo-box-height:    $alpha-leading * 3;
 .c-howest-badge {
 	display: flex;
 	align-items: center;
-    // justify-content: flex-end;
-    // justify-content: center;
+
 	margin-bottom: 0;
     color: white;
     @include ms-1;
-	// @include text-dimensions(ms(-1),1);
+
+    .c-top & {
+        margin-top: #{$alpha-leading * .75}px;
+
+        @include mq(bp3) {
+            margin-top: 0;            
+        }
+    }
+}
+
+.c-howest-badge__text {
+    display: block;
+    white-space: nowrap;
 }
 
 .c-howest-badge__logo {
