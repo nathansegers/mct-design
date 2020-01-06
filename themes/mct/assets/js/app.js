@@ -244,7 +244,7 @@ var checkNotification = function() {
 		givenDate = new Date(givenDate);
 
 		if (givenDate > currentDate) {
-			announcement.style.display = 'block';
+			announcement.style.display = 'flex';
 		}
 	}
 };

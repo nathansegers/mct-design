@@ -38,6 +38,7 @@
 
 .c-media__title {
 	width: 100%;
+	font-family: $alpha-font-family;
 
 	.c-media--link &,
 	.c-media--link:visited & {
@@ -47,6 +48,7 @@
 	.c-media--link:hover &,
 	.c-media--link:focus & {
 		color: $link-color;
+		text-decoration: underline;
 
 		// override this when it's inside the carousel on the homepage
 		.c-carousel__item.is-not-selected & {
@@ -58,10 +60,10 @@
 .c-media__text {
 	color: palette(color-neutral);
 
-	.c-media--link:hover &,
-	.c-media--link:focus & {
-		color: $link-color;
-	}
+	// .c-media--link:hover &,
+	// .c-media--link:focus & {
+	// 	color: $link-color;
+	// }
 
 	// override this when it's inside the carousel on the homepage
 	.c-carousel__item.is-not-selected & {
@@ -73,10 +75,10 @@
 	font-family: $beta-font-family;
 	text-transform: uppercase;
 
-	.c-media--link:hover &,
-	.c-media--link:focus & {
-		color: $link-color;
-	}
+	// .c-media--link:hover &,
+	// .c-media--link:focus & {
+	// 	color: $link-color;
+	// }
 }
 
 .c-media__more-link {
@@ -94,6 +96,7 @@
 	align-items: flex-end;
 	height: 100%;
 	background-color: palette(color-alpha);
+	border-radius: $radius-md;
 
 	&.no-drag {
 		pointer-events: none;
@@ -109,6 +112,7 @@
 	min-width: 100%;
 	will-change: opacity;
 	transition: opacity $animation-duration-beta $animation-easing-alpha;
+	border-radius: $radius-md;
 
 	.c-media--link:hover & {
 		opacity: 0.75;
