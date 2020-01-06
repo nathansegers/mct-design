@@ -22,14 +22,13 @@ type: page
 							<li>AI Engineer</li>
 							<li>IOT & Infrastructure Engineer</li>
 						</ul>
-
 						<h2>Voorwaarden stagebedrijf</h2>
 						<p>Elke stageplaats en ingediende stage-opdracht worden door de opleiding op volgende criteria gescreend:</p>
 						<ul>
-							<li>Binnen het bedrijf is er altijd een IT-medewerker i.f.v. de stageopdracht aanwezig. </li>
-							<li>De accommodatie is aangepast (niet in een privé-woning).</li>
-							<li>Student mag niet thuis aan stage-opdracht werken. </li>
-							<li>Stage-opdracht is duidelijk & niveau ‘3MCT’ waardig. Opleiding beslist hierin finaal. </li>
+							<li>Binnen het bedrijf is er altijd een IT-medewerker i.f.v. de stageopdracht aanwezig.</li>
+							<li>De accommodatie is aangepast (niet in een privé-woning).</li>
+							<li>Student mag niet thuis aan stage-opdracht werken.</li>
+							<li>Stage-opdracht is duidelijk & niveau ‘3MCT’ waardig. Opleiding beslist hierin finaal.</li>
 							<li>Er is geen familiale verwantschap tussen stagegever/stagebegeleider en stagestudent.</li>
 						</ul>
 
