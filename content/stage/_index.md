@@ -1,6 +1,5 @@
 ---
 title: Stage
-type: page
 ---
 
 <main class="o-wrapper">
