@@ -4,7 +4,6 @@ type: page
 ---
 
 <main class="o-wrapper">
-	<!-- section -->
 	<section class="c-row">
 		<div class="o-container">
 			<div class="o-grid o-grid--gutter-lg">
