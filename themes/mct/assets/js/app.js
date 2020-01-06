@@ -194,13 +194,19 @@ function initNavigation() {
 		navigationElement = document.querySelector(navigation),
 		triggerElements = document.querySelectorAll(trigger);
 
-	if (document.querySelector('.ca-row--top')) {
-		navigationElement.style.top = '48px';
+	const top = document.querySelector('.c-row--top');
+	if (top) {
+		navigationElement.style.top = `${top.clientHeight + 1}px`;
 	}
 
 	for (var i = triggerElements.length - 1; i >= 0; i--) {
 		triggerElements[i].addEventListener('click', function() {
 			navigationElement.classList.toggle('is-visible');
+			if (document.documentElement.classList.contains('is-fixed')) {
+				document.documentElement.classList.remove('is-fixed');
+			} else {
+				document.documentElement.classList.add('is-fixed');
+			}
 		});
 	}
 }
@@ -249,8 +255,22 @@ var checkNotification = function() {
 	}
 };
 
+window.addEventListener('resize', function() {
+	if (window.innerWidth > 960) {
+		document.documentElement.classList.remove('is-fixed');
+		document.querySelector('.js-nav-mobile').classList.remove('is-visible');
+	}
+
+	const top = document.querySelector('.c-row--top');
+
+	if (top) {
+		document.querySelector(
+			'.js-nav-mobile'
+		).style.top = `${top.clientHeight + 1}px`;
+	}
+});
+
 document.addEventListener('DOMContentLoaded', function() {
-	initNavigation();
 	initVideoPlayer();
 	getReadyToRemoveCookie();
 	checkNotification();
@@ -265,4 +285,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (document.querySelector('.js-sharing')) {
 		mct_sharing.init();
 	}
+});
+
+window.addEventListener('load', function() {
+	initNavigation();
 });
