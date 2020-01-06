@@ -11,6 +11,7 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
+	border-radius: $radius-md;
 	border-bottom: $alpha-leading * 0.25px solid transparent;
 	background: palette(color-neutral, xxxxx-light);
 	box-shadow: 0 0 0 1px rgba(palette(color-neutral, xxxx-dark), 0.05),

@@ -11,7 +11,7 @@
  */
 
 $logo-ratio:     .680555555555556;
-$logo-height:    $alpha-leading * 2.5;
+$logo-height:    $alpha-leading * 3.5;
 
 $logo-box-ratio:     .76;
 $logo-box-height:    $alpha-leading * 3;
@@ -51,3 +51,37 @@ $logo-box-height:    $alpha-leading * 3;
     .c-logo__path {
         fill: white;
     }
+
+/* howest badge */
+
+.c-howest-badge {
+	display: flex;
+	align-items: center;
+
+	margin-bottom: 0;
+	margin-left: auto;
+    color: white;
+    @include ms-1;
+
+    .c-top & {
+        margin-top: #{$alpha-leading * .75}px;
+
+        @include mq(bp3) {
+            margin-top: 0;            
+        }
+    }
+}
+
+.c-howest-badge__text {
+    display: block;
+    white-space: nowrap;
+}
+
+.c-howest-badge__logo {
+	height: #{$alpha-leading * 1.5}px;
+	margin-left: #{$alpha-leading * .5}px
+}
+
+.c-howest-badge__logo-path {
+	fill: white;
+}

@@ -67,10 +67,12 @@ $choice-column-border-style: solid;
 	box-shadow: 0 0 0 1px rgba(palette(color-neutral, xxxx-dark), 0.05),
 		0 2px 4px rgba(palette(color-neutral, xxxx-dark), 0.1);
 	background-color: palette(color-neutral, xxxxx-light);
+	border-radius: $radius-md;
 
 	@include mq(bp5) {
 		right: 1px;
 		left: 1px;
+		border-radius: $radius-md $radius-md 0 0;
 	}
 }
 
@@ -232,6 +234,7 @@ $choice-column-border-style: solid;
 
 .c-curriculum__semester--choice-4 {
 	&:before {
+		border-radius: 0 0 0 $radius-lg;
 		border-width: 0 0 $choice-column-border-width
 			$choice-column-border-width;
 	}
@@ -239,6 +242,7 @@ $choice-column-border-style: solid;
 
 .c-curriculum__semester--choice-5 {
 	&:before {
+		border-radius: 0 0 $radius-lg 0;
 		border-width: 0 $choice-column-border-width $choice-column-border-width
 			0;
 	}
