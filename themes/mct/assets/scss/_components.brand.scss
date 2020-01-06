@@ -57,13 +57,15 @@ $logo-box-height:    $alpha-leading * 3;
 .c-howest-badge {
 	display: flex;
 	align-items: center;
-
 	margin-bottom: 0;
-	margin-left: auto;
     color: white;
     @include ms-1;
 
     .c-top & {
+        margin-left: auto;
+    }
+
+    .c-update + & {
         margin-top: #{$alpha-leading * .75}px;
 
         @include mq(bp3) {
