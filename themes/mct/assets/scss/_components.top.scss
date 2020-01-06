@@ -6,18 +6,5 @@
     @include mq(bp3) {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 }
-
-    .c-top__item {
-        @include margin-left($columns-gutter);
-	}
-
-	.c-top__logo {
-		display: block;
-		height: 36px;
-		width: auto;
-		margin-left: auto;
-		fill: palette(color-neutral, xxxxx-light);
-	}
