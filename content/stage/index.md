@@ -12,53 +12,42 @@ type: page
 					<div class="o-container u-max-width-md">
 						<h1>Info kandidaat stagebedrijf</h1>
 					</div>
-					<!-- article -->
 					<article class="o-container u-max-width-md">
 						<h2>Opleiding</h2>
-						<p class="">Multimedia & Communication Technology (MCT) is een professionele bachelor opleiding aan Howest, campus Kortrijk. De stageperiode situeert zich in het laatste jaar in één van volgende uitstroomprofielen binnen MCT:</p>
+						<p>Multimedia & Communication Technology (MCT) is een professionele bachelor opleiding aan Howest, campus Kortrijk. De stageperiode situeert zich in het laatste jaar in één van volgende uitstroomprofielen binnen MCT:</p>
 						<ul>
 							<li>Web App Developer</li>
 							<li>Smart Tech & AI Creator</li>
 							<li>AI Engineer</li>
 							<li>IOT & Infrastructure Engineer</li>
 						</ul>
-
 						<h2>Voorwaarden stagebedrijf</h2>
 						<p>Elke stageplaats en ingediende stage-opdracht worden door de opleiding op volgende criteria gescreend:</p>
 						<ul>
-							<li>Binnen het bedrijf is er altijd een IT-medewerker i.f.v. de stageopdracht aanwezig. </li>
-							<li>De accommodatie is aangepast (niet in een privé-woning).</li>
-							<li>Student mag niet thuis aan stage-opdracht werken. </li>
-							<li>Stage-opdracht is duidelijk & niveau ‘3MCT’ waardig. Opleiding beslist hierin finaal. </li>
+							<li>Binnen het bedrijf is er altijd een IT-medewerker i.f.v. de stageopdracht aanwezig.</li>
+							<li>De accommodatie is aangepast (niet in een privé-woning).</li>
+							<li>Student mag niet thuis aan stage-opdracht werken.</li>
+							<li>Stage-opdracht is duidelijk & niveau ‘3MCT’ waardig. Opleiding beslist hierin finaal.</li>
 							<li>Er is geen familiale verwantschap tussen stagegever/stagebegeleider en stagestudent.</li>
 						</ul>
-
 						<h2>Stageperiode</h2>
 						<p>Een student kan in dit academiejaar op twee momenten stage lopen:</p>
 						<ul>
 							<li>Ofwel in de reguliere stageperiode (‘stageperiode lente’): 17 februari 2020 t.e.m. 12 juni 2020.</li>
 							<li>Ofwel in het eerste semester (‘stageperiode herfst’): deze loopt van 30 september 2019 t.e.m. 24 jan 2020.</li>
 						</ul>
-
 						<h2>Kans op een stagiair</h2>
 						<p></p>
 						<p>Jaarlijks gaan gemiddeld 60-tal MCT studenten op zoek naar een stageplaats waarvan 15% voor een buitenlandse ervaring kiest. In onze database zitten elk jaar gemiddeld 300 stageprojecten. De vraag is veel  groter dan het aanbod; één van onze felbegeerde stagiairs kunnen we u dus niet garanderen. </p>
-
 						<p>Om elk stagebedrijf voldoende kansen aan te bieden, streven we naar <em>maximaal twee stagestudenten</em> per stagebedrijf. In overleg kunnen we voor grote organisaties of bedrijven met verschillende departementen eventueel een uitzondering maken.</p>
-
 						<p>In de maand september organiseert de opleiding i.s.m. de bacheloropleiding Toegepaste Informatica en de  graduaatsopleiding MIT een stagemarkt: studenten krijgen de kans om de eerste keer met de verschillende stagebedrijven in contact te komen. De volgende stagemarkt vindt plaats op 18 september 2019. Op donderdag 26 maart 2020 organiseert stad Kortrijk een Jobhappening. Daarop is elke student verplicht aanwezig.</p>
-
 						<h2>Registratie</h2>
 						<p>Het kandidaat stagebedrijf kan één of meerdere stageprojecten (voor meedere opleidingen) registreren via de stagetool van Howest: <a href="https://stage.howest.be/">https://stage.howest.be/</a>. Een uitgebreide handleiding vindt u op: <a href="https://stage.howest.be/Home/Help">https://stage.howest.be/Home/Help</a>.</p>
-
 						<h2>Stageakkoord & contract</h2>
 						<p>Van zodra een student tot een onderling akkoord met u is gekomen en ons hiervan op de hoogte brengt, worden stagecontract & risico-analyse gegenereerd. De student zorgt dat alle administratie verder in orde wordt gebracht.</p>
-
 						<p><strong>Contactpersoon:</strong> Stijn Walcarius, Coördinator Stage & Bachelorproef MCT, <a href="mailto:stijn.walcarius@howest.be">stijn.walcarius@howest.be</a>.</p>
-
 						<p><strong>Meer info:</strong> zie <a href="https://mctwebsite.blob.core.windows.net/docs/info_voor_kandidaat_stagebedrijf.pdf">stagehandleiding</a>.</p>
 					</article>
-
 					<article class="o-container u-max-width-md">
 						<p>Onze laatstejaarsstudenten lopen stage gedurende 15 weken van februari tot en met juni, of van oktober tot en met januari. Studenten kiezen hun stageplaats vóór eind oktober. Alle informatie over de stage alsook voorbeelden van voorbije jaren vindt u in de respectievelijke documenten hieronder.</p>
 						<h2>Stageposters</h2>
@@ -74,10 +63,8 @@ type: page
 							<li><a href="https://mctwebsite.blob.core.windows.net/docs/NMCTposters2016.pdf" rel="noopener">2016</a></li>
 						</ul>
 					</article>
-					<!-- /article -->
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- /section -->
 </main>
