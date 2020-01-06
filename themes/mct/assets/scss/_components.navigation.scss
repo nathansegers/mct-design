@@ -159,7 +159,7 @@
     @include padding-lr($columns-gutter,$columns-gutter);
 
     @include mq(bp3) {
-        @include padding-tb($alpha-leading * 2,$alpha-leading * 2);
+        @include padding-tb($alpha-leading, $alpha-leading * 2);
         @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
     }
 }

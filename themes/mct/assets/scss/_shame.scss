@@ -296,3 +296,11 @@ li {
     column-gap: $columns-gutter * 1px;
 	box-decoration-break: clone;
 }
+
+.is-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
