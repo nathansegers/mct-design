@@ -1,8 +1,11 @@
-<p class="c-update">
-	<span class="c-update__symbol-holder">
-		{{ partial "atoms/symbol" (dict "value" "notifications" "class" "c-update__symbol c-update__symbol--bell") }}
-	</span>
-	<span class="c-update__text">
-		{{.Site.Data.announcement.content | markdownify}}
-	</span>
-</p>
+{{ $t := (time .Site.Data.announcement.ends) }}
+{{ if $t.After now }}
+	<p class="c-update js-announcement" style="display: none;" data-due-date="{{.Site.Data.announcement.ends}}">
+		<span class="c-update__symbol-holder">
+			{{ partial "atoms/symbol" (dict "value" "notifications" "class" "c-update__symbol c-update__symbol--bell") }}
+		</span>
+		<span class="c-update__text">
+			{{.Site.Data.announcement.content | markdownify}}
+		</span>
+	</p>
+{{ end }}
