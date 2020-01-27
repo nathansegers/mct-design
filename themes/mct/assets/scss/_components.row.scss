@@ -59,9 +59,9 @@
 
 	@include padding-tb($alpha-leading * 0.5, $alpha-leading * 0.5);
 
-	@include mq(bp3) {
-		@include margin-tb(0, $alpha-leading * -1);
-	}
+	// @include mq(bp3) {
+	// 	@include margin-tb(0, $alpha-leading * -1);
+	// }
 }
 
 .c-row--header {
@@ -69,9 +69,9 @@
 	z-index: 20;
 	@include padding-tb($alpha-leading, $alpha-leading);
 
-	@include mq(bp3) {
-		@include padding-tb($alpha-leading * 2, $alpha-leading * 2);
-	}
+	// @include mq(bp3) {
+	// 	@include padding-tb($alpha-leading * 2, $alpha-leading * 2);
+	// }
 }
 
 .c-row--howest {
