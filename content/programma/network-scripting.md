@@ -1,5 +1,5 @@
 ---
-title: Network Programming
+title: Network Scripting
 semester: 5
 weight: 30
 tags: "#Powershell #Bash #powerCLI #Python"
