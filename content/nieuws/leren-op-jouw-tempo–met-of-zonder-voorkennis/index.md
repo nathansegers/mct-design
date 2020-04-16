@@ -6,7 +6,7 @@ cover: "studenten-laten-leren-op-eigen-tempo.jpg"
 ---
 
 
-Een crash course net voor de lessen eind september beginnen helpt (zie instapcursussen https://www2.howest.be/instapcursussen), maar er blijven grote verschillen in voorkennis. Hoe zorg je ervoor dat... 
+Een crash course net voor de lessen eind september beginnen helpt (zie [instapcursussen](https://www2.howest.be/instapcursussen)), maar er blijven grote verschillen in voorkennis. Hoe zorg je ervoor dat... 
 ## Een student zonder voorkennis een goed niveau haalt maar dat tegelijkertijd wie al kan programmeren zich ook kan uitleven en vooruitgang boekt?
 
 Ook hier is MCT een de opleiding van de toekomst. Met een goed doordachte strategie die gebaseerd is op ... de feedback van onze studenten. Met de start van het academiejaar nemen 1MCT-studenten vrijwillig deel aan een test, die je huidige programmeervaardigheden test. Ongeveer 6 op 10 van onze studenten deden vorig jaar mee, de andere kozen onmiddellijk voor het “teach” traject (zie verder). 
