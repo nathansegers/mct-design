@@ -93,6 +93,7 @@ blockquote {
     > * {
         font-size: inherit;
         line-height: inherit;
+        margin-bottom: 0;
     }
 
     @include mq(bp3) {
