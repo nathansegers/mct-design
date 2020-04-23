@@ -23,9 +23,9 @@ Ik wou vooral een praktische richting doen zonder economische vakken en ik wou A
 ## Korte Bio
 **Naam**: Tibo Van Craenenbroeck
 
-**Voorkennis**: TSO IT & Netwerke
+**Voorkennis**: TSO IT & Netwerken
 
-**Provincie**: Braban
+**Provincie**: Brabant
 
 **Keuzetraject**: AI Engineer
 
