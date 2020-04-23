@@ -2,7 +2,7 @@
 title: 'Klaar voor de test? Website creativiteit en je brein'
 date: 2020-04-23T12:24:00+01:00
 description: 'Zoals je kan zien op onze website en social media, heeft MCT een nieuwe branding. Dit is niet zomaar iets waar we plots zin in hadden, maar deel van een grotere positieve evolutie van de opleiding.'
-cover: 'TiboVC.jpg'
+cover: 'Screenshot.png'
 draft: false
 ---
 
