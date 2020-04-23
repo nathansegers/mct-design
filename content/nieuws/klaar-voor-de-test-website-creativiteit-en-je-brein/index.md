@@ -1,14 +1,12 @@
 ---
 title: 'Klaar voor de test? Website creativiteit en je brein'
 date: 2020-04-23T12:24:00+01:00
-description: 'Zoals je kan zien op onze website en social media, heeft MCT een nieuwe branding. Dit is niet zomaar iets waar we plots zin in hadden, maar deel van een grotere positieve evolutie van de opleiding.'
+description: 'Zie je vooral een zwart scherm en onhandig kleine lettertjes? Nog niet opgeven. Dit is geen vriendelijke User Interface voor een noob, maar een test, remember!'
 cover: 'Screenshot.png'
 draft: false
 ---
 
 Tijd om je brein eens te testen? Probeer dan eens [de site van Tibo Van Craenenbroeck](https://tibovancraenenbroeck.be/).
-
-Zie je vooral een zwart scherm en onhandig kleine lettertjes? Nog niet opgeven. Dit is geen vriendelijke User Interface voor een noob, maar een test, remember!
 
 Kreeg je een kleine boost - dopamine shot - toen je ontdekte hoe het werkt? Merk je dat je de liefde voor een doordenkertje, de coding en de scripting deelt met Tibo? Dan ben waarschijnlijk een rasechte backend programmeur zoals Tibo. Als je vond dat het veel te simpel was en je pas tevreden bent als je linux scripts het moderne equivalent zijn van geëncrypteerde sanskriet, ga dan onmiddellijk naar [IoT infrastructure Engineer](/programma/iot-infrastructure-engineer).
 
