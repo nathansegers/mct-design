@@ -1,0 +1,8 @@
+<video style="width: 100%; height: auto; margin: 0 0 2rem 0" controls
+	src="
+    {{ index .Params 0 }}
+    {{ if isset .Params 1 }}
+        {{ index .Params 1 }}
+	{{ end }}"
+	>
+</video>
