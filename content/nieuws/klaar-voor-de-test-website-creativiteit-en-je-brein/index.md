@@ -20,6 +20,9 @@ _Tibo’s studeerde TSO & IT netwerken in het verre Brabant (Groot-bijgaarden). 
 "Ik wou vooral een praktische richting doen zonder economische vakken en ik wou AI-software kunnen ontwikkelen. Veel IT-opleidingen hebben wel een paar AI-vakken, maar zijn niet gefocust en combineren die met allerlei andere vakken. Ik wou een keuzetraject dat zich 100% focust op AI-software. Data heeft mij altijd al geïnteresseerd en het is mooi om te zien wat je er allemaal mee kan doen zoals onder andere kankerdetectie."
 
 ## Korte Bio
+
+{{< figure src="TiboVC.jpg" alt="MCT student Tibo Van Craenenbroeck" class="u-mt-alpha u-mb-alpha u-1-of-6 u-rounded-full" >}}
+
 **Naam**: Tibo Van Craenenbroeck  
 **Voorkennis**: TSO IT & Netwerken  
 **Provincie**: Brabant  
