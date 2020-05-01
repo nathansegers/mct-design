@@ -1,0 +1,33 @@
+/*
+    Components: FAQ
+    ---
+    FAQ styles
+*/
+
+.c-faq__button {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.c-faq__desc {
+    display: none;
+    @include padding-top($alpha-leading * .5);
+}
+
+.c-faq__desc.is-open {
+    display: block;
+}
+
+.c-faq__desc + .c-faq__title {
+    @include margin-tb($alpha-leading,0);
+}
+
+.c-faq__caret {
+    stroke: currentColor;
+    width: 21px;
+}
+
+.is-open .c-faq__caret {
+    transform: rotate(90deg);
+}
