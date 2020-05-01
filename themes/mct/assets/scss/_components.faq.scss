@@ -4,6 +4,10 @@
     FAQ styles
 */
 
+* + .c-faq {
+    @include margin-tb($alpha-leading * 2,0);
+}
+
 .c-faq__button {
     font-weight: 700;
     display: flex;
@@ -12,7 +16,7 @@
 
 .c-faq__desc {
     display: none;
-    @include padding-top($alpha-leading * .5);
+    @include padding-top($alpha-leading);
 }
 
 .c-faq__desc.is-open {
@@ -20,12 +24,15 @@
 }
 
 .c-faq__desc + .c-faq__title {
+    border-top: 1px solid palette(color-neutral,xxx-light);
+    @include padding-tb($alpha-leading,0);
     @include margin-tb($alpha-leading,0);
 }
 
 .c-faq__caret {
     stroke: currentColor;
     width: 21px;
+    transition: transform $animation-duration-alpha $animation-easing-alpha;
 }
 
 .is-open .c-faq__caret {
