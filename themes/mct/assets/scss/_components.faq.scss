@@ -11,10 +11,21 @@
 .c-faq__button {
     font-weight: 700;
     display: flex;
-    align-items: center;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border-radius: $radius;
+    padding: $alpha-leading * .5px;
+    margin: $alpha-leading * -.5px;
 
     &:hover {
         text-decoration: underline;
+    }
+
+    &:focus {
+        // color: palette(color-alpha);
+        // box-shadow: 0 0 0 2px rgba(palette(color-neutral),.5);
+        background-color: rgba(palette(color-neutral),.1);
     }
 }
 
@@ -36,6 +47,8 @@
 .c-faq__caret {
     stroke: currentColor;
     width: 21px;
+    flex-shrink: 0;
+    margin-right: $alpha-leading * .25px;
     transition: transform $animation-duration-alpha $animation-easing-alpha;
 }
 
