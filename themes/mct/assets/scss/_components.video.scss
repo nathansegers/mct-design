@@ -4,13 +4,9 @@
 
 .c-video-player {
     position: relative;
-    // background: palette(color-neutral, xxxx-light);
-    background-color: palette(color-alpha);
     border-radius: $radius-md;
-    @include margin-bottom($alpha-leading);
-    // @include box-shadow-xl;
-
     background: palette(color-neutral, xxxx-light);
+    @include margin-bottom($alpha-leading);    
 
     // &:after {
     //     content: '';
@@ -31,12 +27,7 @@
 }
 
 .c-video-player--circle {
-    
-
-    // .c-video-player__video {
-    //     border-radius: 100%;
-    // overflow: hidden;
-    // }
+    background-color: transparent;
 }
 
 .c-video-play-button {
@@ -71,6 +62,17 @@
         height: $alpha-leading * 4px;
         width: $alpha-leading * 4px;
     }
+
+    .c-video-player--circle & {
+        top: auto;
+        left: auto;
+        bottom: 10%;  
+        right: 10%;      
+        transform: none;
+        background-color: palette(color-alpha);
+        // height: $alpha-leading * 2.75px;
+        // width: $alpha-leading * 2.75px;
+    }
 }
 
     .c-video-play-button__symbol {
@@ -78,6 +80,14 @@
         fill: palette(color-alpha,light);
         width: $alpha-leading * 1.5px;
         height: $alpha-leading * 1.5px;
+
+        .c-video-player--circle & {
+            fill: white;
+        }
+    }
+
+    .c-video-player__container {
+        position: relative;
     }
 
     .c-video-player__video {

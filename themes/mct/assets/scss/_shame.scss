@@ -309,3 +309,32 @@ li {
 	border-radius: 50%;
 	overflow: hidden;
 }
+
+// infodag stuff
+
+.c-arrow-celine {
+	color: palette(color-alpha);
+	z-index: 100;	
+	text-align: center;
+
+	@include mq(bp5) {
+		position: absolute;
+		bottom: 0;
+		transform: translateX(-100%);
+		text-align: right;
+		margin-bottom: 0;
+	}
+}
+
+	.c-arrow-celine__arrow {
+		// display: none;
+		position: absolute;
+		width: 55px;
+		right: -65px;	
+		transform: translateY(-75%);
+		pointer-events: none;	
+
+		@include mq(bp5, max) {
+			display: none;
+		}
+	}
