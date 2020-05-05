@@ -12,18 +12,17 @@ Ben Vanpoucke besliste na enkele jaren werken en na een avondschool opleiding om
 
 Alle vakken leiden MCT-studenten op tot IoT-developers binnen hun specifieke afstudeerrichting. Het is dan tof om te zien hoe alles tijdens de projecten mooi samenkomt. Ook Ben heeft dit persoonlijk ondervonden in zijn projecten CineShare en Mr. Escape, deze twee heeft hij samen met Chloë Devriese gemaakt.
 
+CineShare was een applicatie voor de modules [full stack development]({{< ref "/programma/full-stack-development" >}}) en [framework and patterns]({{< ref "/programma/framework-patterns" >}}). Het was een applicatie waarbij je films kan opzoeken, raten en delen met vrienden. Die vrienden moeten dan natuurlijk ook in de applicatie een account hebben. We zijn hier technisch heel ver in gegaan en hebben verschillende nieuwe zaken bijgeleerd.
 
-*"CineShare was een applicatie voor de modules ‘full stack web development’ en ‘framework and patterns’. Het was een applicatie waarbij je films kan opzoeken, raten en delen met vrienden. Die vrienden moeten dan natuurlijk ook in de applicatie een account hebben. We zijn hier technisch heel ver in gegaan en hebben verschillende nieuwe zaken bijgeleerd."*
+Mr. Escape is een AR/MR-applicatie waarbij je op de positie waar je je bevindt, een escape room tovert. Deze escape room wordt verweven in de huidige omgeving. Na enkele raadsels moet je in staat zijn om de kluis te openen via voice control of met gestures. In het begin was het wel wat zoeken maar naar het einde toe, waren we voor beide projecten perfect op elkaar afgestemd. We hebben elk onze sterktes benut en vulden elkaar hierin perfect aan.
 
-*"Mr. Escape is een AR/MR-applicatie waarbij je op de positie waar je je bevindt, een escape room tovert. Deze escape room wordt verweven in de huidige omgeving. Na enkele raadsels moet je in staat zijn om de kluis te openen via voice control of met gestures.
-In het begin was het wel wat zoeken maar naar het einde toe, waren we voor beide projecten perfect op elkaar afgestemd. We hebben elk onze sterktes benut en vulden elkaar hierin perfect aan."*
+Ondertussen heeft Ben beslist om na MCT nog niet te stoppen. Tijdens zijn MCT-opleiding heeft hij een talent en passie ontdekt voor het overbrengen van informatie naar medestudenten. Dit heeft hem ertoe aangezet om volgend jaar nog een lerarenopleiding te volgen zodat hij secundaire school studenten kan overtuigen ook IT te studeren! Nu zijn laatste jaar ten einde loopt komt ook het minste moment van de opleiding dichter bij.  
 
-Ondertussen heeft Ben beslist om na MCT nog niet te stoppen. Tijdens zijn MCT-opleiding heeft hij een talent en passie ontdekt voor het overbrengen van informatie naar medestudenten. Dit heeft hem ertoe aangezet om volgend jaar nog een lerarenopleiding te volgen zodat hij secundaire school studenten kan overtuigen ook IT te studeren!  
-Nu zijn laatste jaar ten einde loopt komt ook het minste moment van de opleiding dichter bij.  
-*"Het besef dat het op zijn einde loopt en dat je afscheid moet nemen van je vrienden en kennissen wetende dat iedereen zijn eigen weg zal gaan en je elkaar veel minder zult zien."* 
+> "Het besef dat het op zijn einde loopt en dat je afscheid moet nemen van je vrienden en kennissen wetende dat iedereen zijn eigen weg zal gaan en je elkaar veel minder zult zien."* 
 
 Dit betekent ook afscheid nemen van enkele favoriete docenten.  
-> "Johan Vannieuwenhuyse, Henk Bostyn en Hans Ameel: altijd bereid voor een babbel. Dit kan zelfs over koetjes en kalfjes gaan."*
+
+> "Johan Vannieuwenhuyse, Henk Bostyn en Hans Ameel: altijd bereid voor een babbel. Dit kan zelfs over koetjes en kalfjes gaan."
 
 Gelukkig organiseert de opleiding jaarlijks een alumni night waar alumni ervaringen kunnen delen met de lectoren maar waar ook de lectoren op hun beurt gretig naar alle succesverhalen van deze MCT-studenten luisteren!
 
