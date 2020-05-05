@@ -1,0 +1,8 @@
+test: Hello
+questions:
+    - q: Kan ik verder studeren na MCT?
+      a: Ja, er zijn aansluitende master-opleidingen.
+    - q: Kan ik een kot vinden?
+      a: Zie de website van Howest met kot.
+    - q: Kan ik eten op de campus?
+      a: Ja er is een restaurant op de campus.

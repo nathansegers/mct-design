@@ -1,0 +1,49 @@
+<div class="o-container u-max-width-optimal">
+	<h2 class="c-type-title-md">
+		FAQ
+	</h2>
+	<p>
+		Nog niet gevonden wat je zocht? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit at ab
+		accusantium officiis eos eius nostrum.
+	</p>
+	
+	<dl class="c-faq js-faq-list">
+		{{ range .Site.Data.faq.questions }}
+		<dt class="c-faq__title">
+			<button aria-expanded="false" aria-controls="faq1_desc" class="c-faq__button">
+				<svg class="c-faq__caret" viewBox="0 0 21 21">
+					<path id="Path_1" data-name="Path 1" d="M4,5l6,6L4,17" transform="translate(3.5 -0.5)" fill="none"
+						stroke-width="2" />
+				</svg>
+				{{ .q }}
+			</button>
+		</dt>
+		<dd id="faq1_desc" class="c-faq__desc">
+			<p>
+				{{ .a }}
+			</p>
+		</dd>
+		{{ end }}
+
+		<dt class="c-faq__title">
+			<button aria-expanded="false" aria-controls="faq3_desc" class="c-faq__button is-open">
+				<svg class="c-faq__caret" viewBox="0 0 21 21">
+					<path id="Path_1" data-name="Path 1" d="M4,5l6,6L4,17" transform="translate(3.5 -0.5)" fill="none"
+						stroke-width="2" />
+				</svg>
+				Is there free parking on holidays?
+			</button>
+		</dt>
+		<dd id="faq3_desc" class="c-faq__desc is-open">
+			<p>
+				All facilities are restricted from 2:00 am - 6:00 am on all days. No
+				exceptions are made for any holiday or recess except those officially listed as a
+				<q>
+					Holidays
+				</q>
+				in the calendar. Please note: 24-hour rental spaces, 24-hour rental lots, and
+				disabled parking is enforced at all times.
+			</p>
+		</dd>
+	</dl>
+</div>
