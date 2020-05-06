@@ -6,6 +6,12 @@
     position: relative;
 }
 
+.c-quote--lg {
+    @include mq(bp3) {
+        @include ms7;
+    }
+}
+
     .c-quote__author {
         margin-bottom: 0;
         text-transform: uppercase;

@@ -60,3 +60,15 @@
 .o-grid--align-center {
     align-items: center;
 }
+
+.o-grid--align-end {
+    align-items: flex-end;
+}
+
+.o-grid--justify-end {
+    justify-content: flex-end;
+}
+
+.o-grid--row-reverse {
+    flex-direction: row-reverse;
+}

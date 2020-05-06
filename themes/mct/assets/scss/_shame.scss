@@ -313,14 +313,14 @@ li {
 // infodag stuff
 
 .c-arrow-celine {
-	color: palette(color-alpha);
+	// color: palette(color-alpha);
 	z-index: 100;	
 	text-align: center;
 
 	@include mq(bp5) {
 		position: absolute;
 		bottom: 0;
-		transform: translateX(-100%);
+		transform: translateX(-100%) translateY(50%) skewY(-3deg);
 		text-align: right;
 		margin-bottom: 0;
 	}
@@ -333,6 +333,7 @@ li {
 		right: -65px;	
 		transform: translateY(-75%);
 		pointer-events: none;	
+		stroke: currentColor;
 
 		@include mq(bp5, max) {
 			display: none;
