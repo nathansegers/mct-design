@@ -167,7 +167,7 @@
 											<video id="video" class="c-video-player__video" playsinline
 												poster="https://mctwebsite.blob.core.windows.net/video/Alexandra.png">
 												<!-- <source src="https://mctwebsite.blob.core.windows.net/video/MCTpromo_newv5_rebranding.webm" type="video/webm"> -->
-												<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra-3.mp4" type="video/mp4">
+												<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra.mp4" type="video/mp4">
 												Your browser does not support HTML5 video.
 											</video>
 										</div>
@@ -200,7 +200,7 @@
 											<video id="video" class="c-video-player__video" playsinline
 												poster="https://mctwebsite.blob.core.windows.net/video/Alexandra.png">
 												<!-- <source src="https://mctwebsite.blob.core.windows.net/video/MCTpromo_newv5_rebranding.webm" type="video/webm"> -->
-												<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra-3.mp4" type="video/mp4">
+												<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra.mp4" type="video/mp4">
 												Your browser does not support HTML5 video.
 											</video>
 										</div>
@@ -233,7 +233,7 @@
 											<video id="video" class="c-video-player__video" playsinline
 												poster="https://mctwebsite.blob.core.windows.net/video/Alexandra.png">
 												<!-- <source src="https://mctwebsite.blob.core.windows.net/video/MCTpromo_newv5_rebranding.webm" type="video/webm"> -->
-												<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra-3.mp4" type="video/mp4">
+												<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra.mp4" type="video/mp4">
 												Your browser does not support HTML5 video.
 											</video>
 										</div>
@@ -266,7 +266,7 @@
 											<video id="video" class="c-video-player__video" playsinline
 												poster="https://mctwebsite.blob.core.windows.net/video/Alexandra.png">
 												<!-- <source src="https://mctwebsite.blob.core.windows.net/video/MCTpromo_newv5_rebranding.webm" type="video/webm"> -->
-												<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra-3.mp4" type="video/mp4">
+												<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra.mp4" type="video/mp4">
 												Your browser does not support HTML5 video.
 											</video>
 										</div>
@@ -288,18 +288,27 @@
 			</div>
 		</div>
 	</section>	
-	<section id="faq" class="c-row c-row--lg c-row--divide">
-		<div class="o-container">
-			<div class="o-grid o-grid--gutter-lg">
-				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
-					<div class="c-main-section-lg">
-						<div class="o-container u-max-width-optimal">
-							{{ partial "components/faq" . }}
-						</div>
-					</div>
+	<section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxxx-light">
+		<div class="o-container u-max-width-optimal">
+			<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-center">
+				<div class="o-grid__item u-width-auto">
+					<h2>Inschrijven?</h2>
+					<p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem praesentium incidunt eos laboriosam a ipsa, minus enim laborum? Ex esse quos recusandae enim vel cumque! Optio tenetur velit ex impedit.</p>
+				</div>
+				<div class="o-grid__item u-width-auto">
+					<p>
+						<a href="https://www.howest.be/nl/studeren/inschrijven-en-info"
+							class="c-button c-button--alpha c-button--lg c-button--transform">Schrijf je nu in</a>
+					</p>
 				</div>
 			</div>
+		
 		</div>
+	</section>
+	<section id="faq" class="c-row c-row--lg c-row--divide">		
+		<div class="o-container u-max-width-optimal">
+			{{ partial "components/faq" . }}
+		</div>					
 	</section>
 </main>
 {{ end }}
