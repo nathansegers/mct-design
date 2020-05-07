@@ -11,9 +11,9 @@
 						Welkom bij de MCT-infodag! Beleef de ervaringen van onze studenten tijdens de opleiding en ontdek de unieke sfeer tijdens de projectweken.
 					</p>
 
-					<div class="o-grid o-grid--gutter o-grid--align-center">
+					<div class="o-grid o-grid--gutter">
 						<div class="o-grid__item u-1-of-2-bp4">
-							<div class="u-max-width-md">
+							<div class="u-max-width-md u-pt-iota">
 								<!-- <p>
 									Onze studenten delen hier hun ervaringen met jullie. Ze begeleiden je chronologisch door de
 									opleiding. MCT studeren is het realiseren van vernieuwende projecten in real life, dus vertellen onze studenten ook meer
@@ -33,12 +33,16 @@
 						<div class="o-grid__item u-1-of-2-bp4">
 							<div class="c-video-player c-video-player--large-intro c-video-player--circle">
 								<div class="c-video-player__container u-mb-epsilon">
-									<button class="c-video-play-button">
-										<svg role="img" class="c-symbol c-symbol-play c-video-play-button__symbol">
+									<button class="c-video-play-button c-video-play-button--circle js-circle-video-button is-playing" aria-label="Pauze video">
+									<!-- <button class="c-video-play-button c-video-play-button--circle js-circle-video-button" aria-label="Play video"> -->
+										<svg role="img" class="c-symbol c-symbol-play c-video-play-button__symbol c-video-play-button__symbol--play">
 											<use xlink:href="/img/svg/svg-symbols.svg#c-symbol-play"></use>
 										</svg>
+										<svg role="img" class="c-symbol c-symbol-pauze c-video-play-button__symbol c-video-play-button__symbol--pauze">
+											<use xlink:href="/img/svg/svg-symbols.svg#c-symbol-pauze"></use>
+										</svg>										
 									</button>
-									<video id="video" class="c-video-player__video" playsinline
+									<video id="video" class="c-video-player__video js-circle-video" playsinline
 										poster="https://mctwebsite.blob.core.windows.net/video/alexandra-3.png">
 										<!-- <source src="https://mctwebsite.blob.core.windows.net/video/MCTpromo_newv5_rebranding.webm" type="video/webm"> -->
 										<source src="https://mctwebsite.blob.core.windows.net/video/Alexandra-3.mp4" type="video/mp4">

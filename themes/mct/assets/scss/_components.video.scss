@@ -101,6 +101,20 @@
         height: $alpha-leading * 1.5px;
     }
 
+    .c-video-play-button__symbol--pauze {
+        display: none;
+
+        .is-playing & {
+            display: block;
+        }
+    }
+
+    .c-video-play-button__symbol--play {
+        .is-playing & {
+            display: none;
+        }
+    }
+
     .c-video-player__container {
         position: relative;
     }

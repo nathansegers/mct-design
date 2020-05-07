@@ -26,7 +26,11 @@
       <title/><path d="M576 511.5l64.5 64.5v31.5h-513V576l64.5-64.5v-159c0-99 52.5-180 144-202.5v-22.5c0-27 21-48 48-48s48 21 48 48V150c91.5 22.5 144 105 144 202.5v159zm-192 192c-36 0-64.5-28.5-64.5-63h129c0 34.5-30 63-64.5 63z"/>
     </symbol>
     <symbol id="c-symbol-play" viewBox="0 0 24 24">
-      <title>play</title><path d="M8 5v14l11-7z" fill-rule="nonzero"/>
+      <title>play</title><path d="M8 5v14l11-7z" />
+    </symbol>
+    <symbol id="c-symbol-pauze" viewBox="0 0 24 24">
+      <title>pauze</title>
+      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
     </symbol>
     <symbol id="c-symbol-social-facebook" viewBox="0 0 24 24">
       <title>social-facebook</title><path d="M13.5 10h3v3h-3v7h-3v-7h-3v-3h3V8.745c0-1.189.374-2.691 1.118-3.512C12.362 4.41 13.291 4 14.404 4H16.5v3h-2.1c-.498 0-.9.402-.9.899V10z" fill-rule="nonzero"/>
