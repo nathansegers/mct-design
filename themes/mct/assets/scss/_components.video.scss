@@ -126,6 +126,11 @@
         z-index: 10;
         border-radius: $radius-md;
 
+        .c-video-player--circle & {
+            border-radius: 100%;
+            overflow: hidden;
+        }
+
         &::-webkit-media-controls-enclosure {
             overflow:hidden;
             // position: absolute;

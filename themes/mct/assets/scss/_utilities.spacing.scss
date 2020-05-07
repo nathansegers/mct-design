@@ -35,9 +35,13 @@
 }
 
 .u-pt-clear {
-    padding-top: 0;
+    padding-top: 0 !important;
+}
+
+.u-pb-clear {
+    padding-bottom: 0 !important;
 }
 
 .u-pl-clear {
-    padding-left: 0;
+    padding-left: 0 !important;
 }
