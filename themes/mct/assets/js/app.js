@@ -224,6 +224,13 @@ function getReadyToRemoveCookie() {
 	}
 }
 
+function pauseAllVideos() {
+	const videos = document.querySelectorAll('video');
+	for (const v of videos) {
+		v.pause();
+	}
+}
+
 function initVideoPlayer() {
 	let videoplayers = document.querySelectorAll('.c-video-player');
 	if (videoplayers.length > 0) {
@@ -243,6 +250,7 @@ function initVideoPlayer() {
 							btnPlay.classList.remove('is-playing');
 							btnPlay.setAttribute('aria-label', 'Speel video');
 						} else {
+							pauseAllVideos();
 							video.play();
 							btnPlay.classList.add('is-playing');
 							btnPlay.setAttribute('aria-label', 'Pauzeer video');
@@ -255,8 +263,16 @@ function initVideoPlayer() {
 							},
 							false
 						);
+						video.addEventListener(
+							'pause',
+							function () {
+								btnPlay.classList.remove('is-playing');
+							},
+							false
+						);
 					} else {
 						// Normal video somewhere on the page
+						pauseAllVideos();
 						btnPlay.parentNode.querySelector('video').play();
 						btnPlay.parentNode
 							.querySelector('video')
