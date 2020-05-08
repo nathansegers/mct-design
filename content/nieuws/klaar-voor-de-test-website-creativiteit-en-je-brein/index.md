@@ -22,7 +22,7 @@ Tibo’s studeerde TSO & IT netwerken in het verre Brabant (Groot-bijgaarden). W
 
 ## Korte Bio
 
-{{< figure src="TiboVC.jpg" alt="MCT student Tibo Van Craenenbroeck" class="u-mt-alpha u-mb-alpha u-1-of-6 u-rounded-full" >}}
+{{< figure-custom src="TiboVC.jpg" alt="MCT student Tibo Van Craenenbroeck" class="u-mt-alpha u-mb-alpha u-1-of-6 u-rounded-full" >}}
 
 **Naam**: Tibo Van Craenenbroeck  
 **Voorkennis**: TSO IT & Netwerken  
