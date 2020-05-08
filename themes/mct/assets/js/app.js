@@ -4,16 +4,16 @@
  *            See https://github.com/Keyamoon/svgxuse
  * @version   1.2.6
  */
-(function() {
+(function () {
 	if ('undefined' !== typeof window && window.addEventListener) {
 		var e = Object.create(null),
 			l,
-			d = function() {
+			d = function () {
 				clearTimeout(l);
 				l = setTimeout(n, 100);
 			},
-			m = function() {},
-			t = function() {
+			m = function () {},
+			t = function () {
 				window.addEventListener('resize', d, !1);
 				window.addEventListener('orientationchange', d, !1);
 				if (window.MutationObserver) {
@@ -23,7 +23,7 @@
 						subtree: !0,
 						attributes: !0,
 					});
-					m = function() {
+					m = function () {
 						try {
 							k.disconnect(),
 								window.removeEventListener('resize', d, !1),
@@ -40,7 +40,7 @@
 						d,
 						!1
 					),
-						(m = function() {
+						(m = function () {
 							document.documentElement.removeEventListener(
 								'DOMSubtreeModified',
 								d,
@@ -54,7 +54,7 @@
 							);
 						});
 			},
-			u = function(k) {
+			u = function (k) {
 				function e(a) {
 					if (void 0 !== a.protocol) var c = a;
 					else (c = document.createElement('a')), (c.href = a);
@@ -71,13 +71,13 @@
 				}
 				return d;
 			};
-		var n = function() {
+		var n = function () {
 			function d() {
 				--q;
 				0 === q && (m(), t());
 			}
 			function l(a) {
-				return function() {
+				return function () {
 					!0 !== e[a.base] &&
 						(a.useEl.setAttributeNS(
 							'http://www.w3.org/1999/xlink',
@@ -89,7 +89,7 @@
 				};
 			}
 			function p(a) {
-				return function() {
+				return function () {
 					var c = document.body,
 						b = document.createElement('x');
 					a.onload = null;
@@ -105,7 +105,7 @@
 				};
 			}
 			function n(a) {
-				return function() {
+				return function () {
 					a.onerror = null;
 					a.ontimeout = null;
 					d();
@@ -178,7 +178,7 @@
 			q += 1;
 			d();
 		};
-		var p = function() {
+		var p = function () {
 			window.removeEventListener('load', p, !1);
 			l = setTimeout(n, 0);
 		};
@@ -200,7 +200,7 @@ function initNavigation() {
 	}
 
 	for (var i = triggerElements.length - 1; i >= 0; i--) {
-		triggerElements[i].addEventListener('click', function() {
+		triggerElements[i].addEventListener('click', function () {
 			navigationElement.classList.toggle('is-visible');
 			if (document.documentElement.classList.contains('is-fixed')) {
 				document.documentElement.classList.remove('is-fixed');
@@ -224,25 +224,68 @@ function getReadyToRemoveCookie() {
 	}
 }
 
-function initVideoPlayer() {
-	var videoplayer = document.querySelector('.c-video-player');
-	if (videoplayer) {
-		var v = videoplayer.querySelector('.c-video-player__video'),
-			playBtns = document.querySelectorAll('.c-video-play-button');
+function pauseAllVideos() {
+	const videos = document.querySelectorAll('video');
+	for (const v of videos) {
+		v.pause();
+	}
+}
 
-		for (const btnPlay of playBtns) {
-			btnPlay.addEventListener('click', function() {
-				btnPlay.parentNode.querySelector('video').play();
-				btnPlay.parentNode
-					.querySelector('video')
-					.setAttribute('controls', 'controls');
-				btnPlay.classList.add('is-hidden');
-			});
+function initVideoPlayer() {
+	let videoplayers = document.querySelectorAll('.c-video-player');
+	if (videoplayers.length > 0) {
+		for (const videoplayer of videoplayers) {
+			var v = videoplayer.querySelector('.c-video-player__video'),
+				playBtns = videoplayer.querySelectorAll('.c-video-play-button');
+
+			for (const btnPlay of playBtns) {
+				btnPlay.addEventListener('click', function () {
+					if (
+						videoplayer.classList.contains('c-video-player--circle')
+					) {
+						const video = btnPlay.parentNode.querySelector('video');
+						// Do some shit
+						if (btnPlay.classList.contains('is-playing')) {
+							video.pause();
+							btnPlay.classList.remove('is-playing');
+							btnPlay.setAttribute('aria-label', 'Speel video');
+						} else {
+							pauseAllVideos();
+							video.play();
+							btnPlay.classList.add('is-playing');
+							btnPlay.setAttribute('aria-label', 'Pauzeer video');
+						}
+
+						video.addEventListener(
+							'ended',
+							function () {
+								btnPlay.classList.remove('is-playing');
+							},
+							false
+						);
+						video.addEventListener(
+							'pause',
+							function () {
+								btnPlay.classList.remove('is-playing');
+							},
+							false
+						);
+					} else {
+						// Normal video somewhere on the page
+						pauseAllVideos();
+						btnPlay.parentNode.querySelector('video').play();
+						btnPlay.parentNode
+							.querySelector('video')
+							.setAttribute('controls', 'controls');
+						btnPlay.classList.add('is-hidden');
+					}
+				});
+			}
 		}
 	}
 }
 
-var checkNotification = function() {
+var checkNotification = function () {
 	const announcement = document.querySelector('.js-announcement');
 	if (announcement) {
 		var givenDate = announcement.getAttribute('data-due-date');
@@ -255,7 +298,7 @@ var checkNotification = function() {
 	}
 };
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
 	if (window.innerWidth > 960) {
 		document.documentElement.classList.remove('is-fixed');
 		document.querySelector('.js-nav-mobile').classList.remove('is-visible');
@@ -264,13 +307,13 @@ window.addEventListener('resize', function() {
 	const top = document.querySelector('.c-row--top');
 
 	if (top) {
-		document.querySelector(
-			'.js-nav-mobile'
-		).style.top = `${top.clientHeight + 1}px`;
+		document.querySelector('.js-nav-mobile').style.top = `${
+			top.clientHeight + 1
+		}px`;
 	}
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 	initVideoPlayer();
 	getReadyToRemoveCookie();
 	checkNotification();
@@ -287,6 +330,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 });
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
 	initNavigation();
 });
