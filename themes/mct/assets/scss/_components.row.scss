@@ -83,6 +83,12 @@
 .c-row--intro {
 	background-color: palette(color-alpha);
 	color: palette(color-neutral, xxxxx-light);
+
+	a {
+		text-decoration: underline;
+		color: white;
+		font-weight: 700;
+	}
 }
 
 .c-row--visual {
@@ -94,6 +100,22 @@
 		right: 0;
 		bottom: -7.5%;
 		height: 50%;
+		background-color: #fff;
+		transform: skewY(-3deg);
+	}
+}
+
+.c-row--visual-bottom {
+	padding-bottom: $alpha-leading * 4px;
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -5%;
+		height: 10%;
 		background-color: #fff;
 		transform: skewY(-3deg);
 	}

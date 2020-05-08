@@ -8,6 +8,7 @@ html {
 	font: $html-font-weight #{$html-font-size}/#{$html-line-height}px $html-font-family;
 	-webkit-overflow-scrolling: touch;
 	background-color: $html-background-color;
+	scroll-behavior: smooth;
 
 	@if $html-responsive-font-size == true {
 		@include mq($html-responsive-font-breakpoint) {
