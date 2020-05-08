@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <clipPath id="clip-custom_1">
+      <rect width="21" height="21"/>
+    </clipPath>
+  </defs>
+  <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
+    <rect width="21" height="21" fill="#fff"/>
+    <path id="Path_1" data-name="Path 1" d="M4,5l6,6L4,17" transform="translate(3.5 -0.5)" fill="none" stroke="#707070" stroke-width="2"/>
+  </g>
+</svg>
