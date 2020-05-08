@@ -174,12 +174,14 @@ button::-moz-focus-inner {
 
 .c-button--header-cta {
     z-index: 30;
+    text-decoration: none;
     @include box-shadow;
 
     &,
     &:visited {
         background-color: palette(color-neutral,xxxxx-light);
         color: palette(color-alpha);
+        text-decoration: none;
     }
 
     &:hover,
