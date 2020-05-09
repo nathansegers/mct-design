@@ -11,6 +11,7 @@
 .c-faq__button {
     font-weight: 700;
     display: flex;
+    align-items: center;
     width: 100%;
     text-align: left;
     outline: none;
@@ -44,11 +45,23 @@
     @include margin-tb($alpha-leading,0);
 }
 
+.c-faq__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: palette(color-alpha);
+    color: white;
+    flex-shrink: 0;
+    margin-right: $alpha-leading * .5px;
+    border-radius: 100%;
+
+}
+
 .c-faq__caret {
     stroke: currentColor;
-    width: 21px;
-    flex-shrink: 0;
-    margin-right: $alpha-leading * .25px;
+    width: 21px;        
     transition: transform $animation-duration-alpha $animation-easing-alpha;
 }
 
