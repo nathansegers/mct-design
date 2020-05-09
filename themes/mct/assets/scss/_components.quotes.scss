@@ -7,6 +7,8 @@
 }
 
 .c-quote--lg {
+    @include ms4;
+
     @include mq(bp3) {
         @include ms7;
     }

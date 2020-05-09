@@ -18,7 +18,7 @@
 .c-type-intro {
     font-weight: $delta-font-weight;
     font-family: $gamma-font-family;
-    @include ms2;
+    @include ms4;
 
     a {
         position: relative;
@@ -39,10 +39,6 @@
             opacity: .5;
             // color: palette(color-alpha,base);
         }
-    }
-
-    @include mq(bp3) {
-        @include ms4;
     }
 
     @include mq(bp4) {
@@ -110,6 +106,7 @@
 
 .c-type-title-sm {
     font-family: $gamma-font-family;
+    @include ms2;
 
     @include mq(bp3) {
         @include ms6;
