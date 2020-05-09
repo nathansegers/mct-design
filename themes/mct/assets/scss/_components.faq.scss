@@ -56,15 +56,17 @@
     flex-shrink: 0;
     margin-right: $alpha-leading * .5px;
     border-radius: 100%;
+    will-change: transform;
+    transition: transform $animation-duration-alpha $animation-easing-alpha;
 
 }
 
 .c-faq__caret {
     stroke: currentColor;
-    width: 21px;        
-    transition: transform $animation-duration-alpha $animation-easing-alpha;
+    width: 20px;        
+    
 }
 
-.is-open .c-faq__caret {
+.is-open .c-faq__arrow {
     transform: rotate(90deg);
 }
