@@ -87,7 +87,7 @@ blockquote {
     font-weight: $delta-font-weight;
     font-family: $gamma-font-family;
     padding-left: 0;
-    @include ms2;
+    @include ms3;
     @include margin-bottom($blockquote-margin-bottom);
 
     > * {
