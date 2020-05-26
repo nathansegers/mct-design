@@ -40,7 +40,7 @@ Slimme applicaties ontwikkelen die de kwaliteit van het leven verbeteren. Alexan
 
 {{< figure-custom src="AlexandraChristiaens.png" alt="MCT student Alexandra Christiaens" class="u-mt-alpha u-mb-alpha u-1-of-6 u-rounded-full" >}}
 
-**Alexandra Christiaens**
+**Alexandra Christiaens**  
 **Voorkennis**: ASO Wetenschappen-Wiskunde, Master Pedagogische wetenschappen - Orthopedagogiek (KUL)  
 **Provincie**: West-Vlaanderen  
 **Keuzetraject**: [Web App developer](/programma/web-app-developer/)  
