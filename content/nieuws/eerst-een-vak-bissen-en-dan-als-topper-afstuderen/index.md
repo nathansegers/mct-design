@@ -3,6 +3,8 @@ title: "Eerst een vak bissen en dan als topper afstuderen"
 date: 2020-05-26T10:30:58+01:00
 description: "Als je informaticabeheer succesvol afrondt, ben je goed voorbereid op heel wat IT-opleidingen. Maar Stijn koos zonder twijfel voor MCT aan de Howest."
 cover: "cover-eerst-een-vak-bissen-en-dan-als-topper-afstuderen.jpg"
+categories:
+- wie
 ---
 
 __“Na informaticabeheer wou ik zeker verder gaan in een informatica richting, daarvoor zijn we in het middelbaar ook naar de SID-IN beurs gegaan. Daar alleen ging mijn voorkeur al naar Howest. Ik had al een lichte voorkeur naar netwerken toe, waardoor MCT toch wel voor de hand lag. Ik leerde de richting al kennen door een oud-student en één van mijn leerkrachten in het middelbaar die toen nog MCT at home volgde.”__

@@ -3,7 +3,8 @@ title: 'Klaar voor de test? Website creativiteit en je brein'
 date: 2020-04-23T12:24:00+01:00
 description: 'Zie je vooral een zwart scherm en onhandig kleine lettertjes? Nog niet opgeven. Dit is geen vriendelijke User Interface voor een noob, maar een test, remember!'
 cover: 'Screenshot.png'
-draft: false
+categories:
+- wie
 ---
 
 Tijd om je brein eens te testen? Probeer dan eens [de site van Tibo Van Craenenbroeck](https://tibovancraenenbroeck.be/).
