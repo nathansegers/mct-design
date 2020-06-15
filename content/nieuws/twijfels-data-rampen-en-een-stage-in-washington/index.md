@@ -5,8 +5,7 @@ description: "Ilse heeft een bachelor diploma Business Management & Entrepreneur
 cover: "cover-twijfels-data-rampen-en-een-stage-in-washington.jpg"
 ---
 
-Ze koos ervoor om eerst een theoretische management opleiding te volgen om kennis op te bouwen om als zelfstandige te starten en daarna een praktische richting te studeren. Dit was voor haar omgeving zeker een verrassende keuze. Niet enkel vroegen ze zich af of ze het nog zag zitten om nog eens 3 jaar te studeren, maar ook stonden ze versteld van haar keuze voor de IT-bachelor MCT.
-
+Ze koos ervoor om eerst een theoretische management opleiding te volgen om kennis op te bouwen om als zelfstandige te starten en daarna een praktische richting te studeren. Dit was voor haar omgeving zeker een verrassende keuze. Niet enkel vroegen ze zich af of ze het nog zag zitten om nog eens 3 jaar te studeren, maar ook stonden ze versteld van haar keuze voor de IT-bachelor MCT.  
 __“MCT is een praktische richting, dus is het meer dingen uitproberen dan met je neus tussen de boeken zitten. De combinatie business en IT is eerder een uniek profiel op de arbeidsmarkt. Niet veel IT’ers kunnen meedenken wanneer een technische oplossing gezocht moet worden voor een bepaald probleem. Wanneer ik hierin kan meedenken, creëer ik een bonus voor het bedrijf.”__
 
 Dat MCT een praktische opleiding is, was voor Ilse een sterkte, maar het heeft ook voor enkele twijfels gezorgd tijdens haar eerste jaar.    
