@@ -2,7 +2,7 @@
 title: "Intens en druk, maar ook gezellig!"
 date: 2020-06-23T10:30:58+01:00
 description: "Humane wetenschappen is nu niet echt een ideale vooropleiding om MCT te studeren maar dit weerhield Stéphanie niet om toch op zoek te gaan naar een unieke informatica opleiding. Haar familie en vrienden reageerden verrast op haar studiekeuze, maar ze werd gesteund door iedereen!"
-cover: "cover.jpg"
+cover: "MCTShootMrt2019-70.jpg"
 ---
 
 > “Ik werd verliefd op MCT tijdens de opendeurdag en na het eerste jaar bleek het wel duidelijk te zijn dat ik mijn interesse gevonden had. MCT was de perfecte richting voor mij.”
