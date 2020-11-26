@@ -3,7 +3,8 @@ title: 'Van moderne wetenschappen talen naar MCT'
 date: 2020-04-28T16:16:00+01:00
 description: 'Nog nooit iets gedaan met IT? Jamie Fong verbaasde haar ouders en eigenlijk iedereen die haar kende toen ze voor MCT koos na haar opleiding moderne talen wetenschappen. Leuke en innovatieve projecten ontwerpen en ontwikkelen is wat ze echt wou doen.'
 cover: 'Jamie.jpg'
-draft: false
+categories:
+- wie
 ---
 
 We vroegen haar welk project haar altijd zal bijblijven:
