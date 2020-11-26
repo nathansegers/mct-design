@@ -1,5 +1,5 @@
 ---
-title: Project 4
+title: Research Project
 semester: 5
 weight: 50
 tags: "#advancedintegration #start-up #choice"

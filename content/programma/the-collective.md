@@ -1,5 +1,5 @@
 ---
-title: Fast Forward
+title: The Collective
 semester: 5
 weight: 40
 tags: "#international #business #mvp #entrepreneurs"
@@ -11,7 +11,7 @@ tracks:
 - infrastructure-engineer
 ---
 
-**Fast Forward is a module that requires international and / or interdisciplinary teamwork: you get the chance to work together with Energy Management or Industrial Product Design students.**
+**The Collective is a module that requires international and / or interdisciplinary teamwork: you get the chance to work together with Energy Management or Industrial Product Design students.**
 
 You start in a motivated team of young entrepreneurs with a great idea for a product or a service and at the end you deliver a prototype or business case and a business plan.
 
