@@ -3,6 +3,8 @@ title: "Weg van mijn bureau!"
 date: 2020-05-19T10:30:58+01:00
 description: "Na een opleiding industriële ICT in Waregem begon Emiel Vansteenbrugge aan MCT. Studeren deed hij niet steeds aan een bureau met zijn laptop. De trein, in de gangen op school en ook de tenten van het rode kruis waren zijn go to studieplekken."
 cover: "cover-weg-van-mijn-bureau.jpg"
+categories:
+- wie
 ---
 
 __“Ik ben vrijwilliger bij het Rode Kruis, dus de vele evenementen waar we paraat stonden moest ik ook nog ergens in mijn schema passen, ik kan de keren dat ik in een hulppost heb zitten leren niet meer op één hand tellen. In mijn eerste jaar stond ik zelfs het weekend voor mijn examen van Computer Networks paraat op een hardcore fuif, heel eerlijk, veel leerstof is er toen niet binnen gekomen maar het is toch goedgekomen.”__

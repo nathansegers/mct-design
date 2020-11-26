@@ -3,7 +3,8 @@ title: 'MCT is een bijzondere ervaring!'
 date: 2020-04-30T11:24:00+01:00
 description: 'Van lichamelijke opvoeding en enkele jaren werkervaring naar werkende MCT-student.'
 cover: 'ben-vanpoucke.jpg'
-draft: false
+categories:
+- wie
 ---
 
 Ben Vanpoucke besliste na enkele jaren werken en na een avondschool opleiding om alsnog te starten aan de MCT bachelor. Zijn omgeving maar ook zijn werkgever heeft hem gesteund in deze beslissing. Zo kon hij de opleiding volgen door zijn werkregime van voltijds naar halftijds te verlagen. Dankzij de samenwerking tussen school en werk werd voor een goede planning gezorgd zodat dit goed te combineren was.

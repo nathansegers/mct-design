@@ -4,6 +4,8 @@ date: 2020-05-05T9:24:00+01:00
 description: 'Vergeet de clichés over een IT-opleiding en IT-studenten. In het tijdperk van sensoren en slimme apps ziet een nieuwe generatie een heel ander verhaal dan enkel maar hardware en software. Alexandra Christiaens is één van hen.'
 cover: 'MCTShootMrt2019-27.jpg'
 draft: false
+categories:
+- wie
 ---
 
 Haar student-carrière voor MCT is op zijn minst interessant te noemen:  

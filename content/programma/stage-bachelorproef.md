@@ -1,5 +1,5 @@
 ---
-title: Stage + Bachelorproef
+title: Stage in binnen- of buitenland & Bachelorproef
 semester: 6
 weight: 10
 tags: "#teamwork #entrepreneur #projectmanagement #integration"

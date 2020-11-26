@@ -3,6 +3,8 @@ title: "Deadlines zijn belangrijk!"
 date: 2020-05-12T10:30:58+01:00
 description: "Oorspronkelijk was ik van plan om DAE te studeren, maar na toch eens te gaan kijken naar MCT ben ik geprikkeld geraakt door het idee dat ik in aanraking kon komen met AI. Uiteindelijk heb ik besloten om toch MCT te kiezen en hier heb ik nog geen spijt van gehad."
 cover: "ProjectII_StreetWorkoutApp.jpg"
+categories:
+- wie
 ---
 
 In het eerste jaar moest Ruben, zoals vele studenten, even zijn weg zoeken. Vooral de weg naar deadlines halen was in het eerste jaar wat moeilijk. Bij MCT is een groot deel van de richting gefocused op het gebruiken en toepassen van de kennis, hiervoor is dagelijks werk van groot belang. 
