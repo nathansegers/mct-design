@@ -1,0 +1,52 @@
+{{ define "main" }}
+<main>
+	<div class="c-row c-row--lg c-row--intro">
+		<div class="c-main-section-xl">
+			<div class="o-container u-max-width-xl">
+				<div class="c-main-section-md"></div>
+					<h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
+						Young professionals met een idee!
+					</h1>
+					<p class="c-type-intro">
+						Bekijk de one minute proposals van deze groepen en stem op jouw favoriet!
+					</p>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<section class="c-row c-row--lg">
+	<div class="c-main-section-xl">
+		<div class="o-container u-max-width-optimal u-text-center">
+			<div class="u-max-width-optimal">
+				<p class="c-type-meta u-mb-gamma u-ms-1 u-color-neutral-base">
+					Young professionals met een idee!
+				</p>
+				<h1 class="c-type-intro u-mb-zeta">
+					Bekijk de one minute proposals van deze groepen en stem op jouw favoriet!
+				</h1>
+				<p>
+					Studenten energiemanagement en MCT hebben er een semester ondernemen op zitten. Tijdens The Collective werden ze in team
+					uitgedaagd om niet te focussen op hun technische skills maar om hun ondernemingszin en businessmindset te ontwikkelen.
+					Na 10 weken van hard werk, omgaan met feedback, pivoteren, en met volle moed opnieuw beginnen, staan hun mock-up
+					bedrijven op punt.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="c-main-section-xl">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+				{{ range .Site.Taxonomies.categories.wie }}
+				<article
+					class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 o-flex o-flex--align-end u-mb-epsilon">
+					{{ partial "atoms/news-article" .}}
+				</article>
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
