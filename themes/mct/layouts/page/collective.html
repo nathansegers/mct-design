@@ -39,14 +39,11 @@
 			<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
 				
 				<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
-					<a class="c-media c-media--link" href="#overlayProject1">
+					<a class="c-media c-media--link js-show-youtube-modal" href="https://www.youtube.com/watch?v=Gpa5S8DgPzs">
 						<picture class="c-media__picture u-mb-delta">
 							<img class="c-media__image" src="https://dummyimage.com/600x400/000/fff" alt="">
 						</picture>
-						<div class="c-media__body">
-							<p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
-								Project 1
-							</p>
+						<div class="c-media__body">							
 							<div class="c-media__content">
 								<h2 class="c-media__title u-ms0 u-mb-gamma">
 									Titel project
@@ -60,14 +57,11 @@
 				</article>
 				
 				<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
-					<a class="c-media c-media--link" href="#overlayProject2">
-						<picture class="c-media__picture u-mb-delta">
+					<a class="c-media c-media--link js-show-youtube-modal" href="https://www.youtube.com/watch?v=Gpa5S8DgPzs">
+						<picture class="c-media__picture c-media__picture--play u-mb-delta ">
 							<img class="c-media__image" src="https://dummyimage.com/600x400/000/fff" alt="">
 						</picture>
-						<div class="c-media__body">
-							<p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
-								Project 2
-							</p>
+						<div class="c-media__body">							
 							<div class="c-media__content">
 								<h2 class="c-media__title u-ms0 u-mb-gamma">
 									Titel project 2
@@ -84,25 +78,9 @@
 		</div>
 	</div>
 </section>
-<div id="overlayProject1" class="overlay">
-	<div class="popup">
-		<a class="close" href="#!">&times;</a>
-		<h2>Project 1 </h2>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eos minima quae iste vero facilis laudantium quis ipsa dolore quaerat odit similique corporis nostrum? Distinctio, reprehenderit! Repellat architecto quo illum.
-		</p>		
+<dialog open>
+	<div class='embed-container'>
+		<iframe src='https://www.youtube.com/embed//Gpa5S8DgPzs' frameborder='0' allowfullscreen></iframe>
 	</div>
-</div>
-<div id="overlayProject2" class="overlay">
-	<div class="popup">
-		<a class="close" href="#!">&times;</a>
-		<h2>Project 2 </h2>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eos minima quae iste vero facilis laudantium quis ipsa dolore quaerat odit similique corporis nostrum? Distinctio, reprehenderit! Repellat architecto quo illum.
-		</p>		
-		<div class='embed-container'>
-			<iframe src='https://www.youtube.com/embed//DoHdPeBs7ts' frameborder='0' allowfullscreen></iframe>
-		</div>
-	</div>
-</div>
+</dialog>
 {{ end }}
