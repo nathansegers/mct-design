@@ -57,23 +57,23 @@
 	border-top: $alpha-leading * 0.25px solid transparent;
 
 	&-code {
-		border-color: palette(color-code);
+		border-color: $color-code;
 	}
 
 	&-connect {
-		border-color: palette(color-connect);
+		border-color: $color-connect;
 	}
 
 	&-create {
-		border-color: palette(color-create);
+		border-color: $color-design;
 	}
 
 	&-analysis {
-		border-color: palette(color-analysis);
+		border-color: $color-analysis;
 	}
 
 	&-project {
-		border-color: palette(color-project);
+		border-color: $color-project;
 	}
 }
 
