@@ -5,6 +5,9 @@
 
 		body.classList.remove('has-modal');
 		modal.removeAttribute('open');
+
+		const iframe = modal.querySelector('iframe');
+		iframe.src = iframe.src;
 	};
 
 	const openModal = function (youtubeUrl) {
