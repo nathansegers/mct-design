@@ -11,7 +11,7 @@
 	};
 
 	const openModal = function (youtubeUrl) {
-		const body = document.querySelector('body'),
+		const body = document.querySelector('html'),
 			modal = document.querySelector('.js-dialog');
 
 		body.classList.add('has-modal');
