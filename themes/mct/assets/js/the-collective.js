@@ -15,13 +15,6 @@
 		modal.querySelector('iframe').src = youtubeUrl;
 		modal.setAttribute('open', null);
 
-		modal.querySelector(
-			'.js-embed-container'
-		).innerHTML = `<iframe src="${youtubeUrl}" frameborder="0" allowfullscreen></iframe>`;
-
-		console.log(modal);
-		console.log(youtubeUrl);
-
 		document
 			.querySelector('.js-dialog-close')
 			.addEventListener('click', function () {
