@@ -28,7 +28,7 @@ Voor studenten die nog geen programmeerervaring hebben, vormt deze cursus een ee
 
 Meer info & inschrijven: http://app.howest.be/instapcursussen
 
-Kies opleiding “New Media & Communication Technology” (NMCT).
+Kies opleiding “Multimedia & Creative Technologies” (MCT).
 
 Alle opleidingsspecifieke instapcursussen gaan door op Howest Campus Graaf Karel De Goedelaan 5 – 8500 Kortrijk.
 
