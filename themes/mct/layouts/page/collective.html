@@ -9,7 +9,7 @@
 			<h1 class="c-type-intro u-mb-zeta">
 				Bekijk de one minute proposals van deze groepen en stem op jouw favoriet!
 			</h1>
-			
+
 			<div class="s-content">
 				<p class="u-mb-theta">
 					Studenten energiemanagement en MCT hebben er een semester ondernemen op zitten. Tijdens <strong>The Collective</strong> werden ze in team uitgedaagd om niet te focussen op hun technische skills maar om hun ondernemingszin en businessmindset te ontwikkelen. Na 10 weken van hard werk, omgaan met feedback, pivoteren, en met volle moed opnieuw beginnen, staan hun mock-up bedrijven op punt. Bekijk hier wat deze studenten bereikt hebben en <a class="u-fw-700" href="test.html">stem op jouw favoriet</a>.
@@ -20,24 +20,24 @@
 	<div class="c-main-section-lg">
 		<div class="o-container">
 			<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
-				{{ range $index, $project := .Site.Data.theCollectiveProjects }}
-							<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 o-flex o-flex--align-end u-mb-epsilon">
-								<a class="c-media c-media--link js-show-youtube-modal" href="{{ $project.videoUrl }}">
-									<picture class="c-media__picture u-mb-delta">
-										<img class="c-media__image" src="{{ $project.image }}" alt="">
-									</picture>
-									<div class="c-media__body">
-										<div class="c-media__content">
-											<h2 class="c-media__title u-ms0 u-mb-alpha">
-												{{ $project.title }}
-											</h2>
-											<p class="c-media__text u-ms0">
-												{{ $project.text }}
-											</p>
-										</div>
+				{{ range $project := .Site.Data.theCollectiveProjects }}
+						<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 o-flex o-flex--align-end u-mb-epsilon">
+							<a class="c-media c-media--link js-show-youtube-modal" href="https://youtube.com/embed/{{ $project.videoId }}">
+								<picture class="c-media__picture u-mb-delta">
+									<img class="c-media__image" src="https://img.youtube.com/vi/{{ $project.videoId }}/maxresdefault.jpg" alt="">
+								</picture>
+								<div class="c-media__body">
+									<div class="c-media__content">
+										<h2 class="c-media__title u-ms0 u-mb-alpha">
+											{{ $project.title }}
+										</h2>
+										<p class="c-media__text u-ms0">
+											{{ $project.text }}
+										</p>
 									</div>
-								</a>
-							</article>
+								</div>
+							</a>
+						</article>
 				{{ end }}
 
 				<!-- <article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 o-flex o-flex--align-end u-mb-epsilon">
