@@ -22,7 +22,8 @@
 			<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
 				{{ range $index, $project := .Site.Data.theCollectiveProjects }}
 					<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 o-flex o-flex--align-end u-mb-epsilon">
-						<a class="c-media c-media--link js-show-youtube-modal" href="{{ $project.videoUrl }}">
+						<div class="c-media " >
+							<a href="{{ $project.videoUrl }}" class="c-media c-media--link js-show-youtube-modal">
 							<picture class="c-media__picture c-media__picture--play u-mb-delta">								
 								<!-- <img class="c-media__image" src="{{ $project.image }}" alt=""> -->
 								<img class="c-media__image" src="https://dummyimage.com/600x400/eee/ddd" alt="">
@@ -30,17 +31,24 @@
 									{{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
 								</span>
 							</picture>
+							</a>
 							<div class="c-media__body">
 								<div class="c-media__content">
-									<h2 class="c-media__title u-ms0 u-mb-alpha">
-										{{ $project.title }}
-									</h2>
-									<p class="c-media__text u-ms0">
-										{{ $project.text }}
+									<h2 class="c-media__title u-ms0 u-mb-beta">
+										{{ $project.title }} <span class="c-media__title-text"> door {{ $project.studenten }}</span>
+									</h2>									
+									<p class="c-media__text u-ms0 u-mb-beta">
+										{{ $project.text }} 
 									</p>
+									<!-- <p class="c-media__title u-ms0">
+										{{ $project.studenten }}
+									</p> -->
+									<!-- <p class="c-media__text u-ms0">
+										
+									</p> -->
 								</div>
 							</div>
-						</a>
+						</div>
 					</article>
 				{{ end }}								
 			</div>
