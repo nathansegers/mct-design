@@ -1,24 +1,145 @@
 -
-  title: An International Masterclass in Urban Challenges and Creativity
-  text: NMCT student Sebastiaan at the DCLivingLab and Creativity World Forum 2017 in Copenhagen.
-  image: forum.jpg
-  studenten: Simon & Martijn
-  videoUrl: https://www.youtube.com/embed/zMiECh4wm0g
+  title: "Quality Time App"
+  text: "
+    De app die jou laat aanduiden welke films je leuk vindt of niet. Daarna kan je je account matchen met je partner om zo een film te vinden je beide leuk vindt en wilt zien.
+  "
+  studenten: Jarmo Cluyse, Gene Dupré, Gilles Naeyaert & Wout Ruyters
+  videoId: 9KiafEvsYAo
 -
-  title: GipGipHoera!
-  text: Laat je GIP rond nieuwe technologieën ondersteunen door NMCT lectoren.
-  image: gipgiphoera.jpg
-  studenten: Simon & Martijn
-  videoUrl: https://www.youtube.com/embed/zMiECh4wm0g
+  title: "Count'M Keep it simple, just count'M"
+  text: "
+    De software/hardware oplossing die ervoor zorgt dat je een duidelijk zicht hebt op de impact van uw verschillende reclamecampagnes.
+  "
+  studenten: Michiel Dejagere, Arthur Taragola, Maarten Ureel & Désirée Verbeke
+  videoId: LWANypKuej8
 -
-  title: NMCT Bachelorproef inspiratie
-  text: Sander hielp met zijn NMCT bachelorproef mee aan doctoraatsonderzoek van UGent.
-  image: inspiratie.jpg
-  studenten: Simon & Martijn
-  videoUrl: https://www.youtube.com/embed/zMiECh4wm0g
+  title: "WAAW: We Are Against Waste"
+  text: "
+    Het bakje in je frigo die je producten scant en ervoor zorgt dat je alles opgebruikt voor het over datum gaat.
+  "
+  studenten: Maurits Cottyn, Jules Desplenter, Thomas Eeckhout & Tibo Van Zwol
+  videId: eXkUwyW-fPU
 -
-  title: Maak van je longboard een e-board
-  text: Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.
-  image: skateboard.jpg
-  studenten: Simon & Martijn
-  videoUrl: https://www.youtube.com/embed/zMiECh4wm0g
+  title: "Aïdes"
+  text: "
+    De artificiele intiligentie die voorspelt wanneer je het best je aandelen koopt of verkoopt. Zo heb je meer tijd om je met andere zaken bezig te houden.
+  "
+  studenten: Steven Copermans, Arno Defauw, Cédric De Meester & Yente De Wael
+  videoId: i10PHqsh1F4
+-
+  title: Glass Handalcoholontsmettingssysteem
+  text: Het handalcoholontsmettingssysteem dat uw klanten aanmoedigt en beloont. Met onder andere een monitoring systeem die u laat weten wanneer u deze moet bijvullen.
+  studenten: Alexandra Christiaens Gilles Clarisse Shannon Goemaere Lukas Snoeck
+  videoId: ccntX3ZzqJo
+-
+  title: "Heattics"
+  text: "
+    Seeing your shop in an other dimension to boost your potential!
+  "
+  studenten: Jens Bonnier, Quinten De Clercq & Robbe De Clercq
+  videoId: MfXfGzbPCZ8
+-
+  title: "Counted In"
+  text: "
+    Counted In laat je op zo een efficiënt mogelijke manier winkelen. Door zelf een route uit te stippelen naar de minst drukke winkels op dat moment.
+  "
+  studenten: Aiko Van Ryssel, Brian Caron, Jonas Anne & Emile Goeminne
+  videoId: ExgvTseOXYs
+-
+  title: "SmartBin"
+  text: "
+    Wij presenteren u SmartBin, een slimme oplossing om alle afvalniveau's van uw vuilnisbakken, in 1 handige app te zien, gedaan met nutteloos lokalen openen en vuilnisbakken checken.
+  "
+  studenten: Lennert Defauw, Ivo Van Horebeek, Gilles Mommerency, Wouter Van Robays & Jannes Waelkens
+  videoId: xaeKgFSCikM
+-
+  title: "Gondii"
+  text: "
+    De software die uw robotgrasmaaier bestuurd, weg van obstakels maar op het gras.
+  "
+  studenten: Robbe Brandse, Kevin Tolpe & Zarin Vansteelandt
+  videoId: rf6T_ByBsf0
+-
+  title: "NaviSchool by NaviScale"
+  text: "
+    The navigation solution made to fit your campus.
+  "
+  studenten: Thomas Debie, Conny Van Gheluwe, Tibo Van Craenenbroeck & Stijn Vandendriessche
+  videoId: kA-XoCxJrA
+-
+  title: "Scanalyse"
+  text: "
+    De digitaliseer app voor uw notities. Scanalyse scant niet enkel de tekst, maar neemt ook de layout van uw bestand over.
+  "
+  studenten: Berni Cortvriend, Victor Lemaire, Gil Parmentier, Bryan Vanoverschelde & Adrien Willems
+  videoId: tYSvY0HdYzw
+-
+  title: "Timezip"
+  text: "
+    Een uniek smart lock geactiveerd door studentenkaarten. Via verbinding met ons online platform, besparen uw studenten/werknemers tijd en kan u op 2 oren slapen dat al je deuren dag en nacht gemonitord worden.
+  "
+  studenten: Guillermo Callewaert, Lex Eggermont, Ruben Goethals & Tibo Louagie
+  videoId: iGbj2dz-1k
+-
+  title: "EdgeFit"
+  text: "
+    EdgeFit de fitste app. Het platform dat ervoor zorgt dat je fitness leven nog nooit zo makkelijk is geweest, door gemakkelijke communicatie tussen trainer en sporter.
+  "
+  studenten: Nick Langens, Rune Vandebuerie, Duncan De Vlaminck & Matthias Limbourg
+  videoId: 3FHEK3estqw
+-
+  title: "Lokaalizer"
+  text: "
+    De tool die helpt om je eigen weg te vinden in een vreemd gebouw, zonder dat je daar voor andere mensen moet lastig vallen.
+  "
+  studenten: Jannes Carpentier, Aaron Debacker & Djenghis Deschuijmere
+  videoId: KakF6EtWH3E
+- 
+  title: "Energie advies op maat!"
+  text: "
+    Een website waar ja aan de hand van vragen in te vullen info krijgt naar waar je energie rekening naartoe gaat. Als de klant meer info wil hebben kan hij een volledige analyse kopen waarbij wij dan apparatuur installeren voor een meer gedetailleerde meting.
+  "
+  studenten: Yentl Maeckelberghe, Jan Verhavert & William Wallays
+  videoId: 1xHRqY69Kjc
+-
+  title: "Mobiro - Digitale kassa"
+  text: "
+    Heb je eindloos veel tickets om bij te houden? Bespaar tijd met Mobiro!
+  "
+  studenten: Keanu David, Kevin Scheyltjens, Szymon Szmczak & Berend Vandenbussche
+  videoId: igbMmpF2iTI
+-
+  title: "Summarise.io, the way to save time!"
+  text: "
+    Het platform die met Artificiële Intelligentie ellenlange teksten samenvat in een klik. Samengevat de manier voor tijdswinning!
+  "
+  studenten: Anikat Arora, Niels Dewulf & Tibo Sevenhant
+  videoId: 5xFcdY4iBlI
+-
+  title: "BeLoaded"
+  text: "
+    The battery is not the limit! Be loaded everywhere, anytime.
+  "
+  studenten: Sebbe Delobelle, Kobe Lamsens & Robbe Vanwalleghem
+  videoId: 70OFS8j_RRE
+-
+  title: "Fodr"
+  text: "
+    Het platform die jou helpt met het optimaliseren van jouw administratieve taken. Focus op wat echt telt.
+  "
+  studenten: Athanase Galatsidas, Jens Krijgsman, Koen De Pauw & Florian Van Daele
+  videoId: neRC7zURLLE
+-
+  title: "CrowdBird"
+  text: "
+    Het crowd management platform die jou waarschuwt waar het te druk is zodat jij geen tijd hoeft te verspillen in een drukke massa.
+  "
+  studenten: Gregory Aernoudt, Luka De Bakker, Robbe Van Den & Daele Kirsten Vermeulen
+  videoId: UtUlu3mYRbg
+-
+  title: "Växa smart meter"
+  text: "
+    Een plug and place digitale meter add-on device. Dat gebruik maakt van uw elektrisch verbruiksprofiel, om met slimme sturing geld te besparen.
+  "
+  studenten: Niels Duyvejonck, Jeroen Ribbens, Jaron Strypsteen & Tyr Vanden Berghe
+  videoId: rkuE65bSA6M
