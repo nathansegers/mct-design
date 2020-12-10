@@ -19,7 +19,7 @@
 	</div>
 	<div class="c-main-section-lg">
 		<div class="o-container">
-			<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
 				{{ range $index, $project := .Site.Data.theCollectiveProjects }}
 					<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 o-flex o-flex--align-end u-mb-epsilon">
 						<div class="c-media " >
@@ -32,13 +32,19 @@
 							</picture>
 							</a>
 							<div class="c-media__body">
-								<div class="c-media__content">
-									<h2 class="c-media__title u-ms0 u-mb-beta">
-										{{ $project.title }} <span class="c-media__title-text"> door {{ $project.studenten }}</span>
+								<div class="c-media__content">									
+									<h2 class="c-media__title u-ms0 u-mb-alpha">
+										 {{ $project.title }} <!--<span class="c-media__title-text"> door {{ $project.studenten }}</span>-->
 									</h2>									
-									<p class="c-media__text u-ms0 u-mb-beta">
+									<!-- <p class="c-media__text u-ms0 u-mb-beta" >
+										Studenten: {{ $project.studenten }}
+									</p> -->
+									<p class="c-media__text u-ms0 u-mb-gamma">
 										{{ $project.text }} 
 									</p>									
+									<p class="c-media__meta u-text-transform-none u-ms0 u-color-alpha-base">
+										{{ $project.studenten }}
+									</p>
 								</div>
 							</div>
 						</div>
@@ -64,7 +70,7 @@
 							</a>
 						</article>
 				{{ end }}
-				*/}}
+				*/}}							
 			</div>
 		</div>
 	</div>
