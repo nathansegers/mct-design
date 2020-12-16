@@ -92,6 +92,11 @@
             transform: scale(1);
         }
     }
+
+    &--sm {
+        height: $alpha-leading * 2.5px;
+        width: $alpha-leading * 2.5px;
+    }
 }
 
     .c-video-play-button__symbol {
@@ -99,6 +104,11 @@
         fill: palette(color-alpha,light);
         width: $alpha-leading * 1.5px;
         height: $alpha-leading * 1.5px;
+
+        .c-video-play-button--sm & {
+            width: $alpha-leading * 1.25px;
+        height: $alpha-leading * 1.25px;
+        }
     }
 
     .c-video-play-button__symbol--pauze {

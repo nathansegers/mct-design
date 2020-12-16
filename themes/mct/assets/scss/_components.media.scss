@@ -57,6 +57,11 @@
 	}
 }
 
+.c-media__title-text {
+	font-weight: normal;
+	color: palette(color-neutral);
+}
+
 .c-media__text {
 	color: palette(color-neutral);
 
@@ -129,4 +134,8 @@
 		width: 100%;
 		object-fit: cover;
 	}
+}
+
+.c-media__picture-play {
+	position: absolute;
 }

@@ -296,3 +296,95 @@ li {
     column-gap: $columns-gutter * 1px;
 	box-decoration-break: clone;
 }
+
+.is-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.u-rounded-full {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+// infodag stuff
+
+.c-arrow-celine {
+	// color: palette(color-alpha);
+	z-index: 100;	
+	text-align: center;
+
+	@include mq(bp5) {
+		position: absolute;
+		bottom: 0;
+		transform: translateX(-100%) translateY(50%) skewY(-3deg);
+		text-align: right;
+		margin-bottom: 0;
+	}
+}
+
+	.c-arrow-celine__arrow {
+		// display: none;
+		position: absolute;
+		width: 55px;
+		right: -65px;	
+		transform: translateY(-75%);
+		pointer-events: none;	
+		stroke: currentColor;
+
+		@include mq(bp5, max) {
+			display: none;
+		}
+	}
+
+/* Popup message*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all .2s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  border-radius: 50%;
+  margin: 70px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  max-width: 500px;
+  position: relative;
+}
+
+// responsive media
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+// font-weight utitlity
+
+.u-fw-700 {
+	font-weight: 700;
+}
+
+.u-text-transform-none {
+	text-transform: unset;
+}
