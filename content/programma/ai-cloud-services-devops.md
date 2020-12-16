@@ -8,7 +8,7 @@ tracks:
 - ai-engineer
 ---
 
-In de [deep learning]({{<ref "/programma/deep-learning" >}}) en [advanced AI]({{<ref "/programma/advanced-ai" >}}) leer je hoe we verschillende AI-modellen kunnen trainen. In deze module, de module AI-services & devops willen we deze AI-modellen in productie nemen.
+In de <a class="js-module-link" href="/programma/deep-learning/">deep learning</a> en <a class="js-module-link" href="/programma/advanced-ai/">advanced AI</a> leer je hoe we verschillende AI-modellen kunnen trainen. In deze module, de module AI-services & devops willen we deze AI-modellen in productie nemen.
 Ontwikkelaars gebruiken deze getrainde modellen in hun applicaties. Daarnaast willen AI-ingenieurs hun modellen constant verbeteren en hertrainen.
 
 In deze module gaan we dieper in op het **deployen van Machine Learning en Deep Learning modellen in een Cloud omgeving** en dit via een CI/CD pipeline. Eindgebruikers roepen Microservices of AI-services aan via een frontend omgeving. De verschillende aanvragen komen in wachtrijen terecht die verwerkt worden door een schaalbare backend omgeving powered by krachtige GPU’s. Deze omgeving is opgebouwd op basis van Docker containers en worden gemanaged door een Kubernetes platform. De opgezette CI/CD pipeline zal gescript worden via Python, Powershell of ander CLI tools.

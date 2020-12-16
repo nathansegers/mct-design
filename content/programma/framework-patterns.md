@@ -2,12 +2,12 @@
 title: Framework & Patterns
 semester: 5
 weight: 10
+description: "Hoe bouw je met een JS-framework een professionele web app? State-of-the-art frontend webdevelopment werkt als een PWA, mét een virtual DOM, two-way data-binding en state-management."
 tags: "#webpack #jsframework #performance #PWA"
 pillar: code
 tracks: web-app
 tools: "Visual Studio Code, Vue developer tools, Webpack, Yarn, Node.js, i18n, Vuex"
 ---
-**Frameworks & Patterns — Hoe bouw je met een JS-framework een professionele web app? State-of-the-art frontend webdevelopment werkt als een PWA, mét een virtual DOM, two-way data-binding en state-management.**
 
 Vanuit de kennis die we opgedaan hebben in de module Frontend, brengen we het maken van een performante professionele app een stap verder.
 Grote frontend frameworks geven ons een scala aan mogelijkheden in de browser. We focussen in deze module op concepten en onderdelen die terugkomen in de meest gangbare frameworks.

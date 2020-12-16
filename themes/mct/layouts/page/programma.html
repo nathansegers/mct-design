@@ -77,7 +77,7 @@
 							</h3>
 							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 1 }}
-									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
 										<p class="c-module__tags">{{ .Params.Tags }}</p>
                             		</a>
@@ -90,7 +90,7 @@
                             </h3>
 							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 2 }}
-								<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+								<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 									<h4 class="c-module__title">{{ .Title }}</h4>
 									<p class="c-module__tags">{{ .Params.Tags }}</p>
 								</a>
@@ -105,7 +105,7 @@
                             </h3>
 							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 3 }}
-									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
 										<p class="c-module__tags">{{ .Params.Tags }}</p>
 									</a>
@@ -121,7 +121,7 @@
 									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "smart-tech-ai" }}
-												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 													<h4 class="c-module__title">{{ .Title }}</h4>
 													<p class="c-module__tags">{{ .Params.Tags }}</p>
 												</a>
@@ -133,7 +133,7 @@
 									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "web-app" }}
-												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 													<h4 class="c-module__title">{{ .Title }}</h4>
 													<p class="c-module__tags">{{ .Params.Tags }}</p>
 												</a>
@@ -145,7 +145,7 @@
 									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "ai-engineer" }}
-												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 													<h4 class="c-module__title">{{ .Title }}</h4>
 													<p class="c-module__tags">{{ .Params.Tags }}</p>
 												</a>
@@ -157,7 +157,7 @@
 									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 4 }}
 											{{ if in .Params.Tracks "infrastructure-engineer" }}
-												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 													<h4 class="c-module__title">{{ .Title }}</h4>
 													<p class="c-module__tags">{{ .Params.Tags }}</p>
 												</a>
@@ -183,7 +183,7 @@
 									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "smart-tech-ai" }}
-												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 													<h4 class="c-module__title">{{ .Title }}</h4>
 													<p class="c-module__tags">{{ .Params.Tags }}</p>
 												</a>
@@ -195,7 +195,7 @@
 									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "web-app" }}
-												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 													<h4 class="c-module__title">{{ .Title }}</h4>
 													<p class="c-module__tags">{{ .Params.Tags }}</p>
 												</a>
@@ -207,7 +207,7 @@
 									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "ai-engineer" }}
-												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 													<h4 class="c-module__title">{{ .Title }}</h4>
 													<p class="c-module__tags">{{ .Params.Tags }}</p>
 												</a>
@@ -219,7 +219,7 @@
 									{{ range (where .Site.Pages "Type" "programma") }}
 										{{ if eq .Params.Semester 5 }}
 											{{ if in .Params.Tracks "infrastructure-engineer" }}
-												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link">
+												<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
 													<h4 class="c-module__title">{{ .Title }}</h4>
 													<p class="c-module__tags">{{ .Params.Tags }}</p>
 												</a>
@@ -235,13 +235,13 @@
 							</h3>
 							{{ range (where .Site.Pages "Type" "programma") }}
 								{{ if eq .Params.Semester 6 }}
-									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--single c-module--link">
+									<a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--single c-module--link js-module-link">
 										<h4 class="c-module__title">{{ .Title }}</h4>
 										<p class="c-module__tags">{{ .Params.Tags }}</p>
 									</a>
 								{{ end }}
 							{{ end }}
-                            <!-- <a href="/module/stage-bachelorproef/" class="c-module c-module--project c-module--full c-module--link">
+                            <!-- <a href="/module/stage-bachelorproef/" class="c-module c-module--project c-module--full c-module--link js-module-link">
                                 <h4 class="c-module__title">Stage + Bachelorproef</h4>
                                 <p class="c-module__tags">#communicatie #teamwork #entrepreneur #projectmanagement #device #network #ux #embeddedsoftware #front-end
 								#data-management</p>
@@ -445,4 +445,38 @@
 	</div>
     {{ partial "components/cta.html" (dict "title" "Inschrijven?" "paragraph" "lijkt deze opleiding wat voor jou? kom dan zeker eens langs op een van onze infodagen.") }}
 </main>
+<dialog class="c-modal js-dialog">
+	<!-- <div class="c-modal__body c-modal__body--module c-modal__body--module-connect js-dialog-body">
+		<button class="c-modal__close js-dialog-close" aria-label="Close dialog">
+			{{ partial "atoms/symbol" (dict "value" "close" "class" "c-nav-main-trigger__symbol")}}
+		</button>
+
+		<ul class="o-list c-curriculum-legend">
+			<li class="c-curriculum-legend__item">
+				<span class="c-curriculum-legend__swatch js-swatch"></span>
+				<span class="js-legend"></span>
+			</li>
+		</ul>
+		<h1 class="c-type-intro u-mb-alpha js-title">
+
+		</h1>
+		<p class="c-type-meta u-ms-1 u-color-neutral-base js-tags">
+
+		</p>
+		<div class="u-max-width-optimal">
+			<p class="c-type-intro-small js-description">
+
+			</p>
+			<div class="s-content js-content">
+			</div>
+			<h3 class="u-mb-alpha u-color-alpha-light">
+				Tools: <span class="u-color-neutral-base js-tools"></span>
+			</h3>
+			<p class="u-color-neutral-base">
+				{{ .Params.Tools }}
+			</p>
+		</div>
+
+	</div> -->
+</dialog>
 {{ end }}

@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<section class="c-row c-row--lg">
+	<div class="c-main-section-lg">
+		<div class="o-container u-max-width-optimal u-text-center">		
+			<p class="c-type-meta u-mb-gamma u-ms-1 u-color-neutral-base">
+				Young professionals met een idee!
+			</p>
+			<h1 class="c-type-intro u-mb-zeta">
+				Bekijk de one minute proposals van deze groepen en stem op jouw favoriet!
+			</h1>
+
+			<div class="s-content">
+				<p class="u-mb-theta">
+					Studenten energiemanagement en MCT hebben er een semester ondernemen op zitten. Tijdens <strong>The Collective</strong> werden ze in team uitgedaagd om niet te focussen op hun technische skills maar om hun ondernemingszin en businessmindset te ontwikkelen. Na 10 weken van hard werk, omgaan met feedback, pivoteren, en met volle moed opnieuw beginnen, staan hun mock-up bedrijven op punt. Bekijk hier wat deze studenten bereikt hebben en <a class="u-fw-700" href="https://forms.gle/sy4bRo45u9BNrt6m6">stem op jouw favoriet</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="c-main-section-lg">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+				{{ range $index, $project := .Site.Data.theCollectiveProjects }}
+					<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 o-flex o-flex--align-end u-mb-epsilon">
+						<div class="c-media " >
+							<a href="https://youtube.com/embed/{{ $project.videoId }}" class="c-media c-media--link js-show-youtube-modal">
+							<picture class="c-media__picture c-media__picture--play u-mb-delta">								
+								<img class="c-media__image" src="https://img.youtube.com/vi/{{ $project.videoId }}/maxresdefault.jpg" alt="">
+								<span class="c-video-play-button c-video-play-button--sm">
+									{{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol") }}
+								</span>
+							</picture>
+							</a>
+							<div class="c-media__body">
+								<div class="c-media__content">									
+									<h2 class="c-media__title u-ms0 u-mb-alpha">
+										 {{ $project.title }} <!--<span class="c-media__title-text"> door {{ $project.studenten }}</span>-->
+									</h2>									
+									<!-- <p class="c-media__text u-ms0 u-mb-beta" >
+										Studenten: {{ $project.studenten }}
+									</p> -->
+									<p class="c-media__text u-ms0 u-mb-gamma">
+										{{ $project.text }} 
+									</p>									
+									<p class="c-media__meta u-text-transform-none u-ms0 u-color-alpha-base">
+										{{ $project.studenten }}
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+				{{ end }}	
+				{{/* 
+				{{ range $project := .Site.Data.theCollectiveProjects }}
+						<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 o-flex o-flex--align-end u-mb-epsilon">
+							<a class="c-media c-media--link js-show-youtube-modal" href="https://youtube.com/embed/{{ $project.videoId }}">
+								<picture class="c-media__picture u-mb-delta">
+									<img class="c-media__image" src="https://img.youtube.com/vi/{{ $project.videoId }}/maxresdefault.jpg" alt="">
+								</picture>
+								<div class="c-media__body">
+									<div class="c-media__content">
+										<h2 class="c-media__title u-ms0 u-mb-alpha">
+											{{ $project.title }}
+										</h2>
+										<p class="c-media__text u-ms0">
+											{{ $project.text }}
+										</p>
+									</div>
+								</div>
+							</a>
+						</article>
+				{{ end }}
+				*/}}
+			</div>
+		</div>
+	</div>
+</section>
+<section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxxx-light">
+	<div class="c-main-section-lg">
+		<div class="o-container u-max-width-optimal u-text-center">
+			<h2 class="">Stem nu en steek zo onze studenten een hart onder de riem!</h2>
+			<p class="u-mb-zeta u-color-neutral-base">
+				wie weet staan er wel studenten te popelen om hun business ideas ook in real life uit te testen!
+			</p>
+			<p>
+				<a href="https://forms.gle/sy4bRo45u9BNrt6m6"
+					class="c-button c-button--alpha c-button--lg c-button--transform">Stem op jouw favoriet</a>
+			</p>
+		</div>
+	</div>
+</section>
+{{ end }}
