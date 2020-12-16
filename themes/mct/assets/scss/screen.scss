@@ -39,6 +39,7 @@
 @import 'generic.normalize';
 @import 'generic.reset';
 @import 'generic.box-sizing';
+@import 'generic.polyfill';
 
 /* Elements */
 @import 'elements.fonts';
@@ -88,6 +89,7 @@
 @import 'components.sharing';
 @import 'components.update';
 @import 'components.faq';
+@import 'components.modal';
 
 /* Plugins */
 @import 'plugins.syntax';

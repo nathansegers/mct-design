@@ -10,6 +10,7 @@ future:
 - Machine Learning Engineer
 - AI developer
 ---
+<!-- TODO: modules in overlay? -->
 
 Je bent een goed abstracte denker, maar de AI ontwikkelaar van de 21e eeuw is geen wiskunde genie.  Het is een gedreven software engineer die data stromen beheerst, het beste haalt uit bestaande libraries, frameworks en (cloud) services en ze combineert tot een krachtig geheel. Met als kers op de taart een goed doordachte API die het mogelijk maakt om rond jouw nieuwe “artificieel brein” creatie een aantrekkelijk en gebruiksvriendelijke interface te bouwen.
 

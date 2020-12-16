@@ -55,7 +55,7 @@ li {
 }
 
 .u-max-width-optimal {
-	max-width: 47.5em;
+	max-width: 43.5em;
 }
 
 .u-max-width-lg {
@@ -296,46 +296,3 @@ li {
     column-gap: $columns-gutter * 1px;
 	box-decoration-break: clone;
 }
-
-.is-fixed {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-}
-
-.u-rounded-full {
-	border-radius: 50%;
-	overflow: hidden;
-}
-
-// infodag stuff
-
-.c-arrow-celine {
-	// color: palette(color-alpha);
-	z-index: 100;	
-	text-align: center;
-
-	@include mq(bp5) {
-		position: absolute;
-		bottom: 0;
-		transform: translateX(-100%) translateY(50%) skewY(-3deg);
-		text-align: right;
-		margin-bottom: 0;
-	}
-}
-
-	.c-arrow-celine__arrow {
-		// display: none;
-		position: absolute;
-		width: 55px;
-		right: -65px;	
-		transform: translateY(-75%);
-		pointer-events: none;	
-		stroke: currentColor;
-
-		@include mq(bp5, max) {
-			display: none;
-		}
-	}

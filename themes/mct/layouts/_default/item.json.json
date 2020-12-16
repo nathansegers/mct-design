@@ -1,0 +1,12 @@
+{{/* jsonify everything for empty values or arrays, etc. */}}
+{
+	"title": {{ .Params.title | jsonify }},
+	"description": {{ .Params.description | jsonify }},
+	"tools": {{ .Params.tools | jsonify }},
+	"semester": {{ .Params.semester | jsonify }},
+	"weight": {{ .Params.weight | jsonify }},
+	"tags": {{ .Params.tags | jsonify }},
+	"pillar": {{ .Params.pillar | jsonify }},
+	"tracks": {{ .Params.tracks | jsonify }},
+	"content": {{ .Content | jsonify }}
+}

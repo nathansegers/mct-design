@@ -318,6 +318,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	getReadyToRemoveCookie();
 	checkNotification();
 
+	modal.setup();
+
 	const observer = lozad(); // lazy loads elements with default selector as ".lozad"
 	observer.observe();
 
