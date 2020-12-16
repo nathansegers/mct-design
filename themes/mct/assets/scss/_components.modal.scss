@@ -14,15 +14,19 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+
+	display: none;
 	width: 100vw;
 	height: 100vh;
 
 	color: $body-color;
-	background-color: transparent;
+	// background-color: transparent;
+	background-color: rgba(palette(color-neutral,xxxx-dark),.75);
 	border: none;
 	margin: 0;
 	padding: 0;
 	overflow-x: auto;
+	z-index: 100;
 
 	@include mq(bp3) {
 		@include padding-lr($columns-gutter * 2, $columns-gutter * 2);
@@ -35,6 +39,7 @@
 
 	&::backdrop {
 		background-color: rgba(palette(color-neutral,xxxx-dark),.75);
+		// z-index: 1001;
 	}
 }
 
@@ -43,6 +48,7 @@
 	background-color: #fff;
 	box-shadow: 0 0 20px rgba(palette(color-neutral,xxxx-dark),.1);
 	margin: auto;
+	width: 100%;
 	max-width: calc(43.5em + #{$columns-gutter * 4}px);
 	@include padding-lr($columns-gutter);
 	@include padding-tb($columns-gutter,0);
@@ -53,27 +59,37 @@
 	}
 }
 
+.c-modal__body--video{
+	padding: 0;
+	max-width: 68em;
+
+	.c-modal__close {
+		top: -52px;
+		right: -52px;
+	}
+} 
+
 .c-modal__body--module {
 	border-top: $alpha-leading * 0.25px solid transparent;
 
 	&-code {
-		border-color: $color-code;
+		border-color: palette(color-code);
 	}
 
 	&-connect {
-		border-color: $color-connect;
+		border-color: palette(color-connect);
 	}
 
-	&-create {
-		border-color: $color-design;
+	&-design {
+		border-color: palette(color-design);
 	}
 
 	&-analysis {
-		border-color: $color-analysis;
+		border-color: palette(color-analysis);
 	}
 
 	&-project {
-		border-color: $color-project;
+		border-color: palette(color-project);
 	}
 }
 
@@ -87,12 +103,125 @@
 	border-radius: 100%;
 	transition: all $animation-duration-alpha $animation-easing-alpha;
 
+	.c-modal__body--video & {
+		background-color: transparent;
+		color: palette(color-neutral,xxx-light);
+	}
+
 	&:focus {
 		outline: none;
 		background-color: palette(color-neutral,xxx-light);
+	
+		.c-modal__body--video & {
+			background-color: transparent;
+			box-shadow: 0 0 0 2px palette(color-neutral,xxx-light);;
+		}
 	}
 
 	&:hover {
 		color: palette(color-neutral,x-dark);
-	}
+
+		.c-modal__body--video & {
+			background-color: transparent;
+			color: palette(color-neutral,xxx-light);
+		}
+	}	
 }
+
+/*
+    Components: c-module
+    ---
+*/
+
+// .has-modal {
+// 	overflow: hidden;
+// }
+
+// .c-modal {
+// 	position: fixed;
+// 	top: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	width: 100vw;
+// 	height: 100vh;
+
+// 	color: $body-color;
+// 	background-color: transparent;
+// 	border: none;
+// 	margin: 0;
+// 	padding: 0;
+// 	overflow-x: auto;
+
+// 	@include mq(bp3) {
+// 		@include padding-lr($columns-gutter * 2, $columns-gutter * 2);
+// 		@include padding-tb($columns-gutter * 2, $columns-gutter * 2);
+// 	}
+
+// 	&[open] {
+// 		display: flex;
+// 	}
+
+// 	&::backdrop {
+// 		background-color: rgba(palette(color-neutral,xxxx-dark),.75);
+// 	}
+// }
+
+// .c-modal__body {
+// 	position: relative;
+// 	background-color: #fff;
+// 	box-shadow: 0 0 20px rgba(palette(color-neutral,xxxx-dark),.1);
+// 	margin: auto;
+// 	max-width: calc(43.5em + #{$columns-gutter * 4}px);
+// 	@include padding-lr($columns-gutter);
+// 	@include padding-tb($columns-gutter,0);
+
+// 	@include mq(bp3) {
+// 		@include padding-lr($columns-gutter * 2);
+// 		@include padding-tb($columns-gutter * 2,$columns-gutter);
+// 	}
+// }
+
+// .c-modal__body--module {
+// 	border-top: $alpha-leading * 0.25px solid transparent;
+
+// 	&-code {
+// 		border-color: $color-code;
+// 	}
+
+// 	&-connect {
+// 		border-color: $color-connect;
+// 	}
+
+// 	&-create {
+// 		border-color: $color-design;
+// 	}
+
+// 	&-analysis {
+// 		border-color: $color-analysis;
+// 	}
+
+// 	&-project {
+// 		border-color: $color-project;
+// 	}
+// }
+
+// .c-modal__close {
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	padding: $columns-gutter * .25px;
+// 	margin: 16px;
+// 	color: palette(color-neutral);
+// 	border-radius: 100%;
+// 	transition: all $animation-duration-alpha $animation-easing-alpha;
+
+// 	&:focus {
+// 		outline: none;
+// 		background-color: palette(color-neutral,xxx-light);
+// 	}
+
+// 	&:hover {
+// 		color: palette(color-neutral,x-dark);
+// 	}
+// }
