@@ -2,7 +2,7 @@ name: MCT deployment
 
 env:
   AZURE_WEBAPP_NAME: nmct    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: 'public'      # set this to the path to your web app project, defaults to the repository root
 
 on:
   push:
