@@ -1,4 +1,4 @@
-name: MCT deploy
+name: MCT deployment
 
 env:
   AZURE_WEBAPP_NAME: nmct    # set this to your application's name
