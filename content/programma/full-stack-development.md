@@ -1,5 +1,5 @@
 ---
-title: Full-stack Development
+title: Advanced full-stack development
 semester: 5
 weight: 20
 tags: "#API #backend #morePWA"
