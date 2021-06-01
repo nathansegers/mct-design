@@ -5,7 +5,7 @@ weight: 20
 tags: "#API #backend #morePWA"
 pillar: code
 tracks:
-- web-app
+- next-web-creator
 ---
 Met het **Entity Framework Core** en **Model First** bouw je een API volgens de **REST API level 3 standaard**. De **asynchrone**, professioneel **gedocumenteerde** en **beveiligde API** gebruikt een SQL of NoSQL **database** en wordt met **Docker gedistribueerd**.
 

@@ -1,8 +1,10 @@
 ---
-title: Web App Developer
+title: Next Web Creator
+aliases:
+- web-app-developer
 intro: "In de tijdspanne van een paar milliseconden kunnen we realtime communiceren met mensen over de hele wereld. We leren hoe dit veilig, snel en efficiënt gaat. Dit voor elkaar krijgen doe je door hard te werken: het ontwikkelen van websites met oog voor de details van een intuïtieve interface tot een veilige en schaalbare back-end."
 layout: profile
-track: web-app
+track: next-web-creator
 future:
 - Frontend developer
 - backend developer

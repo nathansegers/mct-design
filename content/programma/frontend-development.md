@@ -6,7 +6,7 @@ weight: 10
 tags: "#typescript #scss #react"
 pillar: code
 tracks:
-- web-app
+- next-web-creator
 tools: "Visual Studio Code, Chrome developer tools, React"
 ---
 

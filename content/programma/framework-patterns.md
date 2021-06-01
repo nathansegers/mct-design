@@ -5,7 +5,7 @@ weight: 10
 description: "Hoe bouw je met een JS-framework een professionele web app? State-of-the-art frontend webdevelopment werkt als een PWA, mét een virtual DOM, two-way data-binding en state-management."
 tags: "#webpack #jsframework #performance #PWA"
 pillar: code
-tracks: web-app
+tracks: next-web-creator
 tools: "Visual Studio Code, Vue developer tools, Webpack, Yarn, Node.js, i18n, Vuex"
 ---
 

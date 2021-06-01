@@ -6,7 +6,7 @@ tags: "#international #business #mvp #entrepreneurs"
 pillar: project
 tracks:
 - smart-tech-ai
-- web-app
+- next-web-creator
 - ai-engineer
 - infrastructure-engineer
 ---

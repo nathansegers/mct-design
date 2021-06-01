@@ -5,7 +5,7 @@ weight: 30
 tags: "#ASP #netcore #crossplatform #AI-Architectuur, #Docker"
 pillar: code
 tracks:
-- web-app
+- next-web-creator
 - ai-engineer
 ---
 
