@@ -1,5 +1,5 @@
 ---
-title: Concept Visualisation
+title: Motion Design
 semester: 4
 weight: 40
 tags: "#aftereffects #motion"

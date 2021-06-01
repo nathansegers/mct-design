@@ -22,4 +22,4 @@ Het efficient meertalig maken van een web-app. Dit doen we aan de hand van een c
 
 Het uitwerken van een progressive web-app. We garanderen een werking van onze website ook als de netwerk-verbinding (tijdelijk) wegvalt. We maken onze PWA ook toegankelijk zoals een native app, met het behoud van de voordelen van een website.
 
-Onze single page application gaan we ook connecteren met de parallel lopende module full-stack development. Deze module zal inspelen op het coderen van een backend die is voorbereid op een offline-werking van de frontend. Ook worden dan verschillende manieren van authenticatie toegevoegd aan de frontend. Denk aan het gebruik van een JWT en een veilige flow tussen de front- en backend.
+Onze single page application gaan we ook connecteren met de parallel lopende module adv. full-stack development. Deze module zal inspelen op het coderen van een backend die is voorbereid op een offline-werking van de frontend. Ook worden dan verschillende manieren van authenticatie toegevoegd aan de frontend. Denk aan het gebruik van een JWT en een veilige flow tussen de front- en backend.
