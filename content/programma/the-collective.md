@@ -5,7 +5,7 @@ weight: 40
 tags: "#international #business #mvp #entrepreneurs"
 pillar: project
 tracks:
-- smart-tech-ai
+- smart-xr-developer
 - next-web-creator
 - ai-engineer
 - infrastructure-engineer

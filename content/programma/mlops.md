@@ -1,5 +1,7 @@
 ---
 title: MLOps
+aliases:
+- ai-cloud-services-devops
 semester: 5
 weight: 10
 tags: "#Kubernetes #CI/CD #AutomatedAI #CloudAI"

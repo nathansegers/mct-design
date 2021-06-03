@@ -4,7 +4,7 @@
 var trackHolders = document.querySelectorAll('.js-dynamic-track'),
     tracks = {
         'next-web-creator': 9,
-        'smart-tech-ai': 10,
+        'smart-xr-developer': 10,
         'infrastructure-engineer': 11,
         'ai-engineer': 14,
     },

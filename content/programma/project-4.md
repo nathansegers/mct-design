@@ -5,7 +5,7 @@ weight: 50
 tags: "#advancedintegration #start-up #choice"
 pillar: project
 tracks:
-- smart-tech-ai
+- smart-xr-developer
 - next-web-creator
 - ai-engineer
 - infrastructure-engineer
