@@ -1,10 +1,10 @@
 ---
 title: Programma
-description: "De cursussen binnen de opleiding MCT worden steeds gelinkt aan 5 pijlers: code, connect, analyze, create en integrate."
+description: "De cursussen binnen de opleiding MCT worden steeds gelinkt aan 5 pijlers: code, connect, analyze, design en integrate."
 layout: programma
 identifier: programma
 type: page
 
 subheader: "Wat wordt jouw toekomst?"
-intro: "Na een stevige IT basis kies je een uitstroomprofiel: [Smart Tech & AI Creator](#profile-smart-tech-ai), [Web App Developer](web-app-developer), [AI Engineer](ai-engineer) of [IoT Infrastructure Engineer](iot-infrastructure-engineer)."
+intro: "Na een stevige IT basis kies je een uitstroomprofiel: [Smart Tech & AI Creator](smart-tech-ai-creator), [Next Web Creator](next-web-creator), [AI Engineer](ai-engineer) of [IoT Infrastructure Engineer](iot-infrastructure-engineer)."
 ---

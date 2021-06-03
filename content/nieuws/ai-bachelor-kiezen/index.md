@@ -1,9 +1,8 @@
 ---
-type: news
 title: "Welke AI bachelor kiezen?"
 date: 2019-04-29T09:32:00+01:00
 description: "Supervised learning en neurale netwerken doen jou dromen van het ontwikkelen van AI-software die zelf patronen leert ontdekken, voorspellingen maakt of objecten herkent."
-cover: ai-bachelor-kiezen-belgie.jpg
+cover: "ai-bachelor-kiezen-belgie.jpg"
 draft: false
 ---
 

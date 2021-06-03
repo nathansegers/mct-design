@@ -1,13 +1,12 @@
 ---
 title: Computer Networks
+description: Deze basismodule dient als opstap voor verschillende andere modules die steunen op de opgebouwde kennis. We bekijken een eenvoudig netwerk met een webserver en databaseserver en zorgen voor een goede beveiliging van alle componenten.
 semester: 1
 weight: 20
-tags: "#networks #security #windows10 #debian #r.pi #raspbian #apache #mysql #ccna #cisco"
+tags: "#security #debian #r.pi #raspbian #apache #mysql #ccna #cisco"
 pillar: connect
 tools: "Windows 10, Debian Linux, Raspberry Pi, Soho router, Hyper-V virtualisatie"
 ---
-
-**Deze basismodule dient als opstap voor verschillende andere modules die steunen op de opgebouwde kennis. We bekijken een eenvoudig netwerk met een webserver en databaseserver en zorgen voor een goede beveiliging van alle componenten.**
 
 Een computer is vandaag de dag verbonden met de wereld, het Internet heb je aan je vingers op je smartphone. Maar hoe komt dat eigenlijk? Hoe hangt alles aan elkaar?
 

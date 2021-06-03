@@ -33,11 +33,17 @@
 .c-media__title,
 .c-media__text,
 .c-media__meta {
-	transition: color $animation-duration-alpha $animation-easing-alpha;
+	transition-property: color, text-decoration-color;
+	transition-duration: $animation-duration-alpha;
+	transition-timing-function: $animation-easing-alpha;
 }
 
 .c-media__title {
 	width: 100%;
+	font-family: $alpha-font-family;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+    text-decoration-thickness: from-font;
 
 	.c-media--link &,
 	.c-media--link:visited & {
@@ -47,6 +53,8 @@
 	.c-media--link:hover &,
 	.c-media--link:focus & {
 		color: $link-color;
+		text-decoration-color: $link-color;
+		// text-decoration: underline;
 
 		// override this when it's inside the carousel on the homepage
 		.c-carousel__item.is-not-selected & {
@@ -55,13 +63,18 @@
 	}
 }
 
+.c-media__title-text {
+	font-weight: normal;
+	color: palette(color-neutral);
+}
+
 .c-media__text {
 	color: palette(color-neutral);
 
-	.c-media--link:hover &,
-	.c-media--link:focus & {
-		color: $link-color;
-	}
+	// .c-media--link:hover &,
+	// .c-media--link:focus & {
+	// 	color: $link-color;
+	// }
 
 	// override this when it's inside the carousel on the homepage
 	.c-carousel__item.is-not-selected & {
@@ -73,10 +86,10 @@
 	font-family: $beta-font-family;
 	text-transform: uppercase;
 
-	.c-media--link:hover &,
-	.c-media--link:focus & {
-		color: $link-color;
-	}
+	// .c-media--link:hover &,
+	// .c-media--link:focus & {
+	// 	color: $link-color;
+	// }
 }
 
 .c-media__more-link {
@@ -94,6 +107,7 @@
 	align-items: flex-end;
 	height: 100%;
 	background-color: palette(color-alpha);
+	border-radius: $radius-md;
 
 	&.no-drag {
 		pointer-events: none;
@@ -109,6 +123,7 @@
 	min-width: 100%;
 	will-change: opacity;
 	transition: opacity $animation-duration-beta $animation-easing-alpha;
+	border-radius: $radius-md;
 
 	.c-media--link:hover & {
 		opacity: 0.75;
@@ -125,4 +140,8 @@
 		width: 100%;
 		object-fit: cover;
 	}
+}
+
+.c-media__picture-play {
+	position: absolute;
 }

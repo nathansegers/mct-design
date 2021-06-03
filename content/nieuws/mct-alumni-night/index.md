@@ -1,9 +1,8 @@
 ---
-type: news
 title: "MCT Alumni night"
 date: 2019-05-17T15:30:40+01:00
 description: "Op 25 juni worden alle 3de jaars MCT-studenten en MCT/NMCT alumni uitgenodigd, om samen met lectoren en mede-studenten, de campus te herontdekken."
-cover: NMCT-alumni-night.jpg
+cover: "NMCT-alumni-night.jpg"
 draft: false
 ---
 

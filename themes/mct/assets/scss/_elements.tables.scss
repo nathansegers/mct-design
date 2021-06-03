@@ -14,7 +14,7 @@ table {
 
 caption {
     font-family: $alpha-font-family;
-    font-weight: $beta-font-weight;
+    font-weight: $alpha-font-weight;
     text-align: $caption-align;
     @include padding-bottom($caption-margin-bottom);
     @include margin-bottom($caption-padding-bottom);

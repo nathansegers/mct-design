@@ -2,49 +2,53 @@ baseURL = "https://mct.be/"
 # assetDir = "http://localhost:8888/mct-design/public/"
 title = "MCT"
 theme = "mct"
+languageCode = "nl"
 relativeURLS = true
 canonifyurls = true
 enableEmoji = true
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
-    identifier = "home"
+	name = "Home"
+	url = "/"
+	identifier = "home"
 	weight = 10
 
   [[menu.main]]
-    name = "Waarom MCT"
-    url = "/waarom-mct/"
-    identifier = "waarom"
+	name = "Waarom MCT"
+	url = "/waarom-mct/"
+	identifier = "waarom"
 	weight = 20
 
   [[menu.main]]
-    name = "Programma"
-    url = "/programma/"
-    identifier = "programma"
+	name = "Programma"
+	url = "/programma/"
+	identifier = "programma"
 	weight = 30
 
 #   [[menu.main]]
-#     name = "Nieuws"
-#     url = "/nieuws/"
-#     identifier = "nieuws"
+#	 name = "Nieuws"
+#	 url = "/nieuws/"
+#	 identifier = "nieuws"
 # 	weight = 40
 
   [[menu.main]]
-    name = "Projecten"
-    url = "/projecten/"
-    identifier = "projecten"
+	name = "Projecten"
+	url = "/projecten/"
+	identifier = "projecten"
 	weight = 40
 
   [[menu.main]]
-    name = "@Home"
-    url = "/at-home/"
-    identifier = "at-home"
+	name = "@Home"
+	url = "/at-home/"
+	identifier = "at-home"
 	weight = 50
 
   [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    identifier = "contact"
+	name = "Contact"
+	url = "/contact/"
+	identifier = "contact"
 	weight = 60
+
+[outputs]
+    page = ["HTML", "json"]

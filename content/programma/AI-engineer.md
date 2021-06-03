@@ -10,6 +10,7 @@ future:
 - Machine Learning Engineer
 - AI developer
 ---
+<!-- TODO: modules in overlay? -->
 
 Je bent een goed abstracte denker, maar de AI ontwikkelaar van de 21e eeuw is geen wiskunde genie.  Het is een gedreven software engineer die data stromen beheerst, het beste haalt uit bestaande libraries, frameworks en (cloud) services en ze combineert tot een krachtig geheel. Met als kers op de taart een goed doordachte API die het mogelijk maakt om rond jouw nieuwe “artificieel brein” creatie een aantrekkelijk en gebruiksvriendelijke interface te bouwen.
 
@@ -27,7 +28,7 @@ Onze docenten waren lang voor de hype reeds actief in AI, sinds 2008. Reeds in 2
 
 {{< quote "Kiezen voor een MCT AI keuzetraject is simpelweg kiezen voor de AI Bachelor met de beste AI traditie, onderwijs en onderzoek." >}}
 
-Machine Learning is sinds 2015 deel van ons curriculum. De opbouw en ervaring die in ons curriculum bevat zit maakt jou een completer AI Engineer (CI/CD voor AI, Deep Learning, Big Data architectuur).
+Machine Learning is sinds 2015 deel van ons curriculum. De opbouw en ervaring die in ons curriculum bevat zit maakt jou een complete AI Engineer (CI/CD voor AI, Deep Learning, Big Data architectuur).
 
 {{< figure-custom src="/img/jpg/JameiSweetMustard.jpg" alt="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" title="Onze MCT AI studenten op de stand-up meeting van het innovatieve bedrijf Sweet Mustard" >}}
 

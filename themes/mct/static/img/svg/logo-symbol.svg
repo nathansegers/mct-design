@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="60" viewBox="0 0 54 60">
+  <defs>
+    <clipPath id="clip-logo-symbol">
+      <rect width="54" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="logo-symbol" clip-path="url(#clip-logo-symbol)">
+    <path id="Path_42" data-name="Path 42" d="M118.636,150.206l-9.206,5.081-9.207-5.081v10.616l5.517,3.186a7.379,7.379,0,0,0,7.379,0l5.517-3.186Z" transform="translate(-82.461 -104.996)" fill="#fff"/>
+    <path id="Path_43" data-name="Path 43" d="M129.1,108.105,109.509,96.8a7.379,7.379,0,0,0-7.379,0l-19.59,11.31a7.38,7.38,0,0,0-3.69,6.391v22.621a7.379,7.379,0,0,0,3.69,6.39l3.41,1.969V115.744a1.59,1.59,0,0,1,2.386-1.377l17.5,9.857,17.471-9.857a1.59,1.59,0,0,1,2.385,1.377v29.732l3.411-1.969a7.378,7.378,0,0,0,3.689-6.39V114.5A7.379,7.379,0,0,0,129.1,108.105Z" transform="translate(-78.85 -95.806)" fill="#fff"/>
+  </g>
+</svg>

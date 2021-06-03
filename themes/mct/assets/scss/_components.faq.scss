@@ -1,0 +1,72 @@
+/*
+    Components: FAQ
+    ---
+    FAQ styles
+*/
+
+* + .c-faq {
+    @include margin-tb($alpha-leading * 2,0);
+}
+
+.c-faq__button {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border-radius: $radius;
+    padding: $alpha-leading * .5px;
+    margin: $alpha-leading * -.5px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        // color: palette(color-alpha);
+        // box-shadow: 0 0 0 2px rgba(palette(color-neutral),.5);
+        background-color: rgba(palette(color-neutral),.1);
+    }
+}
+
+.c-faq__desc {
+    display: none;
+    @include padding-top($alpha-leading);
+}
+
+.c-faq__desc.is-open {
+    display: block;
+}
+
+.c-faq__desc + .c-faq__title {
+    border-top: 1px solid palette(color-neutral,xxx-light);
+    @include padding-tb($alpha-leading,0);
+    @include margin-tb($alpha-leading,0);
+}
+
+.c-faq__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: palette(color-alpha);
+    color: white;
+    flex-shrink: 0;
+    margin-right: $alpha-leading * .5px;
+    border-radius: 100%;
+    will-change: transform;
+    transition: transform $animation-duration-alpha $animation-easing-alpha;
+
+}
+
+.c-faq__caret {
+    stroke: currentColor;
+    width: 20px;        
+    
+}
+
+.is-open .c-faq__arrow {
+    transform: rotate(90deg);
+}

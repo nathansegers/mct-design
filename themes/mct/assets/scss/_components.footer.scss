@@ -24,6 +24,10 @@
     }
 }
 
+.c-doormat__logo {
+    max-width: 150px;
+}
+
 .c-footer {
     color: palette(color-neutral,x-dark);
     @include padding-top($alpha-leading);

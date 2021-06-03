@@ -42,7 +42,7 @@
 }
 
 // Base colors
-$color-alpha: #e85e00 !default; // #E85E00 = original - #f06400  #f55e00 #ff5c0a
+$color-alpha: #44C8F5 !default; // #44C8F5 #119EDF
 $color-beta: #2612b5 !default;
 
 $color-error: #ff4136 !default;
@@ -51,9 +51,9 @@ $color-notice: #ff851b !default;
 
 $color-neutral: hsl(hue($color-beta), 5, 50) !default;
 
-$color-code: #01a8c1;
+$color-code: lighten(#01a8c1,2.5);
 $color-connect: #ef3696;
-$color-create: #fb9d3c;
+$color-design: #fb9d3c;
 $color-analysis: #a46b50;
 $color-project: #7b9641;
 
@@ -166,15 +166,15 @@ $palettes: (
 	color-connect: (
 		base: $color-connect,
 	),
-	color-create: (
-		base: $color-create,
+	color-design: (
+		base: $color-design,
 	),
 	color-analysis: (
 		base: $color-analysis,
 	),
 	color-project: (
 		base: $color-project,
-	),
+	)
 ) !default;
 
 // ---
@@ -190,12 +190,10 @@ $modularscale: (
 // Font settings
 // ---
 
-// $alpha-font-family: 'Roboto', sans-serif !default;
-// $alpha-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !default;
-// $alpha-font-family: 'acumin-pro', sans-serif !default;
-$alpha-font-family: 'Inter UI', sans-serif !default; // default = 'Inter UI', sans-serif !default;
-// $alpha-font-family: 'aktiv-grotesk', sans-serif !default;
-$beta-font-family: 'Roboto Mono', monospace !default; //'Roboto Mono', monospace !default;
+// $alpha-font-family: 'VAG Rounded Std', 'Comic Sans MS', sans-serif !default;
+$alpha-font-family: 'Inter Web', sans-serif !default;
+$beta-font-family: 'Roboto Mono', monospace !default;
+$gamma-font-family: 'VAG Rounded Web', sans-serif !default;
 
 $alpha-font-size: ms(0) !default;
 
@@ -226,7 +224,6 @@ $border-style: solid !default;
 // Z-indexes
 // ---
 
-// This make zero sense...
 $z-indexes: (
 	alpha: 1,
 	beta: 2,
@@ -239,7 +236,6 @@ $z-indexes: (
 // Breakpoints
 // ---
 
-// Very easy to read and use... NOT 🤬
 $breakpoints: (
 	bp1: 321px,
 	bp2: 480px,
@@ -321,11 +317,11 @@ $body-selection-text-shadow: none !default;
 // set to false to hide the baseline and backround
 $show-baseline: false;
 
-$h1-font-family: $alpha-font-family !default;
+$h1-font-family: $gamma-font-family !default;
 $h1-font-weight: $delta-font-weight !default;
 $h1-margin-bottom: $alpha-leading !default;
 
-$h2-font-family: $alpha-font-family !default;
+$h2-font-family: $gamma-font-family !default;
 $h2-font-weight: $delta-font-weight !default;
 $h2-margin-bottom: $alpha-leading !default;
 
@@ -350,7 +346,7 @@ $base-line-height: 1 !default;
 $base-margin-bottom: $alpha-leading !default;
 $base-indent: 2 !default;
 
-$blockquote-font-style: italic !default;
+$blockquote-font-style: normal !default;
 $blockquote-font-size: ms(1) !default;
 $blockquote-line-height: 1 !default;
 $blockquote-margin-bottom: $alpha-leading !default;
@@ -361,7 +357,7 @@ $small-margin-bottom: $alpha-leading !default;
 
 $horizontal-rule-border-width: 1px 0 0 !default;
 $horizontal-rule-border-style: solid !default;
-$horizontal-rule-border-color: palette(color-neutral, light) !default;
+$horizontal-rule-border-color: palette(color-neutral, xx-light) !default;
 
 $horizontal-rule-margin-top: 0 !default;
 $horizontal-rule-margin-bottom: $alpha-leading !default;
@@ -415,7 +411,7 @@ $table-font-family: $alpha-font-family !default;
 $table-align: left !default;
 
 $caption-font-family: $alpha-font-family !default;
-$caption-font-weight: $beta-font-weight;
+$caption-font-weight: $alpha-font-weight;
 $caption-align: center !default;
 $caption-margin-bottom: $alpha-leading !default;
 $caption-padding-bottom: $alpha-leading !default;

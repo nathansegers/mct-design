@@ -4,12 +4,9 @@
 
 .c-video-player {
     position: relative;
-    // background: palette(color-neutral, xxxx-light);
-    background-color: palette(color-alpha);
-    @include margin-bottom($alpha-leading);
-    // @include box-shadow-xl;
-
+    border-radius: $radius-md;
     background: palette(color-neutral, xxxx-light);
+    @include margin-bottom($alpha-leading);    
 
     // &:after {
     //     content: '';
@@ -27,6 +24,10 @@
     &:hover .c-video-player-controls {
         opacity: 1;
     }
+}
+
+.c-video-player--circle {
+    background-color: transparent;
 }
 
 .c-video-play-button {
@@ -61,6 +62,41 @@
         height: $alpha-leading * 4px;
         width: $alpha-leading * 4px;
     }
+
+    .c-video-player--large-intro & {
+        top: auto;
+        bottom: 5%;  
+        left: 15%;      
+        height: $alpha-leading * 2.75px;
+        width: $alpha-leading * 2.75px;
+    }
+
+    .c-video-player--small-circle & {
+        top: auto;
+        left: auto;
+        bottom: 5%;  
+        right: 5%;      
+        background-color: #fff;
+        transform: translate(0, 0);
+        height: $alpha-leading * 2.75px;
+        width: $alpha-leading * 2.75px;
+
+        &:hover,
+        &:focus {
+            background-color: #fff;
+            transform: scale(1.1);
+            outline: none;
+        }
+
+        &:active {
+            transform: scale(1);
+        }
+    }
+
+    &--sm {
+        height: $alpha-leading * 2.5px;
+        width: $alpha-leading * 2.5px;
+    }
 }
 
     .c-video-play-button__symbol {
@@ -68,6 +104,29 @@
         fill: palette(color-alpha,light);
         width: $alpha-leading * 1.5px;
         height: $alpha-leading * 1.5px;
+
+        .c-video-play-button--sm & {
+            width: $alpha-leading * 1.25px;
+        height: $alpha-leading * 1.25px;
+        }
+    }
+
+    .c-video-play-button__symbol--pauze {
+        display: none;
+
+        .is-playing & {
+            display: block;
+        }
+    }
+
+    .c-video-play-button__symbol--play {
+        .is-playing & {
+            display: none;
+        }
+    }
+
+    .c-video-player__container {
+        position: relative;
     }
 
     .c-video-player__video {
@@ -75,6 +134,12 @@
         width: 100%;
         position: relative;
         z-index: 10;
+        border-radius: $radius-md;
+
+        .c-video-player--circle & {
+            border-radius: 100%;
+            overflow: hidden;
+        }
 
         &::-webkit-media-controls-enclosure {
             overflow:hidden;

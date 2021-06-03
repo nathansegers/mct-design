@@ -1,4 +1,3 @@
 ---
-type: project
 title: Projectweken
 ---

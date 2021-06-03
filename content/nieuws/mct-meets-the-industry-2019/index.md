@@ -1,9 +1,8 @@
 ---
-type: news
 title: "MCT meets the industry"
 date: 2019-05-20T13:04:40+01:00
 description: "Maak kennis met onze innovatieve MCT-studenten en de IoT-projecten die zij ontwikkeld hebben in opdracht van Vlaamse partnerbedrijven."
-cover: NMCT-meets-Industry-49.jpg
+cover: "NMCT-meets-Industry-49.jpg"
 draft: false
 ---
 

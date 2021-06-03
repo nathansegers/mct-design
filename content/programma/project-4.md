@@ -1,12 +1,12 @@
 ---
-title: Project 4
+title: Research Project
 semester: 5
 weight: 50
 tags: "#advancedintegration #start-up #choice"
 pillar: project
 tracks:
 - smart-tech-ai
-- web-app
+- next-web-creator
 - ai-engineer
 - infrastructure-engineer
 ---

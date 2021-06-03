@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- class="has-modal" -->
 <html>
 
 {{ partial "generic/head" . }}
@@ -26,8 +27,19 @@
     <!-- End page footer -->
 
     <!-- Cookie message -->
-	{{ partial "components/cookie-message" . }}
+	  {{ partial "components/cookie-message" . }}
     <!-- End cookie message -->
+
+    <dialog class="c-modal js-dialog">
+      <div class="c-modal__body c-modal__body--video js-dialog-body">
+        <button class="c-modal__close js-dialog-close" aria-label="Close dialog">
+          {{ partial "atoms/symbol" (dict "value" "close" "class" "c-nav-main-trigger__symbol")}}
+        </button>
+        <div class="embed-container js-embed-container">
+          <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </dialog>
 
     {{ partial "generic/javascript" . }}
 
