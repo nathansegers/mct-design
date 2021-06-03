@@ -1,12 +1,13 @@
+  
 module.exports = {
-	plugins: {
-		'/node_modules/@fullhuman/postcss-purgecss': {
+	plugins: [
+		require('@fullhuman/postcss-purgecss')({
 			content: ['themes/mct/layouts/**/*.html'],
 			whitelist: [
 				'c-module--analysis',
 				'c-module--code',
 				'c-module--connect',
-				'c-module--create',
+				'c-module--design',
 				'c-module--integrate',
 				'c-module--link',
 				'h1',
@@ -17,8 +18,8 @@ module.exports = {
 				'ul',
 				'li',
 			],
-		},
-		autoprefixer: {},
-		cssnano: { preset: 'default' },
-	},
+		}),
+	],
+	// autoprefixer: {},
+	// ],
 };
