@@ -34,12 +34,12 @@
                                 </svg>
                             </button>
                             <ul class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="smart-tech-ai" data-name="Smart Tech &amp; AI Creator"
+                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="smart-xr-developer" data-name="Smart XR Developer"
                                  data-module="10">
                                     <a href="#!" class="c-curriculum-choices__filter">
                                         <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
                                             {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> Smart Tech &amp; AI Creator
+                                        </svg> Smart XR Developer
                                     </a>
                                 </li>
                                 <li class="c-curriculum-choices__item js-curriculum-item" data-slug="next-web-creator" data-name="Next Web Creator"
@@ -117,10 +117,10 @@
                                 Semester 4
                             </h3>
                             <div class="c-curriculum__semester-holder--dynamic js-semester-4">
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
+                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-xr-developer-track">
                                     {{ range (where .Site.Pages "Type" "programma") }}
                                         {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "smart-tech-ai" }}
+                                            {{ if in .Params.Tracks "smart-xr-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                                     <p class="c-module__tags">{{ .Params.Tags }}</p>
@@ -179,10 +179,10 @@
                                 Semester 5
                             </h3>
                             <div class="c-curriculum__semester-holder--dynamic js-semester-5">
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
+                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-xr-developer-track">
                                     {{ range (where .Site.Pages "Type" "programma") }}
                                         {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "smart-tech-ai" }}
+                                            {{ if in .Params.Tracks "smart-xr-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                                     <p class="c-module__tags">{{ .Params.Tags }}</p>
@@ -274,13 +274,13 @@
             </div>
         </div>
     </div>
-    <div id="profile-smart-tech-ai" class="c-row c-row--lg">
+    <div id="profile-smart-xr-developer" class="c-row c-row--lg">
         <div class="o-container">
             <div class="o-grid o-grid--gutter-lg">
                 <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
                     <div class="s-content">
                         <h2 class="c-type-title-lg">
-                            Smart Tech & AI
+                            Smart XR Developer
                         </h2>
                     </div>
                 </div>
