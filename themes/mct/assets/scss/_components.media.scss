@@ -33,12 +33,17 @@
 .c-media__title,
 .c-media__text,
 .c-media__meta {
-	transition: color $animation-duration-alpha $animation-easing-alpha;
+	transition-property: color, text-decoration-color;
+	transition-duration: $animation-duration-alpha;
+	transition-timing-function: $animation-easing-alpha;
 }
 
 .c-media__title {
 	width: 100%;
 	font-family: $alpha-font-family;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+    text-decoration-thickness: from-font;
 
 	.c-media--link &,
 	.c-media--link:visited & {
@@ -48,7 +53,8 @@
 	.c-media--link:hover &,
 	.c-media--link:focus & {
 		color: $link-color;
-		text-decoration: underline;
+		text-decoration-color: $link-color;
+		// text-decoration: underline;
 
 		// override this when it's inside the carousel on the homepage
 		.c-carousel__item.is-not-selected & {

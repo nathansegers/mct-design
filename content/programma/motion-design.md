@@ -2,12 +2,12 @@
 title: Motion Design
 semester: 4
 weight: 40
-tags: "#aftereffects #motion"
+tags: "#AfterEffects #XD #ImmersiveInterfaces #VisualStorytelling"
 pillar: design
 tracks:
 - web-app
 ---
 
-Het belang van **visualisatietechnieken** wordt vaak onderschat. Nochtans: in 2020 zal de Apple App store meer dan 5 miljoen verschillende apps hosten, en zullen er 50 tot 200 miljard connected devices zijn op deze aardbol. Wil je als **web app developer** er bovenuit steken, dan kan je er niet omheen: goeie visualisatietechnieken èn de bijhorende **presentatieskills** zijn cruciaal om aan te tonen dat jouw idee de wereld kan veranderen.
-
-In deze module leer je zowel efficiënt visualiseren in de ontwikkelingsfase, als voor professionele showcasing bij een afgewerkt product. We staan stil bij de basis designprincipes, technische micro-animaties, van screencasts tot mockups. Maar we benadrukken ook het belang van goede storytelling om de kijker te kunnen overtuigen. Na deze module ben je in staat om jouw concept professioneel te visualiseren, en deze skills ook te gebruiken in andere modules en de projectweken.
+Naast een goede User Interface (UI), is **User Experience** (UX) misschien wel het belangrijkste onderdeel van een web, app of andere interface. Om een succesvolle UX te garanderen hanteren we binnen deze module **motion design**. Dat helpt de gebruiker onder andere bij het navigeren: via kleine onderdelen van je UI te animeren wordt de aandacht getrokken. Deze **subtiele animaties** helpen bij de oriëntatie op je platform. Zo wordt de gebruiker naar de juiste plaats op de site of app begeleid.
+Daarnaast kan motion design ook dienen om een **actie te bevestigen**. Een gebruiker krijgt feedback na een klik, scroll, upload of na het verzenden van een e-mail. Dat gaat over **micro-animaties**, met een simpele maar effectieve respons.
+Tot slot kan motion design ook een meerwaarde zijn voor de esthetische functionaliteit van een website of applicatie. Een micro-animatie die goed getimed is, kan bijdragen tot een **aangename ervaring** op je platform. Denk bijvoorbeeld aan een leuke animatie in plaats van een klassiek laadicoontje tijdens het wachten. Zo is de gebruiker geneigd om je web / app sneller opnieuw te gebruiken.
