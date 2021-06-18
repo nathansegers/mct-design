@@ -1,6 +1,7 @@
 ---
 title: Next Web Developer
-intro: "In de tijdspanne van een paar milliseconden kunnen we realtime communiceren met mensen over de hele wereld. We leren hoe dit veilig, snel en efficiënt gaat. Dit voor elkaar krijgen doe je door hard te werken: het ontwikkelen van websites met oog voor de details van een intuïtieve interface tot een veilige en schaalbare backend."
+intro: "Hoe laat je een drone vliegen met enkel code? Hoe kan je gebruikers razendsnel realtime laten communiceren? Zit web development ook in jouw DNA? Zie jij het potentieel in smartwatches en smartphones? Dat gevoel kennen we. 
+We gaan aan de slag met zo veel meer dan een simpele klik of swipe. Een hartslag die verhoogt, een wenkbrauw die omhooggaat, een nieuwe houding of de toon van je stem: voor ons is het input."
 layout: profile
 track: next-web-developer
 future:
@@ -9,33 +10,27 @@ future:
 - software engineer
 - iOS developer
 - Android developer
-- Xamarin developer
 - .NET developer
+- Product designer
 ---
-<!-- TODO: modules in overlay? -->
 
-Het web app uitstroomprofiel ligt ons nauw aan het hart. Jaren geleden begon het hele MCT verhaal met een sterke focus en een lange termijn visie op web-ontwikkeling. Ook nu is dat niet anders.
+## De basis in de eerste drie semesters
+Een applicatie die **meerdere inputs verwerkt kan de interactie aangenamer en beter maken**. Om dat te kunnen moet je tal van sensoren uitlezen, de interactie met je gebruiker begrijpen en programmeren. 
+Dit is exact wat we in de eerste drie semesters van MCT leren. **We leren er, vanaf nul**, werken met sensoren, web-ontwikkeling & programmeren en leggen een goede basis van interface design & UX. 
 
-## Voor wie?
-Als web app ontwikkelaar bekijk je projecten in het groter geheel. Je bent geïnteresseerd in de stappen vanaf het design van een interface, tot de pixel-perfecte uitwerking hiervan in een frontend en de ontwikkeling van een op maat gemaakte backend. Je snapt dat je hierbij als team meer kan bereiken dan alleen.
+## Daarna wordt het echt fun!
+In de volgende jaren gaan we aan de slag met de technologieën die ons team van lectoren gebruikt ziet worden in het werkveld. We luisteren naar de uitdagingen die er naar voren gebracht worden en **zetten jullie als IT-experts op de arbeidsmarkt**.
+We gaan meteen aan de slag met projectwerk en hebben oog voor het management en de teamwerking die noodzakelijk is om in een team of als freelancer te functioneren.
 
-{{< quote "Onder begeleiding van onze docenten ga je op zoek naar de nieuwste ontwikkelingen van web app-technologie." >}}
-Samen bekijken we de technologieën die in de nabije toekomst relevant zijn.
-Een eigenschap die je zeker moet hebben, is het nieuwsgierig zijn. De webtechnologie verandert constant en je moet bereid zijn om jezelf steeds opnieuw  scherp te houden, de laatste nieuwtjes op de voet te volgen en je grenzen te verleggen!
+Op **het einde van de specialisatie** ‘Next Web Developer’ **leggen we de lat echt hoog**. In de modules [Future Technologies](/programma/future-technologies) en 
+[New interface design](/programma/new-interface-design) zoeken we samen met de input van studenten, docenten en het werkveld naar technologieën die de markt in de toekomst zullen veranderen. 
+ 
+Hier begeleiden we je naar een piste waar jij je het beste in kan vinden. **Iedereen heeft zijn eigen interesse** en kan aan de slag met een creatieve technologische oplossing waar hij of zij in wil groeien en meer over wil weten. 
+Je **combineert het beste dat een frontend te bieden heeft met heel wat backend technologie**: voice-processing, eye-tracking, biometrische data ... Als Next Web Developer, gebruik je Artificial Intelligence (AI) op een slimme manier zodat je interface ook kan interpreteren wat je gebruiker wil bereiken. 
 
+## De toekomst
+Waar kan je hiermee terecht? Na afloop mag je jezelf **“Full Stack Developer”** noemen. Maar wel eentje **die klaar is voor de volgende generatie interfaces**. 
+{{< quote "Qua jobs hebben de studenten slechts een uitdaging: kiezen wààr ze aan de slag willen gaan... " >}}
 
-## Waar werken we naartoe?
-Deze module begint al op te bouwen in de eerste semesters van het [MCT programma](/programma). We leren de basistechnieken voor websites al in de eerste vakken van de opleiding. Met deze basis weten we onder andere hoe we [een user interface](/programma/user-interface-design) logisch opbouwen, hebben we een basis [full stack](/programma/device-programming-1) kennis om realtime met IoT-devices te werken en maken we [native multi platform apps](/programma/device-programming-1) via Xamarin met C#.
-Uiteindelijk maken we functionele interfaces die vlot werken voor data uit diverse Internet-of-things-bronnen.
-
-## Een full stack developer worden
-In de specialisatiesemesters verleggen we de focus naar het in elkaar zetten van web apps. Progressive web apps zijn aan een stille opmars bezig. Deze PWA’s zijn websites die steeds meer functionaliteiten van native apps krijgen, met het behoud van de flexibiliteit van het web. Zeker voor verschillende IoT-integraties is dit een sterke, to-the-point oplossing.
-
-De ingrediënten voor onze full stack developers zijn enerzijds een goede kennis van ASP.NET Core voor de backend. We maken beveiligde API’s, gebruiken het entity framework en kijken vooral hoe alles degelijk en ook veilig in elkaar zit.
-Aan de andere kant van de frontend werken we vooral met JS. Daarnaast verdiepen we ons in de werking van een browser. Op die manier schaven we kostbare milliseconden van onze laadtijd af. Na de modules frontend en frameworks and patterns klinken termen als: de eventloop, Vue.js en het critical render path je vertrouwd in de oren!
 
 {{< figure-custom src="https://mctwebsite.blob.core.windows.net/video/full-stack-development.jpg" alt="" title="" >}}
-
-## Het totaalplaatje van een web app developer
-Maar er is meer dan enkel coderen voor iemand zoals jij. Wil je er als web app developer bovenuit steken, dan kan je er niet omheen: goeie visualisatietechnieken en de bijhorende presentatieskills zijn cruciaal om aan te tonen dat jouw idee de wereld kan veranderen.
-Je leert zowel efficiënt visualiseren in de ontwikkelingsfase, als voor professionele showcasing bij een afgewerkt product. We staan stil bij de basis designprincipes, technische micro-animaties, van screencasts tot mockups. Maar we benadrukken ook het belang van goede storytelling om de kijker te kunnen overtuigen. Na de module concept visualisation ben je in staat om jouw concept professioneel te visualiseren, en deze skills ook te gebruiken in andere modules en de projectweken. Je leert de verschillende mogelijkheden kennen naar interactie en visualisatie. In het praktische luik worden hiervoor business toepassingen uitgewerkt, in hoofdzaak a.d.h.v. Microsoft Hololens maar ook via mobile devices.
