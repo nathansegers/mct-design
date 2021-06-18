@@ -3,10 +3,12 @@ baseURL = "https://mct.be/"
 title = "MCT"
 theme = "mct"
 languageCode = "nl"
+
 relativeURLS = true
 canonifyurls = true
 enableEmoji = true
-preserveTaxonomyNames = false
+
+disableKinds = ["taxonomy"]
 
 [menu]
   [[menu.main]]
