@@ -6,7 +6,7 @@ tags: "#advancedintegration #start-up #choice"
 pillar: project
 tracks:
 - smart-tech-ai
-- web-app
+- next-web-developer
 - ai-engineer
 - infrastructure-engineer
 ---
