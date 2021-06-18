@@ -6,6 +6,7 @@ languageCode = "nl"
 relativeURLS = true
 canonifyurls = true
 enableEmoji = true
+preserveTaxonomyNames = false
 
 [menu]
   [[menu.main]]
