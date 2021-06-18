@@ -6,7 +6,7 @@ tags: "#expo #reactNative #iOS #Android"
 pillar: code
 tools: "Expo, webpack, JS, ReactNative, Lottie"
 tracks:
-- web-app
+- next-web-developer
 ---
 
 **Smart App Development — Hoe maken we performante en mooie apps die een zo veel mogelijk gedeelde codebase hebben tussen iOS & Android?**

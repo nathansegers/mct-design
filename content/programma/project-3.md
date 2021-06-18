@@ -6,7 +6,7 @@ tags: "#agile #sprints #teamwork #companyprojects #deadlines"
 pillar: project
 tracks:
 - smart-tech-ai
-- web-app
+- next-web-developer
 - ai-engineer
 - infrastructure-engineer
 ---
