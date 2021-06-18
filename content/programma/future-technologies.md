@@ -5,7 +5,7 @@ weight: 10
 description: "Aan de slag met nieuwe technologieën, onder onze begeleiding."
 tags: "#guestLectures #project #sessions"
 pillar: code
-tracks: web-app
+tracks: next-web-developer
 tools: ""
 ---
 

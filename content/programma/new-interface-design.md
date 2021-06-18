@@ -5,7 +5,7 @@ weight: 30
 tags: "#ar #glasses #homepod #tesla"
 pillar: design
 tracks:
-- web-app
+- next-web-developer
 ---
 
 In deze module gaan we aan de slag met nieuwe interfaces. We bouwen verder op eerdere design-modules die je al gekregen hebt in de eerdere semesters. Alles wat je maakt kan technische nog zo goed zijn, als je geen goede UI of UX hebt, dan gaan jouw gebruikers hier niet mee aan de slag kunnen.

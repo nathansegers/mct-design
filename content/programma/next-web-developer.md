@@ -1,8 +1,8 @@
 ---
-title: Web App Developer
+title: Next Web Developer
 intro: "In de tijdspanne van een paar milliseconden kunnen we realtime communiceren met mensen over de hele wereld. We leren hoe dit veilig, snel en efficiënt gaat. Dit voor elkaar krijgen doe je door hard te werken: het ontwikkelen van websites met oog voor de details van een intuïtieve interface tot een veilige en schaalbare backend."
 layout: profile
-track: web-app
+track: next-web-developer
 future:
 - Frontend developer
 - backend developer
