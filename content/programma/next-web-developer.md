@@ -12,6 +12,8 @@ future:
 - Android developer
 - .NET developer
 - Product designer
+aliases:
+    - /programma/web-app-developer
 ---
 
 ## De basis in de eerste drie semesters
