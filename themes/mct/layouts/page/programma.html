@@ -34,12 +34,12 @@
                                 </svg>
                             </button>
                             <ul class="o-list c-curriculum-choices js-curriculum-choices is-hidden">
-                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="smart-tech-ai" data-name="Smart Tech &amp; AI Creator"
+                                <li class="c-curriculum-choices__item js-curriculum-item" data-slug="smart-xr-developer" data-name="Smart XR Developer"
                                  data-module="10">
                                     <a href="#!" class="c-curriculum-choices__filter">
                                         <svg role="img" class="c-symbol c-symbol-check c-curriculum-choices__symbol">
                                             {{ partial "atoms/symbol" (dict "value" "check" "class" "c-curriculum-choices__symbol") }}
-                                        </svg> Smart Tech &amp; AI Creator
+                                        </svg> Smart XR Developer
                                     </a>
                                 </li>
                                 <li class="c-curriculum-choices__item js-curriculum-item" data-slug="next-web-developer" data-name="Next Web Developer"
@@ -117,10 +117,10 @@
                                 Semester 4
                             </h3>
                             <div class="c-curriculum__semester-holder--dynamic js-semester-4">
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
+                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-xr-developer-track">
                                     {{ range (where .Site.Pages "Type" "programma") }}
                                         {{ if eq .Params.Semester 4 }}
-                                            {{ if in .Params.Tracks "smart-tech-ai" }}
+                                            {{ if in .Params.Tracks "smart-xr-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                                     <p class="c-module__tags">{{ .Params.Tags }}</p>
@@ -179,10 +179,10 @@
                                 Semester 5
                             </h3>
                             <div class="c-curriculum__semester-holder--dynamic js-semester-5">
-                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-tech-ai-track">
+                                <div class="c-curriculum__semester--dynamic js-dynamic-track js-smart-xr-developer-track">
                                     {{ range (where .Site.Pages "Type" "programma") }}
                                         {{ if eq .Params.Semester 5 }}
-                                            {{ if in .Params.Tracks "smart-tech-ai" }}
+                                            {{ if in .Params.Tracks "smart-xr-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
                                                     <p class="c-module__tags">{{ .Params.Tags }}</p>
@@ -241,6 +241,11 @@
                                     </a>
                                 {{ end }}
                             {{ end }}
+                            <!-- <a href="/module/stage-bachelorproef/" class="c-module c-module--project c-module--full c-module--link js-module-link">
+                                <h4 class="c-module__title">Stage + Bachelorproef</h4>
+                                <p class="c-module__tags">#communicatie #teamwork #entrepreneur #projectmanagement #device #network #ux #embeddedsoftware #front-end
+                                #data-management</p>
+                            </a> -->
                         </div>
                     </section>
                 </div>
@@ -268,177 +273,7 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div id="profile-smart-tech-ai" class="c-row c-row--lg">
-        <div class="o-container">
-            <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
-                    <div class="s-content">
-                        <h2 class="c-type-title-lg">
-                            Smart Tech & AI
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-6-of-12-bp4">
-                    <div class="c-main-section-lg">
-                        <div class="o-grid o-grid--gutter-lg">
-                            <div class="o-grid__item u-5-of-6-bp5 u-push-1-of-6-bp5">
-                                <div class="u-max-width-md">
-                                    <p class="u-ms2">
-                                        Wil je sensordata verzamelen en met elkaar connecteren? Is het ontwerpen en programmeren van een artificieel brein echt iets voor jou? Lijkt het je wel iets om je voorspellingen visueel weer te geven in slimme, mixed reality applicaties? Dan is MCT uitstroomprofiel Smart Tech & AI waarschijnlijk iets voor jou! Programmeer en connecteer sensoren met Lora en Python. Analyseer datastromen met Machine Learning algoritmes en neurale netwerken.
-                                    </p>
-                                    <h3 class="u-mb-alpha u-color-alpha-light">
-                                        Jouw toekomst
-                                    </h3>
-                                    <p class="u-color-neutral-base">
-                                        Big Data Architect, R&D Developer, ...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="c-main-section-lg">
-                        <p>
-                            <img src="/img/jpg/mixed-reality.jpg" alt="">
-                        </p>
-                    </div>
-                </div>
-                <div class="o-grid__item u-6-of-12-bp4">
-                    <p>
-                        <img src="/img/jpg/cows.jpg" alt="">
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="profile-next-web-developer" class="c-row c-row--lg">
-        <div class="o-container">
-            <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-6-of-12-bp4 u-push-6-of-12-bp4">
-                    <h2 class="c-type-title-lg">
-                        Next Web <br> Developer
-                    </h2>
-                </div>
-            </div>
-            <div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--horizontal-rev">
-                <div class="o-grid__item u-6-of-12-bp4">
-                    <div class="c-main-section-lg">
-                        <div class="o-grid o-grid--gutter-lg">
-                            <div class="o-grid__item u-5-of-6-bp5">
-                                <div class="u-max-width-md">
-                                    <p class="u-ms2">
-                                        Hoe laat je een drone vliegen met enkel code? Hoe kan je gebruikers razendsnel realtime laten communiceren? Zit web development ook in jouw DNA? Zie jij het potentieel in smartwatches en smartphones? Dat gevoel kennen we. 
-                                        We gaan aan de slag met zo veel meer dan een simpele klik of swipe. Een hartslag die verhoogt, een wenkbrauw die omhooggaat, een nieuwe houding of de toon van je stem: voor ons is het input.
-                                    </p>
-                                    <h3 class="u-mb-alpha u-color-alpha-light">
-                                        Jouw toekomst
-                                    </h3>
-                                    <p class="u-color-neutral-base">
-                                        Frontend- of backend developer, software engineer, iOS developer, Android developer, Xamarin developer, .NET
-                                        developer, product designer, etc.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="c-main-section-lg">
-                        <p>
-                            <img src="/img/jpg/NMCT-shoot1-50.jpg" alt="">
-                        </p>
-                    </div>
-                </div>
-                <div class="o-grid__item u-6-of-12-bp4">
-                    <p>
-                        <img src="/img/jpg/NMCT-shoot1-67-2.jpg" alt="">
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="profile-ai-engineer" class="c-row c-row--lg">
-        <div class="o-container">
-            <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
-                    <h2 class="c-type-title-lg">
-                        AI Engineer
-                    </h2>
-                </div>
-            </div>
-            <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-6-of-12-bp4">
-                    <div class="c-main-section-lg">
-                        <div class="o-grid o-grid--gutter-lg">
-                            <div class="o-grid__item u-5-of-6-bp5 u-push-1-of-6-bp5">
-                                <div class="u-max-width-md">
-                                    <p class="u-ms2">
-                                        Het verkeer slimmer aansturen, kanker sneller opsporen, misdaden oplossen door het verbeteren van lage resolutie beelden en robots aansturen. Supervised learning en Neurale netwerken doen jou dromen van het ontwikkelen van AI software die zelf leert patronen ontdekken, voorspellingen maken of objecten herkennen. Software die net dat beetje slimmer is en nieuwe inzichten vindt in de immer streamende data.
-                                    </p>
-                                    <p>
-                                        <a href="ai-engineer" class="c-link-more">
-                                            Meer info
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="c-main-section-lg">
-
-                    </div>
-                </div>
-                <div class="o-grid__item u-6-of-12-bp4">
-                    <p>
-                        <img src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                         alt="">
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="profile-infrastructure-engineer" class="c-row c-row--lg">
-        <div class="o-container">
-            <div class="o-grid o-grid--gutter-lg">
-                <div class="o-grid__item u-6-of-12-bp4 u-push-6-of-12-bp4">
-                    <h2 class="c-type-title-lg">
-                        IoT Infrastructure <br> Engineer
-                    </h2>
-                </div>
-            </div>
-            <div class="o-grid o-grid--gutter-lg o-flex o-flex--wrap o-flex--horizontal-rev">
-                <div class="o-grid__item u-6-of-12-bp4">
-                    <div class="c-main-section-lg">
-                        <div class="o-grid o-grid--gutter-lg">
-                            <div class="o-grid__item u-5-of-6-bp5">
-                                <div class="u-max-width-md">
-                                    <p class="u-ms2">
-                                        Word je enthousiast van computernetwerken installeren, configureren en onderhouden? Is een computernetwerk beveiligen tegen externe en interne bedreigingen echt iets voor jou? Dan is MCT uitstroomprofiel Infrastructure Engineer waarschijnlijk iets voor jou! Leer alles over infrastructuur opzetten met behulp van Windows en Linux, zowel lokaal als in de Cloud. Word expert in VM&nbsp;Ware, een virtueel computernetwerk automatisch deployen aan de hand van scripting.
-                                    </p>
-                                    <h3 class="u-mb-alpha u-color-alpha-light">
-                                        Jouw toekomst
-                                    </h3>
-                                    <p class="u-color-neutral-base">
-                                        Cloud Engineer, IT Engineer, ...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="c-main-section-lg">
-                        <p>
-                            <img src="/img/jpg/NMCT-shoot1-80.jpg" alt="">
-                        </p>
-                    </div>
-                </div>
-                <div class="o-grid__item u-6-of-12-bp4">
-                    <p>
-                        <img src="/img/jpg/NMCT-shoot2-8.jpg" alt="">
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div>    
     {{ partial "components/cta.html" (dict "title" "Inschrijven?" "paragraph" "lijkt deze opleiding wat voor jou? kom dan zeker eens langs op een van onze infodagen.") }}
 </main>
 <dialog class="c-modal js-dialog">
