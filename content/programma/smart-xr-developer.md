@@ -6,6 +6,7 @@ track: smart-xr-developer
 future:
     - AR/XR software developer
     - .Net/Unity Software developer
+    - 3D programmer
 ---
 
 In dit keuzetraject combineer je het beste van de opleidingen Multimedia en Creatieve Technologie (MCT) en Digital Arts en Entertainment (DAE): de expertise op het vlak van IoT, AI en AR van MCT en de knowhow op het vlak van 3D, VR en gaming van DAE. Zo verwerf je alle specifieke IT- en softskills om computer vision (AI), een 3D-interface en wireless communicatie naar slimme devices te combineren.
