@@ -8,7 +8,7 @@ relativeURLS = true
 canonifyurls = true
 enableEmoji = true
 
-disableKinds = ["taxonomy"]
+disableKinds = ["term", "taxonomy"]
 
 [menu]
   [[menu.main]]
