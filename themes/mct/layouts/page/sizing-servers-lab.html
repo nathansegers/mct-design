@@ -81,7 +81,7 @@
 				{{ range $project_index, $project_element := $projects}}
 				<section class="o-grid__item u-max-width c-row">
 					<div class="o-grid o-grid--gutter-lg">
-						{{ $images := $project_element.Params.Images}}
+						{{ $images := .Params.Images}}
 						{{ if $images }}
 							<div class="o-grid__item u-4-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end {{ if not (modBool $project_index 2) }}o-flex-order2{{end}}">
 								<div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
@@ -101,7 +101,7 @@
 						{{ end }}
 						<div class="o-grid__item u-ms4-bp5 {{ if $images }}u-6-of-12-bp5 {{else}}u-10-of-12-bp5 {{end}}u-push-1-of-12-bp5 o-flex--align-end {{ if not (modBool $project_index 2) }}o-flex-order1{{end}}">
 							<h3 class="u-ms4-bp3 u-ms4-bp5">{{ .Title }}</h3>
-							<p>{{ .Content }}</p>
+							{{ .Content }}
 						</div>
 					</div>
 				</section>
