@@ -1,0 +1,21 @@
+{{ $cover := .Params.cover }}
+{{ $image := .Resources.GetMatch $cover }}
+{{ $scaledImage := $image.Resize "200x" }}
+<a class="c-media">
+    <picture class="c-media__picture u-mb-delta">
+        <img class="c-media__image" src="{{ $scaledImage.Permalink }}" alt="">
+    </picture>
+    <div class="c-media__body">
+        <p class="c-media__meta u-ms-2 u-color-neutral-base u-mb-alpha">
+			{{ .Params.Function }}
+        </p>
+        <div class="c-media__content">
+            <h2 class="c-media__title u-mb-gamma">
+                {{ .Params.Name }}
+            </h2>
+            <p class="c-media__text u-ms0">
+                {{ .Params.Speciality }}
+            </p>
+        </div>
+    </div>
+</a>
