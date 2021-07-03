@@ -108,3 +108,17 @@
 .o-flex--justify-space-between {
     justify-content: space-between;
 }
+
+// Media query dependant flexbox containers
+@each $order in 1, 2, 3, 4, 5 {
+    .o-flex-order#{$order} {
+        order: $order;
+    }
+    @each $bp in $breakpoints {
+        .o-flex-order#{$order}-#{$bp} {
+            @include mq($bp) {
+                order: $order;
+            }
+        }
+    }
+}
