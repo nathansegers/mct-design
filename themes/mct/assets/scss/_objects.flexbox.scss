@@ -114,7 +114,7 @@
     .o-flex-order#{$order} {
         order: $order;
     }
-    @each $bp in $breakpoints {
+    @each $bp, $pixels in $breakpoints {
         .o-flex-order#{$order}-#{$bp} {
             @include mq($bp) {
                 order: $order;

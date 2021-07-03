@@ -1,7 +1,7 @@
-{{ $cover := .Params.cover }}
+{{ $cover := .Params.Cover }}
 {{ $image := .Resources.GetMatch $cover }}
 {{ $scaledImage := $image.Resize "200x" }}
-<a class="c-media">
+<div class="c-media">
     <picture class="c-media__picture u-mb-delta">
         <img class="c-media__image" src="{{ $scaledImage.Permalink }}" alt="">
     </picture>
@@ -10,7 +10,7 @@
 			{{ .Params.Function }}
         </p>
         <div class="c-media__content">
-            <h2 class="c-media__title u-mb-gamma">
+            <h2 class="c-media__title u-color-alpha-base u-mb-gamma">
                 {{ .Params.Name }}
             </h2>
             <p class="c-media__text u-ms0">
@@ -18,4 +18,4 @@
             </p>
         </div>
     </div>
-</a>
+</div>

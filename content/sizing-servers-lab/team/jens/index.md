@@ -6,4 +6,5 @@ function: Onderzoeker
 speciality: AI Integration, Data Engineering
 type: Researcher
 weight: 70
+layout: team-member
 ---

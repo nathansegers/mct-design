@@ -6,6 +6,7 @@ function: Lector en Onderzoeker
 speciality: MLOps, AI Deployment, AI Integration
 type: Researcher
 weight: 50
+layout: team-member
 ---
 
 Nathan Segers werkt al sinds 2019 in het Sizing Servers Lab. Hij begon er in februari met zijn stage omtrent Machine Learning in AWS en Azure. Sindsdien gaf hij al 4 sessies op TETRA bijeenkomsten.

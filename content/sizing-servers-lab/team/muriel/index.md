@@ -6,4 +6,5 @@ function: Video Content Creator
 speciality: Adobe, Video Content
 type: Researcher
 weight: 30
+layout: team-member
 ---
