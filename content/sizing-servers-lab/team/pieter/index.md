@@ -6,4 +6,5 @@ function: Onderzoeker en Onderzoekscoordinator
 speciality: AI modellering
 type: Researcher
 weight: 10
+layout: team-member
 ---

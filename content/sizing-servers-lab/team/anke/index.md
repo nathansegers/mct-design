@@ -6,4 +6,5 @@ function: PR Medewerker en Lector
 speciality: PR, Events, Internet of Things
 type: Researcher
 weight: 40
+layout: team-member
 ---

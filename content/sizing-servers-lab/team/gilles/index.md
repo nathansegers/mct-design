@@ -6,4 +6,5 @@ function: Onderzoeker en Lector
 speciality: AI Modellering
 type: Researcher
 weight: 60
+layout: team-member
 ---

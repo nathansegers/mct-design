@@ -6,4 +6,5 @@ function: Lector en Onderzoeker
 speciality: Data Engineering, Cloud Computing, Network Scripting
 type: Researcher
 weight: 20
+layout: team-member
 ---
