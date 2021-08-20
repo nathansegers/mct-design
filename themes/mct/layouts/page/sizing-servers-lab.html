@@ -5,14 +5,18 @@
 			<div class="o-grid o-grid--gutter-lg">
 				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
 					<div class="c-main-section-lg">
-
-						<div class="u-max-width-xl">
-							<h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
-								{{.Params.Subheader}}
-							</h1>
-							<p class="c-type-intro">
-								{{.Params.Intro | markdownify}}
-							</p>
+						<div class="o-grid o-grid--gutter-lg">
+							<div class="o-grid__item u-12-of-12 u-7-of-12-bp3 u-8-of-12-bp4">
+								<h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
+									{{.Params.Subheader}}
+								</h1>
+								<p class="c-type-intro">
+									{{.Params.Intro | markdownify}}
+								</p>
+							</div>
+							<div class="o-grid__item u-8-of-12 u-push-2-of-12 u-6-of-12-bp2 u-push-3-of-12-bp2 u-4-of-12-bp3 u-push-1-of-12-bp3 u-push-1-of-12-bp4 u-3-of-12-bp4">
+								<img alt="{{ .Params.Intro }}" data-src="{{ .Params.logo }}" class="lozad">
+							</div>
 						</div>
 
 					</div>
@@ -96,7 +100,10 @@
 										<div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
 											<p><img alt="{{ $elem.description }}" src="{{ $cover }}"></p>
 											<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
-												{{ $elem.description }}
+												{{ if $elem.link }}<a href="{{$elem.link}}">{{ end }}
+													{{ $elem.description }}
+												{{ if $elem.link }}</a>{{ end }}
+												
 											</p>
 										</div>
 									{{end}}
