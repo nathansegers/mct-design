@@ -3,8 +3,8 @@ title: TETRA
 type: Sizing Servers Lab Project
 weight: 10
 images:
-- cover: "images/studeren-in-het-buitenland.jpg"
-  description: "Test beschrijving foto 1"
+- cover: "images/Vlaio-Tetra-Projecten.jpg"
+  description: "Met steun van VLAIO werken wij TETRA projecten af."
 # - cover: "images/student-korea.jpg"
 #   description: "Test beschrijving foto 2"
 ---
