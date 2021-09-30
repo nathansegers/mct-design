@@ -54,7 +54,7 @@ disableKinds = ["term", "taxonomy"]
 	weight = 60
   
   [[menu.main]]
-	name = "MCT Research"
+	name = "Sizing Servers Lab"
 	url = "/sizing-servers-lab/"
 	identifier = "sizing-servers-lab"
 	weight = 70
