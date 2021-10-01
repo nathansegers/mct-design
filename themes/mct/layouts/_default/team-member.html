@@ -1,0 +1,22 @@
+{{ define "main" }}
+	<section class="c-row c-row--lg">
+		<div class="o-container u-max-width-optimal">
+			<div class="c-main-section-lg">
+				<div class="c-main-section">
+					<h1 class="c-type-intro u-mb-alpha">
+						{{ .Params.Name }}
+					</h1>
+					<p class="c-type-meta u-ms-1 u-color-neutral-base">
+						{{ .Params.Function }}
+					</p>
+					<p class="c-type-intro-small">
+						{{ .Params.Speciality }}
+					</p>
+					<div class="s-content">
+						{{ .Content }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{{ end }}

@@ -52,6 +52,11 @@ enableEmoji = true
 	url = "/contact/"
 	identifier = "contact"
 	weight = 60
-
+  
+  [[menu.main]]
+	name = "Sizing Servers Lab"
+	url = "/sizing-servers-lab/"
+	identifier = "sizing-servers-lab"
+	weight = 70
 [outputs]
     page = ["HTML", "json"]

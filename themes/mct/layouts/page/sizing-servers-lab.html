@@ -1,0 +1,204 @@
+{{ define "main" }}
+<main>
+	<section class="c-row c-row--lg">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter-lg">
+				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+					<div class="c-main-section-lg">
+						<div class="o-grid o-grid--gutter-lg">
+							<div class="o-grid__item u-12-of-12 u-7-of-12-bp3 u-8-of-12-bp4">
+								<h1 class="c-type-meta u-ms-1 u-mb-gamma u-opacity-gamma">
+									{{.Params.Subheader}}
+								</h1>
+								<p class="c-type-intro">
+									{{.Params.Intro | markdownify}}
+								</p>
+							</div>
+							<div class="o-grid__item u-8-of-12 u-push-2-of-12 u-6-of-12-bp2 u-push-3-of-12-bp2 u-4-of-12-bp3 u-push-1-of-12-bp3 u-push-1-of-12-bp4 u-3-of-12-bp4">
+								<img alt="{{ .Params.Intro }}" data-src="{{ .Params.logo }}" class="lozad">
+							</div>
+						</div>
+
+					</div>
+					<div class="c-main-section-lg">
+						<div class="c-video-player">
+							<!-- <button class="c-video-play-button">
+								{{ partial "atoms/symbol" (dict "value" "play" "class" "c-video-play-button__symbol")}}
+							</button> -->
+							<div class="c-video-player__video c-video-player__video--youtube">
+								<iframe src="https://www.youtube.com/embed/nilHNHnGRK4" title='Sizing Servers Lab'></iframe>
+							</div>
+						</div>
+						<p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+							Het Sizing Servers Lab helpt tal van bedrijven met hun AI projecten
+						</p>
+					</div>
+					<div class="c-main-section-lg">
+						<div class="s-content u-max-width">
+							<h2 class="c-type-title-lg">
+								{{ .Params.Catchline }}
+							</h2>
+						</div>
+						<div class="o-grid o-grid--gutter-lg">
+							<div class="o-grid__item u-8-of-12-bp4">
+								<div class="c-projects__body-sm">
+									{{ .Content }}
+								</div>
+							</div>
+							<div class="o-grid__item u-4-of-12-bp4">
+								<div class="c-projects__body-sm">
+									<p><img alt="{{ .Params.ImageDescription}}" data-src="{{ .Params.Image }}"
+										class="lozad"></p>
+									<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+										{{ .Params.ImageDescription}}
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projecten -->
+	<section class="c-row c-row--lg c-row--divide">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter-lg">
+				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+					<div class="c-main-section-lg">
+						<div class="u-max-width-lg">
+							<h2 class="c-type-title-lg">
+								Onze projecten
+							</h2>
+							<p>
+								Als onafhankelijk onderzoekslabo werken wij gesubsidieerd projecten uit voor leden van onze TETRA gebruikersgroep.
+								Hieronder enkele van onze lopende projecten.
+								Wil je meer te weten komen, of heb je zelf ook een interessant onderzoeksproject? Neem dan zeker contact op!
+							</p>
+						</div>
+					</div>
+				</div>
+				{{ $projects := (where .Site.Pages "Type" "Sizing Servers Lab Project")}}
+				{{ range $project_index, $project_element := $projects}}
+				<section class="o-grid__item u-max-width c-row">
+					<div class="o-grid o-grid--gutter-lg">
+						{{ $images := .Params.Images}}
+						<div class="o-grid__item u-ms4-bp5 {{ if $images }}u-6-of-12-bp5 {{else}}u-10-of-12-bp5 {{end}}u-push-1-of-12-bp5 o-flex--align-end {{ if not (modBool $project_index 2) }}o-flex-order2-bp5{{end}}">
+							<h3 class="u-ms4-bp3 u-ms4-bp5">{{ .Title }}</h3>
+							{{ .Content }}
+						</div>
+						{{ if $images }}
+							<div class="o-grid__item u-4-of-12-bp5 u-push-1-of-12-bp5 o-flex--align-end ">
+								<div class="o-grid o-grid--gutter-sm o-flex o-flex--wrap o-flex--align-end">
+									{{ range $elem := $images }}
+										{{ $cover := $elem.cover }}
+										{{ $image := .Resources.GetMatch $elem.cover }}
+										{{ $scaledImage := $image.Resize "200x" }}
+										<div class="o-grid__item u-6-of-12 u-12-of-12-bp5 o-flex--align-end">
+											<p><img alt="{{ $elem.description }}" src="{{ $cover }}"></p>
+											<p class="c-type-meta u-ms-2 u-color-neutral-xxxx-dark u-opacity-alpha">
+												{{ if $elem.link }}<a href="{{$elem.link}}">{{ end }}
+													{{ $elem.description }}
+												{{ if $elem.link }}</a>{{ end }}
+												
+											</p>
+										</div>
+									{{end}}
+								</div>
+							</div>
+						{{ end }}
+					</div>
+				</section>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+	<!-- Projecten -->
+
+	<!-- Team -->
+	<section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
+		<div class="o-container">
+			<div class="c-team">
+				<div class="c-team__body">
+					<div class="o-grid o-grid--gutter-lg">
+						<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+							<div class="c-main-section">
+								<div class="o-grid o-grid--gutter-lg">
+									{{ with .GetPage "team" }}
+									<article class="o-grid__item">
+										<div class="s-content u-max-width">
+											<h2 class="c-type-title-md">
+												{{ .Params.Title }}
+											</h2>
+										</div>
+										<div class="o-grid o-grid--gutter-lg">
+											<div class="o-grid__item u-max-width-xl">
+												<div class="c-projects__body-sm">
+													{{ .Content }}
+												</div>
+											</div>
+										</div>
+									</article>
+									{{ end }}
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <h2 class="c-type-svg c-type-svg--team">
+						<img class="c-type-svg__svg" src="/img/svg/word-team.svg" alt="Research team">
+					</h2> -->
+					<div class="c-main-section">
+						<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-baseline u-mb-epsilon-neg">
+							{{ range (where .Site.Pages "Type" "Researcher") }}
+								<article class="o-grid__item u-1-of-2-bp3 u-1-of-3-bp4 u-1-of-4-bp5 o-flex o-flex--align-end u-mb-epsilon">
+									{{ partial "atoms/team-member" . }}
+								</article>
+							{{ end }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Team -->
+
+	<!-- CTA -->
+	{{ with .GetPage "cta.md" }}
+	{{ $emails := .Params.Emails }}
+	<section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxxx-light">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter">
+				<div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5 u-3-of-4-bp6 u-push-1-of-4-bp6">
+					<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-center">
+						<div class="o-grid__item u-6-of-12-bp5">
+							<h2 class="u-mb-beta">{{ .Title }}</h2>
+							<p class="c-type-meta u-ms-1 u-color-neutral-base">
+								{{ .Params.Subtitle }}
+							</p>
+							<p>
+								{{ .Content }}
+							</p>
+							<p class="u-ms0">
+							{{ range $email_index, $email := $emails }}
+								<a href="mailto:{{ $email }}">{{ $email }}</a><br>
+								{{ end }}
+							</p>
+						</div>
+						<div class="o-grid__item u-4-of-12-bp5">
+							<p>
+								<a href="mailto:{{ index $emails .Params.cta_emails_index }}" class="c-button c-button--alpha c-button--lg c-button--transform">Contacteer ons via e-mail</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	{{ end }}
+
+	<!-- CTA -->
+</main>
+<dialog class="c-modal js-dialog">
+</dialog>
+{{ end }}
