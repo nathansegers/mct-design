@@ -2,7 +2,11 @@
 title: Smart App Development
 semester: 4
 weight: 20
-tags: "#expo #reactNative #iOS #Android"
+tags:
+- expo
+- reactNative
+- iOS
+- Android
 pillar: code
 tools: "Expo, webpack, JS, ReactNative, Lottie"
 tracks:

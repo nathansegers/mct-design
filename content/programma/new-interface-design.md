@@ -2,7 +2,11 @@
 title: New Interface Design
 semester: 5
 weight: 30
-tags: "#ar #glasses #homepod #tesla"
+tags:
+- ar
+- glasses
+- homepod
+- tesla
 pillar: design
 tracks:
 - next-web-developer

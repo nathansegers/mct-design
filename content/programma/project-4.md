@@ -2,7 +2,10 @@
 title: Research Project
 semester: 5
 weight: 50
-tags: "#advancedintegration #start-up #choice"
+tags:
+- advancedintegration
+- start-up
+- choice
 pillar: project
 tracks:
 - next-web-developer

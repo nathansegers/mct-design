@@ -2,7 +2,11 @@
 title: Full Stack Web Development
 semester: 2
 weight: 10
-tags: "#Python #Flask #Javascript #Jinja"
+tags:
+- Python
+- Flask
+- Javascript
+- Jinja
 pillar: code
 ---
 **In deze module kan je leren hoe je een volledig API-driven website kan maken en van A tot Z coderen.

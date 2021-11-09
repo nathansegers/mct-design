@@ -2,7 +2,12 @@
 title: Industry Project
 semester: 4
 weight: 50
-tags: "#agile #sprints #teamwork #companyprojects #deadlines"
+tags:
+- agile
+- sprints
+- teamwork
+- companyprojects
+- deadlines
 pillar: project
 tracks:
 - next-web-developer

@@ -2,7 +2,9 @@
 title: Basic Programming
 semester: 1
 weight: 10
-tags: "#principles #python"
+tags:
+- principles
+- python
 pillar: code
 ---
 

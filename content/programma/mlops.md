@@ -4,7 +4,11 @@ aliases:
 - ai-cloud-services-devops
 semester: 5
 weight: 10
-tags: "#Kubernetes #CI/CD #AutomatedAI #CloudAI"
+tags:
+- Kubernetes
+- CI/CD
+- AutomatedAI
+- CloudAI
 pillar: code
 tracks:
 - ai-engineer

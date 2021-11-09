@@ -2,7 +2,13 @@
 title: Windows OS
 semester: 4
 weight: 40
-tags: "#mswindows #server2016 #mcsalevel #ad #gpo #security"
+tags:
+- mswindows
+- server2016
+- mcsalevel
+- ad
+- gpo
+- security
 pillar: connect
 tracks:
 - infrastructure-engineer

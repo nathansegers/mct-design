@@ -2,7 +2,12 @@
 title: IoT Devices & Robotics
 semester: 5
 weight: 20
-tags: "#Lora #5G #embeddedpython #wearables #EdgeAI"
+tags:
+- Lora
+- 5G
+- embeddedpython
+- wearables
+- EdgeAI
 pillar: analysis
 tracks:
 - infrastructure-engineer

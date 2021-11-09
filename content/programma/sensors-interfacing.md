@@ -2,7 +2,11 @@
 title: Sensors & Interfacing
 semester: 2
 weight: 20
-tags: "#raspberrypi #sensoren #protocol #bitoperaties"
+tags:
+- raspberrypi
+- sensoren
+- protocol
+- bitoperaties
 pillar: connect
 ---
 Met behulp van een single board computer (b.v. Raspberry Pi) en enkele elektronica componenten en sensoren verkennen we verschillende protocollen om data uit te wisselen tussen verschillende devices. We leren werken met seriële protocollen, I2C bussen, de SPI bus en andere seriële en parallelle communicatie tussen componenten onderling of naar de buitenwereld.  We gebruiken daarvoor onder andere displays, sensoren (temperatuur, licht, ...), microcontrollers, motoren, ...

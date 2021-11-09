@@ -2,7 +2,11 @@
 title: Device Programming
 semester: 3
 weight: 10
-tags: "#csharp #xamarinforms #oop #android"
+tags:
+- csharp
+- xamarinforms
+- oop
+- android
 pillar: code
 ---
 

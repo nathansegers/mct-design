@@ -12,9 +12,15 @@
 					<h1 class="c-type-intro u-mb-alpha">
 						{{ .Title }}
 					</h1>
-					<p class="c-type-meta u-ms-1 u-color-neutral-base">
-						{{ .Params.Tags }}
-					</p>
+
+					{{ if .Params.Tags }}
+						<p class="c-type-meta u-ms-1 u-color-neutral-base">
+							{{ range .Params.Tags }}
+								#{{ . }}
+							{{ end }}
+						</p>
+					{{ end }}
+
 					{{ if .Params.Description }}
 						<p class="c-type-intro-small">
 							{{ .Description }}
@@ -22,8 +28,8 @@
 					{{ end }}
 					{{ if .Params.Tools }}
 						<h3 class="u-mb-alpha">
-	                        Tools: <span class="u-color-neutral-base"></span>
-	                    </h3>
+							Tools: <span class="u-color-neutral-base"></span>
+						</h3>
 						<p class="u-color-neutral-base">
 							{{ .Params.Tools }}
 	                    </p>

@@ -3,7 +3,11 @@ title: Cloud Services
 description: Elke onderneming heeft baat bij het gebruiken van “de cloud”. Maar wat is “de cloud” precies? We leren wat er allemaal achter dat woord schuil gaat en gebruiken daarbij diensten van Amazon AWS en Microsoft Azure.
 semester: 5
 weight: 10
-tags: "#Amazon #AWS #Microsoft #Azure"
+tags:
+- Amazon 
+- AWS 
+- Microsoft 
+- Azure
 pillar: connect
 tracks:
 - infrastructure-engineer
