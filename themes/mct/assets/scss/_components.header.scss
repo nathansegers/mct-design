@@ -11,4 +11,13 @@
     .c-nav-mobile & {
         @include margin-bottom($alpha-leading * 1.5);
     }
+
+    @include mq(bp4) {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+    }
+
+    .c-button--header-cta {
+        justify-self: end;
+    }
 }
