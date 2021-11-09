@@ -9,7 +9,7 @@ RewriteRule (.*)$ https://mct.be/$1 [R=301,L]
 
 RewriteRule ^/?module/(.*)$ /programma/$1 [R,L]
 
-ErrorDocument 404 /404
+ErrorDocument 404 /404/index.html
 
 </IfModule>
 
