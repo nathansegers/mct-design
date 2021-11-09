@@ -1,4 +1,7 @@
 <IfModule mod_rewrite.c>
+
+ErrorDocument 404 /404
+
 RewriteEngine On
 RewriteBase /
 
@@ -8,8 +11,6 @@ RewriteCond %{HTTP_HOST} ^www.nmct.be$
 RewriteRule (.*)$ https://mct.be/$1 [R=301,L]
 
 RewriteRule ^/?module/(.*)$ /programma/$1 [R,L]
-
-ErrorDocument 404 /404
 
 </IfModule>
 
