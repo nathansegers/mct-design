@@ -15,5 +15,3 @@ Na alle modules en examens uit Semester 3 (Device Programming 2, Security, IoT C
 Het voornaamste doel van deze module is om de **rollen & werkmethodes** in **projectmanagement** te leren kennen en deze ook te integreren in een **project van begin tot einde**. Deze case wordt binnen een **team** uitgewerkt en gepresenteerd.
 
 Aan de hand van de **agile methode**, leer je voor het eerst samenwerken en communiceren in een team en met interne klanten van een andere opleiding (**Sport en Beweging**). Elke week presenteer je een stand van zaken bij de docenten en word je gecoacht om het project bij te sturen en tot een goed einde te brengen.
-
-En dit word even getoond - voor een demo - op de live website 👋🏼!
