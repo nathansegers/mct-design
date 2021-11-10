@@ -3,7 +3,11 @@ title: Linux OS
 description: Waar kan een onderneming voordeel uithalen door het gebruik van Linux? We leren hoe alomtegenwoordig linux is waarvoor het best gebruikt kan worden, hoe je het opzet, beheert en optimaliseert.
 semester: 4
 weight: 20
-tags: "#linux #debian #operatingsystem #internet"
+tags:
+- linux
+- debian
+- operatingsystem
+- internet
 pillar: connect
 tracks:
 - infrastructure-engineer

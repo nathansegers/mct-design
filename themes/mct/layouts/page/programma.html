@@ -79,7 +79,13 @@
                                 {{ if eq .Params.Semester 1 }}
                                     <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                         <h4 class="c-module__title">{{ .Title }}</h4>
-                                        <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                        {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                     </a>
                                 {{ end }}
                             {{ end }}
@@ -92,7 +98,13 @@
                                 {{ if eq .Params.Semester 2 }}
                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                 </a>
                                 {{ end }}
                             {{ end }}
@@ -107,7 +119,13 @@
                                 {{ if eq .Params.Semester 3 }}
                                     <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                         <h4 class="c-module__title">{{ .Title }}</h4>
-                                        <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                        {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                     </a>
                                 {{ end }}
                             {{ end }}
@@ -123,7 +141,13 @@
                                             {{ if in .Params.Tracks "smart-xr-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                                 </a>
                                             {{ end }}
                                         {{ end }}
@@ -135,7 +159,13 @@
                                             {{ if in .Params.Tracks "next-web-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                                 </a>
                                             {{ end }}
                                         {{ end }}
@@ -147,7 +177,13 @@
                                             {{ if in .Params.Tracks "ai-engineer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                                 </a>
                                             {{ end }}
                                         {{ end }}
@@ -159,7 +195,13 @@
                                             {{ if in .Params.Tracks "infrastructure-engineer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                                 </a>
                                             {{ end }}
                                         {{ end }}
@@ -185,7 +227,13 @@
                                             {{ if in .Params.Tracks "smart-xr-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                                 </a>
                                             {{ end }}
                                         {{ end }}
@@ -197,7 +245,13 @@
                                             {{ if in .Params.Tracks "next-web-developer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                                 </a>
                                             {{ end }}
                                         {{ end }}
@@ -209,7 +263,13 @@
                                             {{ if in .Params.Tracks "ai-engineer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                                 </a>
                                             {{ end }}
                                         {{ end }}
@@ -221,7 +281,13 @@
                                             {{ if in .Params.Tracks "infrastructure-engineer" }}
                                                 <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--link js-module-link">
                                                     <h4 class="c-module__title">{{ .Title }}</h4>
-                                                    <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                                    {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                                 </a>
                                             {{ end }}
                                         {{ end }}
@@ -237,7 +303,13 @@
                                 {{ if eq .Params.Semester 6 }}
                                     <a href="{{ .Permalink }}" class="c-module c-module--{{ .Params.Pillar }} c-module--single c-module--link js-module-link">
                                         <h4 class="c-module__title">{{ .Title }}</h4>
-                                        <p class="c-module__tags">{{ .Params.Tags }}</p>
+                                        {{ if .Params.Tags }}
+                                                        <p class="c-module__tags">
+                                                            {{ range .Params.Tags }}
+                                                                #{{ . }}
+                                                            {{ end }}
+                                                        </p>
+                                                    {{ end }}
                                     </a>
                                 {{ end }}
                             {{ end }}

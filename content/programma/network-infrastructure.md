@@ -2,7 +2,11 @@
 title: Network Infrastructure
 semester: 4
 weight: 10
-tags: "#CCNA1+2 #corporatenetworking #IProuting #cabling"
+tags:
+- CCNA1+2
+- corporateNetworking
+- IProuting
+- cabling
 pillar: connect
 tracks:
 - infrastructure-engineer

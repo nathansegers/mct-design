@@ -2,7 +2,11 @@
 title: Motion Design
 semester: 4
 weight: 40
-tags: "#AfterEffects #XD #ImmersiveInterfaces #VisualStorytelling"
+tags:
+- AfterEffects
+- XD
+- ImmersiveInterfaces
+- VisualStorytelling
 pillar: design
 tracks:
 - next-web-developer

@@ -2,7 +2,10 @@
 title: Advanced AI
 semester: 5
 weight: 10
-tags: "#advancedComputerVision  #naturaLanguagePr. #reinforcementL."
+tags: 
+- advancedComputerVision
+- naturaLanguagePr.
+- reinforcementL.
 pillar: analysis
 tracks:
 - ai-engineer

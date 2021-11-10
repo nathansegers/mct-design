@@ -2,7 +2,13 @@
 title: Virtualisation & Cloud Computing Infrastructure
 semester: 4
 weight: 30
-tags: "#vmware #hyperv #docker #kvm #lxc #hyperconverged"
+tags:
+- vmware
+- hyperv
+- docker
+- kvm
+- lxc
+- hyperconverged
 pillar: connect
 tracks:
 - infrastructure-engineer

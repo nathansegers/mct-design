@@ -2,7 +2,11 @@
 title: Team Project
 semester: 3
 weight: 50
-tags: "#agile #sprints #teamwork #projectmanagement"
+tags:
+- agile
+- sprints
+- teamwork
+- projectmanagement
 pillar: project
 ---
 

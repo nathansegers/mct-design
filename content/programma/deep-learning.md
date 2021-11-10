@@ -2,7 +2,9 @@
 title: Deep Learning
 semester: 5
 weight: 10
-tags: "#dsp #neural_networks"
+tags:
+- dsp
+- neural_networks
 pillar: analysis
 tracks:
 - ai-engineer

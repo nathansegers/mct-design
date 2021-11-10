@@ -2,7 +2,9 @@
 title: Experimental XR
 semester: 5
 weight: 10
-tags: "#HumanInterfaces #ExtendedInteraction"
+tags:
+- humanInterfaces
+- extendedInteraction
 pillar: code
 tracks:
 - smart-xr-developer

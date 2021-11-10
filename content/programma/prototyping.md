@@ -2,7 +2,11 @@
 title: Prototyping
 semester: 1
 weight: 50
-tags: "#arduino #sensoren #microcontroller #prototyping"
+tags:
+- arduino
+- sensoren
+- microcontroller
+- prototyping
 pillar: project
 ---
 Met behulp van een microcontrollerboard (b.v. een Arduino UNO) en enkele elektronica componenten bouwen we een tof idee uit tot een werkend prototype. We starten met de basis, dus voorkennis is niet vereist. Elektrische schakelingen en componenten worden stap per stap verkend. We leren werken met de multimeter zodat we zelf fouten kunnen opsporen en indien nodig de fouten opsporen en oplossen. De software code om het controller bordje aan te sturen leren we ook stap per stap opbouwen. We schrijven de software code op de laptop en sturen deze dan door naar ons controllerboard.

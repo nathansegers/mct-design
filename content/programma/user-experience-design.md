@@ -2,7 +2,10 @@
 title: User Experience Design
 semester: 1
 weight: 40
-tags: "#ux #useroriented #prototype"
+tags:
+- ux
+- userOriented
+- prototype
 pillar: design
 tools: "Adobe XD, pen & papier"
 ---

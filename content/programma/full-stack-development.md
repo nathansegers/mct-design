@@ -2,7 +2,13 @@
 title: Advanced Full Stack Development
 semester: 5
 weight: 20
-tags: "#frontend #backend #GCP #firebase #morePWA #ai"
+tags:
+- frontend
+- backend
+- GCP
+- firebase
+- morePWA
+- ai
 pillar: code
 tracks:
 - next-web-developer

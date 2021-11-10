@@ -2,7 +2,11 @@
 title: User Interface Design
 semester: 2
 weight: 40
-tags: "#ui #design #HTML #CSS"
+tags:
+- ui
+- design
+- HTML
+- CSS
 tools: "Adobe XD, Photoshop en Atom"
 pillar: design
 ---

@@ -2,7 +2,12 @@
 title: Backend Development
 semester: 4
 weight: 30
-tags: "#ASP #netcore #crossplatform #AI-Architectuur, #Docker"
+tags:
+- ASP 
+- netcore 
+- crossplatform 
+- AI-Architectuur
+- Docker
 pillar: code
 tracks:
 - next-web-developer

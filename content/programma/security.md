@@ -2,7 +2,10 @@
 title: Security
 semester: 3
 weight: 10
-tags: "#privacy #security #testing"
+tags:
+- privacy
+- security
+- testing
 pillar: connect
 ---
 Studenten worden bewust gemaakt van de mogelijke bedreigingen die de **beschikbaarheid**, de **vertrouwelijkheid** of de **integriteit** van een systeem **kunnen compromitteren**

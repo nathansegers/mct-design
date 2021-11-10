@@ -2,7 +2,11 @@
 title: Advanced Programming & Maths
 semester: 4
 weight: 10
-tags: "#python #pandas #algorithm #maths"
+tags:
+- python 
+- pandas 
+- algorithm 
+- maths
 pillar: analysis
 tracks:
 - ai-engineer

@@ -2,7 +2,11 @@
 title: The Collective
 semester: 5
 weight: 40
-tags: "#international #business #mvp #entrepreneurs"
+tags:
+- international
+- business
+- mvp
+- entrepreneurs
 pillar: project
 tracks:
 - smart-xr-developer

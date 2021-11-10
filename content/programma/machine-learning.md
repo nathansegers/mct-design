@@ -2,7 +2,10 @@
 title: Machine Learning
 semester: 4
 weight: 30
-tags: "#neuralnetworks #ai #machinelearning"
+tags:
+- neuralnetworks
+- ai
+- machinelearning
 pillar: analysis
 tracks:
 - ai-engineer
