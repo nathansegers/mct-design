@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MR on MCT</title>
+    <link>/tags/mr/</link>
+    <description>Recent content in MR on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/mr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Augmented &amp; Mixed Reality</title>
+      <link>/programma/mixed-reality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/mixed-reality/</guid>
+      <description>Het doel van deze module is om kennis te maken met Augmented Reality en Mixed Reality. Je maakt kennis met de verschillende mogelijkheden naar interactie en visualisatie. In het praktische luik van de module worden hiervoor business toepassingen uitgewerkt, in hoofdzaak a.d.h.v. Microsoft Hololens maar ook via mobile devices en alternatieven zoals MagicLeap.
+De kennis die opgedaan werd in UX-design, UI-design en Interaction Designwordt aangehaald om User Experience om te zetten naar een volledig nieuwe augmented/mixed reality omgeving.</description>
+    </item>
+    
+  </channel>
+</rss>

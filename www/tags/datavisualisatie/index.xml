@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>datavisualisatie on MCT</title>
+    <link>/tags/datavisualisatie/</link>
+    <description>Recent content in datavisualisatie on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/datavisualisatie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interaction Design</title>
+      <link>/programma/interaction-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/interaction-design/</guid>
+      <description>In deze module integreren we kennis uit het eerste jaar (Device Programming 1, User Experience Designen User Interface Design) tot een goed werkend geheel. De focus van de module ligt op het creeëren van een functioneel design met een goede interactie. Van microinteracties tot een goed overzicht in een dashboard wordt bekeken hoe je jouw applicatie beter kan maken. We grijpen ook nog even terug naar de UX basis en kijken hoe je door details de interactie tussen jouw applicatie en de gebruikers nog beter kan maken!</description>
+    </item>
+    
+  </channel>
+</rss>

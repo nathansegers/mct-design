@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on MCT</title>
+    <link>/tags/powershell/</link>
+    <description>Recent content in Powershell on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network Scripting</title>
+      <link>/programma/network-scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/network-scripting/</guid>
+      <description>Om snel een aantal administratieve taken binnen een netwerkinfrastructuur snel en efficiënt te realiseren, kan je niet zonder scripting. Het configureren van DNS of DHCP, het aanmaken van gebruikers &amp;amp; groepen, het beveiligen van resources, het aanmaken en beheren van virtuele machines, &amp;hellip; zijn maar een paar voorbeelden. Je gaat aan de slag met Microsoft Powershell in een Windows en Vmware omgeving. In de Open Source wereld wordt vooral bash-scripting gebruik.</description>
+    </item>
+    
+  </channel>
+</rss>

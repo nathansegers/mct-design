@@ -1,0 +1,14 @@
+
+	
+{
+	"title": "Bloom",
+	"description": "Samen met Hyperspace Ventures ontwikkelde onze studenten een IOT app die het verlichtingsproduct Bloom slim maakt.",
+	"tools": null,
+	"semester": null,
+	"weight": null,
+	"tags": null,
+	"pillar": null,
+	"tracks": null,
+	"content": "\u003cp\u003eBloom is een slimme lamp om een plant te voorzien van een ideaal aantal uren licht. Onze studenten kregen als uitdaging om deze lamp slimmer te maken: het regelen van de uren licht en hoe fel het licht mag zijn.\u003c/p\u003e\n\u003cp\u003eHet was niet altijd eenvoudig om de timing in orde te krijgen tussen de gewenste interval en de hardware. Ook is het altijd een uitdaging om met iets kleinere hardware te werken. We moeten rekening houden met de grootte van onze bestanden, processing-power en de inwerking in het toestel zelf.\u003c/p\u003e\n\u003ch2 id=\"resultaat\"\u003eResultaat\u003c/h2\u003e\n\u003cp\u003eJe kan de Bloom in het stopcontact steken en meteen wordt er een WiFi-signaal verstuurd. Vervolgens kan je via je telefoon verbinden met dit netwerk om de Bloom te installeren.\nVerder is het instellen van de Bloom kinderspel aan de hand van een website die aanvoelt alsof je een native app gebruikt.\u003c/p\u003e\n"
+}
+

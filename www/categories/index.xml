@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on MCT</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language>
+    <lastBuildDate>Tue, 26 May 2020 10:30:58 +0100</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wie</title>
+      <link>/categories/wie/</link>
+      <pubDate>Tue, 26 May 2020 10:30:58 +0100</pubDate>
+      
+      <guid>/categories/wie/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on MCT</title>
+    <link>/tags/android/</link>
+    <description>Recent content in android on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Device Programming</title>
+      <link>/programma/device-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/device-programming/</guid>
+      <description>Het doel van deze module is om C#.NET te leren en de concepten van object georiënteerd programmeren verder uit te diepen. Deze kennis wordt ingezet om mobiele Xamarin.Forms applicaties te ontwikkelen die data manipuleren van bestaande bronnen in de cloud. Hoewel Xamarin.Forms toelaat op verschillende platformen te draaien, ligt de focus van het testen voornamelijk op Android. Deze module bouwt verder op de kennis die opgedaan werd in User Experience Design, Basic Programming en Device Programming I, en loopt parallel met de module IoT Cloud.</description>
+    </item>
+    
+    <item>
+      <title>Smart App Development</title>
+      <link>/programma/smart-app-development-ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/smart-app-development-ios/</guid>
+      <description>Smart App Development — Hoe maken we performante en mooie apps die een zo veel mogelijk gedeelde codebase hebben tussen iOS &amp;amp; Android?
+We bekijken hoe we met React Native een hybride mobile app kunnen maken met een zo veel mogelijk shared codebase. Aan de hand van Expo zetten we een vlotte development structuur op. We bekijken welke device-API&amp;rsquo;s we kunnen gebruiken, hoe we met data werken en hoe we platform specifieke logica toevoegen.</description>
+    </item>
+    
+  </channel>
+</rss>

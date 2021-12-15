@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>project on MCT</title>
+    <link>/tags/project/</link>
+    <description>Recent content in project on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Future Technologies</title>
+      <link>/programma/future-technologies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/future-technologies/</guid>
+      <description>In deze modules dompelenen we je onder in de meest nieuwe en relevante cutting edge technologie. We beginnen het semester met wekelijkse sessies van gast-sprekers uit het werkveld en lectoren. Vanuit deze inspiratie en technische kennis werk je in groep of individueel aan een veelbelovende technologie die nog in de kinderschoenen staat. Op deze manier kom jij straks als expert in het werkveld terecht.</description>
+    </item>
+    
+  </channel>
+</rss>

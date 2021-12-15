@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="cleartype" content="on">
+
+    
+    <meta name="theme-color" content="#44C8F5" />
+    <meta name="apple-mobile-next-web-developer-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-navbutton-color" content="#44C8F5" />
+    <meta name="msapplication-TileColor" content="#44C8F5" />
+
+    
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta name="author" content="mct">
+    <meta name="description" content="Artificial Intelligence @ home! Voor professionele / werkstudenten met interesse voor AI. Nederlandstalige video-opnames van MCT dagonderwijs en practica!">
+    
+
+    <title>Microdegree Machine Learning en Deep Learning | MCT</title>
+
+    
+    
+    
+    <link rel="stylesheet" href="../scss/screen.min.eec788779facff606579e2935c84834efcbc132f533aaa92f6851ce5a3a25ae8.css" integrity="sha256-7seId5&#43;s/2BleeKTXISDTvy8Ey9TOqqS9oUc5aOiWug=">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+
+    
+    
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+
+    <link rel="apple-touch-icon" href="../favicons/apple-touch-icon-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-touch-icon-60.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-touch-icon-76.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-touch-icon-120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-touch-icon-152.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-touch-icon-180.png" />
+    <link rel="apple-touch-icon" href="../favicons/apple-touch-icon.png" />
+
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#44C8F5">
+    <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+    <link rel="manifest" href="../site.webmanifest">
+
+    <meta property="og:url" content="/at-home/" />
+    <meta property="og:title" content="Microdegree Machine Learning en Deep Learning" />
+    <meta property="og:description" content="Artificial Intelligence @ home! Voor professionele / werkstudenten met interesse voor AI. Nederlandstalige video-opnames van MCT dagonderwijs en practica!" />
+    
+
+    
+    <script type="text/javascript">
+        var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){i[e]=function(){var n=arguments;i.queue.push(function(){i[e].apply(i,n)})}}var i={config:e};i.initialize=!0;var a=document,t=window;setTimeout(function(){var n=a.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/next/ai.2.min.js",a.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{i.cookie=a.cookie}catch(e){}i.queue=[],i.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var o="Track"+r[0];if(n("start"+o),n("stop"+o),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var s=t[r];t[r]=function(e,n,a,t,o){var c=s&&s(e,n,a,t,o);return!0!==c&&i["_"+r]({message:e,url:n,lineNumber:a,columnNumber:t,error:o}),c},e.autoExceptionInstrumented=!0}return i}
+        (
+            {instrumentationKey:"c3c025fd-5206-4cf2-ad04-82fcf29209af"}
+        );
+        window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+    </script>
+    
+
+</head>
+
+
+<body>
+
+    
+    <div class="c-row c-row--top">
+    <div class="o-container c-top">
+        
+
+        <p class="c-howest-badge">
+			<span class="c-howest-badge__text">powered by</span>
+			<svg class="c-howest-badge__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.37 85.6">
+			  <title>logo-howest</title>
+			  <g class="c-howest-badge__logo-path">
+			    <path d="M105.15,20.42,111.42,1a.78.78,0,0,0-.51-1,.8.8,0,0,0-1,.52l-6.42,19.86Z"/>
+			    <path d="M88.88,65.35,82.69,84.48a.78.78,0,0,0,.51,1,.67.67,0,0,0,.24,0A.8.8,0,0,0,84.2,85l6.34-19.6Z"/>
+			    <path d="M0,14.77c0-3.19,2-5.31,4.78-5.31s4.77,2.12,4.77,5.31v13h.14c2-2.45,5.7-3.31,8.69-3.31,7.49,0,13.07,4.77,13.07,12.87V55.64c0,3.18-2,5.3-4.78,5.3s-4.78-2.12-4.78-5.3V39c0-4.45-2.78-6.57-6.23-6.57-3.92,0-6.11,2.85-6.11,6.57V55.64c0,3.18-2,5.3-4.77,5.3S0,58.82,0,55.64Z"/>
+			    <path d="M71.06,43c0,10-6.84,18.37-17.12,18.37S36.82,52.92,36.82,43c0-9.69,7-18.51,17.12-18.51S71.06,33.28,71.06,43ZM46.38,43c0,4.57,2.39,9.62,7.56,9.62S61.5,47.54,61.5,43s-2.32-9.76-7.56-9.76S46.38,38.39,46.38,43Z"/>
+			    <path d="M74.11,33.21a13.38,13.38,0,0,1-1-4.51c0-2.12,2-3.85,4.78-3.85a4.55,4.55,0,0,1,4.51,3.79l5.51,18.24H88L93.61,29c.73-2.58,2.06-4.18,4.85-4.18s4.11,1.6,4.84,4.18l5.57,17.85H109l5.5-18.24A4.55,4.55,0,0,1,119,24.85a4.43,4.43,0,0,1,4.78,4.65,12.8,12.8,0,0,1-.93,3.58l-8.16,23c-1,2.79-2.65,4.84-5.77,4.84-2.92,0-4.64-1.65-5.51-4.44L98.52,41.11h-.13L93.48,56.5c-.86,2.79-2.59,4.44-5.51,4.44-3.11,0-4.77-2-5.77-4.84Z"/>
+			    <path d="M136,46.08c.67,4.71,4.58,6.9,9,6.9,4.91,0,8.29-3.84,10.81-3.84a4.24,4.24,0,0,1,3.92,4.11c0,4.11-8.5,8.09-15.6,8.09-10.74,0-17.91-7.83-17.91-18.37,0-9.69,7-18.51,17.12-18.51,10.35,0,17.18,9.42,17.18,17.38,0,2.85-1.26,4.24-4.18,4.24Zm15-6.37c-.53-4.18-3.19-7.29-7.63-7.29-4.25,0-7.1,3.25-7.57,7.29Z"/>
+			    <path d="M185.38,35.6c-1.79,0-5.44-2.78-8.56-2.78-1.73,0-3.25.79-3.25,2.65,0,4.44,16.58,3.78,16.58,14.66,0,6.37-5.37,11.21-13.6,11.21-5.37,0-13.33-3.05-13.33-7.36,0-1.46,1.46-4.25,4.11-4.25,3.72,0,5.37,3.25,9.89,3.25,2.92,0,3.78-.92,3.78-2.72,0-4.37-16.59-3.71-16.59-14.66,0-6.63,5.38-11.14,12.94-11.14,4.71,0,11.94,2.18,11.94,6.9A4.13,4.13,0,0,1,185.38,35.6Z"/>
+			    <path d="M198.51,33.61h-2.12a3.87,3.87,0,0,1-4.18-4.18,4.08,4.08,0,0,1,4.18-4.18h2.12v-5.7c0-3.19,2-5.31,4.78-5.31s4.78,2.12,4.78,5.31v5.7h2.72c2.45,0,4.58,1.13,4.58,4.18s-2.13,4.18-4.58,4.18h-2.72v22c0,3.18-2,5.3-4.78,5.3s-4.78-2.12-4.78-5.3Z"/>
+			  </g>
+			  <g class="c-howest-badge__logo-path">
+			    <path d="M111.14,74.22a2.56,2.56,0,1,0-5.12,0v6a.92.92,0,1,1-1.83,0V66A.92.92,0,1,1,106,66v5.3l0,0a3.8,3.8,0,0,1,3.06-1.45c1.71,0,3.85,1.08,3.85,4.2v6.13a.92.92,0,1,1-1.83,0Z"/>
+			    <path d="M120.31,69.92c3.12,0,4.87,2.72,4.87,5.65s-1.75,5.66-4.87,5.66-4.86-2.72-4.86-5.66S117.19,69.92,120.31,69.92Zm0,9.73c2.25,0,3-2.2,3-4.08s-.79-4.07-3-4.07-3,2.2-3,4.07S118.07,79.65,120.31,79.65Z"/>
+			    <path d="M136.73,80.32c0,3.28-2,5.28-5,5.28-1.89,0-4.24-1.08-4.24-2a.77.77,0,0,1,.77-.85c.83,0,1.64,1.29,3.62,1.29,2.33,0,3-1.83,3-3.41v-1h-.05a3.15,3.15,0,0,1-2.8,1.58c-3.12,0-4.87-2.72-4.87-5.66s1.75-5.65,4.87-5.65a3.74,3.74,0,0,1,2.8,1.39h.05v-.5a.86.86,0,0,1,1-.89.85.85,0,0,1,.86.89Zm-4.68-.67c2.24,0,3-2.2,3-4.08s-.79-4.07-3-4.07-3,2.2-3,4.07S129.8,79.65,132.05,79.65Z"/>
+			    <path d="M140.93,76.28a3.15,3.15,0,0,0,3.27,3.37c2.43,0,3.05-1.5,3.74-1.5a.72.72,0,0,1,.66.81c0,.9-2.26,2.27-4.42,2.27-3.54,0-5.08-2.72-5.08-5.66s1.87-5.65,5-5.65,4.76,2.72,4.76,5.38c0,.65-.23,1-1,1ZM147,74.91c0-1.58-.91-3.41-2.93-3.41-2.27-.09-3.08,1.72-3.14,3.41Z"/>
+			    <path d="M154.64,69.92c1.52,0,3.68.81,3.68,2a.74.74,0,0,1-.83.75c-.79,0-1.1-1.12-2.85-1.12-1,0-1.93.46-1.93,1.39,0,1.94,5.9,1.73,5.9,4.93,0,2.31-2,3.41-4,3.41-2.33,0-4.16-1.16-4.16-2.1a.78.78,0,0,1,.75-.83c.81,0,1.47,1.35,3.47,1.35,1.33,0,2.14-.75,2.14-1.5,0-2.16-5.9-2-5.9-5.11C150.88,71,152.79,69.92,154.64,69.92Z"/>
+			    <path d="M165.41,69.92c1.88,0,3,.64,3,1.39a.77.77,0,0,1-.75.77c-.71,0-1-.58-2.23-.58-2.26,0-3.16,2.2-3.16,4.07s.9,4.08,3.16,4.08c1.29,0,1.63-.62,2.21-.62a.69.69,0,0,1,.71.77c0,.68-1,1.43-2.92,1.43-3.36,0-5-2.72-5-5.66S162.05,69.92,165.41,69.92Z"/>
+			    <path d="M177.62,74.22a2.56,2.56,0,1,0-5.11,0v6a.92.92,0,1,1-1.83,0V66a.92.92,0,1,1,1.83,0v5.3l0,0a3.79,3.79,0,0,1,3.06-1.45c1.7,0,3.84,1.08,3.84,4.2v6.13a.92.92,0,1,1-1.83,0Z"/>
+			    <path d="M186.8,69.92c3.12,0,4.87,2.72,4.87,5.65s-1.75,5.66-4.87,5.66-4.87-2.72-4.87-5.66S183.68,69.92,186.8,69.92Zm0,9.73c2.25,0,3-2.2,3-4.08s-.79-4.07-3-4.07-3,2.2-3,4.07S184.55,79.65,186.8,79.65Z"/>
+			    <path d="M198.53,69.92c3.12,0,4.87,2.72,4.87,5.65s-1.75,5.66-4.87,5.66-4.86-2.72-4.86-5.66S195.41,69.92,198.53,69.92Zm0,9.73c2.25,0,3-2.2,3-4.08s-.79-4.07-3-4.07-3,2.2-3,4.07S196.29,79.65,198.53,79.65Z"/>
+			    <path d="M207.71,80.25a.92.92,0,1,1-1.83,0V66a.92.92,0,1,1,1.83,0Z"/>
+			  </g>
+			</svg>
+		</p>
+    </div>
+</div>
+
+    
+
+    
+    
+<header class="c-row c-row--header">
+	<div class="o-container">
+		<div class="c-header">
+			<p class="c-logo">
+    <a href="../" class="c-logo__link">
+		
+        
+
+        <svg class="c-logo__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 85">
+          <title>MCT logo</title>
+          <g id="MCT">
+            <path class="c-logo__path" d="M36.21,45.21,27,50.29l-9.21-5.08V55.83L23.31,59a7.37,7.37,0,0,0,7.38,0l5.52-3.18Z"/>
+            <path class="c-logo__path" d="M50.28,12.3,30.69,1a7.37,7.37,0,0,0-7.38,0L3.72,12.3A7.38,7.38,0,0,0,0,18.69V41.31A7.38,7.38,0,0,0,3.72,47.7l3.41,2V19.94a1.59,1.59,0,0,1,2.39-1.38L27,28.42l17.47-9.86a1.59,1.59,0,0,1,2.39,1.38V49.67l3.41-2A7.38,7.38,0,0,0,54,41.31V18.69A7.38,7.38,0,0,0,50.28,12.3Z"/>
+          </g>
+          <g id="Icon">
+            <path class="c-logo__path" d="M8.76,72.16c.28-1.64,1.27-2,2.06-2,1.56,0,1.91.91,2.7,3.38L15,78.29h0l1.53-4.72c.79-2.47,1.13-3.38,2.7-3.38.79,0,1.77.33,2.06,2l1.23,7.06c.26,1.43.53,3,.53,3.45a1.48,1.48,0,0,1-1.47,1.49c-1.41,0-1.66-1-1.81-2.07L18.92,76h0l-2.1,6.75c-.31,1-.77,1.41-1.72,1.41s-1.41-.41-1.71-1.41L11.24,76h0l-.92,6.09c-.16,1.06-.41,2.07-1.81,2.07A1.48,1.48,0,0,1,7,82.67c0-.46.27-2,.52-3.45Z"/>
+            <path class="c-logo__path" d="M31.44,70c1.89,0,4.14.54,4.14,2.18a1.42,1.42,0,0,1-1.35,1.48c-.73,0-1.5-.65-2.72-.65C29,73,28,75.05,28,77.18s1.12,4,3.26,4c1.95,0,2.26-.64,3.07-.64A1.33,1.33,0,0,1,35.7,82c0,1.71-2.6,2.31-4.32,2.31-4.32,0-6.75-3.24-6.75-7.17C24.63,73,27.31,70,31.44,70Z"/>
+            <path class="c-logo__path" d="M40.5,73.2H38.74a1.42,1.42,0,0,1-1.62-1.45c0-.9.58-1.44,1.62-1.44h6.64c1,0,1.62.54,1.62,1.44a1.42,1.42,0,0,1-1.62,1.45H43.62v9.3a1.56,1.56,0,1,1-3.12,0Z"/>
+          </g>
+        </svg>
+
+    </a>
+</p>
+
+			<nav class="c-nav-main js-nav">
+	<ul class="o-list c-nav-main__list">
+		
+		
+			<li class="c-nav-main__item ">
+				<a href="../" class="c-nav-main__link">Home</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../waarom-mct/" class="c-nav-main__link">Waarom MCT</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../programma/" class="c-nav-main__link">Programma</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../projecten/" class="c-nav-main__link">Projecten</a>
+			</li>
+		
+			<li class="c-nav-main__item  is-selected">
+				<a href="../at-home/" class="c-nav-main__link">@Home</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../contact/" class="c-nav-main__link">Contact</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../sizing-servers-lab/" class="c-nav-main__link">Sizing Servers Lab</a>
+			</li>
+		
+	</ul>
+</nav>
+
+			<a href="https://www.howest.be/nl/studeren/inschrijven-en-info" class="c-button c-button--md c-button--header-cta">Inschrijven</a>
+			<button class="c-nav-main-trigger js-nav-trigger">
+				<svg role="img" class="c-symbol c-symbol-menu c-nav-main-trigger__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-menu"></use>
+</svg>
+
+			</button>
+		</div>
+	</div>
+</header>
+
+    
+
+    
+<main>
+    <div class="c-row c-row--lg">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter-lg">
+                <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5">
+                    <div class="c-main-section-lg">
+                        <div class="u-max-width-xl">
+                            <h1 class="c-type-meta u-ms-1 u-mb-gamma u-color-neutral-base">
+								Microdegree machine learning en deep learning
+                            </h1>
+                            <p class="c-type-intro">
+								Micro degree Machine Learning en Deep Learning: Artificial Intelligence @ Home met Howest MCT
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c-main-section-lg">
+                        <div class="c-video-player">
+                            <button class="c-video-play-button">
+                                <svg role="img" class="c-symbol c-symbol-play c-video-play-button__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-play"></use>
+</svg>
+
+                            </button>
+                            <video class="c-video-player__video" poster="/img/jpg/ai-at-home-poster.jpg">
+                                <source src="https://mctwebsite.blob.core.windows.net/video/AI-at-home-leren.webm" type="video/webm">
+                                <source src="https://mctwebsite.blob.core.windows.net/video/AI-at-home-leren.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        <p class="c-type-meta u-ms-1 u-color-neutral-xxxx-dark u-opacity-alpha">
+                            Een voorproefje van wat je kan verwachten.
+                        </p>
+                    </div>
+                    <div class="c-main-section-lg">
+                        <div class="c-main-section">
+                            <div class="s-content u-max-width-lg">
+                                <h2 class="c-type-title-lg">
+									"Software ate the world, AI will eat software"
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="c-main-section">
+                            <div class="o-grid o-grid--gutter-lg">
+                                <div class="o-grid__item u-1-of-2-bp4">
+                                    <div class="s-content u-max-width-optimal">
+                                        <p>Artificial Intelligence (AI) is niet meer voorbehouden voor academici. <a href="../programma/machine-learning">Machine Learning</a> en <a href="../programma/deep-learning">Deep Learning</a> zijn dankzij
+										krachtige frameworks en cloud services binnen het bereik van iedere IT'er. Uit data inzichten puren, voorspellingen
+										doen of automatisch patronen herkennen en classificeren, Machine Learning en Deep Learning geven een enorme boost aan
+										je mogelijkheden als ontwikkelaar. “Software ate the world, AI will eat software”</p>
+                                    </div>
+                                </div>
+                                <div class="o-grid__item u-1-of-2-bp4">
+                                    <div class="s-content u-max-width-optimal">
+                                        <p>Deze @home opleiding staat open voor iedereen die minimum 21 jaar is en/of werkstudent. Je kiest zelf wanneer je wilt
+										studeren en ons team begeleidt jou via het internet. Er zijn ook enkele contactmomenten op de campus voorzien.
+										Afstandsonderwijs wordt hoofdzakelijk via onze krachtige LMS (Learning management system) gegeven. Je krijgt
+										Nederlandstalige video opnames van goede kwaliteit van het dagonderwijs, en een heleboel practica ter beschikking om op
+										je eigen tempo je de leerstof eigen te maken.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxx-light">
+        <div class="o-container">
+            <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-center">
+                <div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp5 u-push-1-of-12-bp5 u-2-of-4-bp6 u-push-1-of-4-bp6">
+                    <div class="c-main-section">
+                        <div class="s-content u-max-width-optimal">
+                            <h3>Hoe werkt het?</h3>
+                            <p>Deze @home opleiding staat open voor iedereen die minimum 21 jaar is en/of werkstudent. <strong>Je kiest zelf wanneer je wilt studeren</strong> en ons team begeleidt jou via het internet. Er zijn ook enkele contactmomenten op de campus voorzien.</p>
+							<p>Afstandsonderwijs wordt hoofdzakelijk via ons krachtige LMS (Learning management system) gegeven. Je krijgt <strong>nederlandstalige video-opnames</strong> van goede kwaliteit van het dagonderwijs, en een heleboel practica om&nbsp;<strong>op je eigen tempo</strong>&nbsp;de leerstof eigen te maken.</p>
+							<p>Er is per module:
+								<ul>
+									<li>Een introductie les voorzien in kortrijk - niet verplicht, zal ook als video beschikbaar zijn.</li>
+									<li>Een examen moment voorzien - verplicht. Voorlopig werken we zo tot wanneer we zeker zijn dat onze Leer Systeem (LMS Canvas, internationale LMS software) voldoende garanties biedt voor een eerlijk examen.</li>
+									<li>Alle lessen worden ingericht als afstandsonderwijs, met het nodige materiaal (video + practica) op ons leerplatform. Het betreft een cursus van 2 maal 6 studiepunten.</li>
+								</ul>
+							<p>De opleiding is gespreid over <strong>2 semesters (1 jaar)</strong> om werk en studie te kunnen combineren. Je examens vinden plaats in <strong>Graaf Karel De Goedelaan 5, 8500 Kortrijk</strong>.</p>
+							<p>Je kan <strong>inschrijven tot 4 oktober 2021</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="c-main-section">
+                        <div class="c-curriculum u-pt-alpha">
+                            <div class="c-curriculum__semester u-pt-alpha">
+                                <h3 class="c-curriculum__semester-title">
+                                    Oktober 2021
+                                </h3>
+                                <a href="../programma/machine-learning/" class="c-module c-module--analysis c-module--link js-module-link">
+                                    <h4 class="c-module__title">Machine Learning</h4>
+                                    <p class="c-module__tags">6 studiepunten</p>
+                                </a>
+                            </div>
+                            <div class="c-curriculum__semester u-pt-alpha">
+                                <h3 class="c-curriculum__semester-title">
+                                    Q1 2022
+                                </h3>
+                                <a href="../programma/deep-learning/" class="c-module c-module--analysis c-module--link js-module-link">
+                                    <h4 class="c-module__title">Deep Learning</h4>
+                                    <p class="c-module__tags">6 studiepunten</p>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="u-ms-1 u-color-neutral-base">Een (N)MCT student die reeds voor machine learning is geslaagd krijgt vrijstelling voor deze module.</p>
+                    </div>
+                    <div class="c-main-section">
+                        <div class="s-content u-max-width-optimal">
+                            <h3>Voorwaarde</h3>
+                            <p>De student kent de <strong>programmeertaal Python</strong> voldoende om zelf programma’s te schrijven of te interpreteren.</p>
+                            <h3>Kostprijs</h3>
+                            <p>
+                                Een niet-beursstudent betaalt <strong>382 Euro</strong> <br>
+                                Beursstudenten informeren best bij het studentensecretariaat: 056 24 12 25
+                            </p>
+                            <h3>Vragen?</h3>
+                            <p>Contacteer <a href="https://mct.be/contact/">Johan De Gelas</a> of kom langs tijdens één van onze infodagen op onze campus in Kortrijk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<div class="c-row c-row--lg c-row--divide">
+		<div class="o-container">
+			<div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-center">
+				<div class="o-grid__item u-8-of-12-bp4 u-7-of-12-bp5 u-push-1-of-12-bp5 u-2-of-4-bp6 u-push-1-of-4-bp6">
+					<div class="c-main-section">
+						<h2>Veelgestelde vragen:</h2>
+
+						<h3>Het betreft een cursus van 2 maal 6 SP. Klopt het dat één studiepunt overeenkomt met een duur van 25 tot 30 uur?</h3>
+						<p>In theorie, klopt dat. We vermoeden dat professionals ongeveer 4 tot 8 uur per week zullen nodig hebben, 12-15 weken per module (grof geschat op basis van ons dagonderwijs).</p>
+
+						<h3>Als toelatingsvereiste is kennis van Python gevraagd.</h3>
+						<p>Wij zijn er van overtuigd dat iedereen met wat IT-ervaring heel snel Python leert. Bovendien zijn er veel gratis python cursussen beschikbaar, we wilden ook de kost beperkt houden, maar ook de tijd die je als professional moet spenderen. Maar om de studenten correct te informeren, willen we er zeker op wijzen dat dit de verantwoordelijkheid is van de student. Zeker voor wie al lang niet meer geprogrammeerd heeft, mag dit geen bron van teleurstelling worden.</p>
+
+						<p>We raden een IT bachelor diploma aan - maar de voornaamste voorwaarde is programmeer skills - en bereid zijn om Python te leren. Met de huidige vele goede gratis cursussen python willen wij de tijd &amp; de kost voor onze professionele studenten beperken door intro tot Python niet op te nemen.</p>
+
+						<h3>Wat is het niveau? BA na BA? Geen academische graad?</h3>
+						<p>De graad die je behaald is een micro degree van AI, dus twee creditcontracten voor deze twee modules, dus dezelfde modules van onze Bachelors NMCT (die 180 studiepunten moeten verwerven). Je verwerft dus 2/5 van een postgraduaat. In 2019-2020 wordt dat postgraduaat gelanceerd (onder voorbehoud).</p>
+						<p>De reden is dat we mikken op professionelen die dit naast hun werk moeten voltooien.</p>
+
+						<h3>Hoeveel contacturen zijn er ingepland en wanneer gaan deze door? 's Avonds of overdag?</h3>
+						<p>Het is afstandsonderwijs. Er is - per module - één optioneel intromoment voorzien en er is één verplicht examenmoment 's avonds in Kortrijk.</p>
+
+						<h3>Toelatingsvoorwaarden?</h3>
+						<p>We raden een IT bachelor diploma aan - maar de voornaamste voorwaarden zijn programmeer skills en het bereid zijn om Python te leren. Kijk even naar volgende twee voorbeelden: <a href="https://mctwebsite.blob.core.windows.net/docs/Boston_housing.pdf" rel="noopener">Boston housing demo</a> en <a href="https://mctwebsite.blob.core.windows.net/docs/MNIST_PCA.pdf" rel="noopener">MNIST_PCA</a> om te zien welk niveau wij verwachten. Met de huidige vele goede gratis cursussen python willen wij de tijd &amp; de kost voor onze professionele studenten beperken door intro tot Python niet op te nemen.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <section class="c-row c-row--lg c-row--divide u-bgcolor-neutral-xxxxx-light">
+    <div class="o-container">
+        <div class="o-grid o-grid--gutter">
+            <div class="o-grid__item u-10-of-12-bp5 u-push-1-of-12-bp5 u-3-of-4-bp6 u-push-1-of-4-bp6">
+                <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-center">
+                    <div class="o-grid__item u-width-auto">
+                        <h2 class="u-mb-beta">Klaar om AI op afstand te leren?</h2>
+                        <p class="c-type-meta u-ms-1 u-color-neutral-base">Stoom je klaar voor de toekomst en schrijf je vandaag in.</p>
+                    </div>
+                    <div class="o-grid__item u-width-auto">
+                        <p>
+                            <a href="https://www.howest.be/nl/studeren/inschrijven-en-info" class="c-button c-button--alpha c-button--lg c-button--transform">Schrijf je nu in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<dialog class="c-modal js-dialog">
+	<div class="c-modal__body u-max-width-optimal">
+		<button class="c-modal__close js-dialog-close" aria-label="Close dialog">
+			<svg role="img" class="c-symbol c-symbol-close c-nav-main-trigger__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-close"></use>
+</svg>
+
+		</button>
+		<div class="c-main-section-lg">
+			<div class="c-main-section">
+				<ul class="o-list c-curriculum-legend u-mb-gamma">
+					<li class="c-curriculum-legend__item">
+						<span class="c-curriculum-legend__swatch js-swatch u-bgcolor-code-base"></span>
+						<span class="js-legend"></span>
+					</li>
+				</ul>
+				<h1 class="c-type-intro u-mb-gamma js-title">
+					Full Stack Web Development
+				</h1>
+				<p class="c-type-meta u-ms-1 u-color-neutral-base js-tags">
+					#PYTHON #FLASK #JAVASCRIPT #JINJA
+				</p>
+			</div>
+			<div class="c-main-section">
+				<div class="u-max-width-optimal">
+					<div class="c-main-section">
+						<p class="c-type-intro-small js-description">
+							In deze module kan je leren hoe je een volledig API-driven website kan maken en van A tot Z coderen. Omdat je als bachelor MCT kan kiezen voor de specialisatie App Web developer moet je in staat zijn om volledige (full stack) websites te bouwen.
+						</p>
+					</div>
+
+					
+
+					<div class="c-main-section">
+						<div class="s-content js-content">
+							<p>In deze module maken wij vanaf het begin een duidelijke splitsing tussen de kant van de website die voor de gebruiker bestemd is (de frontend) en de kant waar de gegevens opgehaald en verwerkt worden (de backend).</p>
+
+							<p>Om deze beide zijdes te kunnen programmeren of te scripten maken we gebruik van twee programmeertalen: Javascript voor de frontend ontwikkeling en Python voor de backend ontwikkeling.</p>
+
+							<p>Het uitzicht van de website bepalen en ontwikkelen enerzijds en hoe je databanken manipuleert anderzijds zal je aanleren in de modules <a href="../../programma/user-interface-design/">User Interface Design</a> en <a href="../../programma/data-management/">Datamanagement</a>.</p>
+
+							<p>Het ultieme doel van deze module is ervoor zorgen dat er een real-time tweewegs-communicatie ontstaat tussen sensoren en actuatoren op je Raspberry Pi en je zelfgemaakte website.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</dialog>
+
+
+    
+    <div class="c-nav-mobile js-nav-mobile">
+    <div class="c-nav-mobile__body">
+        <div class="c-header">
+            <p class="c-logo">
+    <a href="../" class="c-logo__link">
+		
+        
+
+        <svg class="c-logo__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 85">
+          <title>MCT logo</title>
+          <g id="MCT">
+            <path class="c-logo__path" d="M36.21,45.21,27,50.29l-9.21-5.08V55.83L23.31,59a7.37,7.37,0,0,0,7.38,0l5.52-3.18Z"/>
+            <path class="c-logo__path" d="M50.28,12.3,30.69,1a7.37,7.37,0,0,0-7.38,0L3.72,12.3A7.38,7.38,0,0,0,0,18.69V41.31A7.38,7.38,0,0,0,3.72,47.7l3.41,2V19.94a1.59,1.59,0,0,1,2.39-1.38L27,28.42l17.47-9.86a1.59,1.59,0,0,1,2.39,1.38V49.67l3.41-2A7.38,7.38,0,0,0,54,41.31V18.69A7.38,7.38,0,0,0,50.28,12.3Z"/>
+          </g>
+          <g id="Icon">
+            <path class="c-logo__path" d="M8.76,72.16c.28-1.64,1.27-2,2.06-2,1.56,0,1.91.91,2.7,3.38L15,78.29h0l1.53-4.72c.79-2.47,1.13-3.38,2.7-3.38.79,0,1.77.33,2.06,2l1.23,7.06c.26,1.43.53,3,.53,3.45a1.48,1.48,0,0,1-1.47,1.49c-1.41,0-1.66-1-1.81-2.07L18.92,76h0l-2.1,6.75c-.31,1-.77,1.41-1.72,1.41s-1.41-.41-1.71-1.41L11.24,76h0l-.92,6.09c-.16,1.06-.41,2.07-1.81,2.07A1.48,1.48,0,0,1,7,82.67c0-.46.27-2,.52-3.45Z"/>
+            <path class="c-logo__path" d="M31.44,70c1.89,0,4.14.54,4.14,2.18a1.42,1.42,0,0,1-1.35,1.48c-.73,0-1.5-.65-2.72-.65C29,73,28,75.05,28,77.18s1.12,4,3.26,4c1.95,0,2.26-.64,3.07-.64A1.33,1.33,0,0,1,35.7,82c0,1.71-2.6,2.31-4.32,2.31-4.32,0-6.75-3.24-6.75-7.17C24.63,73,27.31,70,31.44,70Z"/>
+            <path class="c-logo__path" d="M40.5,73.2H38.74a1.42,1.42,0,0,1-1.62-1.45c0-.9.58-1.44,1.62-1.44h6.64c1,0,1.62.54,1.62,1.44a1.42,1.42,0,0,1-1.62,1.45H43.62v9.3a1.56,1.56,0,1,1-3.12,0Z"/>
+          </g>
+        </svg>
+
+    </a>
+</p>
+
+            <button class="c-nav-main-trigger js-nav-trigger">
+                <svg role="img" class="c-symbol c-symbol-close c-nav-main-trigger__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-close"></use>
+</svg>
+
+            </button>
+        </div>
+        <div class="c-nav-mobile__nav">
+            <nav class="c-nav-main js-nav">
+	<ul class="o-list c-nav-main__list">
+		
+		
+			<li class="c-nav-main__item ">
+				<a href="../" class="c-nav-main__link">Home</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../waarom-mct/" class="c-nav-main__link">Waarom MCT</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../programma/" class="c-nav-main__link">Programma</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../projecten/" class="c-nav-main__link">Projecten</a>
+			</li>
+		
+			<li class="c-nav-main__item  is-selected">
+				<a href="../at-home/" class="c-nav-main__link">@Home</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../contact/" class="c-nav-main__link">Contact</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../sizing-servers-lab/" class="c-nav-main__link">Sizing Servers Lab</a>
+			</li>
+		
+	</ul>
+</nav>
+
+            <a href="#!" class="c-button c-button--md c-button--header-cta">Inschrijven</a>
+        </div>
+    </div>
+</div>
+
+    
+
+    
+    <footer class="c-row c-row--lg c-row--footer">
+	<div class="o-container">
+		<div class="c-doormat">
+			<div class="o-grid o-grid--gutter">
+				<div class="o-grid__item u-1-of-4-bp4 c-doormat__item">
+					<img class="c-doormat__logo" src="../img/svg/logo-portrait.svg" alt="">
+				</div>
+				<div class="o-grid__item u-1-of-4-bp4 c-doormat__item">
+					<h3 class="u-ms0 u-color-neutral-xxxx-dark">Contact</h3>
+					<p class="u-ms0">
+						Howest Kortrijk <br>
+						Graaf Karel de Goedelaan&nbsp;5<br>
+						8500 Kortrijk
+					</p>
+					<p class="u-ms0">
+						<a href="tel:+32 56 24 12 44">+32 56 24 12 44</a> <br>
+						<a href="mailto:mct@howest.be">mct@howest.be</a>
+					</p>
+				</div>
+				<div class="o-grid__item u-1-of-4-bp4 c-doormat__item">
+					<h3 class="u-ms0 u-color-neutral-xxxx-dark">Join the community</h3>
+					<p class="u-ms0">
+						We posten leuke projecten, evenementen en opportuniteiten...
+					</p>
+					<ul class="o-list c-social-list u-ms0">
+    <li class="c-social-list__item"><a href="https://www.facebook.com/mct.howest/" class="c-social-list__link">
+        <svg role="img" class="c-symbol c-symbol-social-facebook c-social-list__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-social-facebook"></use>
+</svg>
+
+    </a></li>
+    <li class="c-social-list__item"><a href="https://twitter.com/mct_howest" class="c-social-list__link">
+        <svg role="img" class="c-symbol c-symbol-social-twitter c-social-list__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-social-twitter"></use>
+</svg>
+
+    </a></li>
+    <li class="c-social-list__item"><a href="https://www.instagram.com/howest_mct/" class="c-social-list__link">
+        <svg role="img" class="c-symbol c-symbol-social-instagram c-social-list__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-social-instagram"></use>
+</svg>
+
+    </a></li>
+    <li class="c-social-list__item"><a href="https://www.linkedin.com/school/15106039/" class="c-social-list__link">
+        <svg role="img" class="c-symbol c-symbol-social-linkedin c-social-list__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-social-linkedin"></use>
+</svg>
+
+    </a></li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="c-footer">
+			<div class="o-grid o-grid--gutter">
+				<div class="o-grid__item u-3-of-4-bp4 u-push-1-of-4-bp4">
+					<p class="c-type-meta u-color-neutral-base u-ms-1">
+						Made by MCT - 2021 - <a href="https://www.howest.be/nl/privacy-and-copyrights" target="_blank">disclaimer</a>
+						- <a href="https://www.howest.be/nl/opleidingen/bachelor/new-media-and-communication-technology" target="_blank">A
+							Howest bachelor</a>
+					</p>
+				</div>
+			</div>
+		</div>
+</footer>
+
+    
+
+    
+	  <div class="c-cookie-message u-max-width-md js-cookie-message" style="display:none;">
+	<p class="c-cookie-message__text u-ms-1">Deze site gebruikt cookies om surfen makkelijker te maken en het gebruik te analyseren. <a href="https://www.howest.be/nl/cookies" target="_blank">Meer info</a>.</p>
+	<button class="c-button c-button--alpha c-button--md js-cookie-button">In orde!</button>
+</div>
+
+    
+
+    <dialog class="c-modal js-dialog">
+      <div class="c-modal__body c-modal__body--video js-dialog-body">
+        <button class="c-modal__close js-dialog-close" aria-label="Close dialog">
+          <svg role="img" class="c-symbol c-symbol-close c-nav-main-trigger__symbol">
+    <use xlink:href="../img/svg/svg-symbols.svg#c-symbol-close"></use>
+</svg>
+
+        </button>
+        <div class="embed-container js-embed-container">
+          <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </dialog>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+<script type="text/javascript" src="../js/app.min.27ac12263f0428b1f5c86c1751f72525faef1be9c98b2674dca3cc785e78d134a04d0bffbd7b343231a2a8a61c1b99464141fb23ec470bf5f88fb0adb4cdefe6.js" integrity="sha512-J6wSJj8EKLH1yGwXUfclJfrvG&#43;nJiyZ03KPMeF540TSgTQv/vXs0MjGiqKYcG5lGQUH7I&#43;xHC/X4j7CttM3v5g=="></script>
+
+
+
+
+
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: ['Roboto+Mono&display=swap'] }
+		};
+		(function () {
+			var wf = document.createElement('script');
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+
+		(function (f, i, r, e, s, h, l) {
+		i['GoogleAnalyticsObject'] = s; f[s] = f[s] || function () {
+			(f[s].q = f[s].q || []).push(arguments)
+		}, f[s].l = 1 * new Date(); h = i.createElement(r),
+			l = i.getElementsByTagName(r)[0]; h.async = 1; h.src = e; l.parentNode.insertBefore(h, l)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-34713257-1', 'auto');
+		ga('send', 'pageview');
+
+		var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){i[e]=function(){var n=arguments;i.queue.push(function(){i[e].apply(i,n)})}}var i={config:e};i.initialize=!0;var a=document,t=window;setTimeout(function(){var n=a.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/next/ai.2.min.js",a.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{i.cookie=a.cookie}catch(e){}i.queue=[],i.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var o="Track"+r[0];if(n("start"+o),n("stop"+o),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var s=t[r];t[r]=function(e,n,a,t,o){var c=s&&s(e,n,a,t,o);return!0!==c&&i["_"+r]({message:e,url:n,lineNumber:a,columnNumber:t,error:o}),c},e.autoExceptionInstrumented=!0}return i}
+		(
+			{instrumentationKey:"c3c025fd-5206-4cf2-ad04-82fcf29209af"}
+		);
+		window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+	</script>
+
+
+
+</body>
+</html>

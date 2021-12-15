@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stream on MCT</title>
+    <link>/tags/stream/</link>
+    <description>Recent content in stream on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/stream/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big Data</title>
+      <link>/programma/big-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/big-data/</guid>
+      <description>Met IoT sensor data problemen voorspellen, transacties op een veilige manier laten gebeuren of met text search intelligent informatie ophalen: data intensieve applicaties steunen op een complexe data architectuur. Je duikt diept in schema flexibility, isolation levels, Index structures, partitioning en nog veel meer zodat je gefundeerde keuzes kan maken als data architect. Je zal begrijpen dat het CAP Theoreum (Consistency, Availability and Partioning, choose 2) een sterke vereenvoudiging is, en je leert hoe je keuzes van database ontwikkelaars kan begrijpen en inschatten voor jouw applicatie.</description>
+    </item>
+    
+  </channel>
+</rss>

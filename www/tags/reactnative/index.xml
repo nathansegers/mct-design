@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reactNative on MCT</title>
+    <link>/tags/reactnative/</link>
+    <description>Recent content in reactNative on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/reactnative/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smart App Development</title>
+      <link>/programma/smart-app-development-ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/smart-app-development-ios/</guid>
+      <description>Smart App Development — Hoe maken we performante en mooie apps die een zo veel mogelijk gedeelde codebase hebben tussen iOS &amp;amp; Android?
+We bekijken hoe we met React Native een hybride mobile app kunnen maken met een zo veel mogelijk shared codebase. Aan de hand van Expo zetten we een vlotte development structuur op. We bekijken welke device-API&amp;rsquo;s we kunnen gebruiken, hoe we met data werken en hoe we platform specifieke logica toevoegen.</description>
+    </item>
+    
+  </channel>
+</rss>

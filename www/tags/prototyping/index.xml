@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prototyping on MCT</title>
+    <link>/tags/prototyping/</link>
+    <description>Recent content in prototyping on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/prototyping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project One</title>
+      <link>/programma/project-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/project-1/</guid>
+      <description>Project One is je eerste integratiemodule: je bewijst door zelfstandig (waterfall) binnen de gegeven richtlijnen (maar met veel ruimte voor je eigen creatieve invulling) een persoonlijke case volledig uit te werken, te documenteren en te presenteren tijdens de projectweken. Je verdiept hiermee je eerder verworven technische competenties en bewijst je project skills: (PM, TimeManagement, leren reflecteren, product prototyping technieken, presentatietechnieken, … ) die je in verschillende sessies met medewerking van gastsprekers uit de industrie hebt aangeleerd gekregen.</description>
+    </item>
+    
+    <item>
+      <title>Prototyping</title>
+      <link>/programma/prototyping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/prototyping/</guid>
+      <description>Met behulp van een microcontrollerboard (b.v. een Arduino UNO) en enkele elektronica componenten bouwen we een tof idee uit tot een werkend prototype. We starten met de basis, dus voorkennis is niet vereist. Elektrische schakelingen en componenten worden stap per stap verkend. We leren werken met de multimeter zodat we zelf fouten kunnen opsporen en indien nodig de fouten opsporen en oplossen. De software code om het controller bordje aan te sturen leren we ook stap per stap opbouwen.</description>
+    </item>
+    
+  </channel>
+</rss>

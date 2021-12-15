@@ -1,0 +1,14 @@
+
+	
+{
+	"title": "IoT Cloud",
+	"description": null,
+	"tools": null,
+	"semester": 3,
+	"weight": 30,
+	"tags": ["azure","mqtt","webservices","iothub"],
+	"pillar": "analysis",
+	"tracks": null,
+	"content": "\u003cp\u003eIoT zonder cloud is onmogelijk. Deze module bevat 3 grote delen. We gaan dieper in op opslag van data in de cloud. Daarnaast is , connectiviteit  van de devices naar de cloud zeer belangrijk. Als laatste moeten we de devices voorzien van de nodige software. Om dit alles te realiseren maken we gebruik van de \u003cstrong\u003eMicrosoft Azure Cloud\u003c/strong\u003e. We schrijven onze eerste \u003cstrong\u003ewebservices\u003c/strong\u003e. De \u003cstrong\u003ehosting van de services\u003c/strong\u003e zal gebeuren \u003cstrong\u003evia het Serverless Platform van Azure\u003c/strong\u003e, namelijk \u003cstrong\u003eAzure Functions\u003c/strong\u003e. Voor het opslaan van data maken we zowel gebruik van relationele opslag als nosql opslag. Relatione opslag van data zal gebeuren in de cloud via Azure SQL Database. Als het gaat om Nosql opslag kiezen we voor Azure Cosmos DB. Naast het opslaan van data leren we ook hoe we devices kunnen connecteren aan het Internet. Met behulp van de Raspberry Pi gaan we berichten versturen naar de Cloud. Daarnaast moeten we ook berichten ontvangen uit de Cloud. Voor beide scenario’s maken we gebruik van \u003cstrong\u003eAzure IoT Hub\u003c/strong\u003e en \u003cstrong\u003eMQTT\u003c/strong\u003e. Deze managed services zal een full end to end secure verbinding opzetten waarover we berichten kunnen versturen. Als laatste zien we \u003cstrong\u003eAzure IoT Edge\u003c/strong\u003e. Deze oplossing laat ons toe om op een beheer  manier software te deployen naar toestellen zoals de Raspberry Pi. Cruciaal is hier het gebruik van Docker\u003c/p\u003e\n"
+}
+

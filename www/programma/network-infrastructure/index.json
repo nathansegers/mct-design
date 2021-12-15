@@ -1,0 +1,14 @@
+
+	
+{
+	"title": "Network Infrastructure",
+	"description": null,
+	"tools": null,
+	"semester": 4,
+	"weight": 10,
+	"tags": ["CCNA1+2","corporateNetworking","IProuting","cabling"],
+	"pillar": "connect",
+	"tracks": ["infrastructure-engineer"],
+	"content": "\u003cp\u003eJe hebt gekozen voor het afstudeerprofiel \u0026lsquo;Infrastructure Engineer\u0026rsquo;. Hier zetten we bedrijfsnetwerken op in het klein, ondersteund met algemene theorie:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eIP subnetting\u003c/li\u003e\n\u003cli\u003eDNS\u003c/li\u003e\n\u003cli\u003eDHCP\u003c/li\u003e\n\u003cli\u003eNAT\u003c/li\u003e\n\u003cli\u003ePort Forwarding\u003c/li\u003e\n\u003cli\u003eVPN\u003c/li\u003e\n\u003cli\u003ebekabeling\u003c/li\u003e\n\u003cli\u003etroubleshooting, \u0026hellip;\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDit kan je opnieuw toepassen in de \u003c!-- raw HTML omitted --\u003eWindows\u003c!-- raw HTML omitted --\u003e en de \u003c!-- raw HTML omitted --\u003eLinux module\u003c!-- raw HTML omitted --\u003e. Je gaat aan de slag met professioneel netwerkmateriaal (Cisco, HP, …) In het labo wordt real-life netwerken opgezet met de meest gebruikte netwerktechnologiën (VLANs, static \u0026amp; dynamic routing, QOS, VoIP, …) Je legt de module 1 \u0026amp; 2 van Cisco Certified Network Associate op eigen tempo af (=deelnamecertificaten). \u003cstrong\u003eHands-on\u003c/strong\u003e is het sleutelwoord!\u003c/p\u003e\n"
+}
+

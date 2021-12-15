@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>operatingsystem on MCT</title>
+    <link>/tags/operatingsystem/</link>
+    <description>Recent content in operatingsystem on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/operatingsystem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux OS</title>
+      <link>/programma/linux-os/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/linux-os/</guid>
+      <description>Linux is alomtegenwoordig. Alleen weten veel mensen dat niet. Gebruik je soms Facebook? Of Instagram? Of Spotify? Of Twitter? Of Android? Dan gebruik je onbewust Linux. Want al deze diensten gebruiken achterliggend Linux.
+We starten vanaf de basis met de installatie van een linux-gebaseerd operating system. We kiezen hierbij voor Debian GNU/Linux omdat het aan de basis staat van heel vele andere bekende linux distributies zoals onder andere Ubuntu, Kali linux, Knoppix, Element en Linux Mint.</description>
+    </item>
+    
+  </channel>
+</rss>

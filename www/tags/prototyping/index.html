@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="cleartype" content="on">
+
+    
+    <meta name="theme-color" content="#44C8F5" />
+    <meta name="apple-mobile-next-web-developer-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-navbutton-color" content="#44C8F5" />
+    <meta name="msapplication-TileColor" content="#44C8F5" />
+
+    
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta name="author" content="mct">
+    <meta name="description" content="">
+    
+
+    <title>prototyping | MCT</title>
+
+    
+    
+    
+    <link rel="stylesheet" href="../../scss/screen.min.eec788779facff606579e2935c84834efcbc132f533aaa92f6851ce5a3a25ae8.css" integrity="sha256-7seId5&#43;s/2BleeKTXISDTvy8Ey9TOqqS9oUc5aOiWug=">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+
+    
+    
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicons/favicon-16x16.png">
+
+    <link rel="apple-touch-icon" href="../../favicons/apple-touch-icon-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../favicons/apple-touch-icon-60.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../favicons/apple-touch-icon-76.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../favicons/apple-touch-icon-120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../favicons/apple-touch-icon-152.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../favicons/apple-touch-icon-180.png" />
+    <link rel="apple-touch-icon" href="../../favicons/apple-touch-icon.png" />
+
+    <link rel="mask-icon" href="../../favicons/safari-pinned-tab.svg" color="#44C8F5">
+    <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+    <link rel="manifest" href="../../site.webmanifest">
+
+    <meta property="og:url" content="/tags/prototyping/" />
+    <meta property="og:title" content="prototyping" />
+    <meta property="og:description" content="" />
+    
+
+    
+    <script type="text/javascript">
+        var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){i[e]=function(){var n=arguments;i.queue.push(function(){i[e].apply(i,n)})}}var i={config:e};i.initialize=!0;var a=document,t=window;setTimeout(function(){var n=a.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/next/ai.2.min.js",a.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{i.cookie=a.cookie}catch(e){}i.queue=[],i.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var o="Track"+r[0];if(n("start"+o),n("stop"+o),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var s=t[r];t[r]=function(e,n,a,t,o){var c=s&&s(e,n,a,t,o);return!0!==c&&i["_"+r]({message:e,url:n,lineNumber:a,columnNumber:t,error:o}),c},e.autoExceptionInstrumented=!0}return i}
+        (
+            {instrumentationKey:"c3c025fd-5206-4cf2-ad04-82fcf29209af"}
+        );
+        window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+    </script>
+    
+
+</head>
+
+
+<body>
+
+    
+    <div class="c-row c-row--top">
+    <div class="o-container c-top">
+        
+
+        <p class="c-howest-badge">
+			<span class="c-howest-badge__text">powered by</span>
+			<svg class="c-howest-badge__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.37 85.6">
+			  <title>logo-howest</title>
+			  <g class="c-howest-badge__logo-path">
+			    <path d="M105.15,20.42,111.42,1a.78.78,0,0,0-.51-1,.8.8,0,0,0-1,.52l-6.42,19.86Z"/>
+			    <path d="M88.88,65.35,82.69,84.48a.78.78,0,0,0,.51,1,.67.67,0,0,0,.24,0A.8.8,0,0,0,84.2,85l6.34-19.6Z"/>
+			    <path d="M0,14.77c0-3.19,2-5.31,4.78-5.31s4.77,2.12,4.77,5.31v13h.14c2-2.45,5.7-3.31,8.69-3.31,7.49,0,13.07,4.77,13.07,12.87V55.64c0,3.18-2,5.3-4.78,5.3s-4.78-2.12-4.78-5.3V39c0-4.45-2.78-6.57-6.23-6.57-3.92,0-6.11,2.85-6.11,6.57V55.64c0,3.18-2,5.3-4.77,5.3S0,58.82,0,55.64Z"/>
+			    <path d="M71.06,43c0,10-6.84,18.37-17.12,18.37S36.82,52.92,36.82,43c0-9.69,7-18.51,17.12-18.51S71.06,33.28,71.06,43ZM46.38,43c0,4.57,2.39,9.62,7.56,9.62S61.5,47.54,61.5,43s-2.32-9.76-7.56-9.76S46.38,38.39,46.38,43Z"/>
+			    <path d="M74.11,33.21a13.38,13.38,0,0,1-1-4.51c0-2.12,2-3.85,4.78-3.85a4.55,4.55,0,0,1,4.51,3.79l5.51,18.24H88L93.61,29c.73-2.58,2.06-4.18,4.85-4.18s4.11,1.6,4.84,4.18l5.57,17.85H109l5.5-18.24A4.55,4.55,0,0,1,119,24.85a4.43,4.43,0,0,1,4.78,4.65,12.8,12.8,0,0,1-.93,3.58l-8.16,23c-1,2.79-2.65,4.84-5.77,4.84-2.92,0-4.64-1.65-5.51-4.44L98.52,41.11h-.13L93.48,56.5c-.86,2.79-2.59,4.44-5.51,4.44-3.11,0-4.77-2-5.77-4.84Z"/>
+			    <path d="M136,46.08c.67,4.71,4.58,6.9,9,6.9,4.91,0,8.29-3.84,10.81-3.84a4.24,4.24,0,0,1,3.92,4.11c0,4.11-8.5,8.09-15.6,8.09-10.74,0-17.91-7.83-17.91-18.37,0-9.69,7-18.51,17.12-18.51,10.35,0,17.18,9.42,17.18,17.38,0,2.85-1.26,4.24-4.18,4.24Zm15-6.37c-.53-4.18-3.19-7.29-7.63-7.29-4.25,0-7.1,3.25-7.57,7.29Z"/>
+			    <path d="M185.38,35.6c-1.79,0-5.44-2.78-8.56-2.78-1.73,0-3.25.79-3.25,2.65,0,4.44,16.58,3.78,16.58,14.66,0,6.37-5.37,11.21-13.6,11.21-5.37,0-13.33-3.05-13.33-7.36,0-1.46,1.46-4.25,4.11-4.25,3.72,0,5.37,3.25,9.89,3.25,2.92,0,3.78-.92,3.78-2.72,0-4.37-16.59-3.71-16.59-14.66,0-6.63,5.38-11.14,12.94-11.14,4.71,0,11.94,2.18,11.94,6.9A4.13,4.13,0,0,1,185.38,35.6Z"/>
+			    <path d="M198.51,33.61h-2.12a3.87,3.87,0,0,1-4.18-4.18,4.08,4.08,0,0,1,4.18-4.18h2.12v-5.7c0-3.19,2-5.31,4.78-5.31s4.78,2.12,4.78,5.31v5.7h2.72c2.45,0,4.58,1.13,4.58,4.18s-2.13,4.18-4.58,4.18h-2.72v22c0,3.18-2,5.3-4.78,5.3s-4.78-2.12-4.78-5.3Z"/>
+			  </g>
+			  <g class="c-howest-badge__logo-path">
+			    <path d="M111.14,74.22a2.56,2.56,0,1,0-5.12,0v6a.92.92,0,1,1-1.83,0V66A.92.92,0,1,1,106,66v5.3l0,0a3.8,3.8,0,0,1,3.06-1.45c1.71,0,3.85,1.08,3.85,4.2v6.13a.92.92,0,1,1-1.83,0Z"/>
+			    <path d="M120.31,69.92c3.12,0,4.87,2.72,4.87,5.65s-1.75,5.66-4.87,5.66-4.86-2.72-4.86-5.66S117.19,69.92,120.31,69.92Zm0,9.73c2.25,0,3-2.2,3-4.08s-.79-4.07-3-4.07-3,2.2-3,4.07S118.07,79.65,120.31,79.65Z"/>
+			    <path d="M136.73,80.32c0,3.28-2,5.28-5,5.28-1.89,0-4.24-1.08-4.24-2a.77.77,0,0,1,.77-.85c.83,0,1.64,1.29,3.62,1.29,2.33,0,3-1.83,3-3.41v-1h-.05a3.15,3.15,0,0,1-2.8,1.58c-3.12,0-4.87-2.72-4.87-5.66s1.75-5.65,4.87-5.65a3.74,3.74,0,0,1,2.8,1.39h.05v-.5a.86.86,0,0,1,1-.89.85.85,0,0,1,.86.89Zm-4.68-.67c2.24,0,3-2.2,3-4.08s-.79-4.07-3-4.07-3,2.2-3,4.07S129.8,79.65,132.05,79.65Z"/>
+			    <path d="M140.93,76.28a3.15,3.15,0,0,0,3.27,3.37c2.43,0,3.05-1.5,3.74-1.5a.72.72,0,0,1,.66.81c0,.9-2.26,2.27-4.42,2.27-3.54,0-5.08-2.72-5.08-5.66s1.87-5.65,5-5.65,4.76,2.72,4.76,5.38c0,.65-.23,1-1,1ZM147,74.91c0-1.58-.91-3.41-2.93-3.41-2.27-.09-3.08,1.72-3.14,3.41Z"/>
+			    <path d="M154.64,69.92c1.52,0,3.68.81,3.68,2a.74.74,0,0,1-.83.75c-.79,0-1.1-1.12-2.85-1.12-1,0-1.93.46-1.93,1.39,0,1.94,5.9,1.73,5.9,4.93,0,2.31-2,3.41-4,3.41-2.33,0-4.16-1.16-4.16-2.1a.78.78,0,0,1,.75-.83c.81,0,1.47,1.35,3.47,1.35,1.33,0,2.14-.75,2.14-1.5,0-2.16-5.9-2-5.9-5.11C150.88,71,152.79,69.92,154.64,69.92Z"/>
+			    <path d="M165.41,69.92c1.88,0,3,.64,3,1.39a.77.77,0,0,1-.75.77c-.71,0-1-.58-2.23-.58-2.26,0-3.16,2.2-3.16,4.07s.9,4.08,3.16,4.08c1.29,0,1.63-.62,2.21-.62a.69.69,0,0,1,.71.77c0,.68-1,1.43-2.92,1.43-3.36,0-5-2.72-5-5.66S162.05,69.92,165.41,69.92Z"/>
+			    <path d="M177.62,74.22a2.56,2.56,0,1,0-5.11,0v6a.92.92,0,1,1-1.83,0V66a.92.92,0,1,1,1.83,0v5.3l0,0a3.79,3.79,0,0,1,3.06-1.45c1.7,0,3.84,1.08,3.84,4.2v6.13a.92.92,0,1,1-1.83,0Z"/>
+			    <path d="M186.8,69.92c3.12,0,4.87,2.72,4.87,5.65s-1.75,5.66-4.87,5.66-4.87-2.72-4.87-5.66S183.68,69.92,186.8,69.92Zm0,9.73c2.25,0,3-2.2,3-4.08s-.79-4.07-3-4.07-3,2.2-3,4.07S184.55,79.65,186.8,79.65Z"/>
+			    <path d="M198.53,69.92c3.12,0,4.87,2.72,4.87,5.65s-1.75,5.66-4.87,5.66-4.86-2.72-4.86-5.66S195.41,69.92,198.53,69.92Zm0,9.73c2.25,0,3-2.2,3-4.08s-.79-4.07-3-4.07-3,2.2-3,4.07S196.29,79.65,198.53,79.65Z"/>
+			    <path d="M207.71,80.25a.92.92,0,1,1-1.83,0V66a.92.92,0,1,1,1.83,0Z"/>
+			  </g>
+			</svg>
+		</p>
+    </div>
+</div>
+
+    
+
+    
+    
+<header class="c-row c-row--header">
+	<div class="o-container">
+		<div class="c-header">
+			<p class="c-logo">
+    <a href="../../" class="c-logo__link">
+		
+        
+
+        <svg class="c-logo__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 85">
+          <title>MCT logo</title>
+          <g id="MCT">
+            <path class="c-logo__path" d="M36.21,45.21,27,50.29l-9.21-5.08V55.83L23.31,59a7.37,7.37,0,0,0,7.38,0l5.52-3.18Z"/>
+            <path class="c-logo__path" d="M50.28,12.3,30.69,1a7.37,7.37,0,0,0-7.38,0L3.72,12.3A7.38,7.38,0,0,0,0,18.69V41.31A7.38,7.38,0,0,0,3.72,47.7l3.41,2V19.94a1.59,1.59,0,0,1,2.39-1.38L27,28.42l17.47-9.86a1.59,1.59,0,0,1,2.39,1.38V49.67l3.41-2A7.38,7.38,0,0,0,54,41.31V18.69A7.38,7.38,0,0,0,50.28,12.3Z"/>
+          </g>
+          <g id="Icon">
+            <path class="c-logo__path" d="M8.76,72.16c.28-1.64,1.27-2,2.06-2,1.56,0,1.91.91,2.7,3.38L15,78.29h0l1.53-4.72c.79-2.47,1.13-3.38,2.7-3.38.79,0,1.77.33,2.06,2l1.23,7.06c.26,1.43.53,3,.53,3.45a1.48,1.48,0,0,1-1.47,1.49c-1.41,0-1.66-1-1.81-2.07L18.92,76h0l-2.1,6.75c-.31,1-.77,1.41-1.72,1.41s-1.41-.41-1.71-1.41L11.24,76h0l-.92,6.09c-.16,1.06-.41,2.07-1.81,2.07A1.48,1.48,0,0,1,7,82.67c0-.46.27-2,.52-3.45Z"/>
+            <path class="c-logo__path" d="M31.44,70c1.89,0,4.14.54,4.14,2.18a1.42,1.42,0,0,1-1.35,1.48c-.73,0-1.5-.65-2.72-.65C29,73,28,75.05,28,77.18s1.12,4,3.26,4c1.95,0,2.26-.64,3.07-.64A1.33,1.33,0,0,1,35.7,82c0,1.71-2.6,2.31-4.32,2.31-4.32,0-6.75-3.24-6.75-7.17C24.63,73,27.31,70,31.44,70Z"/>
+            <path class="c-logo__path" d="M40.5,73.2H38.74a1.42,1.42,0,0,1-1.62-1.45c0-.9.58-1.44,1.62-1.44h6.64c1,0,1.62.54,1.62,1.44a1.42,1.42,0,0,1-1.62,1.45H43.62v9.3a1.56,1.56,0,1,1-3.12,0Z"/>
+          </g>
+        </svg>
+
+    </a>
+</p>
+
+			<nav class="c-nav-main js-nav">
+	<ul class="o-list c-nav-main__list">
+		
+		
+			<li class="c-nav-main__item ">
+				<a href="../../" class="c-nav-main__link">Home</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../waarom-mct/" class="c-nav-main__link">Waarom MCT</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../programma/" class="c-nav-main__link">Programma</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../projecten/" class="c-nav-main__link">Projecten</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../at-home/" class="c-nav-main__link">@Home</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../contact/" class="c-nav-main__link">Contact</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../sizing-servers-lab/" class="c-nav-main__link">Sizing Servers Lab</a>
+			</li>
+		
+	</ul>
+</nav>
+
+			<a href="https://www.howest.be/nl/studeren/inschrijven-en-info" class="c-button c-button--md c-button--header-cta">Inschrijven</a>
+			<button class="c-nav-main-trigger js-nav-trigger">
+				<svg role="img" class="c-symbol c-symbol-menu c-nav-main-trigger__symbol">
+    <use xlink:href="../../img/svg/svg-symbols.svg#c-symbol-menu"></use>
+</svg>
+
+			</button>
+		</div>
+	</div>
+</header>
+
+    
+
+    
+    
+
+
+    
+    <div class="c-nav-mobile js-nav-mobile">
+    <div class="c-nav-mobile__body">
+        <div class="c-header">
+            <p class="c-logo">
+    <a href="../../" class="c-logo__link">
+		
+        
+
+        <svg class="c-logo__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 85">
+          <title>MCT logo</title>
+          <g id="MCT">
+            <path class="c-logo__path" d="M36.21,45.21,27,50.29l-9.21-5.08V55.83L23.31,59a7.37,7.37,0,0,0,7.38,0l5.52-3.18Z"/>
+            <path class="c-logo__path" d="M50.28,12.3,30.69,1a7.37,7.37,0,0,0-7.38,0L3.72,12.3A7.38,7.38,0,0,0,0,18.69V41.31A7.38,7.38,0,0,0,3.72,47.7l3.41,2V19.94a1.59,1.59,0,0,1,2.39-1.38L27,28.42l17.47-9.86a1.59,1.59,0,0,1,2.39,1.38V49.67l3.41-2A7.38,7.38,0,0,0,54,41.31V18.69A7.38,7.38,0,0,0,50.28,12.3Z"/>
+          </g>
+          <g id="Icon">
+            <path class="c-logo__path" d="M8.76,72.16c.28-1.64,1.27-2,2.06-2,1.56,0,1.91.91,2.7,3.38L15,78.29h0l1.53-4.72c.79-2.47,1.13-3.38,2.7-3.38.79,0,1.77.33,2.06,2l1.23,7.06c.26,1.43.53,3,.53,3.45a1.48,1.48,0,0,1-1.47,1.49c-1.41,0-1.66-1-1.81-2.07L18.92,76h0l-2.1,6.75c-.31,1-.77,1.41-1.72,1.41s-1.41-.41-1.71-1.41L11.24,76h0l-.92,6.09c-.16,1.06-.41,2.07-1.81,2.07A1.48,1.48,0,0,1,7,82.67c0-.46.27-2,.52-3.45Z"/>
+            <path class="c-logo__path" d="M31.44,70c1.89,0,4.14.54,4.14,2.18a1.42,1.42,0,0,1-1.35,1.48c-.73,0-1.5-.65-2.72-.65C29,73,28,75.05,28,77.18s1.12,4,3.26,4c1.95,0,2.26-.64,3.07-.64A1.33,1.33,0,0,1,35.7,82c0,1.71-2.6,2.31-4.32,2.31-4.32,0-6.75-3.24-6.75-7.17C24.63,73,27.31,70,31.44,70Z"/>
+            <path class="c-logo__path" d="M40.5,73.2H38.74a1.42,1.42,0,0,1-1.62-1.45c0-.9.58-1.44,1.62-1.44h6.64c1,0,1.62.54,1.62,1.44a1.42,1.42,0,0,1-1.62,1.45H43.62v9.3a1.56,1.56,0,1,1-3.12,0Z"/>
+          </g>
+        </svg>
+
+    </a>
+</p>
+
+            <button class="c-nav-main-trigger js-nav-trigger">
+                <svg role="img" class="c-symbol c-symbol-close c-nav-main-trigger__symbol">
+    <use xlink:href="../../img/svg/svg-symbols.svg#c-symbol-close"></use>
+</svg>
+
+            </button>
+        </div>
+        <div class="c-nav-mobile__nav">
+            <nav class="c-nav-main js-nav">
+	<ul class="o-list c-nav-main__list">
+		
+		
+			<li class="c-nav-main__item ">
+				<a href="../../" class="c-nav-main__link">Home</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../waarom-mct/" class="c-nav-main__link">Waarom MCT</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../programma/" class="c-nav-main__link">Programma</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../projecten/" class="c-nav-main__link">Projecten</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../at-home/" class="c-nav-main__link">@Home</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../contact/" class="c-nav-main__link">Contact</a>
+			</li>
+		
+			<li class="c-nav-main__item ">
+				<a href="../../sizing-servers-lab/" class="c-nav-main__link">Sizing Servers Lab</a>
+			</li>
+		
+	</ul>
+</nav>
+
+            <a href="#!" class="c-button c-button--md c-button--header-cta">Inschrijven</a>
+        </div>
+    </div>
+</div>
+
+    
+
+    
+    <footer class="c-row c-row--lg c-row--footer">
+	<div class="o-container">
+		<div class="c-doormat">
+			<div class="o-grid o-grid--gutter">
+				<div class="o-grid__item u-1-of-4-bp4 c-doormat__item">
+					<img class="c-doormat__logo" src="../../img/svg/logo-portrait.svg" alt="">
+				</div>
+				<div class="o-grid__item u-1-of-4-bp4 c-doormat__item">
+					<h3 class="u-ms0 u-color-neutral-xxxx-dark">Contact</h3>
+					<p class="u-ms0">
+						Howest Kortrijk <br>
+						Graaf Karel de Goedelaan&nbsp;5<br>
+						8500 Kortrijk
+					</p>
+					<p class="u-ms0">
+						<a href="tel:+32 56 24 12 44">+32 56 24 12 44</a> <br>
+						<a href="mailto:mct@howest.be">mct@howest.be</a>
+					</p>
+				</div>
+				<div class="o-grid__item u-1-of-4-bp4 c-doormat__item">
+					<h3 class="u-ms0 u-color-neutral-xxxx-dark">Join the community</h3>
+					<p class="u-ms0">
+						We posten leuke projecten, evenementen en opportuniteiten...
+					</p>
+					<ul class="o-list c-social-list u-ms0">
+    <li class="c-social-list__item"><a href="https://www.facebook.com/mct.howest/" class="c-social-list__link">
+        <svg role="img" class="c-symbol c-symbol-social-facebook c-social-list__symbol">
+    <use xlink:href="../../img/svg/svg-symbols.svg#c-symbol-social-facebook"></use>
+</svg>
+
+    </a></li>
+    <li class="c-social-list__item"><a href="https://twitter.com/mct_howest" class="c-social-list__link">
+        <svg role="img" class="c-symbol c-symbol-social-twitter c-social-list__symbol">
+    <use xlink:href="../../img/svg/svg-symbols.svg#c-symbol-social-twitter"></use>
+</svg>
+
+    </a></li>
+    <li class="c-social-list__item"><a href="https://www.instagram.com/howest_mct/" class="c-social-list__link">
+        <svg role="img" class="c-symbol c-symbol-social-instagram c-social-list__symbol">
+    <use xlink:href="../../img/svg/svg-symbols.svg#c-symbol-social-instagram"></use>
+</svg>
+
+    </a></li>
+    <li class="c-social-list__item"><a href="https://www.linkedin.com/school/15106039/" class="c-social-list__link">
+        <svg role="img" class="c-symbol c-symbol-social-linkedin c-social-list__symbol">
+    <use xlink:href="../../img/svg/svg-symbols.svg#c-symbol-social-linkedin"></use>
+</svg>
+
+    </a></li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="c-footer">
+			<div class="o-grid o-grid--gutter">
+				<div class="o-grid__item u-3-of-4-bp4 u-push-1-of-4-bp4">
+					<p class="c-type-meta u-color-neutral-base u-ms-1">
+						Made by MCT - 2021 - <a href="https://www.howest.be/nl/privacy-and-copyrights" target="_blank">disclaimer</a>
+						- <a href="https://www.howest.be/nl/opleidingen/bachelor/new-media-and-communication-technology" target="_blank">A
+							Howest bachelor</a>
+					</p>
+				</div>
+			</div>
+		</div>
+</footer>
+
+    
+
+    
+	  <div class="c-cookie-message u-max-width-md js-cookie-message" style="display:none;">
+	<p class="c-cookie-message__text u-ms-1">Deze site gebruikt cookies om surfen makkelijker te maken en het gebruik te analyseren. <a href="https://www.howest.be/nl/cookies" target="_blank">Meer info</a>.</p>
+	<button class="c-button c-button--alpha c-button--md js-cookie-button">In orde!</button>
+</div>
+
+    
+
+    <dialog class="c-modal js-dialog">
+      <div class="c-modal__body c-modal__body--video js-dialog-body">
+        <button class="c-modal__close js-dialog-close" aria-label="Close dialog">
+          <svg role="img" class="c-symbol c-symbol-close c-nav-main-trigger__symbol">
+    <use xlink:href="../../img/svg/svg-symbols.svg#c-symbol-close"></use>
+</svg>
+
+        </button>
+        <div class="embed-container js-embed-container">
+          <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </dialog>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+<script type="text/javascript" src="../../js/app.min.27ac12263f0428b1f5c86c1751f72525faef1be9c98b2674dca3cc785e78d134a04d0bffbd7b343231a2a8a61c1b99464141fb23ec470bf5f88fb0adb4cdefe6.js" integrity="sha512-J6wSJj8EKLH1yGwXUfclJfrvG&#43;nJiyZ03KPMeF540TSgTQv/vXs0MjGiqKYcG5lGQUH7I&#43;xHC/X4j7CttM3v5g=="></script>
+
+
+
+
+
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: ['Roboto+Mono&display=swap'] }
+		};
+		(function () {
+			var wf = document.createElement('script');
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+
+		(function (f, i, r, e, s, h, l) {
+		i['GoogleAnalyticsObject'] = s; f[s] = f[s] || function () {
+			(f[s].q = f[s].q || []).push(arguments)
+		}, f[s].l = 1 * new Date(); h = i.createElement(r),
+			l = i.getElementsByTagName(r)[0]; h.async = 1; h.src = e; l.parentNode.insertBefore(h, l)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-34713257-1', 'auto');
+		ga('send', 'pageview');
+
+		var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){i[e]=function(){var n=arguments;i.queue.push(function(){i[e].apply(i,n)})}}var i={config:e};i.initialize=!0;var a=document,t=window;setTimeout(function(){var n=a.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/next/ai.2.min.js",a.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{i.cookie=a.cookie}catch(e){}i.queue=[],i.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var o="Track"+r[0];if(n("start"+o),n("stop"+o),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var s=t[r];t[r]=function(e,n,a,t,o){var c=s&&s(e,n,a,t,o);return!0!==c&&i["_"+r]({message:e,url:n,lineNumber:a,columnNumber:t,error:o}),c},e.autoExceptionInstrumented=!0}return i}
+		(
+			{instrumentationKey:"c3c025fd-5206-4cf2-ad04-82fcf29209af"}
+		);
+		window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+	</script>
+
+
+
+</body>
+</html>

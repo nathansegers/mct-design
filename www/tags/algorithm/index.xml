@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithm on MCT</title>
+    <link>/tags/algorithm/</link>
+    <description>Recent content in algorithm on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language><atom:link href="/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Programming &amp; Maths</title>
+      <link>/programma/advanced-programming-maths/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programma/advanced-programming-maths/</guid>
+      <description>Deze module ondersteunt rechtstreeks de modules Machine learningen Deep learningbinnen Smart Tech &amp;amp; AI. Beide modules zijn immers gebouwd op de programmering van afleidende logica-systemen en systemen voor kansberekening en statistiek. ‘Intelligente’ algoritmes zijn in staat om van enorme hoeveelheden input te leren – en dit om te zetten naar praktische output, al dan niet naar aanleiding van een nieuwe specifieke dataset die verbonden moet worden aan een bepaalde output. Dergelijke algoritmes kunnen zo uiteindelijk voorspellingen doen of beslissingen nemen, gebaseerd op de verzamelde data en de analyse hiervan.</description>
+    </item>
+    
+  </channel>
+</rss>

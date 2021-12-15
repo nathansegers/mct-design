@@ -1,0 +1,14 @@
+
+	
+{
+	"title": "Windows OS",
+	"description": null,
+	"tools": null,
+	"semester": 4,
+	"weight": 40,
+	"tags": ["mswindows","server2016","mcsalevel","ad","gpo","security"],
+	"pillar": "connect",
+	"tracks": ["infrastructure-engineer"],
+	"content": "\u003cp\u003eIn heel veel bedrijven wordt \u003cstrong\u003eMicrosoft Windows Server 2016\u003c/strong\u003e gebruikt voor authenticatie en het beveiligen van resources. \u003cstrong\u003eActive Directory\u003c/strong\u003e is één van de pijlers. Je krijgt een volledige virtuele omgeving ter beschikking (zelfs van thuis/kot bereikbaar) om een Windows gebaseerd KMO netwerk op te zetten. Aan de hand van een ‘best practice’ ben je in staat snel een goed beveiligde omgeving op te stellen. Op basis van heel wat praktijkervaring werd deze best practice samengesteld. Opnieuw wordt de labo-inhoud gerealiseerd vanuit \u003cstrong\u003etal van praktijkvoorbeelden\u003c/strong\u003e.\u003c/p\u003e\n"
+}
+

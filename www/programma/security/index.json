@@ -1,0 +1,14 @@
+
+	
+{
+	"title": "Security",
+	"description": null,
+	"tools": null,
+	"semester": 3,
+	"weight": 10,
+	"tags": ["privacy","security","testing"],
+	"pillar": "connect",
+	"tracks": null,
+	"content": "\u003cp\u003eStudenten worden bewust gemaakt van de mogelijke bedreigingen die de \u003cstrong\u003ebeschikbaarheid\u003c/strong\u003e, de \u003cstrong\u003evertrouwelijkheid\u003c/strong\u003e of de \u003cstrong\u003eintegriteit\u003c/strong\u003e van een systeem \u003cstrong\u003ekunnen compromitteren\u003c/strong\u003e\nEr worden diverse tegenmaatregelen besproken die de kwetsbaarheid tegenover deze bedreigingen kunnen verminderen of minimaliseren.\u003c/p\u003e\n\u003cp\u003eAan de hand van \u003cstrong\u003epraktische voorbeelden\u003c/strong\u003e wordt getracht een inzicht te verwerven in het \u003cstrong\u003ebrede en complexe veld van de ICT-beveiliging\u003c/strong\u003e, zowel op het gebied van WEB-technologie, netwerk-infrastructuur, hardware en software applicaties. In het bijzonder daar waar deze technologieën worden geïntegreerd \u003cstrong\u003ein moderne Cloud en IoT toepassingen\u003c/strong\u003e.\u003cbr\u003e\nEr wordt een zeer summiere inleiding gegeven in de bestaande methodieken en in de ter zake doende wetgeving.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003ePraktische labo-sessies\u003c/strong\u003e laten de studenten zelf aan de slag gaan met een aantal tools om de \u003cstrong\u003eeffectiviteit van beveiligingen\u003c/strong\u003e te \u003cstrong\u003etesten\u003c/strong\u003e. Een opgezette afgeschermde omgeving laat de studenten toe zelf een aantal \u003cstrong\u003ekwetsbaarheden in applicaties uit te buiten\u003c/strong\u003e zodat men zich een goed beeld kan vormen van de impact van het falen van een beveiliging.\u003c/p\u003e\n"
+}
+

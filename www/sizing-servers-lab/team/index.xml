@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ons team on MCT</title>
+    <link>/sizing-servers-lab/team/</link>
+    <description>Recent content in Ons team on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language>
+    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0100</lastBuildDate><atom:link href="/sizing-servers-lab/team/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/sizing-servers-lab/team/pieter/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/sizing-servers-lab/team/pieter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/sizing-servers-lab/team/esli/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/sizing-servers-lab/team/esli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/sizing-servers-lab/team/muriel/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/sizing-servers-lab/team/muriel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/sizing-servers-lab/team/anke/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/sizing-servers-lab/team/anke/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/sizing-servers-lab/team/nathan/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/sizing-servers-lab/team/nathan/</guid>
+      <description>Nathan Segers werkt al sinds 2019 in het Sizing Servers Lab. Hij begon er in februari met zijn stage omtrent Machine Learning in AWS en Azure. Sindsdien gaf hij al 4 sessies op TETRA bijeenkomsten. Hij werkte mee Machine Learning in de Cloud en Versnellen van AI Implementaties.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/sizing-servers-lab/team/gilles/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/sizing-servers-lab/team/gilles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/sizing-servers-lab/team/jens/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/sizing-servers-lab/team/jens/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

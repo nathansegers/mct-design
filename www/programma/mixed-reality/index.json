@@ -1,0 +1,14 @@
+
+	
+{
+	"title": "Augmented \u0026 Mixed Reality",
+	"description": null,
+	"tools": null,
+	"semester": 5,
+	"weight": 30,
+	"tags": ["AR","MR","Unity","hololens"],
+	"pillar": "design",
+	"tracks": ["smart-xr-developer"],
+	"content": "\u003cp\u003eHet doel van deze module is om kennis te maken met Augmented Reality en Mixed Reality. Je maakt kennis met de verschillende mogelijkheden naar \u003cstrong\u003einteractie en visualisatie\u003c/strong\u003e. In het praktische luik van de module worden hiervoor business toepassingen uitgewerkt, in hoofdzaak a.d.h.v. \u003cstrong\u003eMicrosoft Hololens\u003c/strong\u003e maar ook via \u003cstrong\u003emobile devices\u003c/strong\u003e en alternatieven zoals \u003cstrong\u003eMagicLeap\u003c/strong\u003e.\u003c/p\u003e\n\u003cp\u003eDe kennis die opgedaan werd in UX-design, UI-design en \u003c!-- raw HTML omitted --\u003eInteraction Design\u003c!-- raw HTML omitted --\u003e wordt aangehaald om User Experience om te zetten naar een volledig nieuwe \u003cstrong\u003eaugmented/mixed reality omgeving\u003c/strong\u003e. Daarnaast wordt je kennis C#.NET uit de module \u003c!-- raw HTML omitted --\u003eDevice Programming II\u003c!-- raw HTML omitted --\u003e ingezet voor het programmeergedeelte in \u003cstrong\u003eUnity en UWP\u003c/strong\u003e.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eJe leert de \u003cstrong\u003eUser Experience\u003c/strong\u003e te optimaliseren voor Augmented/Mixed Reality omgevingen.\u003c/li\u003e\n\u003cli\u003eJe wordt ondergedompeld in de mogelijkheden die reeds op de markt zijn voor \u003cstrong\u003einteractie en visualisatie\u003c/strong\u003e van Augmented en Mixed Reality.\u003c/li\u003e\n\u003cli\u003eDe look en feel van de game engine \u003cstrong\u003eUnity\u003c/strong\u003e wordt aangeleerd om een 3D augmented reality omgeving om te zetten en te programmeren.\u003c/li\u003e\n\u003c/ul\u003e\n"
+}
+

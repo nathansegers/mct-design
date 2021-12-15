@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="c-symbolset">
+    <symbol id="c-symbol-arrow-left" viewBox="0 0 24 24">
+      <title>arrow-left</title><path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-arrow-right" viewBox="0 0 24 24">
+      <title>arrow-right</title><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-check" viewBox="0 0 24 24">
+      <title>check</title><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-close" viewBox="0 0 24 24">
+      <title>close</title><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-date_range" viewBox="0 0 768 768">
+      <title>c-symbol-date_range icon</title>
+      <path d="M607.5 640.5V288h-447v352.5h447zm0-513c34.5 0 64.5 30 64.5 64.5v448.5c0 34.5-30 63-64.5 63h-447c-36 0-64.5-28.5-64.5-63V192c0-34.5 28.5-64.5 64.5-64.5H192v-63h64.5v63h255v-63H576v63h31.5zm-63 225v63H480v-63h64.5zm-129 0v63h-63v-63h63zm-127.5 0v63h-64.5v-63H288z"/>
+    </symbol>
+    <symbol id="c-symbol-keyboard-arrow-down" viewBox="0 0 24 24">
+      <title>keyboard-arrow-down</title><path d="M7.41 8L12 12.58 16.59 8 18 9.41l-6 6-6-6z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-menu" viewBox="0 0 24 24">
+      <title>menu</title><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-notifications" viewBox="0 0 768 768">
+      <title>c-symbol-notifications icon</title>
+      <title/><path d="M576 511.5l64.5 64.5v31.5h-513V576l64.5-64.5v-159c0-99 52.5-180 144-202.5v-22.5c0-27 21-48 48-48s48 21 48 48V150c91.5 22.5 144 105 144 202.5v159zm-192 192c-36 0-64.5-28.5-64.5-63h129c0 34.5-30 63-64.5 63z"/>
+    </symbol>
+    <symbol id="c-symbol-play" viewBox="0 0 24 24">
+      <title>play</title><path d="M8 5v14l11-7z" />
+    </symbol>
+    <symbol id="c-symbol-pauze" viewBox="0 0 24 24">
+      <title>pauze</title>
+      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+    </symbol>
+    <symbol id="c-symbol-social-facebook" viewBox="0 0 24 24">
+      <title>social-facebook</title><path d="M13.5 10h3v3h-3v7h-3v-7h-3v-3h3V8.745c0-1.189.374-2.691 1.118-3.512C12.362 4.41 13.291 4 14.404 4H16.5v3h-2.1c-.498 0-.9.402-.9.899V10z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-social-instagram" viewBox="0 0 24 24">
+      <title>social-instagram</title><g fill-rule="nonzero"><path d="M15.52 4H8.392A4.396 4.396 0 0 0 4 8.391v7.13a4.396 4.396 0 0 0 4.391 4.39h7.13a4.396 4.396 0 0 0 4.39-4.39V8.39A4.396 4.396 0 0 0 15.522 4zm2.98 11.52a2.983 2.983 0 0 1-2.98 2.98H8.392a2.983 2.983 0 0 1-2.98-2.98V8.392a2.983 2.983 0 0 1 2.98-2.98h7.13a2.983 2.983 0 0 1 2.979 2.98v7.13z"/><path d="M11.956 7.856c-2.26 0-4.1 1.84-4.1 4.1s1.84 4.1 4.1 4.1 4.1-1.84 4.1-4.1-1.84-4.1-4.1-4.1zm0 6.788a2.691 2.691 0 0 1-2.688-2.688 2.691 2.691 0 0 1 2.688-2.688 2.691 2.691 0 0 1 2.688 2.688 2.691 2.691 0 0 1-2.688 2.688zM16.228 6.659a1.04 1.04 0 0 0-1.035 1.035c0 .272.11.54.304.732.192.192.459.304.73.304.274 0 .54-.112.733-.304a1.04 1.04 0 0 0 0-1.464 1.04 1.04 0 0 0-.732-.303z"/></g>
+    </symbol>
+    <symbol id="c-symbol-social-linkedin" viewBox="0 0 24 24">
+      <title>social-linkedin</title><path d="M8.05 19h-3V9h3v10zm11 0h-3v-5.342c0-1.392-.496-2.085-1.479-2.085-.779 0-1.273.388-1.521 1.165V19h-3s.04-9 0-10h2.368l.183 2h.062c.615-1 1.598-1.678 2.946-1.678 1.025 0 1.854.285 2.487 1.001.637.717.954 1.679.954 3.03V19zM6.55 8C5.694 8 5 7.328 5 6.5S5.694 5 6.55 5c.856 0 1.55.672 1.55 1.5S7.406 8 6.55 8z" fill-rule="nonzero"/>
+    </symbol>
+    <symbol id="c-symbol-social-twitter" viewBox="0 0 24 24">
+      <title>social-twitter</title><path d="M18.891 7.313c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861C17.442 5.384 16.552 5 15.485 5c-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743c-1.332 1.045-2.855 1.562-4.578 1.562-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z" fill-rule="nonzero"/>
+    </symbol></svg>

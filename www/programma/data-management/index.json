@@ -1,0 +1,14 @@
+
+	
+{
+	"title": "Data Management",
+	"description": null,
+	"tools": null,
+	"semester": 2,
+	"weight": 30,
+	"tags": ["T-SQL","DBMS","MYSQL","BCNF"],
+	"pillar": "analysis",
+	"tracks": null,
+	"content": "\u003cp\u003eData en databases zijn niet weg te denken uit onze hedendaagse leefwereld. Je leert het juiste \u003cstrong\u003edatabasemanagementsysteem\u003c/strong\u003e (DBMS) te kiezen. Meeste aandacht gaat hierbij naar \u003cstrong\u003erelationele databases\u003c/strong\u003e om een \u003cstrong\u003egenormaliseerd model\u003c/strong\u003e te bouwen met \u003cstrong\u003eT-SQL\u003c/strong\u003e.\u003c/p\u003e\n\u003cp\u003eJe \u003cstrong\u003emanipuleert\u003c/strong\u003e en \u003cstrong\u003ebevraagt\u003c/strong\u003e de \u003cstrong\u003egestockeerde data\u003c/strong\u003e. Je programmeert \u003cstrong\u003eprocedurele databaseobjecten\u003c/strong\u003e om \u003cstrong\u003ebeveiliging\u003c/strong\u003e, \u003cstrong\u003eonderhoud\u003c/strong\u003e en \u003cstrong\u003efoutcontrole\u003c/strong\u003e te \u003cstrong\u003eoptimaliseren\u003c/strong\u003e.\u003c/p\u003e\n"
+}
+

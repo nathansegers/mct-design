@@ -1,0 +1,14 @@
+
+	
+{
+	"title": "Interaction Design",
+	"description": null,
+	"tools": null,
+	"semester": 3,
+	"weight": 40,
+	"tags": ["dashboards","datavisualisatie"],
+	"pillar": "design",
+	"tracks": null,
+	"content": "\u003cp\u003eIn deze module integreren we kennis uit het eerste jaar (\u003c!-- raw HTML omitted --\u003eDevice Programming 1\u003c!-- raw HTML omitted --\u003e, \u003c!-- raw HTML omitted --\u003eUser Experience Design\u003c!-- raw HTML omitted --\u003e en \u003c!-- raw HTML omitted --\u003eUser Interface Design\u003c!-- raw HTML omitted --\u003e) tot een goed werkend geheel. De focus van de module ligt op het creeëren van een functioneel design met een goede interactie. Van \u003cstrong\u003emicrointeracties\u003c/strong\u003e tot een goed overzicht in een \u003cstrong\u003edashboard\u003c/strong\u003e wordt bekeken hoe je jouw applicatie beter kan maken. We grijpen ook nog even terug naar de UX basis en kijken hoe je door details de interactie tussen jouw applicatie en de gebruikers nog beter kan maken!\u003c/p\u003e\n\u003cp\u003eTechnisch werken we met HTML, CSS en JS om vorm te geven aan de ideeën en keuzes die we maken voor ons ontwerp.\u003c/p\u003e\n"
+}
+

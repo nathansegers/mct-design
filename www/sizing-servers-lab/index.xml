@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sizing Servers Lab on MCT</title>
+    <link>/sizing-servers-lab/</link>
+    <description>Recent content in Sizing Servers Lab on MCT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl</language>
+    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0100</lastBuildDate><atom:link href="/sizing-servers-lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Werk samen met ons!</title>
+      <link>/sizing-servers-lab/cta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/sizing-servers-lab/cta/</guid>
+      <description>Samenwerkingen met ons starten vaak binnen een algemeen onderzoeksproject. Maar wij staan zeker ook klaar om jouw bedrijf of organisatie ook persoonlijke en op maat verzorgde oplossingen aan te reiken.
+Verder kan je ons ook contacteren voor het organiseren van workshops en trainingssessies die uw bedrijf en uw team helpen bij het ontwikkelen van jullie IT-plannen.</description>
+    </item>
+    
+  </channel>
+</rss>
