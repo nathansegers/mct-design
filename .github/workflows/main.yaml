@@ -36,8 +36,12 @@ jobs:
         with:
             ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Configure Combell remote
+        run: |
+          ssh-keyscan -t rsa ${{ secrets.COMBELL_HOSTNAME }} >> ~/.ssh/known_hosts
+          git remote add combell ${{ secrets.REMOTE }}
+
       - name: Push to Combell on branch ${{ steps.extract_branch.outputs.branch }}
         run: |
-          git remote add combell ${{ secrets.REMOTE }}
           git push combell ${{ steps.extract_branch.outputs.branch }}
 
