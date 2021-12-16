@@ -28,8 +28,10 @@ hooks:
     exit 0
 
 # INSTALL: Put code in release folder
+# Building the sourcecode with Hugo. Hugo is not added to the PATH, so we'll have to give the path ourselves.
+# I don't know if we have enough rights to change the PATH ourselves...
   install_before: |
-    /data/sites/web/mctbe/hugo 
+    /data/sites/web/mctbe/hugo --minify
     exit 0
   install_after: |
     echo "finished"
