@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - develop
+      - staging
   
   workflow_dispatch:
 
@@ -30,6 +31,10 @@ jobs:
       
       - name: Build
         run: hugo --minify
+
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Push to Combell on branch ${{ steps.extract_branch.outputs.branch }}
         run: |
