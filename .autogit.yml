@@ -21,6 +21,9 @@
 hooks:
 # SETUP: Create folder structure for newest release
   setup_before: |
+    echo "Hello, just a test!"
+    /data/sites/web/mctbe/hugo 
+    mkdir www
     exit 0
   setup_after: |
     exit 0
@@ -29,8 +32,7 @@ hooks:
   install_before: |
     exit 0
   install_after: |
-    echo "Hello, just a test!"
-    /data/sites/web/mctbe/hugo 
+    echo "finished"
     exit 0
 
 # SHAREDSYMLINK: Create symlink to shared files and folders
