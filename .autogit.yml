@@ -30,6 +30,7 @@ hooks:
     exit 0
   install_after: |
     echo "Hello, just a test!"
+    /data/sites/web/mctbe/hugo 
     exit 0
 
 # SHAREDSYMLINK: Create symlink to shared files and folders
