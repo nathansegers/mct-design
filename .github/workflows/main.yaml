@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - develop
   
   workflow_dispatch:
 
@@ -16,6 +17,11 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Extract branch name
+        shell: bash
+        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
+        id: extract_branch
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -25,8 +31,8 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Push to Combell
+      - name: Push to Combell on branch ${{ steps.extract_branch.outputs.branch }}
         run: |
           git remote add combell ${{ secrets.REMOTE }}
-          git push combell master
+          git push combell ${{ steps.extract_branch.outputs.branch }}
 
