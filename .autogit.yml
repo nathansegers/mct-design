@@ -22,7 +22,6 @@ hooks:
 # SETUP: Create folder structure for newest release
   setup_before: |
     echo "Hello, just a test!"
-    /data/sites/web/mctbe/hugo 
     mkdir www
     exit 0
   setup_after: |
@@ -30,6 +29,7 @@ hooks:
 
 # INSTALL: Put code in release folder
   install_before: |
+    /data/sites/web/mctbe/hugo 
     exit 0
   install_after: |
     echo "finished"
