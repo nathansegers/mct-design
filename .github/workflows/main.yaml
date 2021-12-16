@@ -23,14 +23,15 @@ jobs:
         run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
         id: extract_branch
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.81.0'
-          extended: true
+      # We don't need to build with Hugo in here, because this happens on the Autogit pipeline
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v2
+      #   with:
+      #     hugo-version: '0.81.0'
+      #     extended: true
       
-      - name: Build
-        run: hugo --minify
+      # - name: Build
+      #   run: hugo --minify
 
       - uses: webfactory/ssh-agent@v0.5.4
         with:
