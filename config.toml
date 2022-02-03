@@ -8,6 +8,8 @@ relativeURLS = true
 canonifyurls = true
 enableEmoji = true
 
+publishDir = "www"
+
 # disableKinds = ["term", "taxonomy"]
 
 [menu]
