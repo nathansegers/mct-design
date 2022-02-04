@@ -1,6 +1,6 @@
 # mct.be website (in progress)
 ## Status
-![Production](https://github.com/NMCT/mct-design/actions/workflows/azure.yml/badge.svg)
+[![Production](https://github.com/NMCT/mct-design/actions/workflows/main.yaml/badge.svg)](https://github.com/NMCT/mct-design/actions/workflows/main.yaml)
 
 [![Staging](https://api.netlify.com/api/v1/badges/5d140b79-088c-42fe-b39c-eff0def3a1f8/deploy-status)](https://app.netlify.com/sites/epic-beaver-de68d9/deploys)
 
