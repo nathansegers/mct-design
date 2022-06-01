@@ -1,12 +1,11 @@
 ---
-title: Augmented & Mixed Reality
+title: Mixed Reality
 semester: 5
 weight: 30
 tags:
-- AR
 - MR
-- Unity
-- hololens
+- Mobile-AR
+- Hololens
 pillar: design
 tracks:
 - smart-xr-developer
